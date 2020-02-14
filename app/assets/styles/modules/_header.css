@@ -54,6 +54,13 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+        &--team{
+            height: 70vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/ourteambg.png);
+            background-position: top right;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     }
 
     &__text-br{
