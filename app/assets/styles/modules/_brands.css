@@ -3,25 +3,28 @@
     padding-bottom: 80px;
 
 
-    &__logo{
-        width: 50%;
-        position: relative;
-    }
+    
 
-    &__logo-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        flex-wrap: wrap;
-        position: relative;
+    &__container{
+
+        &-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px 0px;
+            
+        }
+
+        & img {
+            height: 80px;
+            padding: 0px 40px;
+        }
     } 
 
 
 
 
     &__title{
-        /* margin-left: 5%; */
         margin: 8px 0 18px 0%;
     }
 
@@ -38,50 +41,7 @@
         filter: grayscale(0%) brightness(100%) opacity(100%);
     }
 
-    &__logo:nth-child(9) {
-        display: none;
-    }
-
-    &__img:nth-child(1){
-        width: 13%;
-        margin: 16px 14% 5% 0;
-    }
-    &__img:nth-child(2){
-        width: 7%;
-        margin: 16px 15% 5% 0;
-    }
-    &__img:nth-child(3){
-        width: 12%;
-        margin: 16px 14% 5% 0;
-    }
-    &__img:nth-child(4){
-        width: 8%;
-        margin: 16px 2% 5% 0;
-    }
-    &__img:nth-child(5){
-        width: 11%;
-        margin: 16px 12% 5% 0%;
-    }
-    &__img:nth-child(6){
-        width: 11%;
-        margin: 16px 14% 5% 0;
-    }
-    &__img:nth-child(7){
-        width: 6%;
-        margin: 16px 14% 5% 0;
-
-    }
-    &__img:nth-child(8){
-        width: 12%;
-        margin: 16px 0% 5% 0;
-
-    }
-    &__img:nth-child(9){
-        width: 40%;
-        display: none;
-    }
 }
-
 
 @media only screen and (max-width: 840px){
     .brands__img:nth-child(1){

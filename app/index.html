@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/global/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/styles/global/owl.theme.default.min.css">
     <!-- build:js assets/scripts/Vendor.js -->
     <script src="temp/scripts/Vendor.js"></script>
     <!-- endbuild -->
@@ -814,22 +816,26 @@
         </div>
     </section>
 
-    <section class="brands ">
+    <section class="brands">
 
         <div class="row">
             <h2 class="title brands__title ">
                 Trusted by the smartest companies
             </h2>
 
-            <div class="brands__logo-container ">
+            <div class="brands__container">
+                <div>
+                    <a href="#" id="prev">&lt;</a>
+                    <a href="#" id="next">&gt;</a>
+                </div>
+                <div class="brands__container--main owl-carousel owllogos owl-theme">
+                <img src="assets/images/dangote.png " alt=" " class="brands__img">
 
-                <img src="assets/images/dangote.png " alt=" " class="brands__img ">
+
+                <img src="assets/images/FCMB_Logo 1.png " alt=" " class="brands__img">
 
 
-                <img src="assets/images/FCMB_Logo 1.png " alt=" " class="brands__img ">
-
-
-                <img src="assets/images/nerfund.png " alt=" " class="brands__img ">
+                <img src="assets/images/nerfund.png " alt=" " class="brands__img">
 
 
                 <img src="assets/images/anam.png " alt=" " class="brands__img ">
@@ -845,7 +851,7 @@
                 <img src="assets/images/ruby.png " alt=" " class="brands__img ">
 
                 <img src="assets/images/easisaver-logo-png.png " alt=" " class="brands__img ">
-
+                </div>
             </div>
 
             
@@ -854,7 +860,7 @@
 
 
 
-    </section> 
+    </section>  
     <section class="diff">
 
         <div class="row">
@@ -987,8 +993,9 @@
             duration: 1200,
         };
 
+        
         ScrollReveal().reveal(".about__container--custom", scaleUp);
-
+        ScrollReveal().reveal(".diff", scaleUp);
 
         var slideInLeft = {
             distance: '100%',
@@ -1033,9 +1040,42 @@
         ScrollReveal().reveal("btn--white", slideInUp);
 
 
-
     </script>
-
+    <script>
+        
+        $(document).ready(function(){
+        $(".owllogos").owlCarousel({
+        autoplay:true,
+        autoplayTimeout:5000,
+        loop:true,
+        items: 9,
+        responsive:{
+            0:{
+                items:1
+            },
+            475:{
+                items:2
+            },
+            640:{
+                items:3
+            },
+            
+            900:{
+                items:4,
+            },
+            1100:{
+                items:5,
+            },
+            1500:{
+                items:6
+            }
+        }
+    });
+    
+  });
+    </script>
+    <script src="jquery.min.js"></script>
+    <script src="assets/scripts/owl.carousel.min.js"></script>
     <!-- build:js assets/scripts/App.js -->
     <script src="temp/scripts/App.js "></script>
     <!-- endbuild -->

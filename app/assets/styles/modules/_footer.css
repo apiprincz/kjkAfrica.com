@@ -162,7 +162,7 @@
             }
             
             & li::before {
-                content:url(../../assets/images/arrow.png);
+                content:url(../../assets/images/mapicon.png);
                 display: inline-block;
                 height: 20%;
                 vertical-align: middle;
