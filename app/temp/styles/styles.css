@@ -3188,6 +3188,90 @@ App.js:39 Letter 10 is 147.7610626220703 */
         transform-origin: center;
     }
 
+.mobile-nav--flex {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content:space-between; 
+        width: 62%;
+    
+    }
+
+.mobile-nav--flex .mobile-nav__title--small:link {
+            margin-right:40px;
+            margin-left: 0px;
+            line-height:48px;
+            white-space: nowrap;
+        }
+
+.mobile-nav--flex .mobile-nav__title--small:link.xmargin {
+                margin-right: 25px;
+            }
+
+.mobile-nav--flex .mobile-nav__title--small:link::before {
+                content: url(../../../assets/images/portbullets.png);
+                vertical-align: middle;
+                padding-right: 20px;
+            }
+
+.mobile-nav--flex .mobile-nav__title--small:visited {
+            margin-left: 0px;
+            margin-right: 40px;
+        }
+
+.mobile-nav--xspace {
+        flex: 50%;
+        line-height: 67px;
+    }
+
+@media only screen and (max-width: 1300px){
+    .mobile-nav--flex{
+       width: 82%;
+    }
+
+}
+
+@media only screen and (max-width: 836px){
+    .mobile-nav--flex{
+       width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 740px){
+    .mobile-nav--xspace {
+        flex: inherit;
+    }
+
+}
+
+@media only screen and (max-width: 530px){
+    .mobile-nav--xspace {
+        
+        line-height: 38px;
+    }
+    .mobile-nav--flex .mobile-nav__title--small:link {
+        line-height: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 475px){
+    .mobile-nav--xmargin {
+        
+        margin-right: 30px;
+    }
+
+
+}
+
+@media only screen and (max-width: 375px){
+    .mobile-nav--flex {
+        width: 111px;
+    }
+
+
+}
+
 @media only screen and (min-width: 740px){
     .mobile-nav .img-resp{
         display: none;
@@ -3254,6 +3338,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         transform: rotate(0deg);
         transform-origin: center;
     }
+    
 }
 
 @media only screen and (min-width: 920px){

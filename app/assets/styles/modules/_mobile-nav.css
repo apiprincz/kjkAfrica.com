@@ -9,6 +9,8 @@
     top: 0%;
     transition: all ease-in-out .3s;
 
+    
+
     &__container .mobile-nav--resp{
         height: 0;
         overflow: hidden;
@@ -182,11 +184,88 @@
         transform: rotate(90deg);
         transform-origin: center;
     }
+    &--flex {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content:space-between; 
+        width: 62%;
+
+        & .mobile-nav__title--small:link {
+            margin-right:40px;
+            margin-left: 0px;
+            line-height:48px;
+            white-space: nowrap;
+
+            &.xmargin {
+                margin-right: 25px;
+            }
+
+            &::before {
+                content: url(../../../assets/images/portbullets.png);
+                vertical-align: middle;
+                padding-right: 20px;
+            }
+        }
+        & .mobile-nav__title--small:visited {
+            margin-left: 0px;
+            margin-right: 40px;
+        }
+    
+    }
+
+    &--xspace {
+        flex: 50%;
+        line-height: 67px;
+    }
     
 }
 
 
 
+
+@media only screen and (max-width: 1300px){
+    .mobile-nav--flex{
+       width: 82%;
+    }
+
+}
+@media only screen and (max-width: 836px){
+    .mobile-nav--flex{
+       width: 100%;
+    }
+
+}
+@media only screen and (max-width: 740px){
+    .mobile-nav--xspace {
+        flex: inherit;
+    }
+
+}
+@media only screen and (max-width: 530px){
+    .mobile-nav--xspace {
+        
+        line-height: 38px;
+    }
+    .mobile-nav--flex .mobile-nav__title--small:link {
+        line-height: 5px;
+    }
+
+}
+@media only screen and (max-width: 475px){
+    .mobile-nav--xmargin {
+        
+        margin-right: 30px;
+    }
+
+
+}
+@media only screen and (max-width: 375px){
+    .mobile-nav--flex {
+        width: 111px;
+    }
+
+
+}
 @media only screen and (min-width: 740px){
     .mobile-nav .img-resp{
         display: none;
@@ -253,6 +332,7 @@
         transform: rotate(0deg);
         transform-origin: center;
     }
+    
 }
 
 @media only screen and (min-width: 920px){
