@@ -671,8 +671,25 @@
 
 
 
-    </script>
 
+    </script>
+    <script>
+
+        const cards = document.querySelectorAll(".solutions__desc h3");
+
+        for (let i = 0; i < cards.length; i++) {
+            
+                if (i >= 3 && i <= 5 || i >= 9 && i <= 11 || i >= 15 && i <= 17  ) {
+                    cards[i].classList.add("colored")
+                    
+                }
+
+
+            
+            
+        }
+
+    </script>
 
     <!-- build:js assets/scripts/App.js -->
     <script src="temp/scripts/App.js "></script>

@@ -6513,13 +6513,19 @@ padding:20px
                 animation: skewCards 3s forwards 0s linear;
     }
 
+.solutions__card:nth-child(even) > .solutions__desc {
+            background: url(../../../assets/images/mapbg.png);
+            background-position: center;
+            /* background-size: */
+        }
+
 .solutions__card.xmargin {
             margin-bottom: 60px;
         }
 
 .solutions__visual:hover {
-            -webkit-animation: cardHover 1s forwards 0s ease-out;
-                    animation: cardHover 1s forwards 0s ease-out;;
+            -webkit-animation: cardHover 1.2s forwards 0s ease-out;
+                    animation: cardHover 1.2s forwards 0s ease-out;;
         }
 
 .solutions__visual img {
@@ -6545,8 +6551,12 @@ padding:20px
         line-height: 60px;
         text-align: center;        
         color: #504D4D; 
-        white-space: nowrap;       
+        white-space: nowrap;
     }
+
+.solutions__desc h3.colored {
+            color:#FB5A1E;
+        }
 
 .solutions__desc p {
         font-family: Sofia Pro;

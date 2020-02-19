@@ -71,7 +71,11 @@
         margin-top: 80px;
         animation: skewCards 3s forwards 0s linear;
 
-        
+        &:nth-child(even) > .solutions__desc {
+            background: url(../../../assets/images/mapbg.png);
+            background-position: center;
+            /* background-size: */
+        }
 
         &.xmargin {
             margin-bottom: 60px;
@@ -79,7 +83,7 @@
     }
     &__visual {
         &:hover {
-            animation: cardHover 1s forwards 0s ease-out;;
+            animation: cardHover 1.2s forwards 0s ease-out;;
         }
         
         & img {
@@ -105,7 +109,11 @@
         line-height: 60px;
         text-align: center;        
         color: #504D4D; 
-        white-space: nowrap;       
+        white-space: nowrap;
+        
+        &.colored {
+            color:#FB5A1E;
+        }
     }
     & p {
         font-family: Sofia Pro;
