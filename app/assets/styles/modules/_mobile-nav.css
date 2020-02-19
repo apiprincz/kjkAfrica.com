@@ -193,7 +193,7 @@
         & .mobile-nav__title--small:link {
             margin-right:40px;
             margin-left: 0px;
-            line-height:48px;
+            line-height:27px;
             white-space: nowrap;
 
             &.xmargin {
@@ -262,6 +262,9 @@
 @media only screen and (max-width: 375px){
     .mobile-nav--flex {
         width: 111px;
+    }
+    .mobile-nav__container:nth-child(3) .mobile-nav--resp.show {
+        height: auto;
     }
 
 

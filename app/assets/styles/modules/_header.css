@@ -68,6 +68,13 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+        &--solutions{
+            height: 70vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/solutionsbg.png);
+            background-position: top right;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     }
 
     &__text-br{
