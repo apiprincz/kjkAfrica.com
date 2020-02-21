@@ -95,6 +95,7 @@
 @media only screen and (max-width:768px){
     .diff__container {
         padding: 15px 0px 60px 60px;
+        flex-direction: column;
         
     }
     .diff__container > div {
@@ -120,6 +121,9 @@
     }
     .diff__container > div img {
         height: 27%;
+    }
+    .diff__container > div p {
+        font-size: 13px;
     }
 }
 @media only screen and (max-width: 350px){

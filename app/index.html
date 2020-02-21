@@ -19,11 +19,14 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/global/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/styles/global/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/styles/css/glide.core.min.css">
+    <link rel="stylesheet" href="assets/styles/css/glide.core.css">
+    <link rel="stylesheet" href="assets/styles/css/glide.theme.min.css">
     <!-- build:js assets/scripts/Vendor.js -->
     <script src="temp/scripts/Vendor.js"></script>
     <!-- endbuild -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <script src="https://unpkg.com/@glidejs/glide"></script>
 
 
     <style>
@@ -890,52 +893,55 @@
 
         </div>
     </section>
+    
+    <section class="row">
+        <h2 class="title brands__title ">
+            Trusted by the smartest companies
+        </h2>
+        <div class="glide__container" >
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="brands__container--main glide__center glide__slides">
+                <li class="glide__slide">
+                    <img src="assets/images/dangote.png " alt=" " class="brand__img ">
+                </li>
+                <li class="glide__slide">
+                <img src="assets/images/FCMB_Logo 1.png " alt=" " class="brand__img">
+                </li>
+                <li class="glide__slide">
+                    <img src="assets/images/nerfund.png " alt=" " class="brands__img">
 
-    <section class="brands">
-
-        <div class="row">
-            <h2 class="title brands__title ">
-                Trusted by the smartest companies
-            </h2>
-
-            <div class="brands__container">
-                <div>
-                    <a href="#" id="prev">&lt;</a>
-                    <a href="#" id="next">&gt;</a>
-                </div>
-                <div class="brands__container--main owl-carousel owllogos owl-theme">
-                <img src="assets/images/dangote.png " alt=" " class="brands__img">
-
-
-                <img src="assets/images/FCMB_Logo 1.png " alt=" " class="brands__img">
-
-
-                <img src="assets/images/nerfund.png " alt=" " class="brands__img">
-
-
-                <img src="assets/images/anam.png " alt=" " class="brands__img ">
-
-
-                <img src="assets/images/greenvisor.png " alt=" " class="brands__img ">
-
-
-                <img src="assets/images/tru-d.png" alt=" " class="brands__img ">
-
-                <img src="assets/images/trippleg.png " alt=" " class="brands__img ">
-
-                <img src="assets/images/ruby.png " alt=" " class="brands__img ">
-
-                <img src="assets/images/easisaver-logo-png.png " alt=" " class="brands__img ">
-                </div>
+                </li>
+                
+                <li class="glide__slide">
+                <img src="assets/images/anam.png " alt=" " class="brand__img">
+                </li>
+                <li class="glide__slide">
+                <img src="assets/images/greenvisor.png " alt=" " class="brand__img ">
+                </li>
+                <li class="glide__slide">
+                <img src="assets/images/tru-d.png" alt="" class=" brand__img">
+                </li>
+                <li class="glide__slide">
+                <img src="assets/images/trippleg.png " alt=" " class="brand__img ">
+                </li>
+                <li class="glide__slide">
+                <img src="assets/images/ruby.png " alt=" " class="brand__img ">
+                </li>
+                <li class="glide__slide">
+                <img src="assets/images/easisaver-logo-png.png" alt=" " class=" brands__img ">
+                </li>
+              </ul>
+              
             </div>
-
-            
-
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__bg glide__arrow glide__arrow--left" data-glide-dir="<"><img src="assets/images/prevBtn.png" alt=""></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="assets/images/nextBtn.png" alt=""></button>
+              </div>
         </div>
-
-
-
-    </section>  
+        </div>
+    </section>
+    
     <section class="diff">
 
         <div class="row">
@@ -1148,9 +1154,33 @@
     });
     
   });
+
+ 
+
+    </script>
+   
+    <script>
+      const config = {
+          type: "carousel",
+          perView : 5,
+          focusAt:"center",
+          breakpoints: {
+            800: {
+                perView: 3
+            },
+            600: {
+                perView: 3
+            },
+            480: {
+                perView: 1
+            }
+        }          
+      }
+      new Glide('.glide', config).mount()
     </script>
     <script src="jquery.min.js"></script>
     <script src="assets/scripts/owl.carousel.min.js"></script>
+
     <!-- build:js assets/scripts/App.js -->
     <script src="temp/scripts/App.js "></script>
     <!-- endbuild -->

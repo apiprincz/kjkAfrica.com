@@ -35,7 +35,7 @@
     
         & li{
             font-size: 1.2rem;
-            line-height: 2.6rem;
+            line-height: 2.0rem;
             font-weight: 300;
             position: relative;
             white-space: nowrap;
@@ -57,7 +57,7 @@
         font-weight: 300;
         font-size: 1.2rem;
         line-height: 2.3rem;
-        padding-bottom: 37px;
+        padding-bottom: 20px;
 
         &--btm-space{
             padding-bottom: 50px;
@@ -65,7 +65,7 @@
     }
 
     &__title{
-        font-size: 2.7rem;
+        font-size: 2.2rem;
         font-family: 'Playfair Display', serif;
         color: #333;
         /* white-space: nowrap; */
@@ -120,14 +120,14 @@
 
         &__text{
             width: 50%;
-            padding-left: 7%;
+            padding-left: 5%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
 
             &--space-removed{
                 padding-left: 0;
-                padding-right: 10%;
+                padding-right: 8%;
             }
         }
     }
@@ -199,11 +199,11 @@
 
 @media only screen and (min-width: 1200px){
     .services__numbering{
-        margin-right: 60px;
+        margin-right: 42px;
     }
 
     .services__title{
-        white-space: nowrap;
+        /* white-space: nowrap; */
     }
 }
 

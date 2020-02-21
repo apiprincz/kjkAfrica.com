@@ -3622,7 +3622,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .services__list li{
             font-size: 1.2rem;
-            line-height: 2.6rem;
+            line-height: 2.0rem;
             font-weight: 300;
             position: relative;
             white-space: nowrap;
@@ -3643,7 +3643,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         font-weight: 300;
         font-size: 1.2rem;
         line-height: 2.3rem;
-        padding-bottom: 37px;
+        padding-bottom: 20px;
     }
 
 .services__text--btm-space{
@@ -3651,7 +3651,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         }
 
 .services__title{
-        font-size: 2.7rem;
+        font-size: 2.2rem;
         font-family: 'Playfair Display', serif;
         color: #333;
     }
@@ -3704,7 +3704,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .services__container__text{
             width: 50%;
-            padding-left: 7%;
+            padding-left: 5%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -3712,7 +3712,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .services__container__text--space-removed{
                 padding-left: 0;
-                padding-right: 10%;
+                padding-right: 8%;
             }
 
 .services__img{
@@ -3778,11 +3778,11 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 @media only screen and (min-width: 1200px){
     .services__numbering{
-        margin-right: 60px;
+        margin-right: 42px;
     }
 
     .services__title{
-        white-space: nowrap;
+        /* white-space: nowrap; */
     }
 }
 
@@ -5512,8 +5512,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .work{
     position: relative;
-    background: #FFF7F5;
 }
+
+/* background: #FFF7F5; */
 
 .work__bg{
         position: absolute;
@@ -5527,18 +5528,103 @@ App.js:39 Letter 10 is 147.7610626220703 */
         padding: 32px 0;
     }
 
+.work__container p {
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 36px;
+            color: #333333; 
+            width:65%;
+                 
+        }
+
+.work__container__container{
+            z-index:-2
+        }
+
 .work__title{
-        font-size: 2.9rem;
-        font-weight: 700;
-        color: #333333;
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 70px;
+        color: #FB5A1E;        
+
+
     }
 
-.work__title::after{
-            content: "";
-            display: inline-block;
-            width: 7%;
-            height: 5px;
-            background: #333333;
+.work__board {
+        display: flex;
+        padding: 20px 30px 40px 80px;
+        margin-bottom: 60px;
+    }
+
+.work__board:nth-of-type(even){
+            padding: 80px 30px 40px 100px;
+
+        }
+
+.work__board--bg {
+            background: #FFF7F5;
+            width:100%;
+            height: 100%;
+            z-index:-2;
+            transform:translateY(1px)
+        }
+
+.work__board img.work__base {
+            position: absolute;
+            z-index:-1;
+            height:89%;
+        }
+
+.work__board:nth-of-type(odd) img.work__base {
+            
+            transform:translateY(-200px)
+            
+        }
+
+.work__board:nth-of-type(even) img.work__base {
+            
+            transform:translateY(-130px);
+            height: 112%;
+            
+        }
+
+.work__board:nth-of-type(odd) .work__desc {
+           order: -1;
+        
+        }
+
+.work__board:nth-of-type(odd) img.work__base {
+           right: 0;
+        
+        }
+
+.work__board:nth-of-type(even) img.work__base {
+           left: 0;
+         
+        
+        }
+
+.work__board:nth-of-type(even) .work__desc p{
+            padding-right: 20px;
+        
+        }
+
+.work__visual {
+        /* width: 800px; */
+        height: 500px;
+    }
+
+.work__visual img {
+            height: 90%;
+           
+        }
+
+.work__desc p {
+            width: 100%;
         }
 
 .work__contents{
@@ -6404,6 +6490,7 @@ padding:20px
 @media only screen and (max-width:768px){
     .diff__container {
         padding: 15px 0px 60px 60px;
+        flex-direction: column;
         
     }
     .diff__container > div {
@@ -6430,6 +6517,9 @@ padding:20px
     }
     .diff__container > div img {
         height: 27%;
+    }
+    .diff__container > div p {
+        font-size: 13px;
     }
 }
 
@@ -6695,3 +6785,29 @@ padding:20px
         height: 52px;
     }
 }
+
+.glide {
+    padding: 0px 70px;
+}
+
+.glide__center {
+        align-items: center;
+        
+    }
+
+.glide li img {
+            width: 40%;
+        }
+
+.glide__arrows button {
+            background: rgba(251, 90, 30, 0.37);
+            box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
+            border-radius:50%;
+            width:40px;
+            height:40px
+        }
+
+.glide__arrows img {
+            width: 100%;
+            height: 100%;
+        }

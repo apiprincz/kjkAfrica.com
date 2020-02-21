@@ -79,6 +79,35 @@ class SwiperSection {
                 }
             }
         })
+        this.mygallerySwiper = new Swiper(".gallery__container", {
+            loop: true,
+            speed: 800,
+            autoplay: {
+                delay: 9000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 4,
+            // Responsive breakpoints
+            breakpoints: {
+                0: {
+                    slidesPerView: 5,
+                },
+                // when window width is >= 320px
+                530: {
+                    slidesPerView: 2,
+                },
+                // when window width is >= 480px
+                730: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 4,
+                },
+                1250: {
+                    slidesPerView: 8
+                }
+            }
+        })
     }
 
 
