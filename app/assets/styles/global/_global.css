@@ -123,6 +123,14 @@ body.fixed{
     font-size: 1.8rem;
     line-height: 1.5;
 
+    &__format {
+        background: white;
+    width: 100%;
+    margin-left: -73px;
+    padding-left: 73px;
+    padding-bottom:0px
+    }
+
 }
 
 .title::after{
@@ -136,7 +144,7 @@ body.fixed{
 }
 
 .content{
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     font-weight: 300;
     line-height: 32px;
     padding-right: 5%;
@@ -166,7 +174,7 @@ body.fixed{
 
 @media only screen and (min-width: 520px){
     .title{
-        font-size: 2.7rem;
+        font-size: 2.2rem;
     }
 
     .title::after{

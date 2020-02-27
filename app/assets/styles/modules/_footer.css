@@ -8,15 +8,15 @@
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 900;
-        font-size: 60px;
-        line-height: 34px;
+        font-size: 4.6rem;
+        line-height: 50px;
 
         span{
-            font-weight: 100;
-            font-size: 40px;
-            letter-spacing: -3px;
-            color: #FFFFFF;
-            line-height: 50px;
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 2.6rem;
+            line-height: 70px;
             
         }
     } 
@@ -97,8 +97,10 @@
         padding: 34px 0 20px 0;
 
         &__lower{
-            font-size: .9rem;
+            font-size: .7rem;
             color: rgba(0,0,0,.9);
+            transform: translateY(4px);
+            padding-left: 10px;
         }
 
         span{
@@ -109,13 +111,15 @@
     &__container{
         width: 100%;
         position: relative;
-        background: linear-gradient(180deg, rgba(250, 125, 11, 0.8) 0%, rgba(254, 86, 39, 0.8) 46.53%, rgba(254, 84, 41, 0.8) 100%), url(../../assets/images/footer-bg.png);
+        background: linear-gradient(180deg,  rgba(254, 86, 39, 0.8) 0%, rgba(254, 84, 41, 0.8) 6.53%, rgba(250, 125, 11, 1.0) 100%), url(../../assets/images/footer-bg.png);
+        background-position: center right;
+        background-size: contain;
     }
 
     &__content{
         width: 100%;
         /* width: calc(95% - 367px); */
-        padding: 70px 100px 120px 80px;
+        padding: 75px 89px 134px 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -124,17 +128,18 @@
             display: flex;
             flex-direction:column;
             align-items:flex-end;
+            transform: translateY(30px);
         }
     }
     &__left {
-        width: 40%;
+        width: 43%;
 
         &--title {
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: bold;
             font-size: 30px;
-            line-height: 20px;
+            line-height: 18px;
             color:#ffffff;
         }
         & ul {
@@ -145,13 +150,14 @@
             align-items: flex-start;
             justify-content: space-between;
             padding-top: 20px;
+            padding-left: 10px;
 
             & li {
                 font-family: Sofia Pro;
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 400;
                 font-size: 18px;
-                line-height:30px;
+                line-height:24px;
                 color:#fff;
 
                 &:nth-child(even){
@@ -164,7 +170,7 @@
             & li::before {
                 content:url(../../assets/images/mapicon.png);
                 display: inline-block;
-                height: 20%;
+                height: 10%;
                 vertical-align: middle;
                 margin-right: 14px;
                 
@@ -176,8 +182,8 @@
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 24px;
         color: #fff;
     }
 
@@ -185,28 +191,34 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 65px 0% 30px 0%;
+        padding: 86px 0% 21px 0%;
     }
 
     &__link:link, &__link:visited{
         text-decoration: none;
         color: #000;
-        font-size: .9rem;
-        margin-right: 20px;
+        font-size: .7rem;
+        /* margin-right: 20px; */
         display: inline-flex;
         white-space: nowrap;
         align-items: center;
+        margin: 0px 10px 0px 20px;
     }
 
     &__lower-right{
         display: flex;
         justify-content: flex-end;
         white-space: nowrap;
+        width: 20%;
 
+        & a {
+            margin: 0px 3px;
+        }
     }
 
     &__link__logo{
         width: 150px;
+        /* transform: translateY(-2px); */
     }
 
     &__lower-left{
@@ -218,7 +230,7 @@
     }
 
     &__lower-content{
-        padding: 0px 0 30px 0;
+        padding: 0px 0 0px 0;
         background: #fff;
         position: relative;
         width: 100%;
@@ -241,11 +253,11 @@
         &::before{
             content: "";
             display: block;
-            height: 22px;
+            height: 18px;
             width: 27px;
             background: black;
             margin-left: 35px;
-            margin-top: 9px;
+            margin-top: 11px;
             background: url(../../assets/images/mail.png);
             background-repeat: no-repeat;
             background-size: contain;
@@ -259,10 +271,11 @@
 
     &__input{
         border: none;
+        font-size: .9rem;
         width: 65%;
         padding: 10px 16px;
         border-radius: 200px;
-        color: #333;
+        color: #C4C4C4;;
         padding-left: 20px;
 
         &__title{
@@ -300,7 +313,7 @@
         border-radius: 200px;
         color: #fff;
         font-weight: 300;
-        font-size: 1rem;
+        font-size: 0.9rem;
         cursor: pointer;
 
         &--adjust{
@@ -411,9 +424,7 @@
         /* display: block; */
         /* width: 33%; */
     }
-    .footer__text__lower {
-        margin-top: 3px;
-    }
+  
     .footer__link--resp:link, .footer__link--resp:visited{
         width: 100%;
         text-align: center;
@@ -452,6 +463,9 @@
         }
         &__desc {
             font-size: 14px;
+        }
+        &__lower-right {
+            justify-content: center;
         }
     }
 }

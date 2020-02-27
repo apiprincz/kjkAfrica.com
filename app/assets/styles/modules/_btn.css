@@ -2,8 +2,8 @@
     border-radius: 4px;
     color: #fff;
     background: transparent;
-    font-size: 1rem;
-    padding: 9px 18px;
+    font-size: 0.61rem;
+    padding: 18px 18px;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -12,17 +12,18 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-decoration: none;
+    letter-spacing: 0.05rem;
 
     
     &--upper-space{
-        margin-top: 30px;
+        margin-top: 12px;
     }
 
     &--primary{
         background: #FB5A1E;
         border-radius: 200px;
-        padding: 14px 31px;
-        font-size: .9rem;
+        padding: 17px 40px;
+        font-size: .7rem;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     }
 
@@ -84,6 +85,6 @@
 
 @media only screen and (min-width: 600px){
     .btn__img--header{
-        width: 34px;
+        width: 23px;
     }
 }

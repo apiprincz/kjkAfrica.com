@@ -3,7 +3,7 @@
     &__container {
             display: flex;
             justify-content:space-around;
-            padding:60px 20px 100px 100px;
+            padding:60px 20px 0px 100px;
         & > div {
             width: 40%;
             & h3 {
@@ -21,14 +21,14 @@
                 font-family: Sofia Pro;
                 font-style: normal;
                 font-weight: 300;
-                font-size: 18px;
+                font-size: 17px;
                 line-height: 190%;
                 color: #504D4D;
                                 
             }
             & img {
                 position: absolute;
-                height: 40%;
+                height: 53%;
             }
             &:nth-of-type(1) img{
                 left: 0px;                
@@ -39,13 +39,18 @@
         }
     
     }
+    &__button {
+        padding: 14px;
+        font-size: .7rem;
+        margin: 28px 0px 28px 122px;
+    }
 }
 .divider {
     height: 270px;
 }
 @media only screen and (max-width:1220px){
     .diff__container {
-        padding: 45px 0px 60px 45px;
+        padding: 45px 0px 0px 45px;
     }
 }
 @media only screen and (max-width:1089px){
@@ -58,7 +63,7 @@
 }
 @media only screen and (max-width:956px){
     .diff__container {
-        padding: 30px 0px 60px 15px;
+        padding: 30px 0px 0px 15px;
         
     }
     .divider {
@@ -94,9 +99,12 @@
 }
 @media only screen and (max-width:768px){
     .diff__container {
-        padding: 15px 0px 60px 60px;
+        padding: 15px 0px 20px 60px;
         flex-direction: column;
         
+    }
+    .diff__button {
+        margin-left: 56px;
     }
     .diff__container > div {
        

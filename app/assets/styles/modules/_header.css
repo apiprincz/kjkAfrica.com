@@ -86,12 +86,22 @@
     }
 
     &__title{
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: #ffffff;
         font-weight: 700;
         font-family: 'Playfair Display', serif;
         font-style: italic;
         line-height: normal;
+        margin: 0.2em 0;
+        &--sub {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2.4rem;
+            line-height: 50px;
+            letter-spacing: -0.05em;
+            color: #FFFFFF;            
+        }
 
         &--services{
             font-family: 'Playfair Display', serif;
@@ -108,11 +118,12 @@
     }
 
     &__text{
-        font-size: 1.3rem;
+        font-size: 0.95rem;
         color: #ffffff;
         font-family: 'Sofia Pro', serif;
         font-weight: 200;
         line-height: 28px;
+
 
         &--services{
             text-align: center;
@@ -145,7 +156,9 @@
             }
         }
     }
-    
+    &__italics {
+        font-style: italic;
+    }
     &__map{
         position: absolute;
         right: 0%;

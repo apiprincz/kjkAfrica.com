@@ -1,6 +1,6 @@
 .quote{
 
-    padding-bottom: 32px;
+    padding-bottom: 6px;
 
     &__list-img{
         position: absolute;
@@ -46,9 +46,9 @@
     }
 
     &__title{
-        font-weight: 600;
+        font-weight: 500;
         color: #333333;
-        font-size: 2.5rem;
+        font-size: 3rem;
         padding-bottom: 50px;
         padding-right: 20px;
     }
@@ -64,7 +64,7 @@
 
     &__text{
         font-weight: 300;
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: #000000;
         line-height: 30px;
         padding-bottom: 30px;

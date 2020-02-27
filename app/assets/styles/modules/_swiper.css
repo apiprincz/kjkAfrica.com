@@ -9,7 +9,7 @@
 }
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: 73px;
+    bottom: 38px;
     left: 0;
     width: 100%;
     margin: 0 7px;
@@ -20,4 +20,5 @@
     height: 4px;
     display: inline-block;
     border-radius: 8px;
+    background: #FF4C2F;;
 }

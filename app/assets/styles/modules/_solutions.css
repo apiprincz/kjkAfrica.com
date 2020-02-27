@@ -67,14 +67,14 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin: 10px;
-        margin-top: 80px;
+        /* margin: 10px; */
+        margin: 60px 10px 30px ;
         animation: skewCards 3s forwards 0s linear;
 
         &:nth-child(even) > .solutions__desc {
             background: url(../../../assets/images/mapbg.png);
             background-position: center;
-            /* background-size: */
+            background-repeat:no-repeat;
         }
 
         &.xmargin {
@@ -119,8 +119,8 @@
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
-        line-height: 30px;
+        font-size: 13px;
+        line-height: 20px;
         color: #504D4D;
         /* text-align: center;         */
     }
