@@ -174,7 +174,8 @@ body.fixed{
 
 @media only screen and (min-width: 520px){
     .title{
-        font-size: 2.2rem;
+        font-size: 2.4rem;
+        color: #494949;
     }
 
     .title::after{

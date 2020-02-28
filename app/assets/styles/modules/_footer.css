@@ -97,8 +97,8 @@
         padding: 34px 0 20px 0;
 
         &__lower{
-            font-size: .7rem;
-            color: rgba(0,0,0,.9);
+            font-size: .8rem;
+            color: rgba(0,0,0,.63);
             transform: translateY(4px);
             padding-left: 10px;
         }

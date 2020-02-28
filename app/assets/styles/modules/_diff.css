@@ -44,6 +44,149 @@
         font-size: .7rem;
         margin: 28px 0px 28px 122px;
     }
+    
+        &__row {
+            padding: 50px 0px;
+        }
+        
+        &__bg{
+            position: absolute;
+            right: 0;
+            width: 18%;
+            top: 24px;
+            z-index: 0;
+        }
+    
+    
+        &__title{
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 45px;
+            line-height: 55px;
+            color: #FB5A1E;        
+    
+    
+        }
+    
+        &__board {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 20px 0px 0px;
+            
+        
+    
+            &--bg {
+                background: #FFF7F5;
+                width:100%;
+                height: 100%;
+                z-index:-2;
+                transform:translateY(1px)
+            }
+    
+           
+          
+            &:nth-of-type(odd) .diff__desc {
+               order: 1;
+            
+            }
+            
+           
+            &:nth-of-type(even) .diff__desc{
+               
+                padding-left: 30px;
+            }
+            &:nth-of-type(odd) .diff__desc{
+               order: -1;
+                padding-right: 30px;
+            }
+        }
+    
+        &__visual {
+            /* width: 800px; */
+            height: 462px;
+            
+            &:nth-of-type(odd){
+                height: 450px;
+            }
+            
+            & img {
+                height: 90%;
+               
+            }
+        }
+    
+        &__desc {
+            width: 50%;
+            & h2 {
+                font-size: 2.5rem;
+            }
+            & h3 {
+                font-family: Sofia Pro;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 40px;
+                color: #FB5A1E;                
+            }
+            & p {
+                font-family: Sofia Pro;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 173.4%;
+                letter-spacing: -0.02em;
+                color: #000000;  
+                
+                & span {
+                color: #FB5A1E;                
+                    font-weight:500
+                }
+            }
+        }
+        &__contents{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            flex-wrap: wrap;
+            padding-bottom: 32px;
+        }
+    
+        &__content{
+            width: 48%;
+            padding: 32px 0;
+    
+            &-text{
+                font-size: 1.2rem;
+                line-height: 30px;
+                color: #000000;
+                font-weight: 300;
+            }
+    
+            &__title{
+                font-family: Playfair Display;
+                font-weight: 700;
+                font-size: 2.2rem;
+                line-height: 30px;
+                padding-bottom: 24px;
+                color: #504D4D;
+            }
+    
+            &:nth-child(3) .work__content__title, 
+            &:nth-child(4) .work__content__title {
+                color: #FB5A1E;
+            }
+    
+            &:nth-child(5) .work__content__title, 
+            &:nth-child(6) .work__content__title {
+                color: #000000;
+            }
+        }
+        &__img-bg-top {
+            width: 40%;
+        }
+    
 }
 .divider {
     height: 270px;

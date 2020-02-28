@@ -678,14 +678,16 @@
     </script>
     <script>
 
-        const cards = document.querySelectorAll(".solutions__desc h3");
+        const cardText = document.querySelectorAll(".solutions__desc h3");
+        // const cards = document.querySelectorAll(".solution__desc")
 
-        for (let i = 0; i < cards.length; i++) {
+        for (let i = 0; i < cardText.length; i++) {
             
                 if (i >= 3 && i <= 5 || i >= 9 && i <= 11 || i >= 15 && i <= 17  ) {
-                    cards[i].classList.add("colored")
+                    cardText[i].classList.add("colored")
                     
                 }
+               
 
 
             

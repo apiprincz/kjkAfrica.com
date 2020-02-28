@@ -1,5 +1,6 @@
 .about-page-process{
     position: relative;
+    padding-bottom: 100px;
 
     .title{
         margin-bottom: 0;
@@ -26,7 +27,7 @@
     &__content{
         font-family: Sofia Pro;
         font-weight: 300;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         line-height: 32px;
         color: #000000;
     }
@@ -38,7 +39,7 @@
             justify-content: flex-end;
         }
         .about-page-process__item-txt{
-            left: -86%; 
+            left: -133%; 
         }
         .about-page-process__item-numbering{
             color: #FE8A00;
@@ -131,15 +132,17 @@
             font-family: Playfair Display;
             font-style: italic;
             font-weight: 900;
-            font-size: 4rem;
+            font-size: 3.5rem;
             letter-spacing: -0.02em;
-            color: #646363;
+            /* color: #646363; */
+            color: rgba(51, 51, 51, 0.9);
             position: absolute;
-            left: 36%;
+            left: 70%;
             white-space: nowrap;
             top: 47%;
             transform: translateY(-50%);
             opacity: .78;
+            padding-top: 20px;
         }
     }
 
@@ -215,13 +218,16 @@
         top: -7px;
     }
     .about-page-process__item-txt{
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
     .about-page-process__item-numbering {
         font-size: 7rem;
     }
     .about-page-process__avatar{
         width: 50%;
+    }
+    .about-page-process__items-container:nth-child(even) .about-page-process__item-txt {
+        left: -161%;
     }
 }
 

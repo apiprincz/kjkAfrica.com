@@ -12,12 +12,12 @@
         transform: translateY(-70px);
     }
     &__hero {
-        width: 66%;
+        width: 67%;
 
         & h2 {
             font-family: Sofia Pro;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 20px;
             line-height: 30px;
             color: #504D4D;
@@ -28,7 +28,7 @@
             font-weight: normal;
             font-size: 16px;
             line-height: 30px;
-            color: #333333;
+            color: #504D4D;
             display: block;
             padding-top: 20px;
             
@@ -129,6 +129,10 @@
              width: 100%;             
              
          }
+         & .row {
+             width: 80%;
+             padding-top: 40px;
+         }
     }
     &__board {
         display: flex;
@@ -148,8 +152,9 @@
         &::before {
             content: url(../../../assets/images/whodot.png);
             position: absolute;
-            top: -140px;
-            left: -38px;
+            top: -154px;
+            left: -45px;
+            transform: scale(0.8);
         }
 
         & > .who__staff {
@@ -160,7 +165,7 @@
     &__text{
         background: rgba(251, 90, 30, 0.9);
         border-radius: 10px;
-        padding: 30px 90px 60px 140px;
+        padding: 30px 70px 40px 140px;
         text-align: left;
         color: #FFFFFF;
         & h5 {
@@ -187,8 +192,8 @@
                 background-position: center;
                 background-size: cover;
                 display: inline-block;
-                height: 24px;
-                width: 24px;
+                height: 30px;
+                width: 34px;
                 margin-right: 16px;
                 vertical-align: middle;
             }
@@ -198,8 +203,8 @@
                 background-position: center;
                 background-size: cover;
                 display: inline-block;
-                height: 24px;
-                width: 24px;
+                height: 30px;
+                width: 30px;
                 margin-right: 16px;
                 vertical-align: middle;
 
@@ -209,8 +214,8 @@
         & p {
             font-family: Sofia Pro;
             font-style: normal;
-            font-weight: 300;
-            font-size: 18px;
+            font-weight: 100;
+            font-size: 17px;
             line-height: 30px;
             color: #FFFFFF;            
         }
@@ -288,7 +293,7 @@
         display: flex;
         align-items: center; 
         padding: 0px 30px 0px 100px;
-        transform: translateY(-50%);
+        transform: translateY(-40%);
         
         &--bg {
             position: absolute;
@@ -300,7 +305,7 @@
         display: flex;
         align-items: center; 
         
-        transform: translateY(-50%);
+        transform: translateY(-40%);
     
         }
 
@@ -493,6 +498,9 @@
     }
 }
 @media only screen and (max-width:768px){
+    .who__row {
+        padding: 60px 35px;
+    }
     .who__history--container{
         flex-direction: column;
     }
@@ -545,6 +553,7 @@
     }
     .who__hero {
         width: 100%;
+        
     }
 }
 
@@ -562,6 +571,9 @@
     }
     .who__hleft {
         padding-right: 0;
+    }
+    .who__hero {
+        padding: 0px 20px;
     }
 }
 @media only screen and (max-width:625px){
@@ -625,6 +637,9 @@
     .who__circle--bg {
         height: 522px;
     }
+    .who__hero h2 {
+        font-size: 18px;
+    }
 }
 @media only screen and (max-width:425px){
     .who__text p {
@@ -644,6 +659,9 @@
     }
     .who__hero p {
         font-size: 14px;
+    }
+    .who__hero {
+        padding: 0px 6px;
     }
     .who__hero h2 {
         font-size: 16px;
@@ -675,14 +693,23 @@
     .who__hero p {
         padding-bottom: 10px;
     }
+    .who__text h5 {
+        font-size: 15px;
+        line-height: 26px;
+    }
 }@media only screen and (max-width:345px){
     .who__desc {
         font-size: 9px;
     }
+    .who__visual::before {
+        transform: rotateX(45deg);
+    }
     .who__visual img {
-        width: 300px;
+        width: 280px;
+        transform: translateY(10px);
     }
-    .who__text h5 {
-        font-size: 16px;
+    .who__text {
+        padding-left: 22px;
     }
+    
 }

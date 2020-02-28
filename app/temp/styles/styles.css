@@ -1176,7 +1176,8 @@ body.fixed{
 
 @media only screen and (min-width: 520px){
     .title{
-        font-size: 2.2rem;
+        font-size: 2.4rem;
+        color: #494949;
     }
 
     .title::after{
@@ -1278,6 +1279,12 @@ body.fixed{
         background-position: center;
         background-attachment: fixed;
         position: relative;
+
+        /* &--portfolio{
+            height: 6vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/portfolio-bg.jpg); */
+            /* background-position: top right; */
+            /* background: #0F0F0F; */
     }
 
 .header__container--services{
@@ -1291,56 +1298,59 @@ body.fixed{
         }
 
 .header__container--work{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url(../../assets/images/work-bg.jpg);        
+            height: 60vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/work-bg.jpg);        
+            background-position: bottom right;
+            background-size: cover;
+            background-repeat: no-repeat;        
         }
 
 .header__container--about{
-            height: 70vh;
-            background: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../assets/images/comp.jpg);
-            background-position: bottom center;
+            height: 61.5vh;
+            background: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../../assets/images/about.png);
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
 .header__container--quote{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/quote__bg.png);
+            height: 50vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/quote__bg.png);
         }
 
 .header__container--contact{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/contact-bg.jpg);
+            height: 60vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/contact-bg.jpg);
             background-position: bottom right;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
-.header__container--portfolio{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/portfolio-bg.jpg);
-            background-position: top right;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+/* } */
 
 .header__container--team{
             height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/ourteambg.png);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/ourteambg.png);
             background-position: top right;
             background-size: cover;
             background-repeat: no-repeat;
         }
+
+/* background-repeat: no-repeat     */
 
 .header__container--who{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/whobg.png);
+            height: 50vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/whobg.png);
             background-position: top right;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
+/* background-size: cover; */
+
 .header__container--solutions{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/solutionsbg.png);
+            height: 50vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/solutionsbg.png);
             background-position: top right;
             background-size: cover;
             background-repeat: no-repeat;
@@ -1388,10 +1398,10 @@ body.fixed{
         }
 
 .header__text{
-        font-size: 0.95rem;
+        font-size: 1.3rem;
         color: #ffffff;
         font-family: 'Sofia Pro', serif;
-        font-weight: 200;
+        font-weight: 500;
         line-height: 28px;
     }
 
@@ -1404,7 +1414,7 @@ body.fixed{
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 300px;
+            width: 250px;
         }
 
 .header__text-container{
@@ -1497,15 +1507,21 @@ body.fixed{
     }
 }
 
+@media only screen and (max-width: 375px){
+    .header__text{
+        font-size: 1.0rem;
+    }
+}
+
 @media only screen and (max-height: 500px){
     .header__container{
         height: 500px;
     }
+    
 }
 
 .nav-bar{
     height: 70px;
-    background: transparent;
     width: 100%;
     z-index: 99;
     transition: all .3s ease-in-out;
@@ -1530,10 +1546,18 @@ body.fixed{
     }
 
 .nav-bar__container{
-        height: 100%;
+        height: 100%; 
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+    
+    }
+
+.nav-bar--port {
+        background: red;
+        height: 40px;
+        width: 100%;
     }
 
 .nav-bar__logo-link{
@@ -1623,6 +1647,10 @@ body.fixed{
     }
 }
 
+header > .nav-bar .new-bar{
+    background-color: red;
+}
+
 @media only screen and (min-width: 740px){
     .nav-bar__link:link, .nav-bar__link:visited{
         display: inline-flex;
@@ -1632,7 +1660,7 @@ body.fixed{
         font-size: 1rem;
         margin: 0 30px;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 100;
         white-space: nowrap;
         vertical-align: center;
         transition: all .3s;
@@ -1849,8 +1877,8 @@ body.fixed{
     }
 
 .footer__text__lower{
-            font-size: .7rem;
-            color: rgba(0,0,0,.9);
+            font-size: .8rem;
+            color: rgba(0,0,0,.63);
             transform: translateY(4px);
             padding-left: 10px;
         }
@@ -2637,6 +2665,8 @@ body.fixed{
     position: relative;
     overflow: hidden;
     padding: 65px 0 100px 0;
+    
+
 }
 
 .portfolio__mark-up{
@@ -3956,6 +3986,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .quote__left-container{
         width: 49%;
         padding-right: 12%;
+        padding-top: 12%;
     }
 
 .quote__list-container{
@@ -3992,15 +4023,16 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .quote__title{
         font-weight: 500;
         color: #333333;
-        font-size: 3rem;
-        padding-bottom: 50px;
+        font-size: 4rem;
+        padding-bottom: 60px;
         padding-right: 20px;
     }
 
 .quote__sub-title{
         font-weight: 500;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         padding-bottom: 15px;
+        color: #000000;
     }
 
 .quote__sub-title span{
@@ -4009,9 +4041,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .quote__text{
         font-weight: 300;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         color: #000000;
-        line-height: 30px;
+        line-height: 36px;
         padding-bottom: 30px;
     }
 
@@ -4020,7 +4052,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         padding-top: 30px; 
     }
     .quote__container {
-        transform: translateY(-9%);
+        transform: translateY(-6%);
     }
     .quote__left-container{
         padding-right: 7%;
@@ -4032,6 +4064,12 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 }
 
+@media only screen and (max-width: 1300px){
+    .quote__title {
+        font-size: 3rem;
+    }
+}
+
 @media only screen and (max-width: 700px){
     .quote__container{
         flex-direction: column;
@@ -4040,6 +4078,12 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
     .quote__title {
         padding-right: 0px;
+    }
+    .quote__text {
+        line-height: 27px;
+    }
+    .quote__title {
+        font-size: 2.5rem;
     }
 }
 
@@ -4064,13 +4108,14 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 .quote-form__submit{
-        padding: 12px 30px;
+        padding: 14px 36px;
         border-radius: 60px;
         color: #ffffff;
         border: none;
         background: #FB5A1E;
         cursor: pointer;
         margin: 7px 0;
+        font-size: 1.4rem;
     }
 
 .quote-form__submit:focus{
@@ -4079,7 +4124,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .quote-form__header{
         background: linear-gradient(180deg, #FA8407 23.8%, #FB5A1E 100%); 
-        padding: 32px 37px;
+        padding: 45px 37px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -4087,7 +4132,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .quote-form__header-img{
             margin-right: 30px;
-            width: 42px;
+            width: 50px;
         }
 
 .quote-form__inputs-container{
@@ -4095,7 +4140,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 .quote-form__input{
-        padding: 14px 0px;
+        padding: 20px 0px;
         resize: none;
         border: none;
         border-bottom: 1px solid #979797;
@@ -4114,7 +4159,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .quote-form__input:focus~.quote-form__label{
             display: block;
             font-weight: 400;
-            font-size: 1rem;
+            font-size: 1.4rem;
             color: #FB5A1E;
             top: -8px;
         }
@@ -4125,7 +4170,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         }
 
 .quote-form__title{
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         color: #ffffff;
         font-weight: 300;
         line-height: normal;
@@ -4149,6 +4194,21 @@ App.js:39 Letter 10 is 147.7610626220703 */
             top: -8px;
         }
 
+@media only screen and (max-width: 1300px){
+    .quote-form__title {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .quote-form__inputs-container {
+        padding: 40px 34px;
+    }
+    .quote-form__header {
+        padding: 32px 37px;
+    } 
+}
+
 @media only screen and (max-width: 640px){
     .quote-form__inputs-container {
         padding: 40px 5%;
@@ -4159,9 +4219,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 }
 
-@media only screen and (max-width: 1080px){
-    .quote-form__inputs-container {
-        padding: 40px 34px;
+@media only screen and (max-width: 425px){
+    .quote-form__header-img {
+        width: 36px;
     }
 }
 
@@ -4198,6 +4258,30 @@ App.js:39 Letter 10 is 147.7610626220703 */
         box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.2);
         width: 93%;
     }
+
+.contact__overlay {
+        position: absolute;
+        height: 100%;
+        background:  linear-gradient(0deg, rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5));
+        width: 100%;
+        top: 0;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.contact__overlay h2 {
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2.2rem;
+            line-height: 350px;
+            letter-spacing: 0.02em;            
+            color: #FFFFFF; 
+            text-align:center;
+            transform:translateY(-15%)           
+        }
 
 .contact__bg{
         height: 400px;
@@ -4327,9 +4411,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .contact__left-container, .contact__right-container{
         width: 100%;
     }
-    .contact__right-container{
-        margin-top: 250px;
-    }
+    
     .contact__left-container {
         padding-right: 0%;
     }
@@ -4350,7 +4432,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 40px;
+        padding-top: 90px;
     }
 
 .portfolio-section__bg-spot {
@@ -4708,6 +4790,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .about-page-process{
     position: relative;
+    padding-bottom: 100px;
 }
 
 .about-page-process .title{
@@ -4735,7 +4818,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .about-page-process__content{
         font-family: Sofia Pro;
         font-weight: 300;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         line-height: 32px;
         color: #000000;
     }
@@ -4749,7 +4832,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         }
 
 .about-page-process__items-container:nth-child(even) .about-page-process__item-txt{
-            left: -86%; 
+            left: -133%; 
         }
 
 .about-page-process__items-container:nth-child(even) .about-page-process__item-numbering{
@@ -4839,15 +4922,17 @@ App.js:39 Letter 10 is 147.7610626220703 */
             font-family: Playfair Display;
             font-style: italic;
             font-weight: 900;
-            font-size: 4rem;
+            font-size: 3.5rem;
             letter-spacing: -0.02em;
-            color: #646363;
+            /* color: #646363; */
+            color: rgba(51, 51, 51, 0.9);
             position: absolute;
-            left: 36%;
+            left: 70%;
             white-space: nowrap;
             top: 47%;
             transform: translateY(-50%);
             opacity: .78;
+            padding-top: 20px;
         }
 
 .about-page-process__avatar{
@@ -4918,13 +5003,16 @@ App.js:39 Letter 10 is 147.7610626220703 */
         top: -7px;
     }
     .about-page-process__item-txt{
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
     .about-page-process__item-numbering {
         font-size: 7rem;
     }
     .about-page-process__avatar{
         width: 50%;
+    }
+    .about-page-process__items-container:nth-child(even) .about-page-process__item-txt {
+        left: -161%;
     }
 }
 
@@ -4990,7 +5078,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
             background: #FFFFFF;
             box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            padding:60px 30px 40px 60px;
+            padding:60px 50px 40px 80px;
             margin: 30px 0px;
         }
 
@@ -5033,7 +5121,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .team__visual{
         position: relative;
-        width: 140px;
+        width: 150px;
         
     }
 
@@ -5054,42 +5142,50 @@ App.js:39 Letter 10 is 147.7610626220703 */
         width: 140px;
         position: relative;
         z-index: 10;
+        padding-top: 40px;
+        
     }
 
 .team__ppic img {
-            width:200%;
+            width:220%;
             
         }
 
 .team__ppic::before {
             content: url(../../assets/images/oball.png);
             position:absolute;
-            bottom: 10px;
-            left:90%;
+            bottom: -20px;
+            left:150%;
             z-index:-10;
-            width: 20%
+            width: 20%;
+            transform: scale(0.5);
         }
 
 .team__ppic::after {
             content: url(../../assets/images/pball.png);
             position:absolute;
-            bottom: 0px;
-            left:-20%;
+            bottom: -68px;
+            left:-40%;
             z-index:-20;
-            width: 40%
+            width: 40%;
+            transform: scale(0.5);
         }
+
+.team__dot {
+        position: absolute;
+        bottom: 100px;
+        left: 68%;
+        z-index: -20;
+        width: 40%;
+        transform: scale(0.3);
+
+    }
 
 .team__desc {
         padding-left: 60px;
         position: relative;
         width: 70%;
     }
-
-/* &:nth-of-type(even) {
-            flex-direction: row-reverse;
-            padding-right:60px;
-
-        } */
 
 .team__desc h3 {
         font-family: Sofia Pro;
@@ -5105,7 +5201,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 22px;
             line-height: 30px;
             letter-spacing: -0.02em;
             color: #333333;
@@ -5120,7 +5216,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
             line-height: 173.4%;
             letter-spacing: -0.02em;
             color: #000000;   
-            padding-top: 20px;         
+            /* padding-top: 20px;          */
             
         }
 
@@ -5135,9 +5231,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .team__img-bg{
         position: absolute;
-        top: -10%;
+        top: 0%;
         left: 0%;
-        width: 60%;
+        width: 32%;
+        height: 71%;
         z-index: -1;
     }
 
@@ -5147,121 +5244,6 @@ App.js:39 Letter 10 is 147.7610626220703 */
             right: 0%;
             width: 20%;
         z-index: -1;
-        }
-
-/* &__item{
-        width: 20.1%;
-        text-align: center;
-        position: relative;
-        border-radius: 50%;
-        padding-bottom: 79px;
-
-        & > div {
-            display: flex;
-            flex-direction:column;
-            align-items:center;
-            justify-content:center;
-        }
-
-        span{
-            font-weight: 300;
-            font-size: 1.2rem;
-            color: #000000;
-        }
-
-        img{
-            width: 100%;
-            cursor: pointer;
-            filter: grayscale(100%);
-            transition: all .3s ease-in;
-        }
-    }
-
-    &__avatar-wrapper{
-        width: 154%;
-        height: 280px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-
-        & img {
-            height: 132%;
-        }
-
-        img:hover{
-            transform: scale(1.1);
-            filter: grayscale(0%);
-        }
-    }
-
-    &__container__main{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-
-        
-    }
-
-    .title{
-        padding-bottom: 20px;
-
-        
-
-        &__sub{
-            font-size: 1.4rem;
-            font-weight: 400;
-            padding-bottom: 55px;
-            text-align: right;
-            position: relative;
-
-            &--left{
-                text-align: left;
-            }
-
-            &::before{
-                content: "";
-                display: inline-block;
-                vertical-align: middle;
-                height: 2px;
-                width: 50px;
-                background: #FB5A1E;
-                margin-bottom: 1px;
-            }
-        }
-
-        &__second{
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 22px;
-            line-height: 240.5%;
-            letter-spacing: -0.02em;
-            color: #000000;            
-        }
-        
-    }
-
-    &__label {
-            white-space: nowrap;
-        & span {
-            font-family: Sofia Pro;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 102.5%;
-            letter-spacing: -0.02em;    
-            color: #000000;        
-        }
-    }    */
-
-.team__img-bg{
-            position: absolute;
-            top: 3%;
-            left: 0%;
-            width: 42%;
-            height: 70%;
-            z-index: -1;
         }
 
 .team__item{
@@ -5398,9 +5380,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .team__ppic {
         width: 124px;
     }
-    .team__ppic::before {
-        left:70%;
-    }
+   
 }
 
 @media only screen and (max-width: 840px){
@@ -5456,19 +5436,6 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 }
-
-/* @media only screen and (max-width: 740px){
-    .team__item{
-        width: 37%;
-        padding-bottom: 30px;
-    }
-    .team__img-bg {
-        display: none;
-    }
-    .team .title {
-        padding-bottom: 0px;
-    }
-} */
 
 @media only screen and (max-width: 740px){
     .team__item{
@@ -5533,9 +5500,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .team__ppic{
         width: 112px;
     }
-    .team__ppic::before {
-        left: 54%;
-    }
+    
     
 }
 
@@ -5566,6 +5531,17 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .xpad {
         padding-left: 50px;
         padding-bottom: 9px;
+    }
+    .team__ppic::before{
+        transform: scale(0.3);
+        left: 167%;
+    }
+    .team__ppic::after{
+        transform: scale(0.3);
+        left: -21%;
+    }
+    .team__desc h4 {
+        font-size: 16px;
     }
     
 }
@@ -5695,7 +5671,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
             font-style: normal;
             font-weight: 300;
             font-size: 16px;
-            line-height: 36px;
+            line-height: 26px;
             color: #333333; 
             width:65%;
                  
@@ -5718,7 +5694,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .work__board {
         display: flex;
-        padding: 20px 30px 0px 130px;
+        padding: 20px 20px 0px 110px;
     }
 
 /* position: relative; */
@@ -5772,7 +5748,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
         }
 
 .work__board:nth-of-type(even) .work__desc p{
-            padding-right: 20px;
+            /* padding-right: 20px; */
+            padding-right: 66px;
         
         }
 
@@ -5788,6 +5765,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .work__desc p {
             width: 100%;
+        }
+
+.work__desc h2 {
+            font-size: 2.5rem;
         }
 
 .work__contents{
@@ -5829,6 +5810,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
         .work__content:nth-child(6) .work__content__title {
             color: #000000;
         }
+
+.work__img-bg-top {
+        width: 40%;
+    }
 
 @media only screen and (max-width: 1146px){
     .work__board:nth-of-type(even) img.work__base{
@@ -5885,6 +5870,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
         right: 19%;
         top: 32px;
     }
+    .work__board:nth-of-type(even) .work__desc p {
+        padding-right: 10px;
+    }
 }
 
 @media only screen and (max-width: 860px){
@@ -5940,6 +5928,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
         top: 63px;
         width: 3%;
     }
+    .work__img-bg-top {
+        transform: translateX(50%);
+    } 
 }
 
 @media only screen and (max-width: 440px){
@@ -6306,7 +6297,7 @@ section.br{
     }
 
 .who__hero {
-        width: 66%;
+        width: 67%;
         
         
     }
@@ -6314,7 +6305,7 @@ section.br{
 .who__hero h2 {
             font-family: Sofia Pro;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 20px;
             line-height: 30px;
             color: #504D4D;
@@ -6326,7 +6317,7 @@ section.br{
             font-weight: normal;
             font-size: 16px;
             line-height: 30px;
-            color: #333333;
+            color: #504D4D;
             display: block;
             padding-top: 20px;
             
@@ -6433,6 +6424,11 @@ section.br{
              
          }
 
+.who__bg .row {
+             width: 80%;
+             padding-top: 40px;
+         }
+
 .who__board {
         display: flex;
         position: relative;
@@ -6455,8 +6451,9 @@ section.br{
 .who__visual::before {
             content: url(../../../assets/images/whodot.png);
             position: absolute;
-            top: -140px;
-            left: -38px;
+            top: -154px;
+            left: -45px;
+            transform: scale(0.8);
         }
 
 .who__visual > .who__staff {
@@ -6467,7 +6464,7 @@ section.br{
 .who__text{
         background: rgba(251, 90, 30, 0.9);
         border-radius: 10px;
-        padding: 30px 90px 60px 140px;
+        padding: 30px 70px 40px 140px;
         text-align: left;
         color: #FFFFFF;
     }
@@ -6497,8 +6494,8 @@ section.br{
                 background-position: center;
                 background-size: cover;
                 display: inline-block;
-                height: 24px;
-                width: 24px;
+                height: 30px;
+                width: 34px;
                 margin-right: 16px;
                 vertical-align: middle;
             }
@@ -6509,8 +6506,8 @@ section.br{
                 background-position: center;
                 background-size: cover;
                 display: inline-block;
-                height: 24px;
-                width: 24px;
+                height: 30px;
+                width: 30px;
                 margin-right: 16px;
                 vertical-align: middle;
 
@@ -6519,8 +6516,8 @@ section.br{
 .who__text p {
             font-family: Sofia Pro;
             font-style: normal;
-            font-weight: 300;
-            font-size: 18px;
+            font-weight: 100;
+            font-size: 17px;
             line-height: 30px;
             color: #FFFFFF;            
         }
@@ -6603,7 +6600,7 @@ section.br{
         display: flex;
         align-items: center; 
         padding: 0px 30px 0px 100px;
-        transform: translateY(-50%);
+        transform: translateY(-40%);
     }
 
 .who__circler--bg {
@@ -6616,7 +6613,7 @@ section.br{
         display: flex;
         align-items: center; 
         
-        transform: translateY(-50%);
+        transform: translateY(-40%);
     
         }
 
@@ -6809,6 +6806,9 @@ section.br{
 }
 
 @media only screen and (max-width:768px){
+    .who__row {
+        padding: 60px 35px;
+    }
     .who__history--container{
         flex-direction: column;
     }
@@ -6861,6 +6861,7 @@ section.br{
     }
     .who__hero {
         width: 100%;
+        
     }
 }
 
@@ -6878,6 +6879,9 @@ section.br{
     }
     .who__hleft {
         padding-right: 0;
+    }
+    .who__hero {
+        padding: 0px 20px;
     }
 }
 
@@ -6944,6 +6948,9 @@ section.br{
     .who__circle--bg {
         height: 522px;
     }
+    .who__hero h2 {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width:425px){
@@ -6964,6 +6971,9 @@ section.br{
     }
     .who__hero p {
         font-size: 14px;
+    }
+    .who__hero {
+        padding: 0px 6px;
     }
     .who__hero h2 {
         font-size: 16px;
@@ -6996,18 +7006,27 @@ section.br{
     .who__hero p {
         padding-bottom: 10px;
     }
+    .who__text h5 {
+        font-size: 15px;
+        line-height: 26px;
+    }
 }
 
 @media only screen and (max-width:345px){
     .who__desc {
         font-size: 9px;
     }
+    .who__visual::before {
+        transform: rotateX(45deg);
+    }
     .who__visual img {
-        width: 300px;
+        width: 280px;
+        transform: translateY(10px);
     }
-    .who__text h5 {
-        font-size: 16px;
+    .who__text {
+        padding-left: 22px;
     }
+    
 }
 
 .diff__container {
@@ -7061,6 +7080,148 @@ section.br{
         font-size: .7rem;
         margin: 28px 0px 28px 122px;
     }
+
+.diff__row {
+            padding: 50px 0px;
+        }
+
+.diff__bg{
+            position: absolute;
+            right: 0;
+            width: 18%;
+            top: 24px;
+            z-index: 0;
+        }
+
+.diff__title{
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 45px;
+            line-height: 55px;
+            color: #FB5A1E;        
+    
+    
+        }
+
+.diff__board {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 20px 0px 0px;
+        }
+
+.diff__board--bg {
+                background: #FFF7F5;
+                width:100%;
+                height: 100%;
+                z-index:-2;
+                transform:translateY(1px)
+            }
+
+.diff__board:nth-of-type(odd) .diff__desc {
+               order: 1;
+            
+            }
+
+.diff__board:nth-of-type(even) .diff__desc{
+               
+                padding-left: 30px;
+            }
+
+.diff__board:nth-of-type(odd) .diff__desc{
+               order: -1;
+                padding-right: 30px;
+            }
+
+.diff__visual {
+            /* width: 800px; */
+            height: 462px;
+        }
+
+.diff__visual:nth-of-type(odd){
+                height: 450px;
+            }
+
+.diff__visual img {
+                height: 90%;
+               
+            }
+
+.diff__desc {
+            width: 50%;
+        }
+
+.diff__desc h2 {
+                font-size: 2.5rem;
+            }
+
+.diff__desc h3 {
+                font-family: Sofia Pro;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 40px;
+                color: #FB5A1E;                
+            }
+
+.diff__desc p {
+                font-family: Sofia Pro;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 173.4%;
+                letter-spacing: -0.02em;
+                color: #000000;
+            }
+
+.diff__desc p span {
+                color: #FB5A1E;                
+                    font-weight:500
+                }
+
+.diff__contents{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            flex-wrap: wrap;
+            padding-bottom: 32px;
+        }
+
+.diff__content{
+            width: 48%;
+            padding: 32px 0;
+        }
+
+.diff__content-text{
+                font-size: 1.2rem;
+                line-height: 30px;
+                color: #000000;
+                font-weight: 300;
+            }
+
+.diff__content__title{
+                font-family: Playfair Display;
+                font-weight: 700;
+                font-size: 2.2rem;
+                line-height: 30px;
+                padding-bottom: 24px;
+                color: #504D4D;
+            }
+
+.diff__content:nth-child(3) .work__content__title, 
+            .diff__content:nth-child(4) .work__content__title {
+                color: #FB5A1E;
+            }
+
+.diff__content:nth-child(5) .work__content__title, 
+            .diff__content:nth-child(6) .work__content__title {
+                color: #000000;
+            }
+
+.diff__img-bg-top {
+            width: 40%;
+        }
 
 .divider {
     height: 270px;
@@ -7170,7 +7331,7 @@ section.br{
 
 .solutions__row {
         margin: 0 auto;
-        padding-left: 50px
+        padding-left: 25px
     }
 
 .solutions__bg--top {
@@ -7191,31 +7352,32 @@ section.br{
 .solutions__hero {
 
         display: flex;
-        padding: 50px 0px 0px 30px;
-        width: 74%;
+        padding: 84px 0px 0px 60px;
+        width: 72%;
 
     }
 
 .solutions__hero h2 {
-            
+            font-size: 3.5rem;
             padding:0px;
-            margin-bottom:20px
+            margin-bottom:28px;
+            line-height:1.3;
         }
 
 .solutions__hero p {
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: 300;
-            font-size: 18px;
-            line-height: 28px;
-            color: #333333;            
+            font-size: 20px;
+            line-height: 32px;
+            /* color: #333333;             */
             
         }
 
 .solutions__hero img {
             
-            height:156px;
-            
+            height:185px;
+            width: 22%;
         }
 
 .solutions__container {
@@ -7234,15 +7396,16 @@ section.br{
         flex-direction: column;
         align-items: flex-start;
         /* margin: 10px; */
-        margin: 60px 10px 30px ;
+        margin: 60px 10px 70px ;
         -webkit-animation: skewCards 3s forwards 0s linear;
                 animation: skewCards 3s forwards 0s linear;
     }
 
 .solutions__card:nth-child(even) > .solutions__desc {
-            background: url(../../../assets/images/mapbg.png);
+            background: linear-gradient(0deg, rgba(255, 255,255 ), rgba(255, 255, 255)), url(../../../assets/images/sol-map.png);
             background-position: center;
             background-repeat:no-repeat;
+            /* background-image:url(../../../assets/images/sol-map.png) */
         }
 
 .solutions__card.xmargin {
@@ -7263,9 +7426,10 @@ section.br{
 .solutions__desc {
         background: #FFF7F5;
         box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.13);
-        padding: 30px 20px;
+        padding: 20px 36px 30px;
         height: 60%;
         overflow-y: auto;
+        border-radius: 0px 0px 14px 14px;
     
     }
 
@@ -7273,8 +7437,8 @@ section.br{
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 600;
-        font-size: 28px;
-        line-height: 60px;
+        font-size: 30px;
+        line-height: 65px;
         text-align: center;        
         color: #504D4D; 
         white-space: nowrap;
@@ -7288,8 +7452,8 @@ section.br{
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 300;
-        font-size: 13px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 28px;
         color: #504D4D;
         /* text-align: center;         */
     }
@@ -7331,7 +7495,9 @@ section.br{
     .solutions__card {
         margin-top: 40px;
     }
-
+    .solutions__hero img {
+        width: 30%;
+    }
 }
 
 @media only screen and (max-width:1024px){
@@ -7363,6 +7529,17 @@ section.br{
 @media only screen and (max-width:768px){
     .solutions__hero p {
         font-size: 15px;
+        line-height: 23px;
+    }
+    .solutions__card.xmargin {
+        margin-bottom: 30px;
+    }
+    .solutions__hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .solutions__hero {
+        padding-top: 30px;
     }
 }
 
@@ -7384,15 +7561,8 @@ section.br{
     }
     .solutions__card {
         margin-top: 24px;
-    }
-}
-
-@media only screen and (max-width:650px){
-    .solutions__card{
-        width: 93%;
-    }
-    .solutions__hero p {
-        font-size: 12px;
+        width: 87%;
+        margin-bottom: 20px;
     }
 }
 
@@ -7415,7 +7585,7 @@ section.br{
     }
     .solutions__hero p {
         font-size: 10px;
-        line-height: 21px;
+        line-height: 17px;
     }
     .solutions__hero img {
         height: 52px;

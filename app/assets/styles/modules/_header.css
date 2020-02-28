@@ -24,53 +24,59 @@
         }
 
         &--work{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url(../../assets/images/work-bg.jpg);        
+            height: 60vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/work-bg.jpg);        
+            background-position: bottom right;
+            background-size: cover;
+            background-repeat: no-repeat;        
         }
 
         &--about{
-            height: 70vh;
-            background: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../assets/images/comp.jpg);
-            background-position: bottom center;
+            height: 61.5vh;
+            background: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../../assets/images/about.png);
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         &--quote{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/quote__bg.png);
+            height: 50vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/quote__bg.png);
         }
 
         &--contact{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/contact-bg.jpg);
+            height: 60vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/contact-bg.jpg);
             background-position: bottom right;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
-        &--portfolio{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/portfolio-bg.jpg);
-            background-position: top right;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+        /* &--portfolio{
+            height: 6vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/portfolio-bg.jpg); */
+            /* background-position: top right; */
+            /* background: #0F0F0F; */
+            /* background-size: cover; */
+            /* background-repeat: no-repeat     */
+        /* } */ 
         &--team{
             height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/ourteambg.png);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/ourteambg.png);
             background-position: top right;
             background-size: cover;
             background-repeat: no-repeat;
         }
         &--who{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/whobg.png);
+            height: 50vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/whobg.png);
             background-position: top right;
             background-size: cover;
             background-repeat: no-repeat;
         }
         &--solutions{
-            height: 70vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/solutionsbg.png);
+            height: 50vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/solutionsbg.png);
             background-position: top right;
             background-size: cover;
             background-repeat: no-repeat;
@@ -118,10 +124,10 @@
     }
 
     &__text{
-        font-size: 0.95rem;
+        font-size: 1.3rem;
         color: #ffffff;
         font-family: 'Sofia Pro', serif;
-        font-weight: 200;
+        font-weight: 500;
         line-height: 28px;
 
 
@@ -134,7 +140,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 300px;
+            width: 250px;
         }
        
 
@@ -231,9 +237,15 @@
         line-height: 35px;
     }
 }
+@media only screen and (max-width: 375px){
+    .header__text{
+        font-size: 1.0rem;
+    }
+}
 
 @media only screen and (max-height: 500px){
     .header__container{
         height: 500px;
     }
+    
 }

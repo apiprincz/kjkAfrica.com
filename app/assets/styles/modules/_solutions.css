@@ -2,7 +2,7 @@
 
     &__row {
         margin: 0 auto;
-        padding-left: 50px
+        padding-left: 25px
     }
 
     &__bg {
@@ -27,28 +27,29 @@
     &__hero {
 
         display: flex;
-        padding: 50px 0px 0px 30px;
-        width: 74%;
+        padding: 84px 0px 0px 60px;
+        width: 72%;
 
         & h2 {
-            
+            font-size: 3.5rem;
             padding:0px;
-            margin-bottom:20px
+            margin-bottom:28px;
+            line-height:1.3;
         }
 
         & p {
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: 300;
-            font-size: 18px;
-            line-height: 28px;
-            color: #333333;            
+            font-size: 20px;
+            line-height: 32px;
+            /* color: #333333;             */
             
         }
         & img {
             
-            height:156px;
-            
+            height:185px;
+            width: 22%;
         }
 
     }
@@ -68,13 +69,14 @@
         flex-direction: column;
         align-items: flex-start;
         /* margin: 10px; */
-        margin: 60px 10px 30px ;
+        margin: 60px 10px 70px ;
         animation: skewCards 3s forwards 0s linear;
 
         &:nth-child(even) > .solutions__desc {
-            background: url(../../../assets/images/mapbg.png);
+            background: linear-gradient(0deg, rgba(255, 255,255 ), rgba(255, 255, 255)), url(../../../assets/images/sol-map.png);
             background-position: center;
             background-repeat:no-repeat;
+            /* background-image:url(../../../assets/images/sol-map.png) */
         }
 
         &.xmargin {
@@ -96,17 +98,17 @@
     &__desc {
         background: #FFF7F5;
         box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.13);
-        padding: 30px 20px;
+        padding: 20px 36px 30px;
         height: 60%;
         overflow-y: auto;
-        
+        border-radius: 0px 0px 14px 14px;
     
     & h3 {
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 600;
-        font-size: 28px;
-        line-height: 60px;
+        font-size: 30px;
+        line-height: 65px;
         text-align: center;        
         color: #504D4D; 
         white-space: nowrap;
@@ -119,8 +121,8 @@
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 300;
-        font-size: 13px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 28px;
         color: #504D4D;
         /* text-align: center;         */
     }
@@ -152,7 +154,9 @@
     .solutions__card {
         margin-top: 40px;
     }
-
+    .solutions__hero img {
+        width: 30%;
+    }
 }
 @media only screen and (max-width:1024px){
     .solutions__desc h3 {
@@ -181,6 +185,17 @@
 @media only screen and (max-width:768px){
     .solutions__hero p {
         font-size: 15px;
+        line-height: 23px;
+    }
+    .solutions__card.xmargin {
+        margin-bottom: 30px;
+    }
+    .solutions__hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .solutions__hero {
+        padding-top: 30px;
     }
 }
 @media only screen and (max-width:650px){
@@ -201,16 +216,11 @@
     }
     .solutions__card {
         margin-top: 24px;
+        width: 87%;
+        margin-bottom: 20px;
     }
 }
-@media only screen and (max-width:650px){
-    .solutions__card{
-        width: 93%;
-    }
-    .solutions__hero p {
-        font-size: 12px;
-    }
-}
+
 @media only screen and (max-width:512px){
     .solutions__hero h2{
         margin-bottom: 11px;
@@ -229,7 +239,7 @@
     }
     .solutions__hero p {
         font-size: 10px;
-        line-height: 21px;
+        line-height: 17px;
     }
     .solutions__hero img {
         height: 52px;

@@ -423,7 +423,7 @@
                             </div> 
                            
 
-                            </div>
+                </div>
                             <div>
                                 <p class="who__desc">
                                     Currently, we deliver value through our <br>
@@ -649,7 +649,7 @@
             origin: 'top',
             viewFactor: .5,
             opacity: 0,
-            duration: 1900,
+            duration: 2000,
         };
         var slideInLeftCustomised = {
             distance: '100%',
@@ -680,9 +680,12 @@
             delay: 200
         };
 
-        ScrollReveal({ reset: false }).reveal(".work__content", slideInTop);
-        ScrollReveal({ reset: false }).reveal(".work__title", slideInLeft);
-        ScrollReveal({ reset: false }).reveal(".footer__title", slideInDown);
+        ScrollReveal({ reset: false }).reveal(".who__hero", slideInTop);
+        ScrollReveal({ reset: false }).reveal(".who__desc", slideInLeftCustomisedRight);
+        ScrollReveal({ reset: false }).reveal(".who__card", slideInLeftCustomised);
+        ScrollReveal({ reset: false }).reveal(".who__text", slideInDown);
+
+        ScrollReveal({ reset: false }).reveal(".who__visual", scaleUp);
 
 
 
