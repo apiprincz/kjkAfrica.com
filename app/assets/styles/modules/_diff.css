@@ -1,20 +1,24 @@
 .diff {
-
+    position: relative;
+    padding-bottom: 60px;
     &__container {
             display: flex;
             justify-content:space-around;
-            padding:60px 20px 0px 100px;
+            padding:20px 20px 0px 30px;
+            position: relative;
+            /* margin-bottom:30px */
         & > div {
-            width: 40%;
+            width: 46%;
             & h3 {
                 font-family: Sofia Pro;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 30px;
+                font-size: 28px;
                 line-height: 65px;
                 letter-spacing: 0.03em;
                 color: #FB5A1E; 
                 white-space: nowrap;
+                padding-bottom:10px
 
             }
             & p {
@@ -28,26 +32,34 @@
             }
             & img {
                 position: absolute;
-                height: 53%;
+                height: 100%;
+
+                &.diff__home-right {
+                    height: 50%;
+                    right:-20%;
+                    top:-50px
+                }
             }
-            &:nth-of-type(1) img{
+            /* &:nth-of-type(1) img{
                 left: 0px;                
-            }
+            } */
             &:nth-of-type(2) img{
-                right: 0px;
+                right: 50px;
             }
         }
     
     }
     &__button {
-        padding: 14px;
+        padding: 18px 32px;
         font-size: .7rem;
-        margin: 28px 0px 28px 122px;
+        margin: 28px 0px 28px 0px;
+
+        & img {
+            left: 14px;
+        }
     }
     
-        &__row {
-            padding: 50px 0px;
-        }
+        
         
         &__bg{
             position: absolute;
@@ -58,7 +70,7 @@
         }
     
     
-        &__title{
+        /* &__title{
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: bold;
@@ -67,14 +79,18 @@
             color: #FB5A1E;        
     
     
-        }
+        } */
     
         &__board {
             display: flex;
             justify-content: space-between;
-            padding: 20px 20px 0px 0px;
+            padding: 70px 50px 50px 60px;
+            position: relative;
             
-        
+            &:nth-of-type(odd){
+                
+                background: #FFF7F5;
+            }
     
             &--bg {
                 background: #FFF7F5;
@@ -105,15 +121,17 @@
         &__visual {
             /* width: 800px; */
             height: 462px;
-            
+            position: relative;
+
             &:nth-of-type(odd){
                 height: 450px;
             }
             
             & img {
                 height: 90%;
-               
+               /* z-index: 2; */
             }
+          
         }
     
         &__desc {
@@ -129,14 +147,24 @@
                 line-height: 40px;
                 color: #FB5A1E;                
             }
-            & p {
+            & h5 {
                 font-family: Sofia Pro;
                 font-style: normal;
-                font-weight: 300;
+                font-weight: 500;
                 font-size: 16px;
                 line-height: 173.4%;
                 letter-spacing: -0.02em;
-                color: #000000;  
+                color: #504D4D;
+            }
+
+            & p {
+                font-family: Sofia Pro;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 173.4%;
+                letter-spacing: -0.02em;
+                color: #504D4D;
                 
                 & span {
                 color: #FB5A1E;                
@@ -144,52 +172,50 @@
                 }
             }
         }
-        &__contents{
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            position: relative;
-            flex-wrap: wrap;
-            padding-bottom: 32px;
+        &__dot {
+            position: absolute;
+            top: -9%;
+            /* transform: scale(0.5); */
+            left: -9%;
+            z-index: -1;
         }
-    
-        &__content{
-            width: 48%;
-            padding: 32px 0;
-    
-            &-text{
-                font-size: 1.2rem;
-                line-height: 30px;
-                color: #000000;
-                font-weight: 300;
-            }
-    
-            &__title{
-                font-family: Playfair Display;
-                font-weight: 700;
-                font-size: 2.2rem;
-                line-height: 30px;
-                padding-bottom: 24px;
-                color: #504D4D;
-            }
-    
-            &:nth-child(3) .work__content__title, 
-            &:nth-child(4) .work__content__title {
-                color: #FB5A1E;
-            }
-    
-            &:nth-child(5) .work__content__title, 
-            &:nth-child(6) .work__content__title {
-                color: #000000;
-            }
+       &__home{
+           &-bottom {
+           position: absolute;
+           z-index: -1;
+           bottom: 0px;
+           left: 0;
+           width: 100%;
+           height: 50%;
+           background: url(../../../assets/images/diffbg3.png);
+           background-size: cover;
+           
+           
+          
         }
-        &__img-bg-top {
-            width: 40%;
+       
         }
     
 }
 .divider {
     height: 270px;
+}
+
+
+
+@media only screen and (max-width:1200px){
+    .diff__board {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .diff__board > div:nth-child(2) {
+        width: 100%;
+        align-items: center;
+    }
+    .diff__board:nth-of-type(odd) .diff__desc {
+        order: 1;
+    }
 }
 @media only screen and (max-width:1220px){
     .diff__container {
@@ -203,6 +229,9 @@
     .diff__container > div p  {
         font-size: 17px;
     }
+    .diff__container > div img  {
+        height: 80%;
+    }
 }
 @media only screen and (max-width:956px){
     .diff__container {
@@ -211,6 +240,9 @@
     }
     .divider {
         height: 300px;
+    }
+    .diff__home-bottom {
+        bottom: -20px;
     }
 }
 @media only screen and (max-width:900px){
@@ -246,13 +278,29 @@
         flex-direction: column;
         
     }
-    .diff__button {
+    /* .diff__button {
         margin-left: 56px;
-    }
+    } */
     .diff__container > div {
        
         width: 100%;
         
+    }
+    .diff__visual {
+        height: 340px;
+    }
+    .diff__visual:nth-of-type(odd) {
+        height: 330px;
+    }
+    .diff__board {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .diff__board:nth-of-type(even) .diff__desc {
+        padding-left: 0px;
+    }
+    .diff__board:nth-of-type(odd) .diff__desc {
+        padding-right: 0px;
     }
     
 }
@@ -263,7 +311,16 @@
     .diff__container > div p  {
         font-size: 15px;
     }
-    
+    .diff__desc h3 {
+        font-size: 24px;
+    }
+    .diff__visual {
+        height: 305px;
+    }
+    .diff__visual:nth-of-type(odd) {
+        height: 305px;
+    }
+
 }
 
 @media only screen and (max-width: 425px){
@@ -276,6 +333,23 @@
     .diff__container > div p {
         font-size: 13px;
     }
+    .diff__visual {
+        height: 260px;
+    }
+    .diff__visual img{
+        height: 77%;
+    }
+    .diff__visual:nth-of-type(odd) {
+        height: 260px;
+    }
+    .diff__desc > .title {
+        font-size: 20px;
+        padding-top: 0px;
+    }
+    .diff__desc h3 {
+        font-size: 17px;
+        line-height: 27px;
+    }
 }
 @media only screen and (max-width: 350px){
     .diff__container > div h3  {
@@ -283,5 +357,8 @@
     }
     .diff__container {
         padding: 15px 0px 60px 20px;
+    }
+    .diff__visual:nth-of-type(odd) {
+        height: 237px;
     }
 }

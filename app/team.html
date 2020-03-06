@@ -450,7 +450,7 @@
                     <div class="team__container__main">
 
                         <div class="team__board mgt">
-                            <div>
+                            <div class="team__anim">
                                 <div class="team__ppic">
                                     <img class="team__im" src="assets/images/jumoke2.png" alt="">
                                     <img class="team__dot" src="assets/images/teamdot.png" alt="">
@@ -472,7 +472,7 @@
                             </div>
                         </div>
                         <div class="team__board mgt">
-                            <div>
+                            <div class="team__anim">
                                 <div class="team__ppic">
                                     <img class="team__im" src="assets/images/niyi2.png" alt="">
                                     <img class="team__dot" src="assets/images/teamdot.png" alt="">
@@ -494,7 +494,7 @@
                             </div>
                         </div>
                         <div class="team__board mgt">
-                            <div>
+                            <div class="team__anim">
                                 <div class="team__ppic">
                                     <img class="team__im" src="assets/images/bose2.png" alt="">
                                     <img class="team__dot" src="assets/images/teamdot.png" alt="">
@@ -564,7 +564,7 @@
                         <div class="team__item">
                             <div style="position: relative;">
                                 <div class="team__avatar-wrapper">
-                                    <img src="assets/images/florence.png" alt="">
+                                    <img src="assets/images/t3.png" alt="">
                                 </div>
                             </div>
                             <div class="team__label">
@@ -576,7 +576,7 @@
                         <div class="team__item">
                             <div style="position: relative;">
                                 <div class="team__avatar-wrapper">
-                                    <img src="assets/images/stephen.png" alt="">
+                                    <img src="assets/images/t4.png" alt="">
                                 </div>
                             </div>
                             <div class="team__label">
@@ -587,19 +587,7 @@
                         <div class="team__item">
                             <div style="position: relative;">
                                 <div class="team__avatar-wrapper">
-                                    <img src="assets/images/jumoke.png" alt="">
-                                </div>
-                            </div>
-                            <div class="team__label">
-                                <h3 class="title__second">CEO</h3>
-                                <span>Jumoke Oduwole</span>
-                            </div>
-                        </div>
-
-                        <div class="team__item">
-                            <div style="position: relative;">
-                                <div class="team__avatar-wrapper">
-                                    <img src="assets/images/niyi.png" alt="">
+                                    <img src="assets/images/t5.png" alt="">
                                 </div>
                             </div>
                             <div class="team__label">
@@ -611,7 +599,7 @@
                         <div class="team__item">
                             <div style="position: relative;">
                                 <div class="team__avatar-wrapper">
-                                    <img src="assets/images/florence.png" alt="">
+                                    <img src="assets/images/t6.png" alt="">
                                 </div>
                             </div>
                             <div class="team__label">
@@ -623,7 +611,19 @@
                         <div class="team__item">
                             <div style="position: relative;">
                                 <div class="team__avatar-wrapper">
-                                    <img src="assets/images/stephen.png" alt="">
+                                    <img src="assets/images/t7.png" alt="">
+                                </div>
+                            </div>
+                            <div class="team__label">
+                                <h3 class="title__second">CEO</h3>
+                                <span>Jumoke Oduwole</span>
+                            </div>
+                        </div>
+
+                        <div class="team__item">
+                            <div style="position: relative;">
+                                <div class="team__avatar-wrapper">
+                                    <img src="assets/images/t8.png" alt="">
                                 </div>
                             </div>
                             <div class="team__label">
@@ -1018,6 +1018,50 @@
 
     </script>
 
+    <!-- <script>
+        (function(){
+            let elements = document.querySelectorAll(".team__anim");
+            let inner = document.querySelectorAll(".team__ppic");
+
+            const easing = 0.1;
+            const outScale =0.6;
+            const inScale = 1;
+            let targetScale = outScale;
+            let elementScale = targetScale;
+            let innerScale = 1/ elementScale
+
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].addEventListener("pointerover", ()=> {
+                 targetScale = inScale
+                })
+                
+                
+                
+            }
+
+            for (let x = 0; x < elements.length; x++) {
+                
+                elements[x].addEventListener("pointerout", ()=> {
+                    targetScale = outScale
+                })
+            }
+
+            const update = () => {
+                elementScale += (targetScale - elementScale) * easing;
+                innerScale = 1 / elementScale
+
+                for (let i = 0; i < elements.length; i++) {
+                    elements[i].style.transform = scale(1.5);
+                    console.log (elementScale)
+                    inner[i].style.transform = `scale($(innerScale))`
+                }
+
+                requestAnimationFrame(update)
+            }
+            requestAnimationFrame(update)
+
+        })()
+    </script> -->
 
     <!-- build:js assets/scripts/App.js -->
     <script src="temp/scripts/App.js "></script>

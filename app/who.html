@@ -402,19 +402,20 @@
                                         At KJK Africa, we draw on our business acumen, technology, 
                                         and branding expertise to deliver technology products and services that are
                                     </p>
-                                    <div class="who__circle" >
+                                    <div class="who__circle who__inner 0" >
                                         <h3>Effective</h3>
                                     </div>
-                                    <div class="who__circle" >
+                                    <div class="who__circle 1" >
                                         <h3>Easy to Use</h3>
+                                    
                                     </div>
-                                    <div class="who__circle" >
+                                    <div class="who__circle 2" >
                                         <h3>Scalable</h3>
                                     </div>
-                                    <div class="who__circle" >
+                                    <div class="who__circle 3" >
                                         <h3>Consumer friendly</h3>
                                     </div>
-                                    <div class="who__circle" >
+                                    <div class="who__circle 4" >
                                         <h3>Profitable</h3>
                                     </div>
                                 </div> 
@@ -677,12 +678,13 @@
             viewFactor: .5,
             opacity: 0,
             duration: 1200,
-            delay: 200
+            delay: 200,
+            
         };
 
-        ScrollReveal({ reset: false }).reveal(".who__hero", slideInTop);
-        ScrollReveal({ reset: false }).reveal(".who__desc", slideInLeftCustomisedRight);
-        ScrollReveal({ reset: false }).reveal(".who__card", slideInLeftCustomised);
+        // ScrollReveal({ reset: false }).reveal(".who__hero", slideInTop);
+        ScrollReveal({ reset: false }).reveal(".who__desc", slideInLeftCustomised);
+        ScrollReveal({ reset: false }).reveal(".who__card", scaleUp);
         ScrollReveal({ reset: false }).reveal(".who__text", slideInDown);
 
         ScrollReveal({ reset: false }).reveal(".who__visual", scaleUp);
@@ -710,10 +712,36 @@
                 }
             
         }
+
+        
+        
+        
         
         
     </script>
+    <script>
+        const circles = document.querySelectorAll(".who__circle")
+        let counter = 0
+        
 
+                setInterval(() => {
+                    for (let i = 0; i < circles.length; i++) {
+                        
+                            circles[i].classList.remove("who__inner")
+                            circles[counter].classList.add("who__inner")
+                     
+                        
+                    }
+                    counter++
+                    if (counter === 5) {
+                        counter = 0
+                    }
+                }, 5000);
+
+                    
+
+            
+    </script>
     <!-- build:js assets/scripts/App.js -->
     <script src="temp/scripts/App.js "></script>
     <!-- endbuild -->
