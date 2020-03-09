@@ -7549,18 +7549,34 @@ section.br{
             
         }
 
+.solutions__bg--zero {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            height: 86%;
+        }
+
+.solutions__left {
+        width: 300px;
+    }
+
+.solutions__right {
+        padding-left: 40px;
+    }
+
 .solutions__hero {
 
         display: flex;
-        padding: 84px 0px 0px 60px;
+        padding: 50px 0px 0px 60px;
         width: 72%;
 
     }
 
 .solutions__hero h2 {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             padding:0px;
-            margin-bottom:28px;
+            margin-bottom:14px;
             line-height:1.3;
         }
 
@@ -7568,16 +7584,16 @@ section.br{
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: 300;
-            font-size: 20px;
-            line-height: 32px;
-            /* color: #333333;             */
+            font-size: 17px;
+            line-height: 36px;
+            color: #333333;            
             
         }
 
 .solutions__hero img {
             
-            height:185px;
-            width: 22%;
+            width: 130%;
+     
         }
 
 .solutions__container {
@@ -7585,18 +7601,19 @@ section.br{
         flex-wrap: wrap;
         position: relative;
         margin: 0 auto;
-        padding: 0px 0px 0px 70px;
+        padding: 0px 0px 0px 40px;
         width: 100%;
         
     }
 
 .solutions__card {
-        width: 30%;
+        width: 29%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: space-around;
         /* margin: 10px; */
-        margin: 60px 10px 70px ;
+        margin: 60px 20px 40px ;
         -webkit-animation: skewCards 3s forwards 0s linear;
                 animation: skewCards 3s forwards 0s linear;
     }
@@ -7637,7 +7654,7 @@ section.br{
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 600;
-        font-size: 30px;
+        font-size: 24px;
         line-height: 65px;
         text-align: center;        
         color: #504D4D; 
@@ -7652,8 +7669,8 @@ section.br{
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 12px;
+        line-height: 20px;
         color: #504D4D;
         /* text-align: center;         */
     }
@@ -7695,14 +7712,21 @@ section.br{
     .solutions__card {
         margin-top: 40px;
     }
-    .solutions__hero img {
-        width: 30%;
+    .solutions__hero {
+        width: 83%;
     }
 }
 
 @media only screen and (max-width:1024px){
     .solutions__desc h3 {
         font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-width:970px){
+    .solutions__card {
+        width: 28%;
     }
 
 }
@@ -7720,10 +7744,7 @@ section.br{
     .solutions__hero{
         padding-left: 0;
     }
-    .solutions__hero img {
-        height: 117px;
-    }
-
+    
 }
 
 @media only screen and (max-width:768px){
@@ -7743,16 +7764,24 @@ section.br{
     }
 }
 
+@media only screen and (max-width:695px){
+    .solutions__card{
+        width: 82%;
+    }
+    .solutions__container{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media only screen and (max-width:650px){
     .solutions__row{
-        padding-left: 22px;
+        padding-left: 0px;
     }
     .solutions__hero p {
         font-size: 14px;
     }
-    .solutions__hero img {
-        height: 100px;
-    }
+    
     .solutions__desc h3 {
         font-size: 21px;
     }
@@ -7761,21 +7790,33 @@ section.br{
     }
     .solutions__card {
         margin-top: 24px;
-        width: 87%;
+        width: 83%;
         margin-bottom: 20px;
     }
+    
 }
 
 @media only screen and (max-width:512px){
     .solutions__hero h2{
         margin-bottom: 11px;
+        font-size: 1.6rem;
     }
     .solutions__hero p {
         font-size: 10px;
         line-height: 21px;
     }
-    .solutions__hero img {
-        height: 78px;
+    .solutions__right {
+        padding-left: 6px;
+    }
+    .solutions__desc {
+        padding: 20px 20px 30px;
+    }
+   
+}
+
+@media only screen and (max-width:425px){
+    .solutions__hero p{
+        line-height: 14px;
     }
 }
 
@@ -7783,13 +7824,8 @@ section.br{
     .solutions__hero h2{
         margin-bottom: 11px;
     }
-    .solutions__hero p {
-        font-size: 10px;
-        line-height: 17px;
-    }
-    .solutions__hero img {
-        height: 52px;
-    }
+    
+    
 }
 
 .glide {
