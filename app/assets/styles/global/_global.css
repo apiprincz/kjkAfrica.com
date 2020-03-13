@@ -13,7 +13,9 @@ html {
     font-family: "Sofia Pro";
     /* font-family: "Montserrat", sans-serif; */
 }
-
+a {
+    text-decoration: none;
+}
 body.fixed{
     height: 100vh;
     overflow: hidden;
