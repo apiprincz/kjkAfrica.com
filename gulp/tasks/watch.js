@@ -70,9 +70,9 @@ task('watch', function(cb) {
         cb();
     });
 
-    watch('./app/assets/styles/**/*.css', series('styles', 'cssInject'));
+        watch('./app/assets/styles/**/*.css', series('styles', 'cssInject'));
 
-    watch('./app/assets/scripts/**/*.js', series(series('modernizr', 'scripts'), 'scriptsRefresh'));
+        watch('./app/assets/scripts/**/*.js', series(series('modernizr', 'scripts'), 'scriptsRefresh'));
 
     cb();
 
