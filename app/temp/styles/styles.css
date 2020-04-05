@@ -1537,6 +1537,9 @@ body.fixed{
     .header__map{
         height: 70%;
     }
+    ..header__container--contact {
+        background-position: top top;
+    }
 }
 
 @media only screen and (max-width: 425px){
@@ -5702,6 +5705,12 @@ App.js:39 Letter 10 is 147.7610626220703 */
         font-weight: 600;
         padding-bottom: 16px;
     }
+
+@media only screen and (max-width:700px){
+    .contact-form__inner-container {
+        padding-bottom: 40px;
+    }
+}
 
 .work{
     position: relative;

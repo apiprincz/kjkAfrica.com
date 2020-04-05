@@ -258,6 +258,9 @@
     .header__map{
         height: 70%;
     }
+    ..header__container--contact {
+        background-position: top top;
+    }
 }
 @media only screen and (max-width: 425px){
     .header__title--sub{
