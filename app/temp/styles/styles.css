@@ -1153,7 +1153,7 @@ body.fixed{
 }
 
 .content{
-    font-size: 1.0rem;
+    font-size: 1.3rem;
     font-weight: 300;
     line-height: 32px;
     padding-right: 5%;
@@ -1537,8 +1537,18 @@ body.fixed{
     .header__map{
         height: 70%;
     }
-    ..header__container--contact {
+    .header__container--contact {
         background-position: top top;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .header__development {
+    vertical-align: sub;
+    }
+    .header__design {
+    width: 7rem;
+        vertical-align: text-bottom;
     }
 }
 
@@ -1559,11 +1569,27 @@ body.fixed{
         width: 10.8rem;
     }
     .header__design {
-        width: 5rem;
-        transform: translateY(-14px);
+        width: 6rem;
+        /* transform: translateY(-14px); */
     }
     .header__title--sub {
         font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .header__text{
+        font-size: 1.0rem;
+    }
+    .header__development {
+        width: 10rem;
+    }
+    .header__design {
+        width: 5rem;
+        /* transform: translateY(-14px); */
+    }
+    .header__title--sub {
+        font-size: 1.5rem;
     }
 }
 
@@ -1932,9 +1958,9 @@ header > .nav-bar .new-bar{
     }
 
 .footer__text__lower{
-            font-size: .8rem;
+            font-size: 1rem;
             color: rgba(0,0,0,.63);
-            transform: translateY(4px);
+            /* transform: translateY(4px); */
             padding-left: 10px;
         }
 
@@ -2011,7 +2037,7 @@ header > .nav-bar .new-bar{
                 display: inline-block;
                 height: 10%;
                 vertical-align: middle;
-                margin-right: 14px;
+                margin-right: 4px;
                 
             }
 
@@ -2034,7 +2060,7 @@ header > .nav-bar .new-bar{
 .footer__link:link, .footer__link:visited{
         text-decoration: none;
         color: #000;
-        font-size: .7rem;
+        font-size: .9rem;
         /* margin-right: 20px; */
         display: inline-flex;
         white-space: nowrap;
@@ -2095,7 +2121,7 @@ header > .nav-bar .new-bar{
             width: 27px;
             background: black;
             margin-left: 35px;
-            margin-top: 11px;
+            margin-top: 6px;
             background: url(../../assets/images/mail.png);
             background-repeat: no-repeat;
             background-size: contain;
@@ -2248,9 +2274,25 @@ header > .nav-bar .new-bar{
     .footer__input-container::before {
         height: 22px;
         width: 27px;
-        margin-left: 15px;
+        margin-left: 10px;
+    }
+    .footer__submit {
+        width: 130px;
+    }
+    .footer__input {
+        padding-left: 7px;
     }
 
+}
+
+@media only screen and (max-width: 425px){
+    .footer__link:link.xpad {
+        padding-left:4px
+    }
+    .footer__input {
+        width: 80%;
+        font-size: 0.7rem;
+    }
 }
 
 @media only screen and (max-width: 370px){
@@ -2258,6 +2300,13 @@ header > .nav-bar .new-bar{
         width: 90%;
         right: 5%;
         transform: translateX(0%);
+    }
+    .footer__input {
+        width: 100%;
+        font-size: 0.6rem;
+    }
+    .footer__input-container::before {
+        margin-left: 0px;
     }
 }
 
@@ -2428,12 +2477,13 @@ header > .nav-bar .new-bar{
 .about__container--custom{
             padding: 120px 0px 0px 0;
             width: inherit;
+            margin:0 auto;
         }
 
 .about__img-one{
         float: right;
-        width: 80%;
-        right: 0%;
+        width: 75%;
+        right: -5%;
         position: relative;
         z-index: 5;
         bottom: 0;
@@ -2719,7 +2769,7 @@ header > .nav-bar .new-bar{
     background: #fff;
     position: relative;
     overflow: hidden;
-    padding: 65px 0 100px 0;
+    padding: 65px 0 56px 0;
     
 
 }
@@ -2798,7 +2848,7 @@ header > .nav-bar .new-bar{
 
 .portfolio__item--left{
             width: 100%;
-            padding-bottom: 40px;
+            padding-bottom: 20px;
         }
 
 .portfolio__item--right{
@@ -3511,7 +3561,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         width: 40px;
         background: white;
         position: absolute;
-        z-index: 77;
+        z-index: 70;
         transform: translateY(-50%);
         cursor: pointer;
         top: 50%;
@@ -3544,6 +3594,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         position: absolute;
         top: 8px;
         left: 73px;
+        background:rgba(251, 90, 30, 0.0)
     }
 
 .testimonials__body{
@@ -3559,8 +3610,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
             display: block;
             position: absolute;
             width: 100%;
-            height: 162%;
-            top: -18%;
+            height: 128%;
+            top: -6%;
             background: url(../../assets/images/map-opaque.png);
             background-size: contain;
             background-position: center;
@@ -4735,7 +4786,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         width: 100%;
     }
     .portfolio__outer-container.swiper-container-two.swiper-container-initialized.swiper-container-horizontal {
-        padding-bottom: 86px;
+        /* padding-bottom: 86px; */
     }
 }
 

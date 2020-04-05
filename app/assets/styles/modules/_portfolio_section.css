@@ -255,7 +255,7 @@
         width: 100%;
     }
     .portfolio__outer-container.swiper-container-two.swiper-container-initialized.swiper-container-horizontal {
-        padding-bottom: 86px;
+        /* padding-bottom: 86px; */
     }
 }
 

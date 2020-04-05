@@ -258,8 +258,17 @@
     .header__map{
         height: 70%;
     }
-    ..header__container--contact {
+    .header__container--contact {
         background-position: top top;
+    }
+}
+@media only screen and (max-width:600px){
+    .header__development {
+    vertical-align: sub;
+    }
+    .header__design {
+    width: 7rem;
+        vertical-align: text-bottom;
     }
 }
 @media only screen and (max-width: 425px){
@@ -278,11 +287,26 @@
         width: 10.8rem;
     }
     .header__design {
-        width: 5rem;
-        transform: translateY(-14px);
+        width: 6rem;
+        /* transform: translateY(-14px); */
     }
     .header__title--sub {
         font-size: 1.7rem;
+    }
+}
+@media only screen and (max-width: 350px){
+    .header__text{
+        font-size: 1.0rem;
+    }
+    .header__development {
+        width: 10rem;
+    }
+    .header__design {
+        width: 5rem;
+        /* transform: translateY(-14px); */
+    }
+    .header__title--sub {
+        font-size: 1.5rem;
     }
 }
 
