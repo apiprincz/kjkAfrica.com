@@ -32,6 +32,12 @@ body.fixed{
         font-size: 16px;
     }
 }
+.active {
+    font-weight: 600;
+}
+.nav-active{
+    color: #FB5A1E;
+}
 
 .title{
     padding: 32px 0 20px 0;

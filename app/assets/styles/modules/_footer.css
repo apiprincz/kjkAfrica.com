@@ -98,9 +98,10 @@
 
         &__lower{
             font-size: 1rem;
-            color: rgba(0,0,0,.63);
+            color: rgba(0,0,0,.9);
             /* transform: translateY(4px); */
             padding-left: 10px;
+            font-weight:600
         }
 
         span{
@@ -183,7 +184,7 @@
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
-        line-height: 24px;
+        line-height: 30px;
         color: #fff;
     }
 
@@ -257,7 +258,7 @@
             width: 27px;
             background: black;
             margin-left: 35px;
-            margin-top: 6px;
+            margin-top: 9px;
             background: url(../../assets/images/mail.png);
             background-repeat: no-repeat;
             background-size: contain;
@@ -396,7 +397,7 @@
     }
 
     .footer__input-container::before {
-        height: 22px;
+        height: 15px;
         width: 27px;
         margin-left: 10px;
     }
@@ -459,15 +460,7 @@
     }
 }
 
-@media only screen and (max-width: 390px){
-    .footer__lower-left .footer__link:link, .footer__link:visited {
-        width: 100%;
-        text-align: center;
-        margin-right: 0;
-        display: block;
-        margin-bottom: 22px;
-    }
-}
+
 @media only screen and (max-width: 1168px){
     .footer {
         &__left{
@@ -550,6 +543,21 @@
         &__left {
             width: 100%;
         }
+        
+    }
+    .footer__lower-left 
+        .footer__link:link, 
+        .footer__link:visited{
+            margin: 0 10px;
+        }
+}
+@media only screen and (max-width: 460px){
+    .footer__lower-left .footer__link:link, .footer__link:visited {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        display: block;
+        margin-bottom: 22px;
     }
 }
 @media only screen and (max-width: 432px){
@@ -570,6 +578,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 380px){
     .footer {
         &__left {

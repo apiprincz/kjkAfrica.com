@@ -4,11 +4,11 @@
     &__container {
             display: flex;
             justify-content:space-around;
-            padding:20px 20px 40px 30px;
+            padding:20px 20px 0px 30px;
             position: relative;
             /* margin-bottom:30px */
         & > div {
-            width: 43%;
+            width: 49%;
             & h3 {
                 font-family: Sofia Pro;
                 font-style: normal;
@@ -78,7 +78,7 @@
         &__title{
             /* font-family: Sofia Pro; */
             font-style: normal;
-            font-size: 2.7rem
+            font-size: 2.4rem
                    
     
     
@@ -239,7 +239,7 @@
         height: 80%;
     }
     .diff__left {
-        height: 340px;
+        height: 302px;
     }
     .diff__container {
         padding-left: 0px;
@@ -265,7 +265,7 @@
         padding-left: 0px;
     }
     .diff__container > div {
-       width: 48%;
+       width: 60%;
     }
     .diff__container > div h3  {
         font-size: 23px;
@@ -383,5 +383,8 @@
     }
     .diff__visual:nth-of-type(odd) {
         height: 237px;
+    }
+    .diff__container > div img.diff__home-left{
+        height: 80%;
     }
 }

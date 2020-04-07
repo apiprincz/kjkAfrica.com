@@ -136,13 +136,16 @@ header > .nav-bar .new-bar{
         font-size: 1rem;
         margin: 0 30px;
         text-decoration: none;
-        font-weight: 100;
+        font-weight: 500;
         white-space: nowrap;
         vertical-align: center;
         transition: all .3s;
     }
 
     .nav-bar__link:link:hover, .nav-bar__link:visited:hover{
+        color: #FB5A1E;
+    }
+    .nav-bar__link.nav-active{
         color: #FB5A1E;
     }
 
