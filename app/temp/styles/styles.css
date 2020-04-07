@@ -1767,8 +1767,8 @@ header > .nav-bar .new-bar{
 
     
     .nav-bar__link--bg:link, .nav-bar__link--bg:visited{
-        /* background: linear-gradient(180deg, #FB5A1E 12.9%, #FA8407 100%); */
-        background: #FB5A1E;
+        background: linear-gradient(180deg, #FB5A1E 12.9%, #FA8407 100%);
+        /* background: #FB5A1E; */
         box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
         border-radius: 45px;
         padding: 7px 22px 10px;
@@ -2076,7 +2076,7 @@ header > .nav-bar .new-bar{
 .footer__link:link, .footer__link:visited{
         text-decoration: none;
         color: #000;
-        font-size: .9rem;
+        font-size: 1.1rem;
         /* margin-right: 20px; */
         display: inline-flex;
         white-space: nowrap;
@@ -2434,7 +2434,7 @@ header > .nav-bar .new-bar{
         }
 }
 
-@media only screen and (max-width: 460px){
+@media only screen and (max-width: 512px){
     .footer__lower-left .footer__link:link, .footer__link:visited {
         width: 100%;
         text-align: center;
@@ -2558,7 +2558,7 @@ header > .nav-bar .new-bar{
     }
 } */
 
-@media only screen and (min-width: 540px){
+@media only screen and (min-width: 630px){
     .about{
         flex-direction: row;
         padding-top: 40px;
@@ -3230,7 +3230,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 .mobile-nav__container:nth-child(2) .mobile-nav--resp.show{
-        height: 440px;
+        height: 460px;
     }
 
 .mobile-nav__container:nth-child(3) .mobile-nav--resp.show{
@@ -3238,7 +3238,11 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 .mobile-nav__container:nth-child(4) .mobile-nav--resp.show{
-        height: 321px;
+        height: 440px;
+    }
+
+.mobile-nav .mobile-nav__container:nth-child(5) .mobile-nav--resp.show {
+        height: 300px;
     }
 
 .mobile-nav__map{
@@ -3463,6 +3467,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .mobile-nav--xspace {
         flex: inherit;
     }
+    .mobile-nav__list-item--small {
+        padding: 0px 0 12px 0;
+    }
 
 }
 
@@ -3482,7 +3489,15 @@ App.js:39 Letter 10 is 147.7610626220703 */
         
         margin-right: 30px;
     }
-
+    .mobile-nav__title:link, .mobile-nav__title:visited{
+        font-size: 1.4rem;
+    }
+    .mobile-nav__list-item--adjusted {
+        margin-left: 30%;
+    }
+    .mobile-nav__social-img {
+        width: 14px;
+    }
 
 }
 
@@ -3492,6 +3507,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
     .mobile-nav__container:nth-child(3) .mobile-nav--resp.show {
         height: auto;
+    }
+    .mobile-nav--flex .mobile-nav__title--small:link {
+        line-height: 16px;
     }
 
 
@@ -7305,6 +7323,7 @@ section.br{
 }
 
 .diff {
+    padding-top: 20px;
     position: relative;
     
 }
@@ -7669,9 +7688,7 @@ section.br{
     .diff__container > div img {
         height: 27%;
     }
-    .diff__container > div p {
-        font-size: 13px;
-    }
+    
     .diff__visual {
         height: 260px;
     }

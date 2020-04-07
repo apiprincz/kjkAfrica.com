@@ -198,7 +198,7 @@
     &__link:link, &__link:visited{
         text-decoration: none;
         color: #000;
-        font-size: .9rem;
+        font-size: 1.1rem;
         /* margin-right: 20px; */
         display: inline-flex;
         white-space: nowrap;
@@ -551,7 +551,7 @@
             margin: 0 10px;
         }
 }
-@media only screen and (max-width: 460px){
+@media only screen and (max-width: 512px){
     .footer__lower-left .footer__link:link, .footer__link:visited {
         width: 100%;
         text-align: center;

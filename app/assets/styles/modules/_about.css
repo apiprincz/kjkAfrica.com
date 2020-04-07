@@ -91,7 +91,8 @@
     }
 } */
 
-@media only screen and (min-width: 540px){
+
+@media only screen and (min-width: 630px){
     .about{
         flex-direction: row;
         padding-top: 40px;
