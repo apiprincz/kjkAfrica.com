@@ -33,14 +33,14 @@
     }
     .swiper-slide-next+.swiper-slide{
         img{
-            margin-right: 40%;
+            margin-right: 50%;
             transform: translateX(50%);
         }
        
     }
     .swiper-slide-next+.swiper-slide+.swiper-slide+.swiper-slide{
        img{
-           display: none;
+           /* display: none; */
        }
     }
 
