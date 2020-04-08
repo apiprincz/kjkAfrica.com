@@ -1973,11 +1973,12 @@ header > .nav-bar .new-bar{
     }
 
 .footer__text__lower{
-            font-size: 1rem;
+            font-size: 0.7rem;
             color: rgba(0,0,0,.9);
             /* transform: translateY(4px); */
             padding-left: 10px;
-            font-weight:600
+            font-weight:300;
+            line-height:2
         }
 
 .footer__text span{
@@ -2038,13 +2039,13 @@ header > .nav-bar .new-bar{
                 font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
-                line-height:24px;
+                line-height:28px;
                 color:#fff;
 
             }
 
 .footer__left ul li:nth-child(even){
-                    width: 40%;
+                    width: 48%;
                     
                 }
 
@@ -2076,7 +2077,7 @@ header > .nav-bar .new-bar{
 .footer__link:link, .footer__link:visited{
         text-decoration: none;
         color: #000;
-        font-size: 1.1rem;
+        font-size: 0.7rem;
         /* margin-right: 20px; */
         display: inline-flex;
         white-space: nowrap;
@@ -2468,6 +2469,24 @@ header > .nav-bar .new-bar{
         }
 }
 
+@media only screen and (min-width: 1400px){
+    .footer__left ul li:nth-child(even) {
+        width: 48%;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .footer__left ul li:nth-child(even) {
+        width: 54%;
+    }
+}
+
+@media only screen and (min-width: 1700px){
+    .footer__left ul li:nth-child(even) {
+        width: 36%;
+    }
+}
+
 .about {
     display: flex;
     justify-content: flex-start;
@@ -2668,7 +2687,7 @@ header > .nav-bar .new-bar{
     }
 
 .brands{
-    background: rgba(255, 247, 245, 0.8);
+    background: rgba(255, 247, 245, 0.9);
     padding-bottom: 80px;
 
 }
@@ -2689,6 +2708,10 @@ header > .nav-bar .new-bar{
 .brands__title{
         margin: 8px 0 18px 0%;
     }
+
+.brands__title--link {
+            color: inherit;
+        }
 
 .brands__img{
         /* filter: grayscale(100%) brightness(124%) opacity(62%); */
@@ -5562,18 +5585,6 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
   }
 
-@media only screen and (min-width: 1400px){
-    .footer__left ul li:nth-child(even) {
-        width: 43%;
-    }
-}
-
-@media only screen and (min-width: 1500px){
-    .footer__left ul li:nth-child(even) {
-        width: 48%;
-    }
-}
-
 @media only screen and (max-width: 1193px){
         .team__board{
         padding: 30px 0px 30px 50px;
@@ -7519,7 +7530,7 @@ section.br{
         }
 
 .diff__left {
-            height: 400px;
+            height: 430px;
         }
 
 .diff__home-bottom {
@@ -8039,7 +8050,7 @@ section.br{
         }
 
 .glide__arrows button {
-            background: rgba(251, 90, 30, 0.37);
+            background: rgba(251, 90, 30, 0.8);
             box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
             border-radius:50%;
             width:40px;

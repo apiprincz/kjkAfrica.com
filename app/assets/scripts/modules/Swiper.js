@@ -57,7 +57,7 @@ class SwiperSection {
                 delay: 9000,
                 disableOnInteraction: false,
             },
-            slidesPerView: 4,
+            slidesPerView: 5,
             // Responsive breakpoints
             breakpoints: {
                 0: {
@@ -75,7 +75,7 @@ class SwiperSection {
                     slidesPerView: 4,
                 },
                 1250: {
-                    slidesPerView: 4
+                    slidesPerView: 5
                 }
             }
         })

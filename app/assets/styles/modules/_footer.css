@@ -97,11 +97,12 @@
         padding: 34px 0 20px 0;
 
         &__lower{
-            font-size: 1rem;
+            font-size: 0.7rem;
             color: rgba(0,0,0,.9);
             /* transform: translateY(4px); */
             padding-left: 10px;
-            font-weight:600
+            font-weight:300;
+            line-height:2
         }
 
         span{
@@ -158,11 +159,11 @@
                 font-style: normal;
                 font-weight: 400;
                 font-size: 18px;
-                line-height:24px;
+                line-height:28px;
                 color:#fff;
 
                 &:nth-child(even){
-                    width: 40%;
+                    width: 48%;
                     
                 }
 
@@ -198,7 +199,7 @@
     &__link:link, &__link:visited{
         text-decoration: none;
         color: #000;
-        font-size: 1.1rem;
+        font-size: 0.7rem;
         /* margin-right: 20px; */
         display: inline-flex;
         white-space: nowrap;
@@ -333,6 +334,7 @@
     }
 
 }
+
 
 
 @media only screen and (max-width: 820px){
@@ -589,5 +591,21 @@
         &__desc {
             font-size: 12px;
         }
+    }
+}
+@media only screen and (min-width: 1400px){
+    .footer__left ul li:nth-child(even) {
+        width: 48%;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .footer__left ul li:nth-child(even) {
+        width: 54%;
+    }
+}
+@media only screen and (min-width: 1700px){
+    .footer__left ul li:nth-child(even) {
+        width: 36%;
     }
 }
