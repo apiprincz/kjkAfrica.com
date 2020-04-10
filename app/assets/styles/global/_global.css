@@ -226,3 +226,21 @@ body.fixed{
         margin-top: 9px;
     }
 }
+.orange__text {
+    color:  #FB5A1E;
+    font-family: Sofia Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+
+&:after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 2px;
+    background: #FB5A1E;
+    border-radius: 15px;
+    margin-top: 9px;
+}
+
+}

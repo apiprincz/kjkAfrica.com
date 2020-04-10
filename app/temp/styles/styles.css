@@ -1233,6 +1233,25 @@ body.fixed{
     }
 }
 
+.orange__text {
+    color:  #FB5A1E;
+    font-family: Sofia Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+
+}
+
+.orange__text:after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 2px;
+    background: #FB5A1E;
+    border-radius: 15px;
+    margin-top: 9px;
+}
+
 .swiper-container, .swiper-container-two{
     width: 100%;
 }
@@ -1295,7 +1314,6 @@ body.fixed{
         /* &--portfolio{
             height: 6vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/portfolio-bg.jpg); */
-            /* background-position: top right; */
     }
 
 .header__container--services{
@@ -1372,6 +1390,16 @@ body.fixed{
 .header__container--diff{
             height: 50vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/diffbg.png);
+            background-position: top right;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+/* background-position: top right; */
+
+.header__container--recognition{
+            height: 50vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/recognitionbg.png);
             background-position: top right;
             background-size: cover;
             background-repeat: no-repeat;
@@ -3435,8 +3463,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
         display: flex; 
         flex-wrap: wrap; 
         justify-content:space-between; 
-        width: 62%;
-        margin-left: 30px;
+        width: 66%;
+        margin-left: 30px; 
     
     }
 
@@ -3465,6 +3493,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .mobile-nav--flex .mobile-nav__title--small:visited {
             margin-left: 0px;
             margin-right: 40px;
+        }
+
+.mobile-nav--flex>.mobile-nav__list-item:nth-of-type(4){
+            transform:translateX(25%)
         }
 
 .mobile-nav--xspace {
@@ -8156,4 +8188,40 @@ section.br{
 
 .blog__text p{
         padding: 20px 0px;
+    }
+
+.recognition__container {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        align-items:flex-start
+    }
+
+.recognition__card {
+        width: 30%;
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        padding: 26px;
+        margin-bottom: 60px;
+    }
+
+.recognition__logo {
+        text-align: center;
+    }
+
+.recognition__desc {
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+.recognition__desc span {
+            font-weight: 600;
+        }
+
+.recognition__btn {
+        text-align: right;
     }

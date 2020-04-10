@@ -101,7 +101,7 @@
         padding: 14px 0 18px 0;
         margin-bottom: 1.8%;
 
-        
+              
         
 
         &--header{
@@ -208,7 +208,7 @@
         display: flex; 
         flex-wrap: wrap; 
         justify-content:space-between; 
-        width: 62%;
+        width: 66%;
         margin-left: 30px;
 
         & .mobile-nav__title--small:link {
@@ -236,6 +236,9 @@
             margin-left: 0px;
             margin-right: 40px;
         }
+        &>.mobile-nav__list-item:nth-of-type(4){
+            transform:translateX(25%)
+        } 
     
     }
 
