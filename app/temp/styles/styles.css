@@ -3381,7 +3381,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .mobile-nav__list-item--small{
             border-bottom: none;
-            padding: 10px 0 14px 0;
+            padding: 10px 0 8px 0;
             /* margin-left:30px; */
 
             
@@ -3501,7 +3501,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .mobile-nav--xspace {
         flex: 50%;
-        line-height: 67px;
+        line-height: 40px;
     }
 
 @media only screen and (max-width: 1300px){
@@ -3937,12 +3937,12 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .services__text{
         font-weight: 300;
         font-size: 1.2rem;
-        line-height: 2.3rem;
+        line-height: 1.7rem;
         padding-bottom: 20px;
     }
 
 .services__text--btm-space{
-            padding-bottom: 50px;
+            padding-bottom: 30px;
         }
 
 .services__title{
@@ -4060,7 +4060,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 .services__call-text--group{
-            margin-bottom: 45px;
+            margin-bottom: 15px;
         }
 
 .services__call-img{

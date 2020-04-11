@@ -56,11 +56,11 @@
     &__text{
         font-weight: 300;
         font-size: 1.2rem;
-        line-height: 2.3rem;
+        line-height: 1.7rem;
         padding-bottom: 20px;
 
         &--btm-space{
-            padding-bottom: 50px;
+            padding-bottom: 30px;
         }
     }
 
@@ -181,7 +181,7 @@
         position: relative;
 
         &--group{
-            margin-bottom: 45px;
+            margin-bottom: 15px;
         }
     }
 
