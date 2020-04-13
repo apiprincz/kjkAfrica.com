@@ -2001,12 +2001,13 @@ header > .nav-bar .new-bar{
     }
 
 .footer__text__lower{
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             color: rgba(0,0,0,.9);
             /* transform: translateY(4px); */
             padding-left: 10px;
             font-weight:300;
-            line-height:2
+            line-height:0;
+            display:contents
         }
 
 .footer__text span{
@@ -2105,7 +2106,7 @@ header > .nav-bar .new-bar{
 .footer__link:link, .footer__link:visited{
         text-decoration: none;
         color: #000;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         /* margin-right: 20px; */
         display: inline-flex;
         white-space: nowrap;
@@ -2119,6 +2120,10 @@ header > .nav-bar .new-bar{
         white-space: nowrap;
         width: 20%;
     }
+
+.footer__lower-right>div {
+            padding-right: 10px;
+        }
 
 .footer__lower-right a {
             margin: 0px 3px;
@@ -3285,7 +3290,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 .mobile-nav__container:nth-child(3) .mobile-nav--resp.show{
-        height: 448px;
+        height: auto;
+        /* height: 448px; */
     }
 
 .mobile-nav__container:nth-child(4) .mobile-nav--resp.show{
@@ -3293,7 +3299,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 .mobile-nav .mobile-nav__container:nth-child(5) .mobile-nav--resp.show {
-        height: 300px;
+        height: auto;
     }
 
 .mobile-nav__map{
@@ -3359,12 +3365,25 @@ App.js:39 Letter 10 is 147.7610626220703 */
         justify-content: flex-start;
         align-items:center;
         border-bottom: 1px solid #FB5A1E;
-        padding: 14px 0 18px 0;
+
+        padding: 6px 0 18px 0;
         margin-bottom: 1.8%;
     }
 
 .mobile-nav__list-item--header{
-            margin-bottom: 12px;
+        border-bottom: 1px solid #FB5A1E;
+        margin-bottom: 12px;
+        padding: 6px 0 18px 0;
+        margin-bottom: 1.8%;
+        }
+
+.mobile-nav__list-item--header-border {
+                border-top: 1px solid #FB5A1E;
+                margin-top: 10px;
+            }
+
+.mobile-nav__list-item--header:last-child{
+            border-bottom: 1px solid transparent;
         }
 
 .mobile-nav__list-item:last-child{
@@ -3383,6 +3402,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
             border-bottom: none;
             padding: 10px 0 8px 0;
             /* margin-left:30px; */
+            
+
 
             
         }
@@ -3392,8 +3413,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
         }
 
 .mobile-nav__list-item--adjusted {
-            margin-left: 50%;
-            transform: translateX(-30%);
+            /* margin-left: 50%;
+            transform: translateX(-30%); */
         }
 
 .mobile-nav__social-img{
@@ -3463,15 +3484,22 @@ App.js:39 Letter 10 is 147.7610626220703 */
         display: flex; 
         flex-wrap: wrap; 
         justify-content:space-between; 
-        width: 66%;
-        margin-left: 30px; 
+        width: 85%;
+        margin-left: 30px;
+        /* &>.mobile-nav__list-item:nth-of-type(4){
+            transform:translateX(25%)
+        }  */
     
     }
+
+.mobile-nav--flex>.mobile-nav__list-item:nth-of-type(even){
+            width: 44%;
+        }
 
 .mobile-nav--flex .mobile-nav__title--small:link {
             margin-right:40px;
             margin-left: 0px;
-            line-height:27px;
+            line-height:20px;
             white-space: nowrap;
         }
 
@@ -3495,18 +3523,27 @@ App.js:39 Letter 10 is 147.7610626220703 */
             margin-right: 40px;
         }
 
-.mobile-nav--flex>.mobile-nav__list-item:nth-of-type(4){
-            transform:translateX(25%)
-        }
-
 .mobile-nav--xspace {
         flex: 50%;
-        line-height: 40px;
+        /* line-height: 40px; */
     }
 
 @media only screen and (max-width: 1300px){
     .mobile-nav--flex{
-       width: 82%;
+       width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    .mobile-nav--flex{
+       width: 97%;
+    }
+    .mobile-nav--flex>.mobile-nav__list-item:nth-of-type(odd){
+        width: 44%;
+    }
+    .mobile-nav--flex>.mobile-nav__list-item:nth-of-type(even){
+        width: 50%;
     }
 
 }
@@ -3514,6 +3551,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
 @media only screen and (max-width: 836px){
     .mobile-nav--flex{
        width: 100%;
+    }
+    .mobile-nav__list-item--small {
+        padding-top: 6px;
     }
 
 }
@@ -3531,10 +3571,16 @@ App.js:39 Letter 10 is 147.7610626220703 */
 @media only screen and (max-width: 530px){
     .mobile-nav--xspace {
         
-        line-height: 38px;
+        /* line-height: 38px; */
     }
     .mobile-nav--flex .mobile-nav__title--small:link {
         line-height: 5px;
+    }
+    .mobile-nav__list-item--small {
+        padding-top: 6px;
+    }
+    .mobile-nav--flex {
+        margin-left: 20px;
     }
 
 }
@@ -3548,10 +3594,13 @@ App.js:39 Letter 10 is 147.7610626220703 */
         font-size: 1.4rem;
     }
     .mobile-nav__list-item--adjusted {
-        margin-left: 30%;
+        /* margin-left: 30%; */
     }
     .mobile-nav__social-img {
         width: 14px;
+    }
+    .mobile-nav__list-item--small {
+        padding-bottom: 9px;
     }
 
 }
@@ -3560,11 +3609,20 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .mobile-nav--flex {
         width: 111px;
     }
+    .mobile-nav--flex>.mobile-nav__list-item:nth-of-type(even) {
+        width: 100%;
+    }
     .mobile-nav__container:nth-child(3) .mobile-nav--resp.show {
         height: auto;
     }
     .mobile-nav--flex .mobile-nav__title--small:link {
         line-height: 16px;
+    }
+    .mobile-nav--xspace {
+        line-height: 38px;
+    }
+    .mobile-nav__list-item-link:link, .mobile-nav__list-item-link:visited {
+        font-size: 1.1rem;
     }
 
 
@@ -3620,7 +3678,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
     .mobile-nav__container .mobile-nav--resp{
         height: auto;
-        overflow: auto;
+        overflow: initial;
         transition: all .6s ease-in-out;
     }
 

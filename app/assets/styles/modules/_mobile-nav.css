@@ -26,14 +26,15 @@
     }
 
     &__container:nth-child(3) .mobile-nav--resp.show{
-        height: 448px;
+        height: auto;
+        /* height: 448px; */
     }
 
     &__container:nth-child(4) .mobile-nav--resp.show{
         height: 440px;
     }
     .mobile-nav__container:nth-child(5) .mobile-nav--resp.show {
-        height: 300px;
+        height: auto;
     }
     &__map{
         position: absolute;
@@ -98,14 +99,26 @@
         justify-content: flex-start;
         align-items:center;
         border-bottom: 1px solid #FB5A1E;
-        padding: 14px 0 18px 0;
+
+        padding: 6px 0 18px 0;
         margin-bottom: 1.8%;
 
-              
+        
         
 
         &--header{
-            margin-bottom: 12px;
+        border-bottom: 1px solid #FB5A1E;
+        margin-bottom: 12px;
+        padding: 6px 0 18px 0;
+        margin-bottom: 1.8%;
+            &-border {
+                border-top: 1px solid #FB5A1E;
+                margin-top: 10px;
+            }
+            
+        &:last-child{
+            border-bottom: 1px solid transparent;
+        }
         }
 
         &:last-child{
@@ -124,6 +137,8 @@
             border-bottom: none;
             padding: 10px 0 8px 0;
             /* margin-left:30px; */
+            
+
 
             
         }
@@ -133,8 +148,8 @@
         }
 
         &--adjusted {
-            margin-left: 50%;
-            transform: translateX(-30%);
+            /* margin-left: 50%;
+            transform: translateX(-30%); */
         }
     }
 
@@ -208,13 +223,17 @@
         display: flex; 
         flex-wrap: wrap; 
         justify-content:space-between; 
-        width: 66%;
+        width: 85%;
         margin-left: 30px;
+
+        &>.mobile-nav__list-item:nth-of-type(even){
+            width: 44%;
+        }
 
         & .mobile-nav__title--small:link {
             margin-right:40px;
             margin-left: 0px;
-            line-height:27px;
+            line-height:20px;
             white-space: nowrap;
 
             &.xmargin {
@@ -236,15 +255,15 @@
             margin-left: 0px;
             margin-right: 40px;
         }
-        &>.mobile-nav__list-item:nth-of-type(4){
+        /* &>.mobile-nav__list-item:nth-of-type(4){
             transform:translateX(25%)
-        } 
+        }  */
     
     }
 
     &--xspace {
         flex: 50%;
-        line-height: 40px;
+        /* line-height: 40px; */
     }
     
 }
@@ -254,13 +273,28 @@
 
 @media only screen and (max-width: 1300px){
     .mobile-nav--flex{
-       width: 82%;
+       width: 90%;
+    }
+
+}
+@media only screen and (max-width: 1000px){
+    .mobile-nav--flex{
+       width: 97%;
+    }
+    .mobile-nav--flex>.mobile-nav__list-item:nth-of-type(odd){
+        width: 44%;
+    }
+    .mobile-nav--flex>.mobile-nav__list-item:nth-of-type(even){
+        width: 50%;
     }
 
 }
 @media only screen and (max-width: 836px){
     .mobile-nav--flex{
        width: 100%;
+    }
+    .mobile-nav__list-item--small {
+        padding-top: 6px;
     }
 
 }
@@ -276,10 +310,16 @@
 @media only screen and (max-width: 530px){
     .mobile-nav--xspace {
         
-        line-height: 38px;
+        /* line-height: 38px; */
     }
     .mobile-nav--flex .mobile-nav__title--small:link {
         line-height: 5px;
+    }
+    .mobile-nav__list-item--small {
+        padding-top: 6px;
+    }
+    .mobile-nav--flex {
+        margin-left: 20px;
     }
 
 }
@@ -292,10 +332,13 @@
         font-size: 1.4rem;
     }
     .mobile-nav__list-item--adjusted {
-        margin-left: 30%;
+        /* margin-left: 30%; */
     }
     .mobile-nav__social-img {
         width: 14px;
+    }
+    .mobile-nav__list-item--small {
+        padding-bottom: 9px;
     }
 
 }
@@ -303,11 +346,20 @@
     .mobile-nav--flex {
         width: 111px;
     }
+    .mobile-nav--flex>.mobile-nav__list-item:nth-of-type(even) {
+        width: 100%;
+    }
     .mobile-nav__container:nth-child(3) .mobile-nav--resp.show {
         height: auto;
     }
     .mobile-nav--flex .mobile-nav__title--small:link {
         line-height: 16px;
+    }
+    .mobile-nav--xspace {
+        line-height: 38px;
+    }
+    .mobile-nav__list-item-link:link, .mobile-nav__list-item-link:visited {
+        font-size: 1.1rem;
     }
 
 
@@ -362,7 +414,7 @@
 
     .mobile-nav__container .mobile-nav--resp{
         height: auto;
-        overflow: auto;
+        overflow: initial;
         transition: all .6s ease-in-out;
     }
 
