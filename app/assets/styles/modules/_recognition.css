@@ -15,15 +15,19 @@
         border-radius: 20px;
         padding: 26px;
         margin-bottom: 60px;
+        height: 424px;
     }
     &__logo {
         text-align: center;
+        height: 20%;
     }
     &__desc {
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 300;
-        font-size: 18px;
+        font-size: 17px;
+        letter-spacing: 0.02em;
+        line-height: 23px;
 
         & span {
             font-weight: 600;
@@ -31,6 +35,68 @@
     }
     &__btn {
         text-align: right;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
     }
+    
+}
+@media only screen and (max-width: 1176px){
+    .recognition__card{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .recognition__logo {
+        height: 13%;
+    }
+    .recognition__card{
+        height: 470px;
+    }
+}
+@media only screen and (max-width: 700px){
+    
+    .recognition__card{
+        width: 48%;
+    }
+    .recognition__desc {
+        font-size: 15px;
+    }
+    
+    .recognition__logo img {
+        width: 51%;
+    }
+    .recognition__logo img.wita {
+        width: 40%;
+    }
+    
+}
+@media only screen and (max-width: 700px){
+    
+    .recognition__card{
+        width: 100%;
+        height: 400px;
+    }
+    .recognition__logo {
+        height: 18%;
+    }
+    .recognition__logo img,.recognition__logo img.wita {
+        width: auto;
+    }
+        
+    
+    
+}
+@media only screen and (max-width: 390px){
+    
+    .recognition__card{
+        width: 100%;
+        height: 450px;
+    }
+    .recognition__logo img {
+        width: 60%;
+    }
+        
+    
     
 }

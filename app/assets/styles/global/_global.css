@@ -232,6 +232,7 @@ body.fixed{
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
+white-space: nowrap;
 
 &:after {
     content: "";
@@ -243,4 +244,9 @@ font-size: 18px;
     margin-top: 9px;
 }
 
+}
+@media only screen and (max-width: 700px){
+    .orange__text {
+        font-size: 16px;
+    }
 }

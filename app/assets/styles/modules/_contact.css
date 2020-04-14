@@ -182,7 +182,8 @@
         font-weight: 400;
         font-size: 1.3rem; 
         padding: 16px 0;
-        color: #000;
+        /* color: #000;*/
+        color: #FB5A1E;
     }
 
     &__social{
