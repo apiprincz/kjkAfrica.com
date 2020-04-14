@@ -263,7 +263,7 @@
 
     &--xspace {
         flex: 50%;
-        /* line-height: 40px; */
+        line-height: 40px;
     }
     
 }
@@ -301,6 +301,7 @@
 @media only screen and (max-width: 740px){
     .mobile-nav--xspace {
         flex: inherit;
+        line-height: 0;
     }
     .mobile-nav__list-item--small {
         padding: 0px 0 12px 0;
@@ -310,7 +311,7 @@
 @media only screen and (max-width: 530px){
     .mobile-nav--xspace {
         
-        /* line-height: 38px; */
+        line-height: 13px;
     }
     .mobile-nav--flex .mobile-nav__title--small:link {
         line-height: 5px;

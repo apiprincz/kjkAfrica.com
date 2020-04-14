@@ -1,3 +1,5 @@
+/* Note differentiator page use this styling */
+
 .work{
     position: relative;
     padding-left: 60px;
@@ -68,7 +70,7 @@
 
     &__board {
         display: flex;
-        padding: 20px 20px 0px 110px;
+        padding: 20px 20px 58px 110px;
         /* position: relative; */
         
         &:nth-of-type(even){
@@ -91,7 +93,7 @@
         }
         &:nth-of-type(odd) img.work__base {
             
-            transform:translateY(-133px)
+            transform:translateY(-65px)
             
         }
         &:nth-of-type(even) img.work__base {

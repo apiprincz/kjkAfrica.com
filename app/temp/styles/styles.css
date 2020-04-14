@@ -1326,16 +1326,16 @@ font-size: 18px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url(../../assets/images/work-bg.jpg);        
         }
 
-.header__container--work{
-            height: 60vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/work-bg.jpg);        
+.header__container--geek{
+            height: 64vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/solutionsbg.png);        
             background-position: bottom right;
             background-size: cover;
             background-repeat: no-repeat;        
         }
 
 .header__container--about{
-            height: 61.5vh;
+            height: 66.5vh;
             background: linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../../assets/images/about.png);
             background-position: top center;
             background-size: cover;
@@ -1367,8 +1367,8 @@ font-size: 18px;
 
 /* background-repeat: no-repeat     */
 
-.header__container--who{
-            height: 50vh;
+.header__container--how{
+            height: 63vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/whobg.png);
             background-position: top right;
             background-size: cover;
@@ -1379,7 +1379,7 @@ font-size: 18px;
 
 .header__container--solutions{
             height: 50vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/solutionsbg.png);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/work-bg.jpg);
             background-position: top right;
             background-size: cover;
             background-repeat: no-repeat;
@@ -1388,7 +1388,7 @@ font-size: 18px;
 /* background: #0F0F0F; */
 
 .header__container--diff{
-            height: 50vh;
+            height: 64vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/diffbg.png);
             background-position: top right;
             background-size: cover;
@@ -1398,7 +1398,7 @@ font-size: 18px;
 /* background-position: top right; */
 
 .header__container--recognition{
-            height: 50vh;
+            height: 64vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/recognitionbg.png);
             background-position: top right;
             background-size: cover;
@@ -1450,7 +1450,7 @@ font-size: 18px;
         font-size: 1.3rem;
         color: #ffffff;
         font-family: 'Sofia Pro', serif;
-        font-weight: 100;
+        font-weight: 200;
         line-height: 28px;
     }
 
@@ -1509,6 +1509,55 @@ font-size: 18px;
         vertical-align: bottom;
         transform: translateY(-11px);
     }
+
+.header__sub--menu {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        border-top: 1px solid #807D7D;
+
+    }
+
+.header__sub--menu ul {
+            width: 100%;
+            display: flex;
+            justify-content:center;
+            /* padding:12px 0px; */
+        }
+
+.header__sub--menu li {
+            list-style-type: none;
+            padding: 22px 12px;
+        
+    }
+
+.header__sub--menu li.active{
+                border-bottom: 6px solid #FB5A1E;
+                transition: all 0.6s ease-in;
+            }
+
+.header__sub--menu li.active a  {
+                    font-size: 24px;
+                    font-weight: 300;
+                }
+
+.header__sub--menu li a{
+            color: white;
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 18px;
+            line-height: 20px;
+            height: 100%;
+            
+
+        }
+
+.header__sub--menu li a:hover {
+                color: #FB5A1E;;
+            }
 
 @media only screen and (min-width: 365px){
     .header__break{
@@ -1576,6 +1625,33 @@ font-size: 18px;
     }
     .header__container--contact {
         background-position: top top;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .header__sub--menu li a {
+        font-size: 15px;
+    }
+    .header__sub--menu li.active a {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .header__sub--menu li  {
+        padding: 14px 8px;
+    }
+    .header__sub--menu li a {
+        font-size: 12px;
+    }
+    .header__sub--menu li.active a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 512px){
+    .header__sub--menu  {
+        display: none;
     }
 }
 
@@ -1661,7 +1737,8 @@ font-size: 18px;
 
 .nav-bar--down{
         top: 0px;
-        background: rgb(51, 50, 50);
+        /* background: rgb(51, 50, 50); */
+        background: black;
         box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
     }
 
@@ -3525,7 +3602,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .mobile-nav--xspace {
         flex: 50%;
-        /* line-height: 40px; */
+        line-height: 40px;
     }
 
 @media only screen and (max-width: 1300px){
@@ -3561,6 +3638,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 @media only screen and (max-width: 740px){
     .mobile-nav--xspace {
         flex: inherit;
+        line-height: 0;
     }
     .mobile-nav__list-item--small {
         padding: 0px 0 12px 0;
@@ -3571,7 +3649,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 @media only screen and (max-width: 530px){
     .mobile-nav--xspace {
         
-        /* line-height: 38px; */
+        line-height: 13px;
     }
     .mobile-nav--flex .mobile-nav__title--small:link {
         line-height: 5px;
@@ -3995,7 +4073,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .services__text{
         font-weight: 300;
         font-size: 1.2rem;
-        line-height: 1.7rem;
+        line-height: 2.3rem;
         padding-bottom: 20px;
     }
 
@@ -5959,6 +6037,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 }
 
+/* Note differentiator page use this styling */
+
 .work{
     position: relative;
     padding-left: 60px;
@@ -6034,7 +6114,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .work__board {
         display: flex;
-        padding: 20px 20px 0px 110px;
+        padding: 20px 20px 58px 110px;
     }
 
 /* position: relative; */
@@ -6060,7 +6140,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .work__board:nth-of-type(odd) img.work__base {
             
-            transform:translateY(-133px)
+            transform:translateY(-65px)
             
         }
 
@@ -7522,8 +7602,9 @@ section.br{
             display: flex;
             justify-content: space-between;
             padding: 70px 50px 50px 60px;
-            position: relative;
         }
+
+/* position: relative; */
 
 .diff__board:nth-of-type(odd){
                 
@@ -7853,6 +7934,7 @@ section.br{
             z-index: -1;
             width: 100%;
             height: 86%;
+            opacity: 0.16;
         }
 
 .solutions__left {
@@ -7927,6 +8009,10 @@ section.br{
             margin-bottom: 60px;
         }
 
+.solutions__visual {
+        position: relative;
+    }
+
 .solutions__visual:hover {
             -webkit-animation: cardHover 1.2s forwards 0s ease-out;
                     animation: cardHover 1.2s forwards 0s ease-out;;
@@ -7934,8 +8020,21 @@ section.br{
 
 .solutions__visual img {
             width: 100%;
+        }
 
-            
+.solutions__visual h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 65px;
+            text-align: center;
+            color: #fff;
+            white-space: nowrap;
         }
 
 .solutions__desc {
@@ -7967,7 +8066,7 @@ section.br{
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 300;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 20px;
         color: #504D4D;
         /* text-align: center;         */

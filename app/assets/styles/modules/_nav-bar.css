@@ -18,7 +18,8 @@
 
     &--down{
         top: 0px;
-        background: rgb(51, 50, 50);
+        /* background: rgb(51, 50, 50); */
+        background: black;
         box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
     }
 
