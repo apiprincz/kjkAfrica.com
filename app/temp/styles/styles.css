@@ -6056,7 +6056,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         position: absolute;
         right: 47%;
         width: 4%;
-        top: 120px;
+        top: 85px;
         z-index: 0;        
     }
 
@@ -6115,10 +6115,21 @@ App.js:39 Letter 10 is 147.7610626220703 */
         font-weight: bold;
         font-size: 45px;
         line-height: 55px;
-        color: #FB5A1E;        
+        color: #FB5A1E;
+        
 
 
     }
+
+.work__title::after {
+            content: '';
+            background: #FB5A1E;
+            border-radius: 15px;
+            width: 100px;
+            height: 10px;
+            display: inline-block;
+            
+        }
 
 .work__board {
         display: flex;
@@ -8417,6 +8428,37 @@ section.br{
         right: 20px;
     }
 
+.recognition__circle{
+        position: absolute;
+        top:3%;
+        left: 0;
+        z-index: -1;
+        width: 80%;
+    }
+
+.recognition__circle img {
+            width: 100%;
+        }
+
+.recognition__square{
+        position: absolute;
+        top:25%;
+        right: 0;
+        z-index: -1;
+    }
+
+.recognition__oval{
+        position: absolute;
+        width: 80%;
+        bottom: 84px;
+        z-index: -1;
+        right: 6%;
+    }
+
+.recognition__oval img {
+            width: 100%;
+        }
+
 @media only screen and (max-width: 1176px){
     .recognition__card{
         width: 45%;
@@ -8480,3 +8522,151 @@ section.br{
     
     
 }
+
+.geek__row {
+        position: relative;
+        margin:0 auto;
+        width:90%;
+    }
+
+.geek__row p {
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            color: #333333;
+        }
+
+.geek__container {
+        display: flex;
+        padding: 10px 0px;
+    
+
+    }
+
+.geek__container > div {
+        width: 74%;
+        position: relative;
+    }
+
+.geek__container > div img {
+            width: 100%;
+        }
+
+.geek__container > div img.geek__text--bg {
+            width: 60%;
+            top: 0;
+            right: 20%;
+        }
+
+.geek__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+.geek__wrapper > .geek__item:nth-child(odd) {
+            transform: translateY(-180px);
+        }
+
+.geek__wrapper > .geek__item:first-child {
+            transform: translateY(0px);
+        }
+
+.geek__wrapper > .geek__item:last-child {
+            width: 66%;
+        }
+
+.geek__item {
+        width: 50%;
+    }
+
+.geek__item img {
+            width: 100%;
+        }
+
+.geek__item > div {
+            padding: 20px 40px 40px 40px;
+            background: #FFF7F5;
+            box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+            position: absolute;
+            right: 100%;
+            width: 100%;
+        }
+
+.geek__item > div p {
+                font-family: Sofia Pro;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 30px;
+                color: #333333;                
+            }
+
+.geek__title {
+
+        font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FB5A1E;
+    }
+
+.geek__circle {
+        position: absolute;
+        bottom: 0;
+        width: 40%;
+        z-index: -1;
+    }
+
+.geek__circle img {
+            width: 100%;
+        }
+
+.geek__hero {
+        font-family: Playfair Display;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 60px;
+        color: #333333;
+        text-align: center;
+    }
+
+.geek__hero::after {
+            content: '';
+            background: #FB5A1E;
+            border-radius: 15px;
+            width: 100px;
+            height: 3px;
+            display: block;
+            position: absolute;
+            right: 50%;
+            text-align: center;
+            transform: translateX(50%);
+        }
+
+.geek__gallery {
+        padding: 20px 0px;       
+    }
+
+.geek__galleria {
+        display: flex; 
+        flex-wrap: wrap;
+        padding: 10px 0px ;  
+        justify-content: space-between;     
+
+    }
+
+.geek__space {
+        width: 32%;
+        padding: 10px 0px;
+    }
+
+.geek__space img {
+            width: 100%;
+        }

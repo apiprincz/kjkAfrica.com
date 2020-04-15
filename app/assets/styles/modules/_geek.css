@@ -1,0 +1,135 @@
+.geek {
+    &__row {
+        position: relative;
+        margin:0 auto;
+        width:90%;
+
+        & p {
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            color: #333333;
+        }
+    }
+    &__container {
+        display: flex;
+        padding: 10px 0px;
+    
+    & > div {
+        width: 74%;
+        position: relative;
+        & img {
+            width: 100%;
+        }
+        & img.geek__text--bg {
+            width: 60%;
+            top: 0;
+            right: 20%;
+        }
+    }
+    
+
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        position: relative;
+        
+        & > .geek__item:nth-child(odd) {
+            transform: translateY(-180px);
+        }
+        & > .geek__item:first-child {
+            transform: translateY(0px);
+        }
+        & > .geek__item:last-child {
+            width: 66%;
+        }
+    }
+    &__item {
+        width: 50%;
+        
+        & img {
+            width: 100%;
+        }
+
+        & > div {
+            padding: 20px 40px 40px 40px;
+            background: #FFF7F5;
+            box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+            position: absolute;
+            right: 100%;
+            width: 100%;            
+            & p {
+                font-family: Sofia Pro;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 30px;
+                color: #333333;                
+            }
+        }
+    }
+    &__title {
+
+        font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FB5A1E;
+    }
+    &__circle {
+        position: absolute;
+        bottom: 0;
+        width: 40%;
+        z-index: -1;
+        & img {
+            width: 100%;
+        }
+    }
+    &__hero {
+        font-family: Playfair Display;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 60px;
+        color: #333333;
+        text-align: center;
+        &::after {
+            content: '';
+            background: #FB5A1E;
+            border-radius: 15px;
+            width: 100px;
+            height: 3px;
+            display: block;
+            position: absolute;
+            right: 50%;
+            text-align: center;
+            transform: translateX(50%);
+        }
+    } 
+
+    &__gallery {
+        padding: 20px 0px;       
+    }
+    &__galleria {
+        display: flex; 
+        flex-wrap: wrap;
+        padding: 10px 0px ;  
+        justify-content: space-between;     
+
+    }
+    &__space {
+        width: 32%;
+        padding: 10px 0px;
+
+        & img {
+            width: 100%;
+        }
+    }
+    
+}

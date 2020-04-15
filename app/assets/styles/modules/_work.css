@@ -8,7 +8,7 @@
         position: absolute;
         right: 47%;
         width: 4%;
-        top: 120px;
+        top: 85px;
         z-index: 0;        
     }
     &__poly {
@@ -63,7 +63,17 @@
         font-weight: bold;
         font-size: 45px;
         line-height: 55px;
-        color: #FB5A1E;        
+        color: #FB5A1E;
+        &::after {
+            content: '';
+            background: #FB5A1E;
+            border-radius: 15px;
+            width: 100px;
+            height: 10px;
+            display: inline-block;
+            
+        }
+        
 
 
     }
