@@ -41,7 +41,7 @@
         &--main {
             position: relative;
         }
-        & p {
+        & p { 
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: 300;
@@ -70,11 +70,19 @@
 
     &__board {
         display: flex;
-        padding: 20px 20px 58px 110px;
+        padding: 20px 0px 0px 110px;
         /* position: relative; */
-        
+        & > div {
+            width: 50%;
+        }
+
+        &:nth-of-type(1) >div >.work__visual {
+            padding: 124px 40px 0px 20px;
+
+        }
+
         &:nth-of-type(even){
-            padding: 80px 30px 40px 100px;
+            padding: 30px 30px 40px 0px;
 
         }
 
@@ -89,17 +97,17 @@
         & img.work__base {
             position: absolute;
             z-index:-1;
-            height:50%;
+            height:64%;
+            bottom: 0;
         }
-        &:nth-of-type(odd) img.work__base {
+        /* &:nth-of-type(odd) img.work__base {
             
             transform:translateY(-65px)
             
-        }
+        } */
         &:nth-of-type(even) img.work__base {
-            
-            transform:translateY(-116px);
-            height: 118%;
+            transform: translateY(50px);
+            height: 125%;
             
         }
         &:nth-of-type(odd) .work__desc {
@@ -124,12 +132,12 @@
 
     &__visual {
         /* width: 800px; */
-        height: 462px;
+        /* height: 462px; */
+        position: relative;
+        /* padding: 124px 40px 0px 20px; */
     
-        
-        & img {
-            height: 100%;
-           
+        & img.work__im {
+            width:100%;
         }
     }
 
@@ -186,24 +194,22 @@
 }
 
 @media only screen and (max-width: 1146px){
-    .work__board:nth-of-type(even) img.work__base{
+    /* .work__board:nth-of-type(even) img.work__base{
         height: 106%;
         transform: translateY(-90px);
-    }
+    } */
     .work {
         padding-left: 0px;
     }
     .work__board {
         padding-left: 44px;
     }
-    .work__visual {
-        height: 354px;
-    }
+    
     .work__board img.work__base {
         height: 46%;
     } 
     .work__board:nth-of-type(even) {
-        padding-left: 30px;
+        /* padding-left: 30px; */
     }
     .work__img-bg-top {
         height: 90%;
@@ -215,15 +221,13 @@
 }
 
 @media only screen and (max-width: 1021px){
-    .work__visual{
-        height: 265px;
-    }
+    
     .work__board:nth-of-type(even) {
         padding-top: 40px;
     }
     .work__board:nth-of-type(even) img.work__base {
-        height: 80%;
-        transform: translateY(-60px); 
+        height: 123%;
+    transform: translateY(38px);
     }
     .work__board{
         padding-top: 0px;
@@ -247,7 +251,7 @@
 
 @media only screen and (max-width: 860px){
     .work__board:nth-of-type(even) img.work__base {
-        height: 86%;
+        /* height: 86%; */
     }
     .work__container p {
         line-height: 24px;
@@ -315,9 +319,9 @@
     .work__img-bg-top {
         height: 40%;
     }
-    .work__visual {
+    /* .work__visual {
         height: 222px;
-    }
+    } */
     .work__desc .title {
         font-size: 1.6rem;
     }

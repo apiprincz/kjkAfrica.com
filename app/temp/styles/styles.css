@@ -6094,7 +6094,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
             position: relative;
         }
 
-.work__container p {
+.work__container p { 
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: 300;
@@ -6122,13 +6122,22 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .work__board {
         display: flex;
-        padding: 20px 20px 58px 110px;
+        padding: 20px 0px 0px 110px;
     }
 
 /* position: relative; */
 
+.work__board > div {
+            width: 50%;
+        }
+
+.work__board:nth-of-type(1) >div >.work__visual {
+            padding: 124px 40px 0px 20px;
+
+        }
+
 .work__board:nth-of-type(even){
-            padding: 80px 30px 40px 100px;
+            padding: 30px 30px 40px 0px;
 
         }
 
@@ -6143,19 +6152,19 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .work__board img.work__base {
             position: absolute;
             z-index:-1;
-            height:50%;
+            height:64%;
+            bottom: 0;
         }
 
-.work__board:nth-of-type(odd) img.work__base {
+/* &:nth-of-type(odd) img.work__base {
             
             transform:translateY(-65px)
             
-        }
+        } */
 
 .work__board:nth-of-type(even) img.work__base {
-            
-            transform:translateY(-116px);
-            height: 118%;
+            transform: translateY(50px);
+            height: 125%;
             
         }
 
@@ -6183,12 +6192,14 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .work__visual {
         /* width: 800px; */
-        height: 462px;
+        /* height: 462px; */
+        position: relative;
     }
 
-.work__visual img {
-            height: 100%;
-           
+/* padding: 124px 40px 0px 20px; */
+
+.work__visual img.work__im {
+            width:100%;
         }
 
 .work__desc p {
@@ -6244,24 +6255,22 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 @media only screen and (max-width: 1146px){
-    .work__board:nth-of-type(even) img.work__base{
+    /* .work__board:nth-of-type(even) img.work__base{
         height: 106%;
         transform: translateY(-90px);
-    }
+    } */
     .work {
         padding-left: 0px;
     }
     .work__board {
         padding-left: 44px;
     }
-    .work__visual {
-        height: 354px;
-    }
+    
     .work__board img.work__base {
         height: 46%;
     } 
     .work__board:nth-of-type(even) {
-        padding-left: 30px;
+        /* padding-left: 30px; */
     }
     .work__img-bg-top {
         height: 90%;
@@ -6273,15 +6282,13 @@ App.js:39 Letter 10 is 147.7610626220703 */
 }
 
 @media only screen and (max-width: 1021px){
-    .work__visual{
-        height: 265px;
-    }
+    
     .work__board:nth-of-type(even) {
         padding-top: 40px;
     }
     .work__board:nth-of-type(even) img.work__base {
-        height: 80%;
-        transform: translateY(-60px); 
+        height: 123%;
+    transform: translateY(38px);
     }
     .work__board{
         padding-top: 0px;
@@ -6305,7 +6312,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 @media only screen and (max-width: 860px){
     .work__board:nth-of-type(even) img.work__base {
-        height: 86%;
+        /* height: 86%; */
     }
     .work__container p {
         line-height: 24px;
@@ -6376,9 +6383,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .work__img-bg-top {
         height: 40%;
     }
-    .work__visual {
+    /* .work__visual {
         height: 222px;
-    }
+    } */
     .work__desc .title {
         font-size: 1.6rem;
     }
@@ -7600,11 +7607,13 @@ section.br{
 .diff__title{
             /* font-family: Sofia Pro; */
             font-style: normal;
-            font-size: 2.4rem
-                   
-    
+            font-size: 2.4rem;
     
         }
+
+.diff__title--nopad {
+                padding-top:0px
+            }
 
 .diff__board {
             display: flex;
@@ -7659,7 +7668,8 @@ section.br{
             }
 
 .diff__desc {
-            width: 50%;
+            /* width: 50%; */
+            padding-top: 6px;
         }
 
 .diff__desc h2 {
@@ -7693,6 +7703,7 @@ section.br{
                 line-height: 173.4%;
                 letter-spacing: -0.02em;
                 color: #504D4D;
+                padding: 20px 0 30px;
             }
 
 .diff__desc p span {
@@ -8382,7 +8393,7 @@ section.br{
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 300;
-        font-size: 17px;
+        font-size: 16px;
         letter-spacing: 0.02em;
         line-height: 23px;
     }
@@ -8392,6 +8403,14 @@ section.br{
         }
 
 .recognition__btn {
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 43.4%;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        padding: 12px 24px;
         text-align: right;
         position: absolute;
         bottom: 20px;

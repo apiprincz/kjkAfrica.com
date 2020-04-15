@@ -79,9 +79,11 @@
         &__title{
             /* font-family: Sofia Pro; */
             font-style: normal;
-            font-size: 2.4rem
+            font-size: 2.4rem;
                    
-    
+            &--nopad {
+                padding-top:0px
+            }
     
         }
     
@@ -139,7 +141,8 @@
         }
     
         &__desc {
-            width: 50%;
+            /* width: 50%; */
+            padding-top: 6px;
             & h2 {
                 font-size: 2.5rem;
             }
@@ -169,6 +172,7 @@
                 line-height: 173.4%;
                 letter-spacing: -0.02em;
                 color: #504D4D;
+                padding: 20px 0 30px;
                 
                 & span {
                 color: #FB5A1E;                
