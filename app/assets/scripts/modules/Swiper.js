@@ -54,7 +54,7 @@ class SwiperSection {
             loop: true,
             speed: 800,
             autoplay: {
-                delay: 9000,
+                delay: 6000,
                 disableOnInteraction: false,
             },
             slidesPerView: 5,

@@ -1405,7 +1405,7 @@ white-space: nowrap;
 /* background-position: top right; */
 
 .header__container--recognition{
-            height: 64vh;
+            height: 68vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/recognitionbg.png);
             background-position: top right;
             background-size: cover;
@@ -8348,11 +8348,13 @@ section.br{
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: space-between;
+                width: 100%;
+                
+                
             }
 
-.blog__column--item>div a > span {
-                    display: block;
-                    transform:translateY(-40px)
+.blog__column--item>div p {
+                    line-height: 1.7;
                 }
 
 .blog__column img{
@@ -8373,9 +8375,13 @@ section.br{
                 width: 100%;
             }
 
-.blog__text p{
-        padding: 20px 0px;
-    }
+.blog__cards p {
+            padding: 6px 0px;
+        }
+
+/* &__text p{
+        padding: 6px 0px;
+    } */
 
 .blog__desc p {
             padding: 10px 0px;
@@ -8407,7 +8413,7 @@ section.br{
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 600;
-        font-size: 40px;
+        font-size: 34px;
         line-height: 26px;
         color: #FB5A1E;        
     }
@@ -8418,16 +8424,44 @@ section.br{
         font-weight: 300;
         font-size: 14px;
         line-height: 40px;
-        color: #504D4D;        
+        color: #504D4D;
     }
+
+.blog__author--italics{
+            font-family: Sofia Pro;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 40px;
+            color: #504D4D;            
+        }
+
+.blog__cta span {
+        display: block;
+        /* transform:translateY(-40px) */
+        line-height: 25px;
+        color: #504D4D;
+    }
+
+.blog__cta span:after {
+            content: '';
+            display:block;
+            width:50px;
+            height:2px;
+            background:#504D4D;
+        }
 
 .blog__text {
         font-family: Sofia Pro;
         font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 30px;
-        color: #504D4D;        
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 35px;
+        color: #333333;               
+    }
+
+.blog__red {
+        color:#FB5A1E;
     }
 
 .recognition__container {
@@ -8727,6 +8761,15 @@ section.br{
 .blog__story--hero {
         text-align: center;
     }
+
+.blog__story--hero h1 {
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 26px;
+            color: #FB5A1E;            
+        }
 
 .blog__story img {
         width: 100%;

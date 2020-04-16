@@ -2,6 +2,15 @@
     
     &--hero {
         text-align: center;
+
+        & h1 {
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 26px;
+            color: #FB5A1E;            
+        }
     }
     & img {
         width: 100%;

@@ -89,7 +89,7 @@
             background-repeat: no-repeat;
         }
         &--recognition{
-            height: 64vh;
+            height: 68vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/recognitionbg.png);
             background-position: top right;
             background-size: cover;
