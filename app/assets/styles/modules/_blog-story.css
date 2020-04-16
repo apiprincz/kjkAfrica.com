@@ -1,0 +1,112 @@
+.blog__story {
+    
+    &--hero {
+        text-align: center;
+    }
+    & img {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    & p, & li {
+
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 40px;
+        color: #000000;
+
+    }
+    & li {
+        list-style-position: inside;
+    }
+    & h3, & h4 {
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+        color: #FB5A1E; 
+        
+        &.blog__story--italics {
+            font-style: italic;
+            line-height: 91px;
+            text-align: center;
+        }
+    }
+    & h4 {
+        font-size: 24px;
+    }
+
+    & h5 {
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 40px;
+        /* color: #FB5A1E; */
+    }
+    
+    &--container {
+        padding: 40px 80px;
+        
+        & p {
+        color: #333333;
+
+        }
+    }
+    &--flex {
+        display: flex;
+        padding: 40px 0px;
+        & > div {
+            padding-right: 20px;
+        }
+    }
+    &--inner {
+        padding-top: 40px;
+    }
+    &--socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 50%;
+        padding-right: 20px;
+        padding-bottom: 60px;
+    
+        
+        & span {
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            /* line-height: 40px; */
+            color: #000000;  
+            padding-left:20px;          
+        }
+
+        & a {
+            padding: 0;
+            display: inline-block;
+            width:20px;
+
+            &.facebook {
+                width: 9px;
+            }
+            
+        }
+         & img {
+             width: 100%;
+            /* padding:0px 10px; */
+
+         }
+         &::before, &::after {
+             content: '';
+             width: 180px;
+             height: 3px;
+             display: inline-block;
+            background: #FB5A1E;
+            border-radius: 3px;             
+         }
+    }
+}

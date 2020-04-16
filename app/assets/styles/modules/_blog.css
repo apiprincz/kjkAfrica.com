@@ -56,4 +56,53 @@
     &__text p{
         padding: 20px 0px;
     }
+    &__desc {
+        & p {
+            padding: 10px 0px;
+        }
+    }
+    &__sub {
+
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        /* text-align: center;        */
+        color: #504D4D;        
+    }
+    &__date {
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 10px;
+        
+        color: #504D4D;        
+    }
+    &__title {
+
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 26px;
+        color: #FB5A1E;        
+    }
+    &__author {
+        font-family: Sofia Pro;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 40px;
+        color: #504D4D;        
+    }
+    &__text {
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        color: #504D4D;        
+    }
 }
