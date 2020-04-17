@@ -1,4 +1,6 @@
 .geek {
+    position: relative;
+    padding-left:34px;
     &__row {
         position: relative;
         margin:0 auto;
@@ -18,7 +20,7 @@
         padding: 10px 0px;
     
     & > div {
-        width: 74%;
+        /* width: 74%; */
         position: relative;
         & img {
             width: 100%;
@@ -39,7 +41,7 @@
         position: relative;
         
         & > .geek__item:nth-child(odd) {
-            transform: translateY(-180px);
+            transform: translateY(-40%);
         }
         & > .geek__item:first-child {
             transform: translateY(0px);
@@ -56,13 +58,13 @@
         }
 
         & > div {
-            padding: 20px 40px 40px 40px;
+            /* padding: 20px 40px 40px 40px; */
             background: #FFF7F5;
             box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
             border-radius: 20px;
             position: absolute;
-            right: 100%;
-            width: 100%;            
+            right: 105%;
+            width: 90%;            
             & p {
                 font-family: Sofia Pro;
                 font-style: normal;
@@ -78,9 +80,17 @@
         font-family: Sofia Pro;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 37px;
     color: #FB5A1E;
+    }
+    &__text {
+        width: 52%;
+        padding-left: 50px;
+
+        & span {
+            font-weight: 600;
+        }
     }
     &__circle {
         position: absolute;
@@ -96,7 +106,7 @@
         font-style: italic;
         font-weight: bold;
         font-size: 48px;
-        line-height: 60px;
+        line-height: 72px;
         color: #333333;
         text-align: center;
         &::after {
@@ -112,14 +122,17 @@
             transform: translateX(50%);
         }
     } 
-
+    &__activity {
+        padding: 0px 80px 40px;
+        transform: translateY(-170px);
+    }
     &__gallery {
         padding: 20px 0px;       
     }
     &__galleria {
         display: flex; 
         flex-wrap: wrap;
-        padding: 10px 0px ;  
+        padding: 20px 0px ;  
         justify-content: space-between;     
 
     }
@@ -133,3 +146,88 @@
     }
     
 }
+@media only screen and (max-width:1024px){
+    .geek {
+        padding-left: 0;
+    }
+    .geek__text {
+        padding: 20px 0px;
+        width: 84%;
+        margin: 0 auto;
+    }
+    .geek__activity{
+        padding: 0px 25px 40px;
+        top: 28px;
+        opacity: 0.8;
+    }
+    .geek__container {
+        flex-direction: column;
+    }
+    .geek__item {
+        width: 46%;
+        & > div {
+            width: 111%;
+
+        }
+    }
+    .geek__wrapper > .geek__item:nth-child(odd) {
+        transform: translateY(-38%);
+    }
+    .geek__wrapper > .geek__item:first-child {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width:900px){
+    .geek__item > div {
+        position: relative;
+        width: 180%;
+    }
+    .geek__activity{
+        transform: translateY(146px);
+    }
+
+}
+@media only screen and (max-width:640px){
+    .geek {
+        padding-left: 0;
+    }
+    .geek__item {
+        z-index: 12;
+        width: 49%;
+    }
+    .geek__activity {
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width:530px){
+    .geek__item > div{
+        width:194%
+        
+    }
+    .geek__hero {
+        font-size: 30px;
+    }
+    .geek__activity {
+        
+        transform: translateY(210px)
+    }
+}
+@media only screen and (max-width:375px){
+    .geek__item > div{
+        width:200%;
+        
+    }
+    .geek__activity {
+        
+        transform: translateY(237px)
+    }
+    .geek__title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .geek__wrapper > .geek__item:last-child {
+        width: 85%;
+    }
+}
+

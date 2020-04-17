@@ -24,7 +24,7 @@
         }
 
         &--geek{
-            height: 64vh;
+            height: 70vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/solutionsbg.png);        
             background-position: bottom right;
             background-size: cover;

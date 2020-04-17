@@ -1334,7 +1334,7 @@ white-space: nowrap;
         }
 
 .header__container--geek{
-            height: 64vh;
+            height: 70vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../assets/images/solutionsbg.png);        
             background-position: bottom right;
             background-size: cover;
@@ -6455,27 +6455,60 @@ App.js:39 Letter 10 is 147.7610626220703 */
         flex-direction: column;
         align-items: center;
         padding-top: 20px;
+        padding-left: 0;
+        
+    }
+    .work__board > div {
+        width: 90%;
+    }
+    .work__board:nth-of-type(1) > div >.work__visual{
+        padding: 25px 0px 0px 20px;
     }
     .work__board:nth-of-type(odd) .work__desc {
         order: 0;
+       
+    }
+    .work__board:nth-of-type(odd) img.work__base{
+        right: -32px;
     }
     .work__board img.work__base {
-        height: 36%;
+        height: 71%;
     }
     .work__board:nth-of-type(even) img.work__base {
-        height: 55%;
+        height: 128%;
+        left: -30px;
+        transform: translateY(44px);
     }
     .work__title {
         font-size: 36px;
     }
     .work__desc {
-        padding: 20px 0px;
+        padding: 20px 30px;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .work__board img.work__base {
+        height: 60%;
+    }
+    .work__board > div {
+        width: 100%;
+    }
+    .work__board:nth-of-type(odd) img.work__base{
+        right: 0px;
+    }
+    .work__img--cont {
+        width: 86%;
     }
 }
 
 @media only screen and (max-width: 512px){
-    img.work__base {
-        display: none;
+    .work__board img.work__base {
+        /* display: none; */
+        height:50%;
+    }
+    .work__desc {
+        padding: 20px 28px;
     }
     .work__title {
         font-size: 30px;
@@ -6502,9 +6535,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
         font-size: 20px;
         line-height: 32px;
     }
-    .work__desc {
-        padding: 0px;
-    }
+    /* .work__desc {
+        padding: 20px 0px 0px 28px;
+    } */
+    
 
 }
 
@@ -6518,8 +6552,11 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .work__desc .title {
         font-size: 1.6rem;
     }
-    .work__board {
+    /* .work__board {
         padding-left: 28px;
+    } */
+    .work__desc {
+        padding-bottom: 0px ;
     }
 }
 
@@ -8769,6 +8806,12 @@ section.br{
     
 }
 
+.geek {
+    position: relative;
+    padding-left:34px;
+    
+}
+
 .geek__row {
         position: relative;
         margin:0 auto;
@@ -8792,7 +8835,7 @@ section.br{
     }
 
 .geek__container > div {
-        width: 74%;
+        /* width: 74%; */
         position: relative;
     }
 
@@ -8814,7 +8857,7 @@ section.br{
     }
 
 .geek__wrapper > .geek__item:nth-child(odd) {
-            transform: translateY(-180px);
+            transform: translateY(-40%);
         }
 
 .geek__wrapper > .geek__item:first-child {
@@ -8834,13 +8877,13 @@ section.br{
         }
 
 .geek__item > div {
-            padding: 20px 40px 40px 40px;
+            /* padding: 20px 40px 40px 40px; */
             background: #FFF7F5;
             box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
             border-radius: 20px;
             position: absolute;
-            right: 100%;
-            width: 100%;
+            right: 105%;
+            width: 90%;
         }
 
 .geek__item > div p {
@@ -8857,10 +8900,19 @@ section.br{
         font-family: Sofia Pro;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 37px;
     color: #FB5A1E;
     }
+
+.geek__text {
+        width: 52%;
+        padding-left: 50px;
+    }
+
+.geek__text span {
+            font-weight: 600;
+        }
 
 .geek__circle {
         position: absolute;
@@ -8878,7 +8930,7 @@ section.br{
         font-style: italic;
         font-weight: bold;
         font-size: 48px;
-        line-height: 60px;
+        line-height: 72px;
         color: #333333;
         text-align: center;
     }
@@ -8896,6 +8948,11 @@ section.br{
             transform: translateX(50%);
         }
 
+.geek__activity {
+        padding: 0px 80px 40px;
+        transform: translateY(-170px);
+    }
+
 .geek__gallery {
         padding: 20px 0px;       
     }
@@ -8903,7 +8960,7 @@ section.br{
 .geek__galleria {
         display: flex; 
         flex-wrap: wrap;
-        padding: 10px 0px ;  
+        padding: 20px 0px ;  
         justify-content: space-between;     
 
     }
@@ -8916,6 +8973,94 @@ section.br{
 .geek__space img {
             width: 100%;
         }
+
+@media only screen and (max-width:1024px){
+    .geek {
+        padding-left: 0;
+    }
+    .geek__text {
+        padding: 20px 0px;
+        width: 84%;
+        margin: 0 auto;
+    }
+    .geek__activity{
+        padding: 0px 25px 40px;
+        top: 28px;
+        opacity: 0.8;
+    }
+    .geek__container {
+        flex-direction: column;
+    }
+    .geek__item {
+        width: 46%;
+    }
+        .geek__item > div {
+            width: 111%;
+
+        }
+    .geek__wrapper > .geek__item:nth-child(odd) {
+        transform: translateY(-38%);
+    }
+    .geek__wrapper > .geek__item:first-child {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width:900px){
+    .geek__item > div {
+        position: relative;
+        width: 180%;
+    }
+    .geek__activity{
+        transform: translateY(146px);
+    }
+
+}
+
+@media only screen and (max-width:640px){
+    .geek {
+        padding-left: 0;
+    }
+    .geek__item {
+        z-index: 12;
+        width: 49%;
+    }
+    .geek__activity {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width:530px){
+    .geek__item > div{
+        width:194%
+        
+    }
+    .geek__hero {
+        font-size: 30px;
+    }
+    .geek__activity {
+        
+        transform: translateY(210px)
+    }
+}
+
+@media only screen and (max-width:375px){
+    .geek__item > div{
+        width:200%;
+        
+    }
+    .geek__activity {
+        
+        transform: translateY(237px)
+    }
+    .geek__title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .geek__wrapper > .geek__item:last-child {
+        width: 85%;
+    }
+}
 
 .blog__story--hero {
         text-align: center;
