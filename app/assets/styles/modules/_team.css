@@ -39,7 +39,7 @@
     &__board {
         display: flex;
         justify-content:space-between;
-        padding: 30px 60px ;
+        padding: 30px 44px ;
         width:30%;
         border: 1px solid #FB5A1E;
         box-sizing: border-box;
@@ -47,6 +47,8 @@
         margin: 40px 0px 20px 0px;
         position: relative;
         cursor: pointer;
+
+    
 
 
 
@@ -73,6 +75,8 @@
         z-index: 10;
         padding-top: 40px;
 
+        
+        
         & img {
             width:100%;
             
@@ -128,7 +132,9 @@
 
                 &:after {
                     content: url(../../assets/images/modalmap.png);
-                    vertical-align:middle
+                    vertical-align:middle;
+                    position: absolute;
+                    right:0
                 }
             }
 
@@ -153,6 +159,19 @@
             color: #000000;   
             padding-top: 30px;         
             
+        }
+    }
+
+    &__role {
+        text-align: center;
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;   
+        
+        &.xtra {
+            padding-bottom: 22px;
         }
     }
 
@@ -318,32 +337,36 @@
 @media only screen and (max-width: 1193px){
     .team {
         &__board{
-        padding: 30px 0px 30px 50px;
+        padding: 30px 20px;
         }
     }
     .team__board:nth-of-type(even){
-        padding: 30px 0px 30px 0px;
+        /* padding: 30px 0px 30px 0px; */
     }
     
 }
 @media only screen and (max-width: 1024px){
+    .team__board {
+        width: 45%;
+    }
     .team__row.xpad {
         padding:40px;
+    }
+    .team__content {
+        padding: 60px;
     }
     
 }
 @media only screen and (max-width: 967px){
     .team__desc p {
-        font-size: 18px;
+        /* font-size: 18px; */
     }
     .team__visual {
         width: 134px;
     }
-    .team__board {
-        padding-left: 0px;
-    }
+    
     .team__desc {
-        padding-right: 20px;
+        /* padding-right: 20px; */
     }
     .team__board:nth-of-type(even) > .team__desc{
         padding-left: 0px;
@@ -353,6 +376,7 @@
     }
     .team__ppic {
         width: 124px;
+        
     }
    
 }
@@ -366,14 +390,20 @@
     {
         margin-left: 45px;
     }
+    .team__content {
+        padding: 40px 60px;
+    }
 }
 @media only screen and (max-width: 768px){
     .team__board {
         flex-direction: column;
         align-items: center;
     }
+    .team__desc h3.team__hero {
+        font-size: 30px;
+    }
     .team__desc {
-        width: 100%;
+        /* width: 100%; */
         padding-top: 20px;
     }
     .team__board:nth-of-type(even) {
@@ -422,6 +452,15 @@
         padding-bottom: 50px;
     }
 }
+@media only screen and (max-width: 700px){
+    .team__board{
+        width: 48%;
+    }
+    .team__row {
+        padding: 40px;
+    }
+
+}
 @media only screen and (max-width: 640px){
 
     .about-page__container{
@@ -451,16 +490,47 @@
         font-size: 16px;
     }
     .team__desc h3 {
-        font-size: 33px;
+        font-size: 22px;
     }
     .team__links img {
         height: 15px;
+    }
+    .team__board {
+        padding: 20px 8px;
+    }
+    .team__role {
+        font-size: 14px;
+    }
+    .team__content {
+        padding: 30px;
     }
     
 }
 @media only screen and (max-width: 524px){
     .team__item {
         width: 45%;
+    }
+    .team__ppic::before {
+        transform: scale(0.3);
+    }
+    .team__ppic::after {
+        transform: scale(0.5);
+        left: -17%;
+    }
+    
+}
+@media only screen and (max-width: 512px){
+    .team__board{
+        width: 80%;
+    }
+    .team__container__main {
+        justify-content: center;
+    }
+    .team__desc p {
+        font-size: 14px;
+    }
+    .team__content {
+        width: 90%;
     }
     
 }
@@ -493,7 +563,10 @@
         width: 228px;
     }
     .team__desc h3 {
-        font-size: 26px;
+        font-size: 24px;
+    }
+    .team__desc h3.team__hero {
+        font-size: 24px;
     }
     .xpad {
         padding-left: 50px;
@@ -501,7 +574,7 @@
     }
     .team__ppic::before{
         transform: scale(0.3);
-        left: 167%;
+        /* left: 167%; */
     }
     .team__ppic::after{
         transform: scale(0.3);
@@ -516,8 +589,17 @@
     .team__board.mgt,.team__board.mgt:nth-of-type(even) {
         padding-left: 34px;
     }
+    .team__board {
+        width: 90%;
+    }
+    .team__desc h3 {
+        font-size: 22px;
+    }
     .team__item {
         width: 66%;
+    }
+    .team__content {
+        padding: 20px;
     }
 }
 
