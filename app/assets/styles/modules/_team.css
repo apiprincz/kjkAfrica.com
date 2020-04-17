@@ -133,8 +133,7 @@
                 &:after {
                     content: url(../../assets/images/modalmap.png);
                     vertical-align:middle;
-                    position: absolute;
-                    right:0
+                    
                 }
             }
 
@@ -271,9 +270,10 @@
             &__second{
                 font-weight: bold;
                 font-size: 1.5rem;
-                padding: 16px;
+                padding: 16px 0px;
                 line-height: 12px;
                 color: #000000;
+                white-space: nowrap;
             }
         }
         &__modal {
@@ -532,6 +532,9 @@
     .team__content {
         width: 90%;
     }
+    .header__sub--menu li a {
+        line-height: 12px;
+    }
     
 }
 @media only screen and (max-width: 480px){
@@ -545,7 +548,7 @@
 @media only screen and (max-width: 440px){
     .team__item{
         width: 60%;
-        padding-bottom: 0px;
+        padding-bottom: 16px;
     }
     .team__container__main{
         justify-content: center;

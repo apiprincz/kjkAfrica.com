@@ -26,7 +26,7 @@
             z-index: -1;
             width: 100%;
             height: 86%;
-            opacity: 0.16;
+            opacity: 0.10;
         }
 
     }
@@ -97,9 +97,22 @@
         &.xmargin {
             margin-bottom: 60px;
         }
+        &:nth-of-type(even) >div > .solutions__visual > .solutions__overlay{
+            background: linear-gradient(0deg, rgba(251,90,30, 0.8), rgba(0, 0, 0));
+    
+        }
     }
     &__visual {
         position: relative;
+
+        &.edu {
+            transform-origin: top;
+            transform:scaleY(1.1)
+        }
+        &.agric{
+            transform: scaleY(1.55);
+            transform-origin: top;
+        }
         &:hover {
             animation: cardHover 1.2s forwards 0s ease-out;;
         }
@@ -121,8 +134,19 @@
             color: #fff;
             white-space: nowrap;
         }
+        
     }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0,0 ), rgba(0, 0, 0));
+        opacity: 0.4;
 
+        
+    }
     &__desc {
         background: #FFF7F5;
         box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.13);
@@ -130,6 +154,10 @@
         height: 60%;
         overflow-y: auto;
         border-radius: 0px 0px 14px 14px;
+        
+        &.edu {
+            transform: translateY(23px);
+        }
     
     & h3 {
         font-family: Sofia Pro;
@@ -137,7 +165,7 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 65px;
-        text-align: center;        
+        text-align:left;        
         color: #504D4D; 
         white-space: nowrap;
         

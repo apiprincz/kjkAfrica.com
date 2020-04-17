@@ -1536,7 +1536,7 @@ white-space: nowrap;
 
 .header__sub--menu li {
             list-style-type: none;
-            padding: 22px 12px;
+            padding: 22px 17px;
         
     }
 
@@ -1657,8 +1657,11 @@ white-space: nowrap;
 }
 
 @media only screen and (max-width: 512px){
-    .header__sub--menu  {
-        display: none;
+    .header__sub--menu li  {
+        padding: 14px 4px;
+    }
+    .header__sub--menu  li a {
+        font-size: 10px;
     }
 }
 
@@ -2213,6 +2216,10 @@ header > .nav-bar .new-bar{
             margin: 0px 3px;
         }
 
+.footer__link--container {
+        display: flex;
+    }
+
 .footer__link__logo{
         width: 150px;
         /* transform: translateY(-2px); */
@@ -2416,6 +2423,9 @@ header > .nav-bar .new-bar{
     .footer__input {
         padding-left: 7px;
     }
+    .footer__link--container {
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -2554,7 +2564,7 @@ header > .nav-bar .new-bar{
 
 @media only screen and (max-width: 512px){
     .footer__lower-left .footer__link:link, .footer__link:visited {
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
         margin-right: 0;
         display: block;
@@ -2569,12 +2579,18 @@ header > .nav-bar .new-bar{
         .footer__left ul {
             flex-direction: column;
         }
-        .footer__left ul li{
+             .footer__left ul li{
             font-size: 15px;
-        }
+            }
             .footer__left ul li:nth-child(even){
                 width: 100%;
-            }
+                 }
+    .footer__lower-left .footer__link:link, .footer__link:visited{
+        margin-bottom: 14px;
+    }
+    .footer__lower-left {
+        margin-bottom: 12px;
+    }
 }
 
 @media only screen and (max-width: 380px){
@@ -3366,11 +3382,11 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 .mobile-nav__container:nth-child(1) .mobile-nav--resp.show {
-        height: 451px;
+        height: 390px;
     }
 
 .mobile-nav__container:nth-child(2) .mobile-nav--resp.show{
-        height: 460px;
+        height: 420px;
     }
 
 .mobile-nav__container:nth-child(3) .mobile-nav--resp.show{
@@ -3405,6 +3421,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
         line-height: normal;
     }
 
+.mobile-nav__title:link.xheight,.mobile-nav__title:visited.xheight{
+            line-height: 35px;
+        }
+
 .mobile-nav__title--small:link.mobile__list-dot:before {
         content: '';
         vertical-align: middle;
@@ -3435,7 +3455,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 .mobile-nav__sub{
-        padding: 8px 0 0 30px;
+        padding: 13px 0 0 9px;
     }
 
 .mobile-nav__links{
@@ -3447,7 +3467,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .mobile-nav__list-item{
         display: flex;
         justify-content: flex-start;
-        align-items:center;
+        align-items:flex-start;
         border-bottom: 1px solid #FB5A1E;
 
         padding: 6px 0 18px 0;
@@ -3504,6 +3524,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .mobile-nav__social-img{
         width: 20px;
     }
+
+.mobile-nav__social-img.facebook {
+            width: 9px;
+        }
 
 .mobile-nav__list-item-link:hover{
         color: #fff;
@@ -3686,6 +3710,17 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
     .mobile-nav__list-item--small {
         padding-bottom: 9px;
+    }
+        /* width: 20px; */
+
+        .mobile-nav__social-img.facebook {
+            width: 7px;
+        }
+    .mobile-nav__container:nth-child(1) .mobile-nav--resp.show {
+        height: 330px;
+    }
+    .mobile-nav__container:nth-child(2) .mobile-nav--resp.show {
+        height: 360px;
     }
 
 }
@@ -5567,8 +5602,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .team__desc h3.team__hero:after {
                     content: url(../../assets/images/modalmap.png);
                     vertical-align:middle;
-                    position: absolute;
-                    right:0
+                    
                 }
 
 .team__desc h4 {
@@ -5707,9 +5741,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .team .title__second{
                 font-weight: bold;
                 font-size: 1.5rem;
-                padding: 16px;
+                padding: 16px 0px;
                 line-height: 12px;
                 color: #000000;
+                white-space: nowrap;
             }
 
 .team__modal {
@@ -5980,6 +6015,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .team__content {
         width: 90%;
     }
+    .header__sub--menu li a {
+        line-height: 12px;
+    }
     
 }
 
@@ -5995,7 +6033,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 @media only screen and (max-width: 440px){
     .team__item{
         width: 60%;
-        padding-bottom: 0px;
+        padding-bottom: 16px;
     }
     .team__container__main{
         justify-content: center;
@@ -8044,7 +8082,7 @@ section.br{
             z-index: -1;
             width: 100%;
             height: 86%;
-            opacity: 0.16;
+            opacity: 0.10;
         }
 
 .solutions__left {
@@ -8119,9 +8157,25 @@ section.br{
             margin-bottom: 60px;
         }
 
+.solutions__card:nth-of-type(even) >div > .solutions__visual > .solutions__overlay{
+            background: linear-gradient(0deg, rgba(251,90,30, 0.8), rgba(0, 0, 0));
+    
+        }
+
 .solutions__visual {
         position: relative;
+        
     }
+
+.solutions__visual.edu {
+            transform-origin: top;
+            transform:scaleY(1.1)
+        }
+
+.solutions__visual.agric{
+            transform: scaleY(1.55);
+            transform-origin: top;
+        }
 
 .solutions__visual:hover {
             -webkit-animation: cardHover 1.2s forwards 0s ease-out;
@@ -8147,6 +8201,18 @@ section.br{
             white-space: nowrap;
         }
 
+.solutions__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0,0 ), rgba(0, 0, 0));
+        opacity: 0.4;
+
+        
+    }
+
 .solutions__desc {
         background: #FFF7F5;
         box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.13);
@@ -8157,13 +8223,17 @@ section.br{
     
     }
 
+.solutions__desc.edu {
+            transform: translateY(23px);
+        }
+
 .solutions__desc h3 {
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 600;
         font-size: 24px;
         line-height: 65px;
-        text-align: center;        
+        text-align:left;        
         color: #504D4D; 
         white-space: nowrap;
     }
