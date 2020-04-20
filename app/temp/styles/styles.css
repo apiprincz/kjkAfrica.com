@@ -8689,7 +8689,7 @@ section.br{
         }
 
 .blog__container {
-            padding-top: 100px;
+            padding-top: 130px;
             padding-bottom:40px;
     }
 
@@ -8703,6 +8703,7 @@ section.br{
 
 .blog__left img {
             width: 100%;
+            padding-top:20px;
         }
 
 .blog__column {
@@ -8717,6 +8718,10 @@ section.br{
             right:0;
 
             
+        }
+
+.blog__column--desc {
+            padding-left: 30px;
         }
 
 .blog__column--item {
@@ -8739,10 +8744,21 @@ section.br{
 
 .blog__column--item>div p {
                     line-height: 1.5;
+                    font-size: 12px;
+
+                }
+
+.blog__column--item>div h5 {
+                    color: #FB5A1E;
+                    font-family: Sofia Pro;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 27px;
                 }
 
 .blog__column img{
-            width: 80%;
+            width: 100%;
         }
 
 .blog__cards {
@@ -8763,12 +8779,37 @@ section.br{
             padding: 6px 0px;
         }
 
+.blog__cards--bg {
+            position: absolute;
+            left: 0;
+            top: -10%;
+            z-index: -1;
+            
+            
+        }
+
+.blog__card > div {
+        padding: 20px 0px;
+    }
+
 /* &__text p{
         padding: 6px 0px;
     } */
 
+.blog__desc {
+        position: relative;
+    }
+
 .blog__desc p {
             padding: 10px 0px;
+        }
+
+.blog__desc>div {
+            position: absolute;
+            top: 50%;
+            z-index: -1;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
 .blog__sub {
@@ -8776,7 +8817,7 @@ section.br{
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 26px;
         line-height: 20px;
         /* text-align: center;        */
         color: #504D4D;        
@@ -8814,10 +8855,11 @@ section.br{
 .blog__author--italics{
             font-family: Sofia Pro;
             font-style: italic;
-            font-weight: 300;
+            /* font-weight: 300; */
             font-size: 10px;
             line-height: 40px;
-            color: #504D4D;            
+            color: #504D4D; 
+            padding-top:6px;           
         }
 
 .blog__cta span {
@@ -8825,6 +8867,7 @@ section.br{
         transform:translateY(-30px);
         line-height: 25px;
         color: #504D4D;
+        font-weight:bold;
 
     }
 
@@ -8846,7 +8889,7 @@ section.br{
         font-weight: 600;
         font-size: 24px;
         line-height: 35px;
-        color: #333333;            
+        color: #FB5A1E;            
     }
 
 .blog__text--long {
@@ -9282,6 +9325,11 @@ section.br{
         padding: 10px 0px;
     }
 
+.blog__story--img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
 .blog__story p, .blog__story li {
 
         font-family: Sofia Pro;
@@ -9302,7 +9350,7 @@ section.br{
         font-style: normal;
         font-weight: 600;
         font-size: 30px;
-        line-height: 40px;
+        line-height: 64px;
         color: #FB5A1E;
     }
 

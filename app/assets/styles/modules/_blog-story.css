@@ -16,6 +16,10 @@
         width: 100%;
         padding: 10px 0px;
     }
+    &--img {
+        width: 90%;
+        margin: 0 auto;
+    }
     & p, & li {
 
         font-family: Sofia Pro;
@@ -34,7 +38,7 @@
         font-style: normal;
         font-weight: 600;
         font-size: 30px;
-        line-height: 40px;
+        line-height: 64px;
         color: #FB5A1E; 
         
         &.blog__story--italics {

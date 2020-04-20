@@ -451,17 +451,21 @@
 
     <section style="position: relative;">
         <div class="blog__column--bg">
-            <img src="assets/images/solcircle.png" alt="">
+            <img src="assets/images/Ellipse1.png" alt="">
         </div>
         <div class="blog__container row">
             <div>
                 <div class="blog__left">
                     <div>
+                        <p class="blog__sub">Blog Post</p>
+
                         <div class="blog__img">
-                            <img src="assets/images/blogpic.png" alt="">
+                            <img src="assets/images/blogfeaturedimg.png" alt="">
                         </div>
                         <div class="blog__desc">
-                        <p class="blog__sub">Blog Post</p>
+                            <div >
+                                <img src="assets/images/modalmap.png" alt="">
+                            </div>
                         <p class="blog__date">
                             14th April 2020
                         </p>
@@ -492,7 +496,7 @@
                                     <img src="assets/images/blog2.png" alt="">
                                 </a>
                             </div>
-                            <div>
+                            <div class="blog__column--desc">
                                 <div>
                                 <p class="blog__red">Blog Post</p>
                                 <p class="blog__date">
@@ -501,9 +505,9 @@
                                 <!-- <h1 class="blog__title">
                                     DT: Digital Transformation Guide
                                 </h1> -->
-                                <p>
+                                <h5>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                </p>
+                                </h5>
                                 <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                                 </div>
                                 <a class="blog__cta" href="blog-story.html">
@@ -519,7 +523,7 @@
                                     <img src="assets/images/blog3.png" alt="">
                                 </a>
                             </div>
-                            <div>
+                            <div class="blog__column--desc">
                                 <div>
                                 <p class="blog__red">Blog Post</p>
                                 <p class="blog__date">
@@ -528,9 +532,9 @@
                                 <!-- <h1 class="blog__title">
                                     DT: Digital Transformation Guide
                                 </h1> -->
-                                <p>
+                                <h5>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                </p>
+                                </h5>
                                 <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                                 </div>
                                 <a class="blog__cta" href="blog-story.html">
@@ -546,7 +550,7 @@
                                     <img src="assets/images/blog4.png" alt="">
                                 </a>
                             </div>
-                            <div>
+                            <div class="blog__column--desc">
                                 <div>
                                 <p class="blog__red">Blog Post</p>
                                 <p class="blog__date">
@@ -555,9 +559,9 @@
                                 <!-- <h1 class="blog__title">
                                     DT: Digital Transformation Guide
                                 </h1> -->
-                                <p>
+                                <h5>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                </p>
+                                </h5>
                                 <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                                 </div>
                                 <a class="blog__cta" href="blog-story.html">
@@ -573,7 +577,7 @@
                                     <img src="assets/images/blog5.png" alt="">
                                 </a>
                             </div>
-                            <div>
+                            <div class="blog__column--desc">
                                 <div>
                                 <p class="blog__red">Blog Post</p>
                                 <p class="blog__date">
@@ -582,9 +586,9 @@
                                 <!-- <h1 class="blog__title">
                                     DT: Digital Transformation Guide
                                 </h1> -->
-                                <p>
+                                <h5>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                </p>
+                                </h5>
                                 <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                                 </div>
                                 <a class="blog__cta" href="blog-story.html">
@@ -600,7 +604,10 @@
         </div>
     </section>
 
-    <section>
+    <section style="position: relative;">
+        <div class="blog__cards--bg">
+            <img src="assets/images/whobg3.png" alt="">
+        </div>
         <div class="row">
             <h1>
                 New Blog Post
@@ -620,9 +627,9 @@
                             <!-- <h1 class="blog__title">
                                 DT: Digital Transformation Guide
                             </h1> -->
-                            <p class="blog__text">
+                            <h4 class="blog__text">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p>
+                            </h4>
                             <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                             </div>
                             <a class="blog__cta xform" href="blog-story.html">
@@ -645,9 +652,9 @@
                             <!-- <h1 class="blog__title">
                                 DT: Digital Transformation Guide
                             </h1> -->
-                            <p class="blog__text">
+                            <h4 class="blog__text">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p>
+                            </h4>
                             <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                             </div>
                             <a class="blog__cta xform" href="blog-story.html">
@@ -670,9 +677,9 @@
                             <!-- <h1 class="blog__title">
                                 DT: Digital Transformation Guide
                             </h1> -->
-                            <p class="blog__text">
+                            <h4 class="blog__text">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p>
+                            </h4>
                             <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                             </div>
                             <a class="blog__cta xform" href="blog-story.html">
@@ -828,16 +835,16 @@
             delay: 200
         };
         var slideInUp = {
-            distance: '100%',
+            distance: '50%',
             origin: 'bottom',
             viewFactor: .5,
             opacity: 0,
             duration: 1200,
-            delay: 200
+            delay: 500
         };
 
 
-        ScrollReveal({ reset: false }).reveal("", slideInUp);
+        ScrollReveal({ reset: false }).reveal(".blog__text--long", slideInUp);
         ScrollReveal({ reset: false }).reveal(".blog__img", slideInLeft);
         ScrollReveal({ reset: false }).reveal(".blog__column--item", slideInDown);
         ScrollReveal({ reset: false }).reveal(".blog__title", slideInDown);
