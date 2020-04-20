@@ -8764,6 +8764,7 @@ section.br{
 .blog__cards {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding: 30px 0px 50px;
     }
 
