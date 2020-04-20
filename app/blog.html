@@ -449,12 +449,15 @@
 
     </header>
 
-    <section>
+    <section style="position: relative;">
+        <div class="blog__column--bg">
+            <img src="assets/images/solcircle.png" alt="">
+        </div>
         <div class="blog__container row">
             <div>
                 <div class="blog__left">
                     <div>
-                        <div>
+                        <div class="blog__img">
                             <img src="assets/images/blogpic.png" alt="">
                         </div>
                         <div class="blog__desc">
@@ -481,6 +484,7 @@
                     </div>
                 </div>
                 <div class="blog__column">
+                    
                     <div>
                         <div class="blog__column--item">
                             <div>
@@ -502,7 +506,7 @@
                                 </p>
                                 <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                                 </div>
-                                <a class="blog__cta" href="">
+                                <a class="blog__cta" href="blog-story.html">
                                    <span>
                                     Read Story
                                    </span> 
@@ -529,7 +533,7 @@
                                 </p>
                                 <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                                 </div>
-                                <a class="blog__cta" href="">
+                                <a class="blog__cta" href="blog-story.html">
                                    <span>
                                     Read Story
                                    </span> 
@@ -556,7 +560,7 @@
                                 </p>
                                 <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                                 </div>
-                                <a class="blog__cta" href="">
+                                <a class="blog__cta" href="blog-story.html">
                                    <span>
                                     Read Story
                                    </span> 
@@ -583,7 +587,7 @@
                                 </p>
                                 <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                                 </div>
-                                <a class="blog__cta" href="">
+                                <a class="blog__cta" href="blog-story.html">
                                    <span>
                                     Read Story
                                    </span> 
@@ -621,7 +625,7 @@
                             </p>
                             <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                             </div>
-                            <a class="blog__cta" href="blog-story.html">
+                            <a class="blog__cta xform" href="blog-story.html">
                                <span>
                                 Read Story
                                </span> 
@@ -646,7 +650,7 @@
                             </p>
                             <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                             </div>
-                            <a class="blog__cta" href="blog-story.html">
+                            <a class="blog__cta xform" href="blog-story.html">
                                <span>
                                 Read Story
                                </span> 
@@ -671,7 +675,7 @@
                             </p>
                             <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
                             </div>
-                            <a class="blog__cta" href="blog-story.html">
+                            <a class="blog__cta xform" href="blog-story.html">
                                <span>
                                 Read Story
                                </span> 
@@ -789,7 +793,7 @@
             duration: 1900,
         };
         var slideInLeft = {
-            distance: '30%',
+            distance: '5%',
             origin: 'left',
             viewFactor: .5,
             opacity: 0,
@@ -810,14 +814,14 @@
             duration: 1900,
         };
         var scaleUp = {
-            scale: 0,
-            viewFactor: .5,
+            scale: 0.4,
+            viewFactor: .2,
             opacity: 0,
-            duration: 1900,
+            duration: 2900,
         };
         var slideInDown = {
-            distance: '100%',
-            origin: 'top',
+            distance: '20%',
+            origin: 'bottom',
             viewFactor: .5,
             opacity: 0,
             duration: 1200,
@@ -833,11 +837,12 @@
         };
 
 
-        ScrollReveal({ reset: false }).reveal(".portfolio-section-item", slideInUp);
-        ScrollReveal({ reset: false }).reveal(".portfolio-section__text", slideInLeft);
-        ScrollReveal({ reset: false }).reveal(".title", slideInDown);
+        ScrollReveal({ reset: false }).reveal("", slideInUp);
+        ScrollReveal({ reset: false }).reveal(".blog__img", slideInLeft);
+        ScrollReveal({ reset: false }).reveal(".blog__column--item", slideInDown);
+        ScrollReveal({ reset: false }).reveal(".blog__title", slideInDown);
         ScrollReveal({ reset: false }).reveal(".portfolio-section__filter-container", slideInLeft);
-        ScrollReveal({ reset: false }).reveal(".portfolio-section__right-container", scaleUp);
+        ScrollReveal({ reset: false }).reveal(".blog__card", scaleUp);
         ScrollReveal({ reset: false }).reveal(".footer__title", slideInDown);
 
 

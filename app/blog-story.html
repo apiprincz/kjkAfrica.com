@@ -673,7 +673,7 @@
     <section>
         <div class="row">
             <h1>
-                Related Post
+                New Blog Post
             </h1>
             <div>
                 <div class="blog__cards">
@@ -681,48 +681,75 @@
                         <a href="">
                             <img src="assets/images/blog6.png" alt="">
                         </a>
-                        <div class="blog__text">
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolores sint expedita voluptatibus harum veritatis officiis amet maiores 
-                                quod eligendi odit ipsa delectus ipsam et laboriosam voluptas, sapiente atque qui.
+                        <div>
+                            <div>
+                            
+                            <p class="blog__date">
+                                14th April 2020
                             </p>
-                            <a class="blog__cta" href="">
-                                <span>
-                                 Read Story
-                                </span> 
-                             </a>
+                            <!-- <h1 class="blog__title">
+                                DT: Digital Transformation Guide
+                            </h1> -->
+                            <p class="blog__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
+                            </div>
+                            <a class="blog__cta xform" href="blog-story.html">
+                               <span>
+                                Read Story
+                               </span> 
+                            </a>
                         </div>
                     </div>
                     <div class="blog__card">
                         <a href="">
                             <img src="assets/images/blog7.png" alt="">
                         </a>
-                        <div class="blog__text">
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolores sint expedita voluptatibus harum veritatis officiis amet maiores 
-                                quod eligendi odit ipsa delectus ipsam et laboriosam voluptas, sapiente atque qui.
+                        <div>
+                            <div>
+                            
+                            <p class="blog__date">
+                                14th April 2020
                             </p>
-                            <a class="blog__cta" href="">
-                                <span>
-                                 Read Story
-                                </span> 
-                             </a>
+                            <!-- <h1 class="blog__title">
+                                DT: Digital Transformation Guide
+                            </h1> -->
+                            <p class="blog__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
+                            </div>
+                            <a class="blog__cta xform" href="blog-story.html">
+                               <span>
+                                Read Story
+                               </span> 
+                            </a>
                         </div>
                     </div>
                     <div class="blog__card">
                         <a href="">
                             <img src="assets/images/blog8.png" alt="">
                         </a>
-                        <div class="blog__text">
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolores sint expedita voluptatibus harum veritatis officiis amet maiores 
-                                quod eligendi odit ipsa delectus ipsam et laboriosam voluptas, sapiente atque qui.
+                        <div>
+                            <div>
+                            
+                            <p class="blog__date">
+                                14th April 2020
                             </p>
-                            <a class="blog__cta" href="">
-                                <span>
-                                 Read Story
-                                </span> 
-                             </a>
+                            <!-- <h1 class="blog__title">
+                                DT: Digital Transformation Guide
+                            </h1> -->
+                            <p class="blog__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            </p>
+                            <p class="blog__author--italics">Written by Abiola Akinwoleola</p>
+                            </div>
+                            <a class="blog__cta xform" href="blog-story.html">
+                               <span>
+                                Read Story
+                               </span> 
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -858,9 +885,9 @@
         };
         var scaleUp = {
             scale: 0,
-            viewFactor: .5,
-            opacity: 0,
-            duration: 1900,
+            viewFactor: .8,
+            opacity: 0.7,
+            duration: 3900,
         };
         var slideInDown = {
             distance: '100%',
@@ -880,11 +907,12 @@
         };
 
 
-        ScrollReveal({ reset: false }).reveal(".portfolio-section-item", slideInUp);
-        ScrollReveal({ reset: false }).reveal(".portfolio-section__text", slideInLeft);
+        ScrollReveal({ reset: false }).reveal(".blog__story--title", slideInUp);
+        ScrollReveal({ reset: false }).reveal("h1", slideInLeft);
+        ScrollReveal({ reset: false }).reveal("h3", slideInLeft);
         ScrollReveal({ reset: false }).reveal(".title", slideInDown);
         ScrollReveal({ reset: false }).reveal(".portfolio-section__filter-container", slideInLeft);
-        ScrollReveal({ reset: false }).reveal(".portfolio-section__right-container", scaleUp);
+        ScrollReveal({ reset: false }).reveal("img", scaleUp);
         ScrollReveal({ reset: false }).reveal(".footer__title", slideInDown);
 
 

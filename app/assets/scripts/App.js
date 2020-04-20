@@ -7,6 +7,7 @@ import ResponsiveMap from "./modules/ResponsiveMap";
 import KeepFormStyleTwo from "./modules/KeepFormStyletwo";
 import SideContent from "./modules/SideContentToggle";
 import HeaderMapAnim from "./modules/HeaderMapAnim";
+import PortfolioNavs from "./modules/Portfolio"
 // import TeamModal from "./modules/Team";
 
 
@@ -19,4 +20,5 @@ let responsiveMap = new ResponsiveMap();
 let keepFormStyleTwo = new KeepFormStyleTwo();
 let sideContent = new SideContent();
 let headerMapAnim = new HeaderMapAnim();
+let portfolioNavs = new PortfolioNavs();
 // let TeamModal = new TeamModal();
