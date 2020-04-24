@@ -176,6 +176,9 @@
     .geek__wrapper > .geek__item:first-child {
         transform: translateY(0);
     }
+    .geek__wrapper > .geek__item:last-child {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width:900px){
@@ -226,8 +229,8 @@
         font-size: 22px;
         line-height: 28px;
     }
-    .geek__wrapper > .geek__item:last-child {
+    /* .geek__wrapper > .geek__item:last-child {
         width: 85%;
-    }
+    } */
 }
 
