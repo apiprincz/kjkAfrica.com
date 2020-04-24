@@ -26,11 +26,27 @@ gtag('config', 'UA-159861942-1');
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/global/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/styles/global/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/styles/css/glide.core.min.css">
+    <link rel="stylesheet" href="assets/styles/css/glide.core.css">
+    <link rel="stylesheet" href="assets/styles/css/glide.theme.min.css">
     <!-- build:js assets/scripts/Vendor.js -->
     <script src="temp/scripts/Vendor.js"></script>
     <!-- endbuild -->
-
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/@glidejs/glide"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+
+
+    <style>
+        .swiper-container {
+            width: 100%;
+            /* height: 300px; */
+        }
+    </style>
 
 
 </head>
@@ -430,47 +446,38 @@ gtag('config', 'UA-159861942-1');
         </div>
     </header>
 
-    <section class="portfolio-section">
-        <img src="assets/images/bg-spot.png" class="portfolio-section__bg-spot" alt="">
-        <img src="assets/images/portbg.png" class="portfolio-section__port-bg" alt="">
-        <div class="portfolio-section__container row">
-
-            <div class="portfolio-section__left-container">
-                <h2 class="title portfolio-section__title">
-                    Portfolio
-                </h2>
-
-                <p class="portfolio-section__text">
-                    KJK AFRICA provides engaging and exciting software solutions for modern retail. Our team will be happy to lend web services
-                    to promote your business, creating scalable solutions to attract new buyers and boost engagement from
-                    old ones. We help your business to reach a larger audience and build long lasting relationships and create
-                    an appealing shopping experience.
-                </p>
-
-            </div>
-
-            <!-- <div class="portfolio-section__right-container">
-
-                <img src="assets/images/KJK HISTORY PNG.jpg" alt="" class="portfolio-section__img">
-
-            </div> -->
-
-
-        </div>
-
-        <!-- <div class="portfolio-section__filter-container row">
-            <a href="" class="btn btn--primary portfolio-section__btn portfolio-section__btn--active">CASE STUDY</a>
-            <a href="" class="btn btn--primary portfolio-section__btn">PRODUCTS</a>
-            <a href="" class="btn btn--primary portfolio-section__btn">WEB/APP</a>
-            <a href="" class="btn btn--primary portfolio-section__btn">BRANDING</a>
-        </div> -->
-
-    </section>
+    
 
     <section style='position:relative'>
     
         <div class=" portfolio-section__items-container active">
-
+            <section class="portfolio-section">
+                <img src="assets/images/bg-spot.png" class="portfolio-section__bg-spot" alt="">
+                <img src="assets/images/portbg.png" class="portfolio-section__port-bg" alt="">
+                <div class="portfolio-section__container row">
+        
+                    <div class="portfolio-section__left-container">
+                        <h2 class="title portfolio-section__title">
+                            Portfolio
+                        </h2>
+        
+                        <p class="portfolio-section__text">
+                            KJK AFRICA provides engaging and exciting software solutions for modern retail. Our team will be happy to lend web services
+                            to promote your business, creating scalable solutions to attract new buyers and boost engagement from
+                            old ones. We help your business to reach a larger audience and build long lasting relationships and create
+                            an appealing shopping experience.
+                        </p>
+        
+                    </div>
+        
+                    
+        
+        
+                </div>
+        
+                
+        
+            </section>
             <div class="portfolio-section-item">
                 <div>
                 <div class="portfolio-section__text-content-container">
@@ -486,9 +493,6 @@ gtag('config', 'UA-159861942-1');
                         <p class="portfolio-section__text-content">
                             tru- DATA is a user friendly mobile and web application that is developed to authenticate documents, progressively eliminate
                             counterfeiting and ease document verification processes. 
-                            <!-- tru- DATA is also an e-platform for
-                            retrieving, reclaiming and repossessing documents easily. This technology is currently owned
-                            and proprietary to only Tripple Gee &AMP; CO. PLC in West Africa. -->
                         </p>
                         <div class="portfolio-section__desc-content">
                             <span>Mobile</span>
@@ -617,10 +621,36 @@ gtag('config', 'UA-159861942-1');
 
             
         </div>
-        <div class=" portfolio-section__items-container portfolio-section__items-container-products">
-
+        <div class=" portfolio-section__items-container">
+            <div>
+            <section class="portfolio-section">
+                <img src="assets/images/bg-spot.png" class="portfolio-section__bg-spot" alt="">
+                <img src="assets/images/portbg.png" class="portfolio-section__port-bg" alt="">
+                <div class="portfolio-section__container row">
+        
+                    <div class="portfolio-section__left-container">
+                        <h2 class="title portfolio-section__title">
+                            Portfolio
+                        </h2>
+        
+                        <p class="portfolio-section__text">
+                            KJK AFRICA provides engaging and exciting software solutions for modern retail. Our team will be happy to lend web services
+                            to promote your business, creating scalable solutions to attract new buyers and boost engagement from
+                            old ones. We help your business to reach a larger audience and build long lasting relationships and create
+                            an appealing shopping experience.
+                        </p>
+        
+                    </div>
+    
+        
+        
+                </div>
+        
+                
+        
+            </section>
+            </div>
             <div class="portfolio-section-item fave">
-                <div>
                 <div class="portfolio-section__text-content-container">
                     <div>
                         
@@ -635,8 +665,8 @@ gtag('config', 'UA-159861942-1');
                        </p>
                         
 
-                    </div>
-                </div>
+                 </div>
+                
                 <div class="portfolio-section__image-container portfolio-section__image-container--resp">
                     <img src="assets/images/fave-pro.png" class="portfolio-section__img-markup" alt="">
                 </div>
@@ -716,9 +746,578 @@ gtag('config', 'UA-159861942-1');
                 </div>
                 </div>
             </div>
-            
+        </div>
 
             
+        </div>
+        <div class="portfolio-section__items-container nopad">
+        
+                <div class=" swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/miss2mrs.png " style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        Miss2Mrs
+                                    </h2>
+                                    <ul>
+                                        <p>WHAT WE DID</p>
+                                        <li>Responsive Website Design</li>
+                                        <li>Social Media Presence</li>
+                                        <li>Photo Gallery</li>
+                                        <li>Contact Form</li>
+                                        <li>Mobile Version</li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/ruby1.png" style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        Ruby Links
+                                    </h2>
+                                    <ul>
+                                        <p>WHAT WE DID</p>
+                                        <li>Logo Creation</li>
+                                        <li>Corporate Brand/Creatives</li>
+                                        <li>Responsive Website Design</li>
+                                        <li>SSL/Domain Name Validation</li>
+                                        <li>Interactive Forms</li>
+                                        <li> Graphics Design</li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-ruby btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/apriltravels.png" style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title">
+                                        April Travels
+                                    </h2>
+                                    <ul>
+                                        <p class="apple">WHAT WE DID</p>
+                                        <li> Corporate e-Brand</li>
+                                        <li> Travel Web Application</li>
+                                        <li> Responsive Website Design </li>
+                                        <li> Interactive Form</li>
+                                        <li> Content Management System </li>
+                                        
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-apple btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/saint.png" style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        Saints Community
+                                    </h2>
+                                    <ul>
+                                        <p>WHAT WE DID</p>
+                                        <li> Mobile Website</li>
+                                        <li> Content management system </li>
+                                        <li> Interactive Forms </li>
+                                        <li> Creatives </li>
+                                        <li> Security/Malware/SSL Protections </li>
+                                        <li> Code Guard Backups </li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-saint btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/gimc.png" style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title">
+                                        GIMC
+                                    </h2>
+                                    <ul>
+                                        <p class="gimc">WHAT WE DID</p>
+                                        <li> Corporate Rebranding </li>
+                                        <li> Responsive Website Design </li>
+                                        <li> Interactive Forms </li>
+                                        <li> Graphics Design</li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-gimc btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/cakes1.png" style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        Cakes Gallery
+                                    </h2>
+                                    <ul>
+                                        <p class="cakes">WHAT WE DID</p>
+                                        <li> Mobile Website </li>
+                                        <li> Content management system </li>
+                                        <li> Interactive Forms</li>
+                                        <li> Creatives </li>
+                                        <li> Security/Malware/SSL Protections </li>
+                                        <li> Code Guard Backups </li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-cakes btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/trans.png " style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        Trans-Meredien
+                                    </h2>
+                                    <ul>
+                                        <p class="trans">WHAT WE DID</p>
+                                        <li> Corporate Re-branding </li>
+                                        <li> Responsive Website Design </li>
+                                       
+                                        <li> SSL/Domain Name Validation </li>
+                                        <li> Interactive Forms</li>
+
+                                        <li> Graphics Design </li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-trans btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/shortest.png" style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        Shortest Route
+                                    </h2>
+                                    <ul>
+                                        <p class="shortest">WHAT WE DID</p>
+                                        <li> Logo Creation</li>
+                                        <li> Mobile App </li>
+                                        <li> Responsive Website Design</li>
+                                        <li> Social Media Prescence</li>
+                                        <li> Mobile Version</li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-shortest btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/tripplegee.png " style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        Tripple Gee
+                                    </h2>
+                                    <ul>
+                                        <p class="trippleg">WHAT WE DID</p>
+                                        <li> Logo Creation</li>
+                                        <li> Mobile App </li>
+                                        <li> Responsive Website Design</li>
+                                        <li> Social Media Prescence</li>
+                                        <li> Mobile Version</li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-trippleg btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/radiant.png " style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        Radiantlife Travel
+                                    </h2>
+                                    <ul>
+                                        <p class="radiant">WHAT WE DID</p>
+                                        <li> Logo Creation</li>
+                                        <li> Mobile App </li>
+                                        <li> Responsive Website Design</li>
+                                        <li> Social Media Prescence</li>
+                                        <li> Mobile Version</li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-radiant btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/easieaver.png " style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        EasiSaver
+                                    </h2>
+                                    <ul>
+                                        <p class="easi">WHAT WE DID</p>
+                                        <li> Website Design</li>
+                                        <li> Interactive Form</li>
+                                        <li> Content management </li>
+                                        <li> Web Applications</li>
+                                        <li> Security/Malware Protection</li>
+                                        <li> SSL </li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-easi btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/femi.png " style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        Femi Aluko
+                                    </h2>
+                                    <ul>
+                                        <p class="femi">WHAT WE DID</p>
+                                        <li> Logo Creation</li>
+                                        <li> Mobile App </li>
+                                        <li> Responsive Website Design</li>
+                                        <li> Social Media Prescence</li>
+                                        <li> Mobile Version</li>
+                                        <li> Audio Play input</li>
+                                        <li>  Analytics</li>
+                                        <li> Cyberposters</li>
+                                        <li> Newsletter </li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-femi btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/queen.png" style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        Queen’s Hospital                                    
+                                    </h2>
+                                    <ul>
+                                        <p class="queen">WHAT WE DID</p>
+                                        <li> Website Design</li>
+                                        <li> Interactive Forms</li>
+                                        <li> Photo Gallery</li>
+                                        <li> Graphics</li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-queen btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/miss2mrs.png " style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        J36 Solutions
+                                    </h2>
+                                    <ul>
+                                        <p class="j36">WHAT WE DID</p>
+                                        <li> Coporate Re-branding</li>
+                                        <li> Responsive Website Design</li>
+                                        <li> Contact Form</li>
+                                        <li> Mobile Version</li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-j36 btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--right ">
+                                    <img src="assets/images/premier.png " style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title ">
+                                        Inline Premier
+                                    </h2>
+                                    <ul>
+                                        <p class="inline">WHAT WE DID</p>
+                                        <li>Responsive Website Design</li>
+                                        <li>Social Media Presence</li>
+                                        <li>Photo Gallery</li>
+                                        <li>Contact Form</li>
+                                        <li>Mobile Version</li>
+                                    </ul>
+                                    <a href="#" class="btn btn--link btn-inline btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+        
+                        
+                    </div>
+        
+                    <div class="swiper-controls">
+                        <div class="portfolio__swiper--area">
+                            <div>
+                                <span class="portfolio__current">01</span>
+                                <span class="portfolio__dash"></span>
+                                <span class="portfolio__total"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <div class="swiper--next">
+                        <img src="assets/images/nexticon.png" alt="">
+                    </div>
+                    <div class="swiper--prev">
+                        <img src="assets/images/previcon.png" alt="">
+
+                    </div>
+                </div>
+            
+        </div>
+        <div class=" portfolio-section__items-container">
+            <div>
+            <section class="portfolio-section">
+                <img src="assets/images/bg-spot.png" class="portfolio-section__bg-spot" alt="">
+                <img src="assets/images/portbg.png" class="portfolio-section__port-bg" alt="">
+                <div class="portfolio-section__container row">
+        
+                    <div class="portfolio-section__left-container">
+                        <h2 class="title portfolio-section__title">
+                            Portfolio
+                        </h2>
+        
+                        <p class="portfolio-section__text">
+                            KJK AFRICA provides engaging and exciting software solutions for modern retail. Our team will be happy to lend web services
+                            to promote your business, creating scalable solutions to attract new buyers and boost engagement from
+                            old ones. We help your business to reach a larger audience and build long lasting relationships and create
+                            an appealing shopping experience.
+                        </p>
+        
+                    </div>
+    
+        
+        
+                </div>
+        
+                
+        
+            </section>
+            </div>
+            <div class="portfolio-section-item fave">
+                <div class="portfolio-section__text-content-container">
+                    <div>
+                        
+                        <h2 class="portfolio-section__text-content-title">
+                            FAVE
+                        </h2>
+                        
+
+                        <p class="portfolio-section__text-content">
+                            Pairing artists and fans to make their dreams a reality FAVE is a social platform for fans to connect with their favourite artists and influence 
+                            the pulse of the music or movie industry through active participation    
+                       </p>
+                        
+
+                 </div>
+                
+                <div class="portfolio-section__image-container portfolio-section__image-container--resp">
+                    <img src="assets/images/fave-pro.png" class="portfolio-section__img-markup" alt="">
+                </div>
+                </div>
+            </div>
+
+            <div class="portfolio-section-item marketplace">
+                <div>
+                <div class="portfolio-section__text-content-container ">
+                    <div>
+                        
+                        <h2 class="portfolio-section__text-content-title ">
+                            Marketplace
+                        </h2>
+                        
+
+                        <p class="portfolio-section__text-content ">
+                            Directory by KJK is a software that collates information. The application stores information in an accessible and retrievable manner, thereby eliminating the need for manual storage systems. This technology
+                             can be applied to any industry that has information to share with its customers.
+                        </p>
+                       
+
+                    </div>
+                </div>
+                <div class="portfolio-section__image-container portfolio-section__image-container--resp portfolio-section__afiaanyi">
+                    <img src="assets/images/market-pro.png" class="portfolio-section__img-markup" alt="">
+                </div>
+                </div>
+            </div>
+
+            <div class="portfolio-section-item travel">
+                
+                <div >
+                
+                <div class="portfolio-section__text-content-container ">
+                    <div>
+                        
+                        <h2 class="portfolio-section__text-content-title ">
+                            Travel application
+                        </h2>
+                       
+
+                        <p class="portfolio-section__text-content p">
+                        
+                            Our travel product is a ready-to-launch unbranded software that can be customised for clients in the travel industry. The application can be deployed as a website or mobile app. Its key features include 
+                            automated contact storage, interactive interface, and fluid operation.</p>
+
+                       
+                    </div>
+                </div>
+                <div class="portfolio-section__image-container portfolio-section__tworeport">
+                    <img src="assets/images/travel-pro.png" class="portfolio-section__img-markup" alt="">
+                </div>
+                </div>
+            </div>
+            <div class="portfolio-section-item pave">
+                
+                <div >
+                
+                <div class="portfolio-section__text-content-container ">
+                    <div>
+                        
+                        <h2 class="portfolio-section__text-content-title ">
+                            PAVE
+                        </h2>
+                       
+
+                        <p class="portfolio-section__text-content ">
+                            Our travel product is a ready-to-launch unbranded software that can be customised for clients in the travel industry. The application can be deployed as a website or mobile app. Its key features
+                             include automated contact storage, interactive interface, and fluid operation.
+                        </p>
+                       
+                    </div>
+                </div>
+                <div class="portfolio-section__image-container portfolio-section__tworeport">
+                    <img src="assets/images/pave-pro.png" class="portfolio-section__img-markup" alt="">
+                </div>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -882,9 +1481,19 @@ gtag('config', 'UA-159861942-1');
 
 
     </script>
+    <script src="jquery.min.js"></script>
+    <script src="assets/scripts/owl.carousel.min.js"></script>
     <script>
         const Navs = document.querySelectorAll('.header__portfolio--navs ul li')
         const Portfolios = document.querySelectorAll('.portfolio-section__items-container')
+        const menu = document.querySelectorAll('.swiper-slide')
+        const newValue = document.querySelector('.portfolio__total')
+        const currentValue = document.querySelector('.portfolio__current')
+        const prevBtn = document.querySelector('.swiper--prev')
+        const nextBtn = document.querySelector('.swiper--next')
+        const swiperBg = document.querySelector('.portfolio__swiper--area')
+        const bgColors = ['#E83124','#D43724', '#32B196', '#D43724', '#4DC28D', '#9B4E6C', '#333EA8', '#32CCFE','#D8944E', '#8F4585','#3E7BAC', '#41ABD5','#222D35', '#2B8309','#8F45A5', '#D43724',]
+         var counter = 0
 
         for (let i = 0; i < Navs.length; i++) {
             Navs[i].addEventListener('click', function(e){
@@ -901,8 +1510,65 @@ gtag('config', 'UA-159861942-1');
             })
             
         }
+        for (let i = 0; i < menu.length; i++) {
+            newValue.textContent=menu.length
+            
+       
+        }
+        prevBtn.addEventListener('click', function(){
+            
+            
+            if (counter === 0){
+                counter = menu.length
+            }
+            counter--
+            
+            for (let i = 0; i < menu.length; i++) {
+                
+                swiperBg.style.backgroundColor = bgColors[counter]
+                
+            } 
+        })
+        nextBtn.addEventListener('click', function(){
+            if (counter === Number(newValue.textContent)){
+                counter = 0
+            }
+            counter++
+            
+            
+            for (let i = 0; i < menu.length; i++) {
+                
+                swiperBg.style.backgroundColor = bgColors[counter]
+                
+            }
+            
+        })
+       
     </script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+        // If we need pagination
+        // autoplay: {
+        //     	delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+        observer: true,
+        observeParents: true,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+                clickable: true,
+                
+            
+        },
     
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper--next',
+          prevEl: '.swiper--prev',
+        },
+      })
+    </script>
     <!-- build:js assets/scripts/App.js -->
     <script src="temp/scripts/App.js "></script>
     <!-- endbuild -->

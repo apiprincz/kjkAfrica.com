@@ -1,8 +1,9 @@
-.swiper-container, .swiper-container-two{
+.swiper-container, .swiper-container-two,.swiper-container-three {
     width: 100%;
+    height: 100%;
 }
 
-.swiper-wrapper-two{
+.swiper-wrapper-two, .swiper-wrapper-three{
     display: flex;
     justify-content: flex-start;
     align-content: center;

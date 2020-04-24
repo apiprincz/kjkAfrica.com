@@ -79,30 +79,37 @@
             color: white;
         }
     }
-
+    &-items > div {
+        display: flex;
+    }
     &__items-container{
         padding-top: 50px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
-        /* height: 0; */
+        height: 0;
         display: none;
         /* position: absolute; */
         top: 0;
-        opacity: 0;
+        opacity: 1;
 
-        &-products {
-            
-        & > div p, h2{
-            color: white;
+        & > div {
+            opacity: 1;
         }
+        &.nopad {
+            padding: 0;
         }
+       
         &.active {
             height: 100%;
             opacity: 1;
             display: block;
             transition: opacity 0.3s;
+
+            & .portfolio-section-item {
+                opacity: 1;
+            }
         }
     }
 
@@ -115,6 +122,7 @@
         /* border-radius: 15px; */
         overflow: hidden;
         /* margin-bottom: 50px; */
+        opacity: 1;
         transition: all .2s ease-in-out;
         width: 100%;
         padding: 40px 60px;
@@ -161,8 +169,11 @@
             background:url(../../../assets/images/mombg.png);
             background-size:cover ;
         }
-        &.fave > div{
-            background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);;
+        &.fave{
+            display: block;
+         > div{
+            background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);
+            }
         }
         &.marketplace > div{
             background: linear-gradient(184.56deg, #F99225 23.65%, #F26327 89.79%);

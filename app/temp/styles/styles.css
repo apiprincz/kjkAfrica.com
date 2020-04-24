@@ -1259,11 +1259,12 @@ white-space: nowrap;
     }
 }
 
-.swiper-container, .swiper-container-two{
+.swiper-container, .swiper-container-two,.swiper-container-three {
     width: 100%;
+    height: 100%;
 }
 
-.swiper-wrapper-two{
+.swiper-wrapper-two, .swiper-wrapper-three{
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -1415,7 +1416,7 @@ white-space: nowrap;
 .header__container--portfolio{
             height: 68vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/portheaderbg.png);
-            background-position: top right;
+            background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -2972,13 +2973,32 @@ header > .nav-bar .new-bar{
     position: relative;
     overflow: hidden;
     padding: 65px 0 56px 0;
-    
 
 }
 
 .portfolio__mark-up{
         margin: 0 5%;
     }
+
+.portfolio__title {
+        font-family: Playfair Display;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 53px;
+        line-height: 90px;
+        text-align: center;
+        
+        color: #333333;
+        
+    }
+
+.portfolio__title:after {
+            content: '';
+            width:100px;
+            height:3px;
+            display:block;
+            background: #E83124;
+        }
 
 .portfolio .owl-theme .owl-controls .owl-page {
         display: inline-block;
@@ -3044,6 +3064,10 @@ header > .nav-bar .new-bar{
         flex-direction: column;
     }
 
+.portfolio__container.web {
+            align-items: flex-start;
+        }
+
 .portfolio__item{
         position: relative;
     }
@@ -3059,6 +3083,222 @@ header > .nav-bar .new-bar{
             order: -1;
             padding-bottom: 0px;
         }
+
+.portfolio__item--flex-text {
+            padding: 70px 0px 45px 70px;
+            position: relative;
+        }
+
+.portfolio__item--flex-text p{
+
+                font-family: Sofia Pro;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 26px;
+                line-height: 40px;
+                /* identical to box height */
+                
+                
+                color: #E83124;
+            }
+
+.portfolio__item--flex-text p.gimc, .portfolio__item--flex-text p.apple {
+                    color: #32B196 ;
+                }
+
+.portfolio__item--flex-text p.cakes{
+                    color: #9B4E6C;;
+                }
+
+.portfolio__item--flex-text p.trans{
+                    color:  #333EA8;
+                }
+
+.portfolio__item--flex-text p.shortest {
+                    color: #32CCFE;
+                }
+
+.portfolio__item--flex-text p.trippleg {
+                    color: #D8944E;
+                }
+
+.portfolio__item--flex-text p.radiant {
+                    color: #8E4BB4;
+                }
+
+.portfolio__item--flex-text p.easi {
+                    color: #3D77A7;
+                }
+
+.portfolio__item--flex-text p.femi {
+                    color: #42A7D1;
+                }
+
+.portfolio__item--flex-text p.queen {
+                    color: #222D35;
+                }
+
+.portfolio__item--flex-text p.j36 {
+                    color:  #2B8309;
+                }
+
+.portfolio__item--flex-text p.inline {
+                    color: #8E4BB4;
+                }
+
+.portfolio__item--flex-text ul {
+                padding-top: 30px;
+            }
+
+.portfolio__item--flex-text li {
+                font-family: Sofia Pro;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+                /* or 167% */
+                
+                
+                color: #000000;                
+            }
+
+.portfolio__swiper--area {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #E83124;
+        /* text-align: center; */
+        width: 43%;
+        padding: 20px 40px;
+
+    }
+
+.portfolio__swiper--area> div {
+            display: flex ;
+            align-items:center;
+        }
+
+.portfolio__swiper--area span {
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 40px;
+            color: #FFFFFF;            
+        }
+
+.portfolio__dash {
+        display: inline-block;
+        width: 20px;
+        height: 2px;
+        background: white;
+        margin: 0px 10px;
+    }
+
+li {
+    list-style-type: none;
+}
+
+.btn--top-space {
+    margin-top: 40px;
+    background: #E83124;
+    font-family: Sofia Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+/* or 143% */
+
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+}
+
+.btn-ruby, .btn-saint {
+        background-color: #E83124;
+    }
+
+.btn-apple,.btn-gimc {
+        background:#32B196 ;
+    }
+
+.btn-cakes {
+        background: #9B4E6C;;
+    }
+
+.btn-trans {
+        background: #333EA8 ;
+    }
+
+.btn-shortest {
+        background: #32CCFE;
+    }
+
+.btn-trippleg {
+        background: #D8944E;
+    }
+
+.btn-radiant {
+        background: #8E4BB4;
+    }
+
+.btn-easi {
+        background:#3D77A7 ;
+    }
+
+.btn-femi {
+        background: #42A7D1;
+    }
+
+.btn-queen {
+        background: #222D35;
+    }
+
+.btn-j36 {
+        background:  #2B8309;
+    }
+
+.btn-inline {
+        background: #8E4BB4;
+    }
+
+.swiper-controls {
+    position: relative;
+}
+
+.swiper--prev  {
+        width: 30px;
+        height:30px;
+        border-radius:50%;
+        background:rgba(134, 30, 23, 0.57);;
+        position: absolute;
+        right: 100px;
+        bottom: 20px;
+        z-index:500;
+        text-align:center;
+        display:flex; 
+        justify-content:center;
+        align-items:center;
+        /* & img{
+        transform:translateY(50%)
+        } */
+    }
+
+.swiper--next {
+        width: 30px;
+        height:30px;
+        border-radius:50%;
+        background:rgba(134, 30, 23, 0.57);;
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+        z-index: 500;
+        text-align:center;
+        display:flex; 
+        justify-content:center;
+        align-items:center;
+
+    }
 
 /* .portfolio .owl-carousel .owl-nav button.owl-prev, .portfolio .owl-carousel .owl-nav button.owl-next, .portfolio .owl-carousel .owl-dots {
     transform: translateY(-18px);
@@ -3083,10 +3323,16 @@ header > .nav-bar .new-bar{
     } */
 }
 
+.swiper-slide-active
+
 @media only screen and (min-width: 920px){
     /* .portfolio .owl-carousel .owl-nav button.owl-prev, .portfolio .owl-carousel .owl-nav button.owl-next, .portfolio .owl-carousel .owl-dots {
         transform: translateY(-48px);
     } */
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    display: none;
 }
 
 .corouzel {
@@ -4970,21 +5216,29 @@ App.js:39 Letter 10 is 147.7610626220703 */
             color: white;
         }
 
+.portfolio-section-items > div {
+        display: flex;
+    }
+
 .portfolio-section__items-container{
         padding-top: 50px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
-        /* height: 0; */
+        height: 0;
         display: none;
         /* position: absolute; */
         top: 0;
-        opacity: 0;
+        opacity: 1;
     }
 
-.portfolio-section__items-container-products > div p, .portfolio-section__items-container-products h2{
-            color: white;
+.portfolio-section__items-container > div {
+            opacity: 1;
+        }
+
+.portfolio-section__items-container.nopad {
+            padding: 0;
         }
 
 .portfolio-section__items-container.active {
@@ -4993,6 +5247,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
             display: block;
             transition: opacity 0.3s;
         }
+
+.portfolio-section__items-container.active .portfolio-section-item {
+                opacity: 1;
+            }
 
 .portfolio-section-item{
         display: flex;
@@ -5003,6 +5261,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         /* border-radius: 15px; */
         overflow: hidden;
         /* margin-bottom: 50px; */
+        opacity: 1;
         transition: all .2s ease-in-out;
         width: 100%;
         padding: 40px 60px;
@@ -5057,9 +5316,13 @@ App.js:39 Letter 10 is 147.7610626220703 */
             background-size:cover ;
         }
 
-.portfolio-section-item.fave > div{
-            background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);;
+.portfolio-section-item.fave{
+            display: block;
         }
+
+.portfolio-section-item.fave > div{
+            background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);
+            }
 
 .portfolio-section-item.marketplace > div{
             background: linear-gradient(184.56deg, #F99225 23.65%, #F26327 89.79%);

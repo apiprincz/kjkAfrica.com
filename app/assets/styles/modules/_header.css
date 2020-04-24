@@ -99,7 +99,7 @@
         &--portfolio{
             height: 68vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/portheaderbg.png);
-            background-position: top right;
+            background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }

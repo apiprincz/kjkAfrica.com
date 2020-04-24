@@ -79,7 +79,7 @@ class SwiperSection {
                 }
             }
         })
-        this.mygallerySwiper = new Swiper(".gallery__container", {
+        this.mygallerySwiper = new Swiper(".swiper-container-three", {
             loop: true,
             speed: 800,
             autoplay: {
