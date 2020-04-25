@@ -5353,7 +5353,11 @@ App.js:39 Letter 10 is 147.7610626220703 */
         }
 
 .portfolio-section__items-container.active .portfolio-section-item {
-                opacity: 1;
+                opacity: 1 !important;
+            }
+
+.portfolio-section__items-container.active .portfolio-section h2, .portfolio-section__items-container.active p{
+                opacity: 1 !important; 
             }
 
 .portfolio-section-item{
@@ -5422,25 +5426,64 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section-item.fave{
             display: block;
+            background: none;
+            box-shadow: none;
         }
 
 .portfolio-section-item.fave > div{
             background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);
             }
 
+.portfolio-section-item.fave h2, .portfolio-section-item.fave p {
+                color: white;
+            }
+
+.portfolio-section-item.marketplace
+        { 
+            background: none;
+            box-shadow: none;
+        }
+
 .portfolio-section-item.marketplace > div{
             background: linear-gradient(184.56deg, #F99225 23.65%, #F26327 89.79%);
+            }
+
+.portfolio-section-item.marketplace h2, .portfolio-section-item.marketplace p {
+                color: white;
+            }
+
+.portfolio-section-item.travel{
+            background: none;
+            box-shadow: none;
         }
 
 .portfolio-section-item.travel > div{
             background: linear-gradient(231.09deg, #504D4D -3.8%, #50150C 46.32%);
+            }
+
+.portfolio-section-item.travel h2, .portfolio-section-item.travel p {
+                color: white;
+            }
+
+.portfolio-section-item.pave{
+            background: none;
+            box-shadow: none;
+           
         }
 
 .portfolio-section-item.pave > div{
             background: #387789;
             box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
-            border-radius: 8px;    
-        }
+            border-radius: 8px;   
+            }
+
+.portfolio-section-item.pave > div > .portfolio-section__image-container {
+                width: 80%;
+            }
+
+.portfolio-section-item.pave h2, .portfolio-section-item.pave p {
+                color: white;
+            }
 
 .portfolio-section__img-markup{
         width: 96%;
@@ -5624,6 +5667,13 @@ App.js:39 Letter 10 is 147.7610626220703 */
         background: #333333;
         background-size: contain;
         background-position: center;
+    }
+
+.portfolio-section__shapes {
+        position: absolute;
+        right: 0;
+        top: 10%;
+        
     }
 
 @media only screen and (max-width: 940px){

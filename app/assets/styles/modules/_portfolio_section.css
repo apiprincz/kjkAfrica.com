@@ -108,7 +108,10 @@
             transition: opacity 0.3s;
 
             & .portfolio-section-item {
-                opacity: 1;
+                opacity: 1 !important;
+            }
+            & .portfolio-section h2, p{
+                opacity: 1 !important; 
             }
         }
     }
@@ -171,20 +174,52 @@
         }
         &.fave{
             display: block;
+            background: none;
+            box-shadow: none;
+            
          > div{
             background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);
             }
+            & h2, p {
+                color: white;
+            }
         }
-        &.marketplace > div{
+        &.marketplace
+        { 
+            background: none;
+            box-shadow: none;
+            & > div{
             background: linear-gradient(184.56deg, #F99225 23.65%, #F26327 89.79%);
+            }
+            & h2, p {
+                color: white;
+            }
         }
-        &.travel > div{
+        &.travel{
+            background: none;
+            box-shadow: none;
+            & > div{
             background: linear-gradient(231.09deg, #504D4D -3.8%, #50150C 46.32%);
+            }
+            & h2, p {
+                color: white;
+            }
         }
-        &.pave > div{
+        &.pave{
+            background: none;
+            box-shadow: none;
+            & > div{
             background: #387789;
             box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
-            border-radius: 8px;    
+            border-radius: 8px; 
+            & > .portfolio-section__image-container {
+                width: 80%;
+            }   
+            }
+            & h2, p {
+                color: white;
+            }
+           
         }
     }
 
@@ -364,6 +399,13 @@
         background: #333333;
         background-size: contain;
         background-position: center;
+    }
+
+    &__shapes {
+        position: absolute;
+        right: 0;
+        top: 10%;
+        
     }
 }
 
