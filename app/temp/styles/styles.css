@@ -5245,6 +5245,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         justify-content: center;
         align-items: center;
         padding-top: 30px;
+        padding-bottom:60px;
     }
 
 .portfolio-section__bg-spot {
@@ -5283,7 +5284,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         font-style: normal;
         font-weight: 300;
         font-size: 1.2rem;
-        line-height: 52px;
+        line-height: 34px;
         color: #504D4D;
     }
 
@@ -5325,7 +5326,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 
 .portfolio-section__items-container{
-        padding-top: 50px;
+        /* padding-top: 50px; */
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -5392,7 +5393,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
             box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.12);
             background-repeat: no-repeat;
             /* border-radius: 15px; */
-            overflow: hidden;
+            /* overflow: hidden; */
             /* margin-bottom: 50px; */
             transition: all .2s ease-in-out;
             width: 100%;
@@ -5428,10 +5429,20 @@ App.js:39 Letter 10 is 147.7610626220703 */
             display: block;
             background: none;
             box-shadow: none;
+            padding: 100px 80px 80px;
         }
 
 .portfolio-section-item.fave > div{
             background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);
+        }
+
+.portfolio-section-item.fave > div > .portfolio-section__image-container {
+                width: 85%;
+            }
+
+.portfolio-section-item.fave > div img {
+                transform: translateY(-62px);
+                height: 125%;
             }
 
 .portfolio-section-item.fave h2, .portfolio-section-item.fave p {
@@ -5446,7 +5457,12 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section-item.marketplace > div{
             background: linear-gradient(184.56deg, #F99225 23.65%, #F26327 89.79%);
-            }
+        
+        }
+
+.portfolio-section-item.marketplace > div img{
+                    transform: translate(-20px, -42px);
+                }
 
 .portfolio-section-item.marketplace h2, .portfolio-section-item.marketplace p {
                 color: white;
@@ -5455,11 +5471,17 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .portfolio-section-item.travel{
             background: none;
             box-shadow: none;
+            padding: 100px 80px 80px;
         }
 
 .portfolio-section-item.travel > div{
-            background: linear-gradient(231.09deg, #504D4D -3.8%, #50150C 46.32%);
-            }
+            background: linear-gradient(231.09deg, #504D4D -3.8%, #50150C 46.32%);    
+             }
+
+.portfolio-section-item.travel > div img{
+                transform: translate(20px, -62px);
+                height: 104%;
+                }
 
 .portfolio-section-item.travel h2, .portfolio-section-item.travel p {
                 color: white;
@@ -5477,6 +5499,11 @@ App.js:39 Letter 10 is 147.7610626220703 */
             border-radius: 8px;   
             }
 
+.portfolio-section-item.pave > div img{
+                transform: translate(-20px, -62px);
+                height: 104%;
+                }
+
 .portfolio-section-item.pave > div > .portfolio-section__image-container {
                 width: 80%;
             }
@@ -5486,7 +5513,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
             }
 
 .portfolio-section__img-markup{
-        width: 96%;
+        width: 100%;
         position: relative;
         z-index: 1;
     }
@@ -5518,7 +5545,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         }
 
 .portfolio-section__image-container{
-        width: 55%;
+        width: 68%;
         position: relative;
         display: inline-flex;
         align-items: center;
@@ -5690,12 +5717,26 @@ App.js:39 Letter 10 is 147.7610626220703 */
         /* padding: 14% 3%; */
         /* order: -1; */
     }
+    .portfolio-section-item.fave, .portfolio-section-item.travel {
+        padding: 40px 60px;
+    }
     .portfolio-section__text-content-container {
         width: 100%;
         padding: 3% 5% 6%;
     }
     .portfolio-section__text {
         line-height: 25px;
+    }
+    .portfolio-section-item.fave > div img,
+    .portfolio-section-item.marketplace > div img,
+    .portfolio-section-item.travel > div img,
+    .portfolio-section-item.pave > div img {
+        transform: translate(0);
+    }
+    .portfolio-section-item.pave > div > .portfolio-section__image-container,
+    .portfolio-section-item.fave > div > .portfolio-section__image-container
+    {
+        width: 100%;
     }
 }
 
@@ -5748,9 +5789,16 @@ App.js:39 Letter 10 is 147.7610626220703 */
 }
 
 @media only screen and (max-width: 425px){
-    .portfolio-section-item {
+    .portfolio-section-item,
+    .portfolio-section-item.fave, 
+    .portfolio-section-item.travel {
         padding: 40px 30px;
     }
+    .portfolio-section__text-content-title {
+        font-size: 2.5rem;
+    }
+    
+    
 }
 
 .about-page{
@@ -10077,6 +10125,89 @@ section.br{
         font-size: 18px;
     }
 
+}
+
+.redirect {
+    text-align: center;
+    padding: 140px 0px 60px;
+}
+
+.redirect h3 {
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 90px;
+        line-height: 90px;
+        /* identical to box height */
+        
+        text-align: center;
+        
+        color: #FB5A1E;        
+    }
+
+.redirect > div {
+        width: 100%;
+    }
+
+.redirect > div img {
+            width: 100%;
+        }
+
+.redirect p {
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44px;
+        line-height: 55px;
+        text-align: center;
+        
+        color: #FFA969;        
+    }
+
+.redirect p.redirect__sub {
+        font-family: Sofia Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+        
+        color: #979797;
+    }
+
+.redirect p.redirect__sub span {
+            color: black;
+        }
+
+@media only screen and (max-width:930px){
+    .redirect p {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .redirect h3 {
+        font-size: 60px;
+    }
+    .redirect p {
+        font-size: 20px;
+    }
+    .redirect p.redirect__sub {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .redirect h3 {
+        font-size: 50px;
+    }
+    .redirect p {
+        font-size: 15px;
+        line-height: 27px;
+    }
+    .redirect p.redirect__sub {
+        font-size: 15px;
+    }
 }
 
 

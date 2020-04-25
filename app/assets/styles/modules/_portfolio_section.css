@@ -6,6 +6,7 @@
         justify-content: center;
         align-items: center;
         padding-top: 30px;
+        padding-bottom:60px;
     }
 
     &__bg-spot {
@@ -43,7 +44,7 @@
         font-style: normal;
         font-weight: 300;
         font-size: 1.2rem;
-        line-height: 52px;
+        line-height: 34px;
         color: #504D4D;
     }
 
@@ -83,7 +84,7 @@
         display: flex;
     }
     &__items-container{
-        padding-top: 50px;
+        /* padding-top: 50px; */
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -144,7 +145,7 @@
             box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.12);
             background-repeat: no-repeat;
             /* border-radius: 15px; */
-            overflow: hidden;
+            /* overflow: hidden; */
             /* margin-bottom: 50px; */
             transition: all .2s ease-in-out;
             width: 100%;
@@ -176,10 +177,18 @@
             display: block;
             background: none;
             box-shadow: none;
+            padding: 100px 80px 80px;
             
          > div{
             background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);
+            & > .portfolio-section__image-container {
+                width: 85%;
             }
+            & img {
+                transform: translateY(-62px);
+                height: 125%;
+            }
+        }
             & h2, p {
                 color: white;
             }
@@ -190,7 +199,11 @@
             box-shadow: none;
             & > div{
             background: linear-gradient(184.56deg, #F99225 23.65%, #F26327 89.79%);
-            }
+                & img{
+                    transform: translate(-20px, -42px);
+                }
+        
+        }
             & h2, p {
                 color: white;
             }
@@ -198,9 +211,14 @@
         &.travel{
             background: none;
             box-shadow: none;
+            padding: 100px 80px 80px;
             & > div{
             background: linear-gradient(231.09deg, #504D4D -3.8%, #50150C 46.32%);
-            }
+            & img{
+                transform: translate(20px, -62px);
+                height: 104%;
+                }    
+             }
             & h2, p {
                 color: white;
             }
@@ -212,6 +230,11 @@
             background: #387789;
             box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
             border-radius: 8px; 
+            & img{
+                transform: translate(-20px, -62px);
+                height: 104%;
+                }    
+             
             & > .portfolio-section__image-container {
                 width: 80%;
             }   
@@ -224,7 +247,7 @@
     }
 
     &__img-markup{
-        width: 96%;
+        width: 100%;
         position: relative;
         z-index: 1;
 
@@ -256,7 +279,7 @@
     }
 
     &__image-container{
-        width: 55%;
+        width: 68%;
         position: relative;
         display: inline-flex;
         align-items: center;
@@ -424,12 +447,26 @@
         /* padding: 14% 3%; */
         /* order: -1; */
     }
+    .portfolio-section-item.fave, .portfolio-section-item.travel {
+        padding: 40px 60px;
+    }
     .portfolio-section__text-content-container {
         width: 100%;
         padding: 3% 5% 6%;
     }
     .portfolio-section__text {
         line-height: 25px;
+    }
+    .portfolio-section-item.fave > div img,
+    .portfolio-section-item.marketplace > div img,
+    .portfolio-section-item.travel > div img,
+    .portfolio-section-item.pave > div img {
+        transform: translate(0);
+    }
+    .portfolio-section-item.pave > div > .portfolio-section__image-container,
+    .portfolio-section-item.fave > div > .portfolio-section__image-container
+    {
+        width: 100%;
     }
 }
 
@@ -479,7 +516,14 @@
     }
 }
 @media only screen and (max-width: 425px){
-    .portfolio-section-item {
+    .portfolio-section-item,
+    .portfolio-section-item.fave, 
+    .portfolio-section-item.travel {
         padding: 40px 30px;
     }
+    .portfolio-section__text-content-title {
+        font-size: 2.5rem;
+    }
+    
+    
 }
