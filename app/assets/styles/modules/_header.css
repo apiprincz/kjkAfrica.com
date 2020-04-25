@@ -364,6 +364,15 @@
     width: 7rem;
         vertical-align: text-bottom;
     }
+    .header__portfolio--navs li {
+        padding: 0 22px;
+    } 
+    .header__sub--menu li a, .header__portfolio--navs li a {
+        font-size: 15px;
+    }
+    .header__sub--menu li.active a, .header__portfolio--navs li.active a {
+        font-size: 20px;
+    }
 }
 @media only screen and (max-width: 512px){
     .header__sub--menu li  {
@@ -372,7 +381,9 @@
     .header__sub--menu  li a {
         font-size: 10px;
     }
-    
+    .header__portfolio--navs li {
+        padding: 0 14px;
+    }
     
 }
 @media only screen and (max-width: 425px){
@@ -389,7 +400,12 @@
         font-size: 8px;
         line-height: 5px;
     }
-    
+    .header__sub--menu li a, .header__portfolio--navs li a {
+        font-size: 13px;
+    }
+    .header__sub--menu li.active a, .header__portfolio--navs li.active a {
+        font-size: 17px;
+    }
 }
 @media only screen and (max-width: 375px){
     .header__text{
@@ -404,6 +420,12 @@
     }
     .header__title--sub {
         font-size: 1.7rem;
+    }
+    .header__portfolio--navs li {
+        padding: 0 10px;
+    }
+    .header__sub--menu li a, .header__portfolio--navs li a {
+        font-size: 11px;
     }
 }
 @media only screen and (max-width: 350px){
@@ -423,6 +445,7 @@
     .header__title--sub {
         font-size: 1.5rem;
     }
+   
 }
 
 @media only screen and (max-height: 500px){
