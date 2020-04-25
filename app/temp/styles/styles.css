@@ -1742,6 +1742,12 @@ white-space: nowrap;
     .header__title--sub {
         font-size: 1.7rem;
     }
+    .header__portfolio--navs li {
+        padding: 0 10px;
+    }
+    .header__sub--menu li a, .header__portfolio--navs li a {
+        font-size: 11px;
+    }
 }
 
 @media only screen and (max-width: 350px){
@@ -1761,6 +1767,7 @@ white-space: nowrap;
     .header__title--sub {
         font-size: 1.5rem;
     }
+   
 }
 
 @media only screen and (max-height: 500px){
@@ -3415,6 +3422,19 @@ color: #FFFFFF;
     
     .swiper--prev {
         right: 76px;
+    }
+}
+
+@media only screen and (max-width:365px){
+    
+    .swiper--prev {
+        right: 59px;
+    }
+    .swiper--next{
+        right: 18px;
+    }
+    .portfolio__dash {
+        margin: 0 4px;
     }
     
 }
