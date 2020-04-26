@@ -230,7 +230,7 @@
                 
                 & a  {
                     border-bottom: 5px solid #FB5A1E;
-                    font-size: 24px;
+                    font-size: 20px;
                     font-weight: 300;
                 transition: all 0.3s ease-in;
                 white-space:nowrap;
@@ -244,7 +244,7 @@
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: 100;
-            font-size: 18px;
+            font-size: 17px;
             line-height: 20px;
             
             padding: 22px 0px;
