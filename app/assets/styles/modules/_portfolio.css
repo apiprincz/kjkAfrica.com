@@ -168,7 +168,7 @@
                 font-style: normal;
                 font-weight: 300;
                 font-size: 18px;
-                line-height: 28px;
+                line-height: 25px;
                 /* or 167% */
                 
                 
@@ -341,6 +341,23 @@ color: #FFFFFF;
     display: none;
 }
 
+@media only screen and (max-width:1325px){
+    .portfolio__title.saint, .portfolio__title.queens {
+        font-size: 40px;
+        line-height: 63px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .portfolio__title {
+        font-size: 40px;
+        line-height: 63px;
+    }
+    .portfolio__title.saint, .portfolio__title.queens {
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
 @media only screen and (max-width:1110px){
     .portfolio__item--flex-img {
         height: 666px;
@@ -351,6 +368,16 @@ color: #FFFFFF;
     .portfolio__item--flex-text {
         padding:28px 26px 28px 70px;
     }
+    .portfolio__title {
+        font-size: 33px;
+        line-height: 63px;
+    }
+    .portfolio__item--flex-text {
+        width: 40%;
+    }
+    .portfolio__item--flex-text li {
+        line-height: 22px;
+    }
 }
 @media only screen and (max-width:1005px){
     .portfolio__container.web {
@@ -358,6 +385,7 @@ color: #FFFFFF;
     }
     .portfolio__item--flex-text {
         padding:0px 0px 45px 70px;
+        width: 100%;
     }
     .portfolio__item--flex-img {
         width: 100%;
@@ -366,6 +394,15 @@ color: #FFFFFF;
     .portfolio__swiper--area {
         width: 40%;
     }
+    .portfolio__title.saint, .portfolio__title.queens {
+        /* font-size: 36px; */
+        line-height: 63px;
+        white-space: nowrap;
+    }
+    .portfolio__title{
+        white-space: nowrap;
+    }
+
 
 }
 @media only screen and (max-width:640px){
@@ -382,6 +419,8 @@ color: #FFFFFF;
     
     .portfolio__item--flex-text {
         padding:0px 0px 10px 30px;
+        min-height: 521px;
+        height: 521px;
     }
     .portfolio__swiper--area {
         width: 60%;
@@ -397,6 +436,11 @@ color: #FFFFFF;
     
     .swiper--prev {
         right: 76px;
+    }
+    .portfolio__title,
+    .portfolio__title.saint, 
+    .portfolio__title.queens {
+        font-size: 30px;
     }
 }
     
