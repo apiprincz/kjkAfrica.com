@@ -1686,10 +1686,10 @@ white-space: nowrap;
         padding: 0 22px;
     } 
     .header__sub--menu li a, .header__portfolio--navs li a {
-        font-size: 15px;
+        font-size: 11px;
     }
     .header__sub--menu li.active a, .header__portfolio--navs li.active a {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -1720,10 +1720,16 @@ white-space: nowrap;
         font-size: 8px;
         line-height: 5px;
     }
-    .header__sub--menu li a, .header__portfolio--navs li a {
+    .header__sub--menu li a {
+        font-size: 9px;
+    }
+     .header__portfolio--navs li a {
         font-size: 13px;
     }
-    .header__sub--menu li.active a, .header__portfolio--navs li.active a {
+    .header__sub--menu li.active a{
+        font-size: 14px;
+    }
+    .header__portfolio--navs li.active a {
         font-size: 17px;
     }
 }
@@ -1745,7 +1751,13 @@ white-space: nowrap;
     .header__portfolio--navs li {
         padding: 0 10px;
     }
-    .header__sub--menu li a, .header__portfolio--navs li a {
+    .header__sub--menu li a{
+        font-size: 8px;
+    }
+    .header__sub--menu li.active a{
+        font-size: 10px;
+    }
+     .header__portfolio--navs li a {
         font-size: 11px;
     }
 }
@@ -7603,6 +7615,7 @@ section.br{
 
 .who__dot {
         position: absolute;
+        width: 100%;
         left: 0;
         height: 60%;
         transform: translateY(-70px);
@@ -8926,8 +8939,15 @@ section.br{
         }
 
 .solutions__visual:hover {
-            -webkit-animation: cardHover 1.2s forwards 0s ease-out;
-                    animation: cardHover 1.2s forwards 0s ease-out;;
+            
+            -webkit-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+            
+                    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+            transform: translate3d(0, 0, 0);
+            -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+            perspective: 1000px;
+              
         }
 
 .solutions__visual img {
@@ -9000,35 +9020,19 @@ section.br{
         /* text-align: center;         */
     }
 
-@-webkit-keyframes cardHover{
-    0%{
-        transform: scale(.7);
-        opacity: 0;
-        }
-    61%{
-        transform: scale(1.1);
-        opacity: 0.6;
-        }
-    100%{
-        transform: rotate(xx) scale(1);
-        opacity: 1;
-        }
-}
-
-@keyframes cardHover{
-    0%{
-        transform: scale(.7);
-        opacity: 0;
-        }
-    61%{
-        transform: scale(1.1);
-        opacity: 0.6;
-        }
-    100%{
-        transform: rotate(xx) scale(1);
-        opacity: 1;
-        }
-}
+@keyframes shake {
+   
+    
+    
+  
+    30%, 50%, 70% {
+      transform: translate3d(0px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+    }
+  }
 
 @media only screen and (max-width:1140px){
     .solutions__container {
@@ -9579,6 +9583,18 @@ section.br{
         height: 424px;
     }
 
+.recognition__card:hover {
+            
+            -webkit-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+            
+                    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+            transform: translate3d(0, 0, 0);
+            -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+            perspective: 1000px;
+              
+        }
+
 .recognition__logo {
         text-align: center;
         height: 20%;
@@ -9642,6 +9658,20 @@ section.br{
 .recognition__oval img {
             width: 100%;
         }
+
+@keyframes shake {
+   
+    
+    
+  
+    30%, 50%, 70% {
+      transform: translate3d(0px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+    }
+  }
 
 @media only screen and (max-width: 1176px){
     .recognition__card{

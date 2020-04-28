@@ -765,10 +765,10 @@ gtag('config', 'UA-159861942-1');
             duration: 1900,
         };
         var scaleUp = {
-            scale: 0,
-            viewFactor: .5,
+            scale: 0.6,
+            viewFactor: .8,
             opacity: 0,
-            duration: 1900,
+            duration: 2900,
         };
         var slideInDown = {
             distance: '100%',
@@ -780,7 +780,7 @@ gtag('config', 'UA-159861942-1');
             
         };
 
-        // ScrollReveal({ reset: false }).reveal(".who__hero", slideInTop);
+        ScrollReveal({ reset: false }).reveal(".who__hhero", slideInLeft);
         ScrollReveal({ reset: false }).reveal(".who__desc", slideInLeftCustomised);
         ScrollReveal({ reset: false }).reveal(".who__card", scaleUp);
         ScrollReveal({ reset: false }).reveal(".who__text", slideInDown);
