@@ -608,6 +608,12 @@
             font-size: 12px;
         }
     }
+    .footer__lower-left .footer__link:link, .footer__link:visited{
+        margin: 0 7px;
+    }
+    .footer__link:link, .footer__link:visited {
+        font-size: 0.8rem;
+    }
 }
 @media only screen and (min-width: 1400px){
     .footer__left ul li:nth-child(even) {

@@ -5,6 +5,10 @@
     &--narrow{
         width: 86%;
     }
+    &--wide {
+        width: 100%;
+        
+    }
 }
 
 
