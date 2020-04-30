@@ -1442,6 +1442,14 @@ white-space: nowrap;
             background-repeat: no-repeat;
         }
 
+.header__container--trudata{
+            height: 90vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/td-bg.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
 .header__text-br{
         display: none;
     }
@@ -10360,6 +10368,19 @@ section.br{
             padding-left: 30px;
         }
 
+.header__case--logo {
+        width: 60%;
+    }
+
+.header__case--logo.afiaanyi {
+            width: 32%;
+            margin:0 auto;
+        }
+
+.header__case--logo img {
+            width: 100%;
+        }
+
 .header__case--content {
         
         width: 45%;
@@ -10378,7 +10399,7 @@ section.br{
 /* width:100%; */
 
 .header__case--content > div h3 {
-            font-family: Montserrat;
+            font-family: sofia pro;
             font-style: normal;
             font-weight: 900;
             font-size: 20px;
@@ -10493,6 +10514,19 @@ section.br{
                 /* vertical-align: middle; */
             }
 
+.client__itemize {
+        padding-left: 10px;
+    }
+
+.client__itemize li {
+            list-style-type: disc;
+            list-style-position:inside;
+            font-weight: 300;
+            font-size: 0.9rem;
+            line-height: 1.3rem;
+            
+        }
+
 .client__text{
         font-weight: 300;
         font-size: 0.9rem;
@@ -10555,7 +10589,7 @@ section.br{
         }
 
 .client__container__img{
-            width: 70%;
+            width: 58%;
         }
 
 .client__container__img--space-added{
@@ -10576,14 +10610,18 @@ section.br{
             }
 
 .client__container__text--space-removed{
-                padding-left: 46px;
-                padding-right: 70px;
+                padding-left: 56px;
+                padding-right: 15px;
                 
             }
 
 .client__container__text--space-narrow {
-                padding-left: 3%;
+                padding-left: 0px;
                 padding-right: 38px;
+            }
+
+.client__container__text--pad-left {
+                padding-left: 9%;
             }
 
 .client__branding {
@@ -10600,17 +10638,35 @@ section.br{
         }
 
 .client__products {
-        position: relative;
+        width: 90%;
+        
     }
 
-.client__products > div {
-            position: absolute;
-            width:70%;
+.client__products--collections {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
         }
 
-.client__products > div.client__outer {
-                right: 0;
-                top: -100px;
+.client__products--collections > div {
+                /* position: absolute; */
+                width:65.5%;
+            }
+
+.client__products--collections > div.client__inner {
+                    position: absolute;
+                    width: 69%;
+                    left: 0%;
+                    top:-5%
+                }
+
+.client__products--collections > div.client__outer {
+                   
+                }
+
+.client__products--collections.afiaanyi > div {
+                width: 71.5%;
+                padding-bottom: 20px;
             }
 
 .client__showcase{

@@ -16,6 +16,18 @@
 
         
     }
+    &--logo {
+        width: 60%;
+
+        &.afiaanyi {
+            width: 32%;
+            margin:0 auto;
+        }
+
+        & img {
+            width: 100%;
+        }
+    }
     &--content {
         
         width: 45%;
@@ -31,7 +43,7 @@
             /* width:100%; */
         
         & h3 {
-            font-family: Montserrat;
+            font-family: sofia pro;
             font-style: normal;
             font-weight: 900;
             font-size: 20px;
@@ -73,6 +85,8 @@
         flex-direction: column;
         justify-content: space-between;
     }
+
+    
 
     &--btn {
         font-family: Montserrat;
