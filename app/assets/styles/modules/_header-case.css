@@ -35,6 +35,13 @@
         &.narrow {
             width: 40%;
         }
+        &.wide {
+            width: 52%;
+
+            & > div .header__case--client {
+                padding-left: 20px;
+            }
+        }
 
 
         & > div {
