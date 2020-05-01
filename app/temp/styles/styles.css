@@ -1450,6 +1450,14 @@ white-space: nowrap;
             background-repeat: no-repeat;
         }
 
+.header__container--chaz{
+            height: 90vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/chazb-bg.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
 .header__text-br{
         display: none;
     }
@@ -10657,8 +10665,16 @@ section.br{
                     position: absolute;
                     width: 69%;
                     left: 0%;
-                    top:-5%
+                    top:-5%;
                 }
+
+.client__products--collections > div.client__inner.trudata {
+                        width: 60%;
+                    }
+
+.client__products--collections > div.client__inner.chaz {
+                        width: 52%;
+                    }
 
 .client__products--collections > div.client__outer {
                    

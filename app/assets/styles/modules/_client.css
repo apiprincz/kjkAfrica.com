@@ -190,7 +190,14 @@
                     position: absolute;
                     width: 69%;
                     left: 0%;
-                    top:-5%
+                    top:-5%;
+
+                    &.trudata {
+                        width: 60%;
+                    }
+                    &.chaz {
+                        width: 52%;
+                    }
                 }
                 &.client__outer {
                    
