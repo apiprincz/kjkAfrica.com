@@ -244,6 +244,9 @@ color: #FFFFFF;
     &-shortest {
         background: #32CCFE;
     }
+    &-mom {
+        background: #970A73;
+    }
     &-trippleg {
         background: #D8944E;
     }
@@ -330,7 +333,7 @@ color: #FFFFFF;
         margin: 0 6px;
     } */
 }
-.swiper-slide-active
+
 
 @media only screen and (min-width: 920px){
     /* .portfolio .owl-carousel .owl-nav button.owl-prev, .portfolio .owl-carousel .owl-nav button.owl-next, .portfolio .owl-carousel .owl-dots {
@@ -405,6 +408,7 @@ color: #FFFFFF;
 
 
 }
+
 @media only screen and (max-width:640px){
     
     .portfolio__item--flex-text {

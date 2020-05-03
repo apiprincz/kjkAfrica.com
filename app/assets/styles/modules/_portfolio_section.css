@@ -324,7 +324,7 @@
         }
         &--mom{
             color: white;
-            /* line-height: 45px; */
+            line-height: 50px;
         }
         &--miss{
             color: #fff;
@@ -490,7 +490,12 @@
         width: 100%;
     }
 }
-
+@media only screen and (max-width:768px){
+    
+    .portfolio-section__text-content-title  {
+        line-height: 45px;
+    }
+}
 @media only screen and (max-width: 740px){
     .portfolio-section-item {
         width: 100%;

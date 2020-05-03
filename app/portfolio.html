@@ -690,7 +690,7 @@ gtag('config', 'UA-159861942-1');
                             <span>Web</span>
                             
                         </div>
-                        <a href="" class="btn btn--primary portfolio-section__content-btn chazb btn--hover">
+                        <a href="casestudy/petrol.html" class="btn btn--primary portfolio-section__content-btn chazb btn--hover">
                             View Case Study
                         </a>
 
@@ -726,7 +726,7 @@ gtag('config', 'UA-159861942-1');
                             <span>Web</span>
                             
                         </div>
-                        <a href="" class="btn btn--primary portfolio-section__content-btn mom btn--hover">
+                        <a href="casestudy/mom.html" class="btn btn--primary portfolio-section__content-btn mom btn--hover">
                             View Case Study
                         </a>
 
@@ -979,6 +979,30 @@ gtag('config', 'UA-159861942-1');
                                         <li> Code Guard Backups </li>
                                     </ul>
                                     <a href="#" class="btn btn--link btn-saint btn--primary btn--top-space  btn--hover">
+                                        Visit Website
+                                    </a>
+                                    
+                                </div>
+                                
+                            </div>
+        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__container web">
+                                <div class="portfolio__item portfolio__item--flex-img ">
+                                    <img src="assets/images/mom-web.png" style="width: 100%; " alt=" ">
+                                </div>
+                                <div class="portfolio__item portfolio__item--flex-text">
+        
+                                    <h2 class="portfolio__title saint">
+                                        MOM Foundation
+                                    </h2>
+                                    <ul>
+                                        <p>WHAT WE DID</p>
+                                        <li>Logo Creation</li>
+                                        <li>Branding</li>
+                                    </ul>
+                                    <a href="" target="_blank" class="btn btn--link btn-mom btn--primary btn--top-space  btn--hover">
                                         Visit Website
                                     </a>
                                     
@@ -1616,8 +1640,10 @@ gtag('config', 'UA-159861942-1');
         const currentValue = document.querySelector('.portfolio__current')
         const prevBtn = document.querySelector('.swiper--prev')
         const nextBtn = document.querySelector('.swiper--next')
+        let dataBtn = document.querySelectorAll(['data-swiper-slide-index'])
         const swiperBg = document.querySelector('.portfolio__swiper--area')
-        const bgColors = ['#E83124','#D43724', '#32B196', '#D43724', '#4DC28D', '#9B4E6C', '#333EA8', '#32CCFE','#D8944E', '#8F4585','#3E7BAC', '#41ABD5','#222D35', '#2B8309','#8F45A5', '#D43724',]
+        // const swipeBtn = document.querySelectorAll('.swiper-slide a')
+        const bgColors = ['#E83124','#D43724', '#32B196', '#D43724','#970A73', '#4DC28D', '#9B4E6C', '#333EA8', '#D8944E','#8F45A5', '#3E7BAC', '#41ABD5', '#222D35', '#2B8309','#8F45A5']
          var counter = 0
 
         for (let i = 0; i < Navs.length; i++) {
@@ -1635,36 +1661,50 @@ gtag('config', 'UA-159861942-1');
             })
             
         }
+        for (let x = 0; x < dataBtn.length; x++) {
+            console.log(dataBtn[x])
+            
+        }
         for (let i = 0; i < menu.length; i++) {
             newValue.textContent=menu.length
-            
-       
+            // if(menu[i].classList.contains('swiper-slide-active')){
+            //     console.log('yes')
+            // }
+            // else{
+            //     console.log('no')
+            // }
+            // console.log(menu)
+                
         }
+        // for (let x = 0; x < swipeBtn.length; x++) {
+        //     console.log(swipeBtn[x])
+            
+        // }
         prevBtn.addEventListener('click', function(){
             
             
-            if (counter === 0){
-                counter = menu.length
-            }
-            counter--
-            
             for (let i = 0; i < menu.length; i++) {
-                
-                swiperBg.style.backgroundColor = bgColors[counter]
-                
+                // console.log(menu[i])
+            newValue.textContent=menu.length
+            if(menu[i].classList.contains('swiper-slide-active')){
+                swiperBg.style.backgroundColor = bgColors[i-1]
+    
+
+            }
+       
             } 
         })
         nextBtn.addEventListener('click', function(){
-            if (counter === Number(newValue.textContent)){
-                counter = 0
-            }
-            counter++
-            
             
             for (let i = 0; i < menu.length; i++) {
+            newValue.textContent=menu.length
+            if(menu[i].classList.contains('swiper-slide-active')){
+                swiperBg.style.backgroundColor = bgColors[i+1]
                 
-                swiperBg.style.backgroundColor = bgColors[counter]
-                
+
+            }
+            
+       
             }
             
         })

@@ -1466,6 +1466,22 @@ white-space: nowrap;
             background-repeat: no-repeat;
         }
 
+.header__container--petrol{
+            height: 90vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/petrol-bg.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+.header__container--mom{
+            height: 90vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/mom-bg.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
 .header__text-br{
         display: none;
     }
@@ -3324,6 +3340,10 @@ color: #FFFFFF;
         background: #32CCFE;
     }
 
+.btn-mom {
+        background: #970A73;
+    }
+
 .btn-trippleg {
         background: #D8944E;
     }
@@ -3412,8 +3432,6 @@ color: #FFFFFF;
         margin: 0 6px;
     } */
 }
-
-.swiper-slide-active
 
 @media only screen and (min-width: 920px){
     /* .portfolio .owl-carousel .owl-nav button.owl-prev, .portfolio .owl-carousel .owl-nav button.owl-next, .portfolio .owl-carousel .owl-dots {
@@ -5702,7 +5720,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section__text-content-title--mom{
             color: white;
-            /* line-height: 45px; */
+            line-height: 50px;
         }
 
 .portfolio-section__text-content-title--miss{
@@ -5871,6 +5889,13 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .portfolio-section-item.fave > div > .portfolio-section__image-container
     {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    
+    .portfolio-section__text-content-title  {
+        line-height: 45px;
     }
 }
 
@@ -10377,7 +10402,8 @@ section.br{
     }
 
 .header__case > div.header__case--content {
-            padding-left: 100px;
+            padding-left: 90px;
+            padding-right: 30px;
         }
 
 .header__case > div.header__case--content.narrow{
@@ -10453,6 +10479,8 @@ section.br{
 .header__case--img {
         width: 47%;
     }
+
+/* padding-right: 100px; */
 
 .header__case--img img {
             width: 100%;
