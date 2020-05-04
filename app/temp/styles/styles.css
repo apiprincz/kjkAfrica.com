@@ -3268,6 +3268,11 @@ header > .nav-bar .new-bar{
             width: 783px;
         }
 
+.portfolio__item--flex-img > img.queens {
+                width: 100%; 
+                height: 100vh;
+            }
+
 .portfolio__swiper--area {
         position: absolute;
         bottom: 0;
@@ -3491,10 +3496,16 @@ color: #FFFFFF;
         padding:0px 0px 45px 70px;
         width: 100%;
     }
-    .portfolio__item--flex-img {
+    .portfolio__item--flex-img
+    
+    {
         width: 100%;
+        /* height: 100%; */
+    }
+    .portfolio__item--flex-img img.queens {
         height: 100%;
     }
+    
     .portfolio__swiper--area {
         width: 40%;
     }
