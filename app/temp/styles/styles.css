@@ -1435,7 +1435,7 @@ white-space: nowrap;
         }
 
 .header__container--afiaanyi{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/afiaanyibg.png);
             background-position: center;
             background-size: cover;
@@ -1443,7 +1443,7 @@ white-space: nowrap;
         }
 
 .header__container--trudata{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/td-bg.png);
             background-position: center;
             background-size: cover;
@@ -1451,7 +1451,7 @@ white-space: nowrap;
         }
 
 .header__container--chaz{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/chazb-bg.png);
             background-position: center;
             background-size: cover;
@@ -1459,7 +1459,7 @@ white-space: nowrap;
         }
 
 .header__container--nerfund{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/nerfund-bg.png);
             background-position: center;
             background-size: cover;
@@ -1467,7 +1467,7 @@ white-space: nowrap;
         }
 
 .header__container--petrol{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/petrol-bg.png);
             background-position: center;
             background-size: cover;
@@ -1475,7 +1475,7 @@ white-space: nowrap;
         }
 
 .header__container--mom{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/mom-bg.png);
             background-position: center;
             background-size: cover;
@@ -1718,6 +1718,9 @@ white-space: nowrap;
     .header__sub--menu li.active a {
         font-size: 17px;
     }
+    .header__container--afiaanyi, .header__container--trudata{
+        height: 90vh;
+    }
 }
 
 @media only screen and (max-width: 660px){
@@ -1793,6 +1796,17 @@ white-space: nowrap;
     .header__portfolio--navs li.active a {
         font-size: 17px;
     }
+    .header__container--afiaanyi,
+    .header__container--trudata,
+    .header__container--tworeport,
+    .header__container--chaz,
+    .header__container--nerfund,
+    .header__container--mom,
+    .header__container--petrol
+     {
+        height: 70vh;
+    }
+    
 }
 
 @media only screen and (max-width: 375px){
@@ -10519,6 +10533,99 @@ section.br{
         color: #E83124;            
     }
 
+@media only screen and (max-width:1365px){
+    .header__case--content.narrow, .header__case--content{
+        width: 55%;
+    }   
+    .header__case > div.header__case--content {
+        padding-left: 60px;
+    }
+    .header__case--content.wide {
+        width: 67%;
+    }
+    .header__case > div.header__case--content.wide {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width:1065px){
+    .header__case > div.header__case--content.narrow {
+        padding-left: 3px;
+    }
+    .header__case > div.header__case--content {
+        padding-right: 7px;
+    }   
+    .header__case--content > div li, .header__case--content > div p {
+        padding: 6px 0px;
+        line-height: 20px;
+        white-space: normal;
+    }
+    .header__case--client {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width:765px){
+    .header__case {
+        flex-direction: column;
+    }
+    .header__case > div.header__case--content {
+        padding-left: 3px;
+    }
+    .header__case--content.narrow, .header__case > div.header__case--content {
+        width: 80%;
+    }
+    .header__case > div.header__case--content.wide {
+        width: 90%;
+    }
+    .header__case > div {
+        padding-left: 0;
+    }
+    .header__case--img.wide {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .header__case > div.header__case--content.narrow {
+        padding-left: 20px;
+        width: 98%;
+    }
+    
+}
+
+@media only screen and (max-width:512px){
+    .header__case--img {
+        width: 70%;
+    }
+    .header__case > div.header__case--content.wide {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .header__case--content > div li, .header__case--content > div p {
+        font-size: 12px;
+    }
+    .header__case--content > div h3 {
+        font-size: 16px;
+    }
+     .header__case > div.header__case--content {
+         width: 90%;
+     }
+     .header__case > div.header__case--content.wide {
+         padding:0px 3px 0px 6px;
+     }
+     .header__case--btn {
+         padding: 12px 18px;
+         font-size: 14px;
+     }
+     .header__case--content > div h3 {
+         white-space: nowrap;
+     }
+
+}
+
 .client{
     background: #FFF7F5;
     width: 100%;
@@ -10526,6 +10633,10 @@ section.br{
     padding-bottom: 30px;
 
 }
+
+.client:nth-of-type(even) {
+        background: rgba(249, 187, 182, 0.26);
+    }
 
 .client__call{
         position: relative;
@@ -10702,6 +10813,7 @@ section.br{
 
 .client__products {
         width: 90%;
+        padding-top: 40px;
         
     }
 
@@ -10869,90 +10981,52 @@ section.br{
     }
 }
 
-@media only screen and (max-width: 1100px){
-    client__circle {
-        width: 180px;
+@media only screen and (max-width: 765px){
+    .client__container {
+        flex-direction: column;
+        align-items: center;
     }
-}
-
-@media only screen and (max-width: 860px){
-    client__container__img {
-        width: 35%;
-        align-self: center;
-    }
-    client__container__text{
-        width: 75%;
-    }
-    client__list{
-        display: flex;
-    }
-    client__list li{
-        width: 50%;
-    }
-    client__list li::before{
-        margin-right: 20px;
-        margin-top: 5px;
-    }
-}
-
-@media only screen and (max-width: 660px){
-
-    client__call {
-        padding-bottom: 40px;
-    }
-
-    client__container{
-        padding-bottom: 0;
-    }
-
-    client:nth-of-type(even) client__container__img{
+    .client__container__img {
         order: -1;
     }
+    .client__container__text {
+        width: 100%;
+    }
+    .client:nth-of-type(1) > .client__container {
+        padding: 50px 0px 0px;
+    }
+    .client__container {
+        padding: 0;
+    }
+    
+    .client__container__text--space-removed {
+        padding-left: 5%;
+    }
+    .client__container__text--space-narrow {
+        padding-left: 5%;
+    }
+    .client__container__text--wide {
+        padding-left: 5%;
+    }
+    .client__products--collections.afiaanyi > div {
+        padding-bottom: 35px;
+    }
+    .client__img p {
+        font-size: 15px;
+    }
+}
 
-    client--last{
-        padding-bottom: 40px;
-    }
-
-    client__container {
-        flex-direction: column;
-    }
-    client__list li{
-        width: 100%;
-    }
-    client__container__text{
-        padding-left: 0;
-        width: 100%;
-        /* order: -1; */
-    }
-    client__container__img{
-        width: 330px;
-        margin-bottom: 30px;
-    }
-    client__list{
-        display: block;
-    }
-    client__img__inner-one--shift {
-        transform: translateX(0%);
-    }
-    client__call-text {
-        width: 100%;
-        padding-left: 23px;
-    }
-    client__call-img, client__call-image {
-        width: 100%;
-        margin: 30px 0;
-    }
-    client__circle {
-        /* width: 180px; */
+@media only screen and (max-width: 512px){
+    
+    .client__img p {
+        line-height: 17px;
     }
 }
 
 @media only screen and (max-width: 420px){
-    client__container__img{
-        width: 100%;
-    }
-    client__title--no-margin{
-        white-space: normal;
+    
+    .client__title{
+        font-size: 2.4rem;
     }
 }
 

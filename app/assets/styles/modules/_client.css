@@ -4,6 +4,10 @@
     overflow: hidden;
     padding-bottom: 30px;
 
+    &:nth-of-type(even) {
+        background: rgba(249, 187, 182, 0.26);
+    }
+
     &__call{
         position: relative;
     }
@@ -176,6 +180,7 @@
     }
     &__products {
         width: 90%;
+        padding-top: 40px;
 
         &--collections {
             position: relative;
@@ -340,89 +345,53 @@
 }
 
 
-@media only screen and (max-width: 1100px){
-    client__circle {
-        width: 180px;
-    }
-}
 
-@media only screen and (max-width: 860px){
-    client__container__img {
-        width: 35%;
-        align-self: center;
+@media only screen and (max-width: 765px){
+    .client__container {
+        flex-direction: column;
+        align-items: center;
     }
-    client__container__text{
-        width: 75%;
-    }
-    client__list{
-        display: flex;
-    }
-    client__list li{
-        width: 50%;
-    }
-    client__list li::before{
-        margin-right: 20px;
-        margin-top: 5px;
-    }
-}
-
-@media only screen and (max-width: 660px){
-
-    client__call {
-        padding-bottom: 40px;
-    }
-
-    client__container{
-        padding-bottom: 0;
-    }
-
-    client:nth-of-type(even) client__container__img{
+    .client__container__img {
         order: -1;
     }
-
-    client--last{
-        padding-bottom: 40px;
-    }
-
-    client__container {
-        flex-direction: column;
-    }
-    client__list li{
+    .client__container__text {
         width: 100%;
     }
-    client__container__text{
-        padding-left: 0;
-        width: 100%;
-        /* order: -1; */
+    .client:nth-of-type(1) > .client__container {
+        padding: 50px 0px 0px;
     }
-    client__container__img{
-        width: 330px;
-        margin-bottom: 30px;
+    .client__container {
+        padding: 0;
     }
-    client__list{
-        display: block;
+    
+    .client__container__text--space-removed {
+        padding-left: 5%;
     }
-    client__img__inner-one--shift {
-        transform: translateX(0%);
+    .client__container__text--space-narrow {
+        padding-left: 5%;
     }
-    client__call-text {
-        width: 100%;
-        padding-left: 23px;
+    .client__container__text--wide {
+        padding-left: 5%;
     }
-    client__call-img, client__call-image {
-        width: 100%;
-        margin: 30px 0;
+    .client__products--collections.afiaanyi > div {
+        padding-bottom: 35px;
     }
-    client__circle {
-        /* width: 180px; */
+    .client__img p {
+        font-size: 15px;
     }
 }
 
-@media only screen and (max-width: 420px){
-    client__container__img{
-        width: 100%;
+
+
+@media only screen and (max-width: 512px){
+    
+    .client__img p {
+        line-height: 17px;
     }
-    client__title--no-margin{
-        white-space: normal;
+}
+@media only screen and (max-width: 420px){
+    
+    .client__title{
+        font-size: 2.4rem;
     }
 }

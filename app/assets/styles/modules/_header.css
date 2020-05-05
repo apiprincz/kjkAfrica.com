@@ -111,42 +111,42 @@
             background-repeat: no-repeat;
         }
         &--afiaanyi{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/afiaanyibg.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
         &--trudata{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/td-bg.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
         &--chaz{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/chazb-bg.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
         &--nerfund{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/nerfund-bg.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
         &--petrol{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/petrol-bg.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
         &--mom{
-            height: 90vh;
+            height: 80vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/mom-bg.png);
             background-position: center;
             background-size: cover;
@@ -389,6 +389,9 @@
     .header__sub--menu li.active a {
         font-size: 17px;
     }
+    .header__container--afiaanyi, .header__container--trudata{
+        height: 90vh;
+    }
 }
 @media only screen and (max-width: 660px){
     .header__sub--menu li  {
@@ -461,6 +464,17 @@
     .header__portfolio--navs li.active a {
         font-size: 17px;
     }
+    .header__container--afiaanyi,
+    .header__container--trudata,
+    .header__container--tworeport,
+    .header__container--chaz,
+    .header__container--nerfund,
+    .header__container--mom,
+    .header__container--petrol
+     {
+        height: 70vh;
+    }
+    
 }
 @media only screen and (max-width: 375px){
     .header__text{

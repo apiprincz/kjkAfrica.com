@@ -109,3 +109,92 @@
         color: #E83124;            
     }
 }
+
+@media only screen and (max-width:1365px){
+    .header__case--content.narrow, .header__case--content{
+        width: 55%;
+    }   
+    .header__case > div.header__case--content {
+        padding-left: 60px;
+    }
+    .header__case--content.wide {
+        width: 67%;
+    }
+    .header__case > div.header__case--content.wide {
+        padding-left: 30px;
+    }
+}
+@media only screen and (max-width:1065px){
+    .header__case > div.header__case--content.narrow {
+        padding-left: 3px;
+    }
+    .header__case > div.header__case--content {
+        padding-right: 7px;
+    }   
+    .header__case--content > div li, .header__case--content > div p {
+        padding: 6px 0px;
+        line-height: 20px;
+        white-space: normal;
+    }
+    .header__case--client {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width:765px){
+    .header__case {
+        flex-direction: column;
+    }
+    .header__case > div.header__case--content {
+        padding-left: 3px;
+    }
+    .header__case--content.narrow, .header__case > div.header__case--content {
+        width: 80%;
+    }
+    .header__case > div.header__case--content.wide {
+        width: 90%;
+    }
+    .header__case > div {
+        padding-left: 0;
+    }
+    .header__case--img.wide {
+        width: 75%;
+    }
+}
+@media only screen and (max-width:600px){
+    .header__case > div.header__case--content.narrow {
+        padding-left: 20px;
+        width: 98%;
+    }
+    
+}
+@media only screen and (max-width:512px){
+    .header__case--img {
+        width: 70%;
+    }
+    .header__case > div.header__case--content.wide {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:425px){
+    .header__case--content > div li, .header__case--content > div p {
+        font-size: 12px;
+    }
+    .header__case--content > div h3 {
+        font-size: 16px;
+    }
+     .header__case > div.header__case--content {
+         width: 90%;
+     }
+     .header__case > div.header__case--content.wide {
+         padding:0px 3px 0px 6px;
+     }
+     .header__case--btn {
+         padding: 12px 18px;
+         font-size: 14px;
+     }
+     .header__case--content > div h3 {
+         white-space: nowrap;
+     }
+
+}
