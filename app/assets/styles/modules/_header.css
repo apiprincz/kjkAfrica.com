@@ -41,7 +41,7 @@
         }
 
         &--quote{
-            height: 50vh;
+            height: 58vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/images/quote__bg.png);
         }
 
@@ -195,7 +195,7 @@
     }
 
     &__text{
-        font-size: 1.3rem;
+        font-size: 0.9rem;
         color: #ffffff;
         font-family: 'Sofia Pro', serif;
         font-weight: 200;
@@ -212,6 +212,10 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 250px;
+
+            &-small {
+                width: 200px;
+            }
         }
        
 
@@ -263,6 +267,10 @@
         width: 100%;
         margin: 0 auto;
         border-top: 1px solid #807D7D;
+
+        &--removed {
+            border-top: none;
+        }
         
         & ul {
             width: 100%;
@@ -310,6 +318,9 @@
     }
     &__portfolio--navs li {
         padding: 0px 38px;
+    }
+    &__portfolio--navs li a {
+       white-space: nowrap;
     }
 
    
@@ -392,6 +403,12 @@
     .header__container--afiaanyi, .header__container--trudata{
         height: 90vh;
     }
+    .header__portfolio--navs li {
+        padding: 0px 16px;
+    }
+    .header__portfolio--navs li a{
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 660px){
     .header__sub--menu li  {
@@ -419,9 +436,11 @@
     .header__portfolio--navs li {
         padding: 0 22px;
     } 
-    .header__sub--menu li a, .header__portfolio--navs li a {
+    .header__sub--menu li a ,
+    .header__portfolio--navs li a{
         font-size: 11px;
     }
+     
     .header__sub--menu li.active a, .header__portfolio--navs li.active a {
         font-size: 16px;
     }
@@ -430,11 +449,12 @@
     .header__sub--menu li  {
         padding: 0px 6px;
     }
-    .header__sub--menu  li a {
+    .header__sub--menu  li a,
+    .header__portfolio--nav  li a{
         font-size: 10px;
     }
     .header__portfolio--navs li {
-        padding: 0 14px;
+        padding: 0 11px;
     }
     
 }
@@ -445,25 +465,20 @@
     .header__text {
         font-size: 1.1rem;
     }
-    .header__sub--menu li.active a{
-        font-size: 10px;
-    }
-    .header__sub--menu li a {
-        font-size: 8px;
-        line-height: 5px;
-    }
-    .header__sub--menu li a {
+    
+    
+    .header__sub--menu li a,
+    .header__portfolio--navs li a {
         font-size: 9px;
+        line-height: 5px;
+
     }
-     .header__portfolio--navs li a {
-        font-size: 13px;
-    }
-    .header__sub--menu li.active a{
-        font-size: 14px;
-    }
+     
+    .header__sub--menu li.active a,
     .header__portfolio--navs li.active a {
-        font-size: 17px;
+        font-size: 11px;
     }
+    
     .header__container--afiaanyi,
     .header__container--trudata,
     .header__container--tworeport,
@@ -491,7 +506,7 @@
         font-size: 1.7rem;
     }
     .header__portfolio--navs li {
-        padding: 0 10px;
+        padding: 0 6px;
     }
     .header__sub--menu li a{
         font-size: 8px;
@@ -499,9 +514,7 @@
     .header__sub--menu li.active a{
         font-size: 10px;
     }
-     .header__portfolio--navs li a {
-        font-size: 11px;
-    }
+    
 }
 @media only screen and (max-width: 350px){
     .header__text{

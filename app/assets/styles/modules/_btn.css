@@ -67,7 +67,7 @@
 
     &--gradient{
         background: linear-gradient(180deg, #FA8209 0%, #FF4B30 82.24%);
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     &--link:link, &--link:visited{

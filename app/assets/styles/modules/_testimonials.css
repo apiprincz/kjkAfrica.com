@@ -116,17 +116,56 @@
         width: 13%;
     }
 
-    &__container-first{
+    &__container-one,
+    &__container-two,
+    &__container-three,
+    &__container-four,
+    &__container-five
+    {
         padding: 154px 0;
-        background:url(../../assets/images/pic.png);
+        /* background:url(../../assets/images/pic.png); */
+        
+        display: flex;
+        justify-content: flex-end;
+        
+       
+   }
+   &__container-one{
+    background: linear-gradient(327.75deg,#fb5a1e 3.02%,rgba(186,149,82,.75) 99.31%),url(../../assets/images/giwa.jpg);
+    width: 0%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+    &__container-two{
+        background: linear-gradient(327.75deg,#fb5a1e 3.02%,rgba(186,149,82,.75) 99.31%),url(../../assets/images/pic-square.png);
         width: 0%;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-   }
+    }
+    &__container-three{
+        background: linear-gradient(327.75deg,#fb5a1e 3.02%,rgba(186,149,82,.75) 99.31%),url(../../assets/images/bridget.jpg);
+        width: 0%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__container-four {
+        background: linear-gradient(327.75deg,#fb5a1e 3.02%,rgba(186,149,82,.75) 99.31%),url(../../assets/images/debola.jpg);
+        width: 0%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__container-five {
+        background: linear-gradient(327.75deg,#fb5a1e 3.02%,rgba(186,149,82,.75) 99.31%),url(../../assets/images/Bakare.jpeg);
+        width: 0%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+  
 
     &__container-second{
         display: flex;
@@ -134,7 +173,7 @@
         align-items: center;
         width: 100%;
         position: relative;
-        padding: 105px 10%;
+        padding:60px 10%;
     }
 
     .testimonials__img--resp {
@@ -166,7 +205,12 @@
 }
 
 @media only screen and (min-width: 700px){
-    .testimonials__container-first{
+    .testimonials__container-one,
+    .testimonials__container-two,
+    .testimonials__container-three,
+    .testimonials__container-four,
+    .testimonials__container-five
+    {
         width: 39%;
     }
     .testimonials__container-second{

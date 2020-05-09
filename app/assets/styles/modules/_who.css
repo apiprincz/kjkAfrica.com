@@ -126,7 +126,7 @@
          & img {
              position: absolute;
              top:-200px;
-             height: 154%;
+             /* height: 154%; */
              width: 100%;             
              
          }
@@ -143,18 +143,22 @@
         position: relative;
         width: 400px;
         height: 300px;
+        & > div {
+            width: 540px;
+        }
+
         & img {
-            width: 150%;
-            height:600px;
-            transform:translate(-8%,-32%);
+            width: 100%;
+            /* height:600px; */
+            transform:translate(-8%,-10%);
             position: initial;
             
         }
         &::before {
             content: url(../../../assets/images/whodot.png);
             position: absolute;
-            top: -154px;
-            left: -45px;
+            top: -120px;
+            left: -100px;
             transform: scale(0.8);
         }
 
@@ -166,7 +170,7 @@
     &__text{
         background: rgba(251, 90, 30, 0.9);
         border-radius: 10px;
-        padding: 30px 70px 40px 140px;
+        padding: 30px 50px 40px 140px;
         text-align: left;
         color: #FFFFFF;
         z-index: -1;
@@ -217,8 +221,8 @@
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: 100;
-            font-size: 17px;
-            line-height: 30px;
+            font-size: 15px;
+            line-height: 24px;
             color: #FFFFFF;            
         }
     }
@@ -249,7 +253,7 @@
             &::after {
                 content: "";
                 display: block;
-                width: 280px;
+                width: 150px;
                 height: 4px;
                 background: #FB5A1E;
                 border-radius: 15px;
@@ -430,37 +434,53 @@
         }
     }
     .who__text{
-        padding: 30px 25px 60px 110px;
+        padding: 40px 25px 60px 110px;
     }
     .who__visual img {
-        transform: translate(-8%,-23%)
+        transform: translate(-8%,13%)
     }
+    .who__text h3 {
+        line-height: 32px;
+    }
+    .who__visual > div {
+        width: 465px;
+    }
+    .who__visual::before {
+        top: -46px;
+    }
+
 }
 @media only screen and (max-width:1120px){
     .who__card > div{
         width: 23%;
     }
-    .who__visual{
-        width: 354px;
-    }
-    .who__visual img {
-        height: 516px;
-    }
+    
+   
     .who__text{
         padding-left: 105px;
     }
     .who__hleft {
         padding: 0px 30px 0px 20px;
     }
-    .who__text p {
-        line-height: 25px;
+    .who__hleft p {
+        line-height: 24px;
+        font-size: 16px;
     }
 
 }
-@media only screen and (max-width:1000px){
-    .who__visual{
-        width: 230px;
+@media only screen and (max-width:1024px){
+    .who__board{
+       flex-direction: column;
     }
+    .who__text {
+        width: 90%;
+    }
+    .who__board > div {
+        align-self: center;
+    }
+}
+@media only screen and (max-width:1000px){
+    
     .who__staff img {
         transform: scale(1.0);
         height: 310px;
@@ -480,9 +500,7 @@
         line-height: 21px;
         font-size: 15px;
     }
-    .who__visual img {
-        width: 400px;
-    }
+    
     .who__text h3{
         font-size: 23px;
     }
@@ -503,6 +521,10 @@
     }
     .who__circler p {
         font-size: 16px;
+    }
+    .who__hleft p {
+        line-height: 20px;
+        font-size: 14px;
     }
     .who__desc {
         font-size: 22px;
@@ -552,18 +574,11 @@
         padding: 10px 20px 4px;
     }
     .who__bg img {
-        top: -50px;
+        /* top: -50px; */
         height: 125%;
     }
-    .who__visual img {
-        width: 450px;
-        transform: scale(0.9);
-    }
-    .who__visual::before {
-        top: -2px;
-        left: 0px;
-        transform: scale(0.8);
-    }
+   
+    
     .who__staff::before {
         top: -85px;
     }
@@ -585,9 +600,7 @@
         transform-origin: right;
         transform: scale(0.8);
     }
-    .who__board {
-        flex-direction: column;
-    }
+    
     .who__hero {
         width: 100%;
         
@@ -621,6 +634,20 @@
     .who__history--container {
         padding-bottom: 50px;
     }
+    .who__visual img {
+        transform: translate(0%,16%);
+    }
+    .who__visual {
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .who__visual >div {
+        width: 100%;
+    }
+    .who__visual::before {
+        left: -67px;
+    }
     
 }
 @media only screen and (max-width:530px){
@@ -641,9 +668,7 @@
     .who__desc {
         font-size: 16px;
     }
-    .who__visual img {
-        width: 357px;
-    }
+    
     .who__visual::before {
         transform: scale(0.6);
     }
@@ -718,9 +743,7 @@
     .who__circle--bg {
         height: 427px;
     }
-    .who__visual img {
-        width: 314px;
-    }
+    
     .who__card {
         width: 100%;
     }
@@ -741,10 +764,7 @@
     .who__visual::before {
         transform: rotateX(45deg);
     }
-    .who__visual img {
-        width: 280px;
-        transform: translateY(10px);
-    }
+    
     .who__text {
         padding-left: 22px;
     }

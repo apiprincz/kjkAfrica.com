@@ -233,6 +233,12 @@
         padding: 45px 0px 0px 45px;
     }
 }
+@media only screen and (min-width:1089px){
+    .diff__container > .diff__left {
+        width: 63%;
+        
+    }
+}
 @media only screen and (max-width:1089px){
     .diff__container > div h3  {
         font-size: 22px;
@@ -243,23 +249,31 @@
     .diff__container > div img  {
         height: 80%;
     }
-    .diff__left {
-        height: 302px;
+    .diff__container > .diff__left {
+        height: 400px;
+        width: 60%;
     }
     .diff__container {
         padding-left: 0px;
     }
+    
 }
 @media only screen and (max-width:956px){
     .diff__container {
         padding: 30px 0px 0px 15px;
         
     }
+    .diff__container > div p {
+        line-height: 160%;
+    }
     .divider {
         height: 300px;
     }
     .diff__home-bottom {
         bottom: -20px;
+    }
+    .diff__container > .diff__left {
+        height: 360px;
     }
 }
 @media only screen and (max-width:900px){
@@ -280,6 +294,14 @@
     }
     .diff__left {
         height: 300px;
+    }
+}
+@media only screen and (max-width:860px){
+    .diff__container > .diff__left {
+       height: 326px; 
+    }
+    .diff__container > div p {
+        line-height: 136%;
     }
 }
 @media only screen and (max-width:823px){

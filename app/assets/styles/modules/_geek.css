@@ -11,13 +11,13 @@
             font-style: normal;
             font-weight: 300;
             font-size: 16px;
-            line-height: 26px;
+            line-height: 28px;
             color: #333333;
         }
     }
     &__container {
         display: flex;
-        padding: 10px 0px;
+        padding: 40px 0px;
     
     & > div {
         /* width: 74%; */
@@ -109,7 +109,9 @@
         font-size: 48px;
         line-height: 72px;
         color: #333333;
-        text-align: center;
+        text-align: left;
+        padding-bottom: 20px;
+        padding-left: 40px;
         &::after {
             content: '';
             background: #FB5A1E;
@@ -118,7 +120,7 @@
             height: 3px;
             display: block;
             position: absolute;
-            right: 50%;
+            /* right: 50%; */
             text-align: center;
             transform: translateX(50%);
         }

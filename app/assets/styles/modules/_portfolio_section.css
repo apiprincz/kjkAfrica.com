@@ -511,9 +511,7 @@
     .portfolio-section__img {
         width: 100%;
     }
-    .portfolio__outer-container.swiper-container-two.swiper-container-initialized.swiper-container-horizontal {
-        /* padding-bottom: 86px; */
-    }
+    
 }
 
 @media only screen and (max-width: 820px){

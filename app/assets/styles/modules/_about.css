@@ -7,7 +7,7 @@
 
     
     &__sec{
-        background: linear-gradient(0deg, rgba(255, 247, 244, 0.95), rgba(255, 247, 244, 0.95)), url(../../assets/images/bg.png);
+        /* background: linear-gradient(0deg, rgba(255, 247, 244, 0.95), rgba(255, 247, 244, 0.95)), url(../../assets/images/bg.png); */
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

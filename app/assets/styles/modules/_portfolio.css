@@ -346,9 +346,9 @@ color: #FFFFFF;
         transform: translateY(-48px);
     } */
 }
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+/* .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
     display: none;
-}
+} */
 
 @media only screen and (max-width:1325px){
     .portfolio__title.saint, .portfolio__title.queens {

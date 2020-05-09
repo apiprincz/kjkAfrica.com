@@ -20,7 +20,7 @@
 
         &--show {
             height: 100%;
-            transition : height 0.2s ease-out;
+            transition : height 0.4s ease-out;
             text-align:center
         }
         & p {
@@ -41,7 +41,7 @@
         justify-content:space-between;
         padding: 30px 44px ;
         width:30%;
-        border: 1px solid #FB5A1E;
+        /* border: 1px solid #FB5A1E; */
         box-sizing: border-box;
         border-radius: 30px;
         margin: 40px 0px 20px 0px;
@@ -156,7 +156,7 @@
             line-height: 173.4%;
             letter-spacing: -0.02em;
             color: #000000;   
-            padding-top: 30px;         
+            /* padding-top: 30px;          */
             
         }
     }
@@ -306,7 +306,7 @@
             width: 80%;
             background: #fff;
             border: 1px solid #FB5A1E;
-            padding: 100px;
+            padding: 60px 100px;
             height: 90vh;
             margin: 0 auto;
             overflow-y: auto;
