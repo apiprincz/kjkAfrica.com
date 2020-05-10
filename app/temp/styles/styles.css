@@ -5507,7 +5507,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         justify-content: center;
         align-items: center;
         padding-top: 30px;
-        padding-bottom:60px;
+        /* padding-bottom:60px; */
     }
 
 .portfolio-section__bg-spot {
@@ -5636,11 +5636,33 @@ App.js:39 Letter 10 is 147.7610626220703 */
         transition: all .2s ease-in-out;
         width: 100%;
         padding: 40px 60px;
+        
+        
     }
 
 .portfolio-section-item--half{
             width: 48%;
             flex-direction: column;
+        }
+
+.portfolio-section-item h2 {
+            font-family: Playfair Display;
+            font-style: italic;
+            font-weight: 900;
+            font-size: 50px;
+            line-height: 32px;
+            text-align: left;
+            color: #FFFFFF;            
+        }
+
+.portfolio-section-item p {
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            padding-bottom: 20px;
         }
 
 .portfolio-section-item:nth-of-type(odd) {
@@ -5659,6 +5681,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
             /* margin-bottom: 50px; */
             transition: all .2s ease-in-out;
             width: 100%;
+            padding: 60px 0px;
         }
 
 .portfolio-section-item-afiaanyi, .portfolio-section-item-tworeport, .portfolio-section-item-mom{
@@ -5711,57 +5734,30 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section-item.fave > div{
             background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);
-        }
-
-.portfolio-section-item.fave > div > .portfolio-section__image-container {
-                width: 85%;
-            }
-
-.portfolio-section-item.fave > div img {
-                transform: translateY(-62px);
-                height: 125%;
+            border-radius:8px;
+            
             }
 
 .portfolio-section-item.fave h2, .portfolio-section-item.fave p {
                 color: white;
             }
 
-.portfolio-section-item.marketplace
-        { 
-            background: none;
-            box-shadow: none;
-        }
-
-.portfolio-section-item.marketplace > div{
-            background: linear-gradient(184.56deg, #F99225 23.65%, #F26327 89.79%);
-        
-        }
-
-.portfolio-section-item.marketplace > div img{
-                    transform: translate(-20px, -42px);
-                }
-
-.portfolio-section-item.marketplace h2, .portfolio-section-item.marketplace p {
-                color: white;
+.portfolio-section-item.attendance > div {
+                background: #225B9B;
+                box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
+                border-radius: 8px;
             }
 
-.portfolio-section-item.travel{
-            background: none;
-            box-shadow: none;
-            padding: 100px 80px 80px;
-        }
+.portfolio-section-item.cms > div {
+                background: linear-gradient(179.7deg, #262626 8.29%, #3E3E3E 99.71%);
+                box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
+                border-radius: 8px;                
+            }
 
-.portfolio-section-item.travel > div{
-            background: linear-gradient(231.09deg, #504D4D -3.8%, #50150C 46.32%);    
-             }
-
-.portfolio-section-item.travel > div img{
-                transform: translate(20px, -62px);
-                height: 104%;
-                }
-
-.portfolio-section-item.travel h2, .portfolio-section-item.travel p {
-                color: white;
+.portfolio-section-item.edu > div {
+                background: #477DA0;
+                box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
+                border-radius: 8px;                
             }
 
 .portfolio-section-item.pave{
@@ -5773,19 +5769,59 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .portfolio-section-item.pave > div{
             background: #387789;
             box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
-            border-radius: 8px;   
-            }
-
-.portfolio-section-item.pave > div img{
-                transform: translate(-20px, -62px);
-                height: 104%;
-                }
-
-.portfolio-section-item.pave > div > .portfolio-section__image-container {
-                width: 80%;
+            border-radius: 8px; 
+              
+             
+               
             }
 
 .portfolio-section-item.pave h2, .portfolio-section-item.pave p {
+                color: white;
+            }
+
+.portfolio-section-item.mind > div {
+                background: linear-gradient(115.97deg, #7200EA 1.2%, #6509C4 49.37%, #630DBC 92.96%, #7037AD 92.96%);
+                box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
+                border-radius: 8px;                
+            }
+
+.portfolio-section-item.travel{
+            background: none;
+            box-shadow: none;
+        }
+
+/* padding: 100px 80px 80px; */
+
+.portfolio-section-item.travel > div{
+            background: linear-gradient(231.09deg, #504D4D -3.8%, #50150C 46.32%);
+            border-radius: 8px;
+
+               
+             }
+
+.portfolio-section-item.travel h2{
+                line-height: 47px;
+            }
+
+.portfolio-section-item.directory > div {
+                background: linear-gradient(259.35deg, #5CAAF2 -5.55%, #3077B3 97.49%);
+                box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
+                border-radius: 8px;               
+            }
+
+.portfolio-section-item.marketplace
+        { 
+            background: none;
+            box-shadow: none;
+        }
+
+.portfolio-section-item.marketplace > div{
+            background: linear-gradient(184.56deg, #F99225 23.65%, #F26327 89.79%);
+                
+        
+        }
+
+.portfolio-section-item.marketplace h2, .portfolio-section-item.marketplace p {
                 color: white;
             }
 
@@ -5793,6 +5829,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         width: 100%;
         position: relative;
         z-index: 1;
+        transform: translateX(-40px);
     }
 
 .portfolio-section__img-markup--cakesgallery{
@@ -5800,26 +5837,47 @@ App.js:39 Letter 10 is 147.7610626220703 */
         }
 
 .portfolio-section__text-content-container{
-        width: 48%;
+        width: 38%;
         position: relative;
         /* display: inline-flex; */
         align-items: center;
         justify-content: center;
-        padding: 4% 5%;
-
-        /* &--afiaanyi, &--miss{
-            background: #333;
-        } */
-
-        /* &--tworeport{
-            background: #E53131;
-        } */
+        padding: 2% 5% 2% 2%;
     }
 
 .portfolio-section__text-content-container--half{
             width: 100%;
             padding: 8% 6%
         }
+
+.portfolio-section__text-content-container > div {
+            padding-bottom: 20px;
+        }
+
+.portfolio-section-extended {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0px;
+    }
+
+.portfolio-section-extended a {
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #FFFFFF;
+            
+        }
+
+.portfolio-section-link:after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        background: white;
+        margin: 6px 0px;
+    }
 
 .portfolio-section__image-container{
         width: 68%;
@@ -5991,6 +6049,18 @@ App.js:39 Letter 10 is 147.7610626220703 */
         
     }
 
+@media only screen and (max-width: 1244px){
+    .portfolio-section-item h2{
+        font-size: 42px;
+    }
+}
+
+@media only screen and (max-width: 1078px){
+    .portfolio-section-item h2{
+        font-size: 36px;
+    }
+}
+
 @media only screen and (max-width: 940px){
     .portfolio-section-item > div{
         /* width: 48%; */
@@ -6015,12 +6085,12 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .portfolio-section__text {
         line-height: 25px;
     }
-    .portfolio-section-item.fave > div img,
+    /* .portfolio-section-item.fave > div img,
     .portfolio-section-item.marketplace > div img,
     .portfolio-section-item.travel > div img,
     .portfolio-section-item.pave > div img {
         transform: translate(0);
-    }
+    } */
     .portfolio-section-item.pave > div > .portfolio-section__image-container,
     .portfolio-section-item.fave > div > .portfolio-section__image-container
     {
@@ -6079,6 +6149,15 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .portfolio-section__text-content-title {
         font-size: 3.0rem;
     }
+    .portfolio-section-extended a {
+        font-size: 14px;
+    }
+    .portfolio-section-item h2 {
+        font-size: 30px;
+    }
+    .portfolio-section-item > div {
+        padding: 23px 0px;
+    }
 }
 
 @media only screen and (max-width: 425px){
@@ -6090,7 +6169,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .portfolio-section__text-content-title {
         font-size: 2.5rem;
     }
-    
+    .portfolio-section__img-markup {
+        transform: translateX(-20px);
+    }
     
 }
 
@@ -10387,14 +10468,15 @@ section.br{
         font-style: normal;
         font-weight: 600;
         font-size: 30px;
-        line-height: 64px;
-        color: #FB5A1E; 
-        white-space: nowrap;
+        line-height: 38px;
+        color: #FB5A1E;
     }
+
+/* white-space: nowrap; */
 
 .blog__story h3.blog__story--italics, .blog__story h4.blog__story--italics {
             font-style: italic;
-            line-height: 91px;
+            line-height: 38px;
             text-align: center;
         }
 
@@ -10544,7 +10626,11 @@ section.br{
 
 @media only screen and (max-width:350px){
     .blog__story h3, .blog__story h4 {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .blog__story h3.blog__story--italics {
+        line-height: 28px;
     }
 
 }
