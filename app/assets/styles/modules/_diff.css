@@ -326,7 +326,7 @@
     .diff__container > div {
        
         width: 100%;
-        
+        padding: 0px 15px;
     }
     .diff__visual {
         height: 340px;
@@ -345,10 +345,20 @@
         padding-right: 0px;
     }
     .diff__container>div.diff__left {
-        width: auto;
+        width: 60%;
+        height: auto;
     }
     .diff__home-bottom {
         bottom:-50px ;
+    }
+    .diff__container > div img.diff__home-left {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:540px){
+    
+    .diff__container > div   {
+        padding: 0;
     }
 }
 @media only screen and (max-width:512px){
@@ -375,7 +385,7 @@
         padding: 15px 0px 0px 0px;
     }
     .diff__container > div img {
-        height: 27%;
+        /* height: 27%; */
     }
     
     .diff__visual {
@@ -410,6 +420,6 @@
         height: 237px;
     }
     .diff__container > div img.diff__home-left{
-        height: 80%;
+        /* height: 80%; */
     }
 }

@@ -35,10 +35,10 @@ class SwiperSection {
         this.anotherSwiper = new Swiper('.swiper-container-two', {
             loop: true,
             speed: 600,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 5000,
+            //     disableOnInteraction: false,
+            // },
             grabCursor: true,
             pagination: {
                 el: '.swiper-pagination',

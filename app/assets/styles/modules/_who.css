@@ -239,6 +239,7 @@
         order: -1;
         padding:0px 70px 0px 36px;
         position: relative;
+        width: 100%;
 
        
         & h3 {
@@ -272,8 +273,10 @@
     }
     &__staff {
         position: relative;
+        width: 100%;
         & img {
-            height: 440px;
+            /* height: 440px; */
+            width: 100%;
         
         }
         &::before {
@@ -483,7 +486,7 @@
     
     .who__staff img {
         transform: scale(1.0);
-        height: 310px;
+        /* height: 310px; */
     }
     .who__history--container {
         padding-right: 40px;
@@ -563,6 +566,10 @@
     .who__history--container{
         flex-direction: column;
     }
+    .who__history--container {
+        padding-right: 0px;
+       
+    }
     .who__hleft {
         order: 1;
         padding-top: 20px;
@@ -605,9 +612,6 @@
         width: 100%;
         
     }
-}
-
-@media only screen and (max-width:768px){
     .who__card > div{
         width: 33%;
     } 
@@ -624,6 +628,10 @@
     }
     .who__hero {
         padding: 0px 20px;
+    }
+    .who__staff{
+        width: 70%;
+        margin: 0 auto;
     }
 }
 @media only screen and (max-width:625px){
@@ -672,9 +680,7 @@
     .who__visual::before {
         transform: scale(0.6);
     }
-    .who__staff img {
-        height: 250px;
-    }
+    
     .who__staff::before {
         top: -60px;
     }
@@ -735,10 +741,11 @@
         font-size: 11px;
     }
     .who__hleft h3::after {
-        width: 190px;
+        width: 120px;
     }
     .who__hleft h3 {
         font-size: 30px;
+        line-height: 38px;
     }
     .who__circle--bg {
         height: 427px;
@@ -762,7 +769,8 @@
         font-size: 9px;
     }
     .who__visual::before {
-        transform: rotateX(45deg);
+        transform: scale(0.6);
+
     }
     
     .who__text {

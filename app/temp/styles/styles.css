@@ -1846,7 +1846,7 @@ white-space: nowrap;
         font-size: 8px;
     }
     .header__sub--menu li.active a{
-        font-size: 10px;
+        font-size: 9px;
     }
     
 }
@@ -2105,12 +2105,19 @@ header > .nav-bar .new-bar{
 .btn__img{
         margin-right: 10px;
         width: 8px;
+        /* margin: 0 auto; */
+        margin-left: 2px;
     }
 
 .btn__img--header{
             /* margin-right: 16px; */
             width: 25px;
         }
+
+.btn--content {
+        font-size: 12px;
+        padding: 12px 13px;
+    }
 
 .btn--header{
         margin-top: 26px;
@@ -4519,6 +4526,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .testimonials__body-text--adjusted{
                 padding-left: 8%;
                 padding-top: 12px;
+                font-weight: 600;
             }
 
 .testimonials__content{
@@ -5636,6 +5644,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         transition: all .2s ease-in-out;
         width: 100%;
         padding: 40px 60px;
+        position: relative;
         
         
     }
@@ -5652,8 +5661,16 @@ App.js:39 Letter 10 is 147.7610626220703 */
             font-size: 50px;
             line-height: 32px;
             text-align: left;
-            color: #FFFFFF;            
+            color: #FFFFFF;
         }
+
+.portfolio-section-item h2.escape {
+                font-family: sofia pro;
+            }
+
+.portfolio-section-item h2.escape.colored {
+                    color:#333333;
+                }
 
 .portfolio-section-item p {
             font-family: Sofia Pro;
@@ -5908,6 +5925,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
         line-height: 94px;
     }
 
+/* font-family: sofia pro; */
+
 .portfolio-section__text-content-title--afiaanyi{
             color: #fff;
         }
@@ -5945,6 +5964,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
             color: #fff;
         }
 
+.portfolio-section__text-content-sub-title.colored {
+            color: #FB5A1E; 
+        }
+
 .portfolio-section__text-content{
         font-family: Sofia Pro;
         font-style: normal;
@@ -5956,6 +5979,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section__text-content--afiaanyi, .portfolio-section__text-content--miss{
             color: #fff;
+        }
+
+.portfolio-section__text-content.colored {
+            color: #333333;
         }
 
 .portfolio-section__desc-content {
@@ -6025,6 +6052,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
         width: 42%;    
     }
 
+.portfolio-section__image-casing{
+        width: 56%;    
+    }
+
 .portfolio-section__ellipse{
         position: absolute;
         top: 8%;
@@ -6049,10 +6080,152 @@ App.js:39 Letter 10 is 147.7610626220703 */
         
     }
 
+.portfolio-section-modal {
+        position: fixed;
+        height: 0vh;
+        width: 100%;
+        opacity: 0;
+        top: 0;
+        /* left: 0; */
+        z-index: 100;
+        pointer-events: none;
+    }
+
+.portfolio-section-modal-show {
+            opacity: 1;
+            height: 100vh;
+            pointer-events:all;
+        }
+
+.portfolio-section-modal-container {
+            
+            margin:0 auto;
+            width:100%;
+            height:100%;
+            display:flex;
+            align-items:center;
+            background: rgba(0, 0, 0, 0.71);
+        }
+
+.portfolio-section-modal-container > div {
+                display: flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            padding: 45px 60px;
+            background: white;
+            border-radius: 10px;
+            width:48%;
+            position: relative;
+            /* height: 85%; */
+            margin:0 auto;
+            }
+
+/* height: 86%; */
+
+.portfolio-section-modal-container > div p {
+                font-family: Sofia Pro;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                /* or 175% */
+                
+                text-align: center;
+                
+                color: rgba(51, 51, 51, 0.75);
+                
+                                
+            }
+
+.portfolio-section-modal-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 16%;
+        }
+
+.portfolio-section-modal-bg img {
+                width: 100%;
+            }
+
+.portfolio-section-modal-img {
+            width: 83%;
+        }
+
+.portfolio-section-modal-img img {
+                width: 100%;
+            }
+
+.portfolio-section-modal-img.mom {
+                width: 69%;
+            }
+
+.portfolio-section-modal-logo {
+            width: 30%;
+            padding: 20px 0px;
+        }
+
+.portfolio-section-modal-logo.trudata {
+                width: 14%;
+                padding:0
+            }
+
+.portfolio-section-modal-logo.mom {
+                width: 16%;
+                padding: 5px 0px;
+            }
+
+.portfolio-section-modal-logo img {
+                width: 100%;
+            }
+
+.portfolio-section-modal-container > div.portfolio-section-modal-closed {
+            position: absolute;
+            right:19%;
+            top:9%;
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+.portfolio-section-modal-container > div.portfolio-section-modal-closed img {
+                width: 100%;
+            }
+
+.portfolio-section-next {
+        background: #C4C4C4;
+        right: 31%;
+        bottom: 14%;
+    }
+
+.portfolio-section-prev {
+        background: #C4C4C4;
+        right: 36%;
+        bottom: 14%;
+    }
+
+@media only screen and (min-width: 1244px){
+    .portfolio-section-item h2.escape{
+        line-height: 44px;
+    }
+    
+}
+
 @media only screen and (max-width: 1244px){
     .portfolio-section-item h2{
         font-size: 42px;
     }
+    
+}
+
+@media only screen and (max-width: 1100px){
+    .portfolio-section__img {
+        width: 100%;
+    }
+    
 }
 
 @media only screen and (max-width: 1078px){
@@ -6096,6 +6269,36 @@ App.js:39 Letter 10 is 147.7610626220703 */
     {
         width: 100%;
     }
+    .portfolio-section-modal-container > div {
+        padding: 30px;
+    }
+    .portfolio-section__image-casing > img {
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .portfolio-section__right-container{
+        display: none;
+    }
+    .portfolio-section__left-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:780px){
+    
+    .portfolio-section-modal-container > div {
+        width: 70%;
+    }
+    .portfolio-section-prev {
+        right: 33%;
+        bottom: 9%;
+    }
+    .portfolio-section-next {
+        right: 24%;
+        bottom: 9%;
+    }
 }
 
 @media only screen and (max-width:768px){
@@ -6117,26 +6320,55 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 }
 
-@media only screen and (max-width: 1100px){
-    .portfolio-section__img {
-        width: 100%;
-    }
-    
-}
-
-@media only screen and (max-width: 820px){
-    .portfolio-section__right-container{
-        display: none;
-    }
-    .portfolio-section__left-container {
-        width: 100%;
-    }
-}
-
 @media only screen and (max-width: 750px){
     .portfolio-section__btn{
         width: auto;
         margin-bottom: 16px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .portfolio-section-prev {
+        right: 33%;
+        bottom: 11%;
+    }
+    .portfolio-section-next {
+        right: 24%;
+        bottom: 11%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .portfolio-section-prev {
+        right: 31%;
+        bottom: 14%;
+    }
+    .portfolio-section-next {
+        right: 21%;
+        bottom: 14%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .portfolio-section-modal-container > div p {
+        font-size: 15px;
+    }
+    .portfolio-section-modal-container > div.portfolio-section-modal-closed {
+        top: 11%;
+    }
+}
+
+@media only screen and (max-width: 568px){
+    .portfolio-section-modal-container > div {
+        width: 75%;
+    }
+    .portfolio-section-prev {
+        right: 31%;
+        bottom: 15%;
+    }
+    .portfolio-section-next {
+        right: 19%;
+        bottom: 15%;
     }
 }
 
@@ -6145,6 +6377,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         font-size: 16px;
         line-height: 25px;
         padding-right: 14px;
+        white-space: nowrap;
     }
     .portfolio-section__text-content-title {
         font-size: 3.0rem;
@@ -6160,6 +6393,24 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 }
 
+@media only screen and (max-width: 512px){
+    .portfolio-section-modal-container > div p.tworeport {
+        font-size: 16px;
+    }
+    .portfolio-section-modal-container > div {
+        width: 80%;
+    }
+    .portfolio-section-prev {
+        right: 27%;
+        bottom: 15%;
+    }
+    .portfolio-section-next {
+        right: 16%;
+        bottom: 15%;
+    }
+    
+}
+
 @media only screen and (max-width: 425px){
     .portfolio-section-item,
     .portfolio-section-item.fave, 
@@ -6172,7 +6423,71 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .portfolio-section__img-markup {
         transform: translateX(-20px);
     }
+    .portfolio-section-modal-container > div {
+        width: 88%;
+    }
+    .portfolio-section-modal-container > div.portfolio-section-modal-closed {
+        right: 11%;
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+    }
+    .portfolio-section-prev,
+    .portfolio-section-next {
+        width: 20px;
+        height: 20px;
+        bottom: 16%;
+    }
+
+        .portfolio-section-prev img, .portfolio-section-next img {
+            width: 36%;
+        }
+    .portfolio-section-modal-container > div {
+        padding: 15px;
+    }
+    .portfolio-section-modal-container > div.portfolio-section-modal-closed {
+        top: 15%;
+    }
+    .portfolio-section-prev {
+        right: 25%;
+        
+    }
+    .portfolio-section-next {
+        right: 12%;
+       
+    }
+    .portfolio-section-item p {
+        font-size: 13px;
+    }
+    .portfolio-section__text {
+        font-size: 1.0rem;
+    }
+}
+
+@media only screen and (max-width: 368px){
+    .portfolio-section-modal-container > div p {
+        font-size: 13px;
+    }
+    .portfolio-section-modal-container > div p.tworeport {
+        font-size: 14px;
+    }
+    .portfolio-section-prev,
+    .portfolio-section-next {
+       
+        bottom: 17%;
+    }
+    .portfolio-section-prev {
+       
+        right: 22%;
+    }
+}
+
+@media only screen and (max-width: 368px){
     
+    
+    .portfolio-section-modal-container > div.portfolio-section-modal-closed {
+        top: 17%;
+    }
 }
 
 .about-page{
@@ -8183,6 +8498,7 @@ section.br{
         order: -1;
         padding:0px 70px 0px 36px;
         position: relative;
+        width: 100%;
     }
 
 .who__hleft h3 {
@@ -8216,12 +8532,14 @@ section.br{
         }
 
 .who__staff {
-        position: relative;        
+        position: relative;
+        width: 100%;        
         
     }
 
 .who__staff img {
-            height: 440px;
+            /* height: 440px; */
+            width: 100%;
         
         }
 
@@ -8450,7 +8768,7 @@ section.br{
     
     .who__staff img {
         transform: scale(1.0);
-        height: 310px;
+        /* height: 310px; */
     }
     .who__history--container {
         padding-right: 40px;
@@ -8531,6 +8849,10 @@ section.br{
     .who__history--container{
         flex-direction: column;
     }
+    .who__history--container {
+        padding-right: 0px;
+       
+    }
     .who__hleft {
         order: 1;
         padding-top: 20px;
@@ -8573,9 +8895,6 @@ section.br{
         width: 100%;
         
     }
-}
-
-@media only screen and (max-width:768px){
     .who__card > div{
         width: 33%;
     } 
@@ -8592,6 +8911,10 @@ section.br{
     }
     .who__hero {
         padding: 0px 20px;
+    }
+    .who__staff{
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
@@ -8642,9 +8965,7 @@ section.br{
     .who__visual::before {
         transform: scale(0.6);
     }
-    .who__staff img {
-        height: 250px;
-    }
+    
     .who__staff::before {
         top: -60px;
     }
@@ -8708,10 +9029,11 @@ section.br{
         font-size: 11px;
     }
     .who__hleft h3::after {
-        width: 190px;
+        width: 120px;
     }
     .who__hleft h3 {
         font-size: 30px;
+        line-height: 38px;
     }
     .who__circle--bg {
         height: 427px;
@@ -8737,7 +9059,8 @@ section.br{
         font-size: 9px;
     }
     .who__visual::before {
-        transform: rotateX(45deg);
+        transform: scale(0.6);
+
     }
     
     .who__text {
@@ -9089,7 +9412,7 @@ section.br{
     .diff__container > div {
        
         width: 100%;
-        
+        padding: 0px 15px;
     }
     .diff__visual {
         height: 340px;
@@ -9108,10 +9431,21 @@ section.br{
         padding-right: 0px;
     }
     .diff__container>div.diff__left {
-        width: auto;
+        width: 60%;
+        height: auto;
     }
     .diff__home-bottom {
         bottom:-50px ;
+    }
+    .diff__container > div img.diff__home-left {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:540px){
+    
+    .diff__container > div   {
+        padding: 0;
     }
 }
 
@@ -9139,7 +9473,7 @@ section.br{
         padding: 15px 0px 0px 0px;
     }
     .diff__container > div img {
-        height: 27%;
+        /* height: 27%; */
     }
     
     .diff__visual {
@@ -9175,7 +9509,7 @@ section.br{
         height: 237px;
     }
     .diff__container > div img.diff__home-left{
-        height: 80%;
+        /* height: 80%; */
     }
 }
 
