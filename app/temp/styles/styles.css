@@ -1621,7 +1621,7 @@ white-space: nowrap;
 
 .header__sub--menu li.active a,  .header__portfolio--navs li.active a  {
                     border-bottom: 5px solid #FB5A1E;
-                    font-size: 20px;
+                    /* font-size: 20px; */
                     font-weight: 300;
                 transition: all 0.3s ease-in;
                 white-space:nowrap;
