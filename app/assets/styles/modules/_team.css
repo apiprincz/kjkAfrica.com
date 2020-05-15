@@ -115,13 +115,17 @@
         
         padding-top: 14px;
        
-
+        & > div {
+            display: flex; 
+            align-items: center;  
+            position: relative;
+        }
         & h3 {
         font-family: Sofia Pro;
         font-style: normal;
         font-weight: bold;
         font-size: 26px;
-        line-height: 40px;
+        line-height: 90px;
         letter-spacing: -0.02em;
         color: #FB5A1E;
         white-space:nowrap;
@@ -130,11 +134,7 @@
                 font-size: 36px;
                 font-weight: 600;
 
-                &:after {
-                    content: url(../../assets/images/modalmap.png);
-                    vertical-align:middle;
-                    
-                }
+                
             }
 
         }
@@ -175,11 +175,19 @@
     }
 
     &__links {
-        padding-top: 20px;
-
+        padding-left: 40px;
+        display: flex;
+         & a {
+            width: 40px;
+         }
         & img {
-            height: 20px;
+            width: 100%;;
             padding-right:10px;
+
+            &.twitter {
+                width: 116%;
+            }
+
         }
     }
     &__img-bg{
@@ -436,6 +444,14 @@
     .team__board.mgt > .team__desc h3{
         padding-top: 20px;
     }
+    .team__links  {
+        
+        padding-left: 20px;
+    }
+    .team__links a {
+        width: 30px;
+        
+    }
 
 }
 
@@ -492,9 +508,7 @@
     .team__desc h3 {
         font-size: 22px;
     }
-    .team__links img {
-        height: 15px;
-    }
+    
     .team__board {
         padding: 20px 8px;
     }
@@ -567,6 +581,7 @@
     }
     .team__desc h3 {
         font-size: 24px;
+        line-height: 56px;
     }
     .team__desc h3.team__hero {
         font-size: 24px;
@@ -585,6 +600,17 @@
     }
     .team__desc h4 {
         font-size: 16px;
+    }
+    .team__desc > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .team__links {
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+    .team__links a {
+        width: 25px;
     }
     
 }

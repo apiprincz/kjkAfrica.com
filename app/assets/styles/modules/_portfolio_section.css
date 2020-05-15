@@ -217,7 +217,7 @@
             display: block;
             background: none;
             box-shadow: none;
-            padding: 100px 80px 80px;
+            /* padding: 100px 80px 80px; */
             
          > div{
             background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);

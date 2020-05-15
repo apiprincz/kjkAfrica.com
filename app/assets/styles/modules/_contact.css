@@ -204,6 +204,9 @@
     &__text{
         color: #333;
     }
+    &__animation {
+        padding-top: 35px;
+    }
     
 }
 
@@ -214,9 +217,15 @@
     .contact__left-container, .contact__right-container{
         width: 100%;
     }
-    
     .contact__left-container {
-        padding-right: 0%;
+        height: auto;
+        padding: 20px 7% 0px 40px;
+    }
+    .contact-form {
+        padding: 0;
+    }
+    .contact__right-container {
+        padding: 0px 40px 40px;
     }
     .contact__map{
         width: 100%;
@@ -224,5 +233,14 @@
     .contact__bg{
         visibility: hidden;
     }
+    .contact__animation {
+        padding-top: 0;
+    }
 
+}
+
+@media only screen and (max-width: 740px){
+    .contact__map--bg{
+        left: 4%;
+    } 
 }

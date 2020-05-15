@@ -49,6 +49,7 @@
         }
         & > .geek__item:last-child {
             width: 66%;
+            z-index: -1;
         }
     }
     &__item {
@@ -97,7 +98,7 @@
         position: absolute;
         bottom: 0;
         width: 40%;
-        z-index: -1;
+        z-index: -2;
         & img {
             width: 100%;
         }
@@ -160,7 +161,7 @@
     }
     .geek__activity{
         padding: 0px 25px 40px;
-        top: 28px;
+        top: 343px;
         opacity: 0.8;
     }
     .geek__container {
@@ -181,16 +182,18 @@
     }
     .geek__wrapper > .geek__item:last-child {
         width: 100%;
+        z-index: -1;
     }
 }
 
 @media only screen and (max-width:900px){
     .geek__item > div {
         position: relative;
-        width: 180%;
+        width: 200%;
     }
     .geek__activity{
         transform: translateY(146px);
+        top: 366px;
     }
 
 }
@@ -204,6 +207,7 @@
     }
     .geek__activity {
         padding-top: 30px;
+        top: 400px;
     }
 }
 @media only screen and (max-width:530px){
@@ -213,12 +217,29 @@
     }
     .geek__hero {
         font-size: 30px;
+        line-height: 42px;
     }
     .geek__activity {
         
         transform: translateY(210px)
     }
 }
+@media only screen and (max-width:445px){
+    .geek__activity {
+        top: 450px;
+        margin-top: 20px;
+        
+    }
+    .geek__hero {
+        font-size: 22px;
+        line-height: 42px;
+    }
+    .geek__hero::after {
+        right: auto;
+        transform: translateX(0);
+    }
+}
+
 @media only screen and (max-width:375px){
     .geek__item > div{
         width:200%;
@@ -237,3 +258,9 @@
     } */
 }
 
+@media only screen and (max-width:350px){
+    .geek__activity {
+        top: 480px;
+        
+    }
+}

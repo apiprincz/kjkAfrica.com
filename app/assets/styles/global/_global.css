@@ -152,9 +152,9 @@ body.fixed{
 }
 
 .content{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 300;
-    line-height: 32px;
+    line-height: 24px;
     padding-right: 5%;
     padding-bottom: 16px;
 
@@ -195,11 +195,16 @@ body.fixed{
         border-radius: 15px;
         margin-top: 9px;
     }
+    .content {
+        line-height: 24px;
+    }
 }
 
 @media only screen and (min-width: 771px){
     .content{
         padding-right: 30px;
+        font-size: 1.1rem;
+        line-height: 22px;
     }
     .title::after{
         content: "";
@@ -215,6 +220,7 @@ body.fixed{
 @media only screen and (min-width: 920px){
     .content{
         /* padding-bottom: 70px; */
+        line-height: 29px;
     }
     .title::after{
         content: "";

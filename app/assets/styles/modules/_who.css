@@ -67,7 +67,7 @@
         display: flex;
         flex-wrap: wrap;
         /* align-items: flex-start; */
-        padding: 10px 20px 160px;
+        padding: 10px 20px 40px;
         /* justify-content: space-around; */
         
 
@@ -158,8 +158,8 @@
             content: url(../../../assets/images/whodot.png);
             position: absolute;
             top: -120px;
-            left: -100px;
-            transform: scale(0.8);
+            left: -110px;
+            transform: scale(0.6);
         }
 
         & > .who__staff {
@@ -242,7 +242,7 @@
         width: 100%;
 
        
-        & h3 {
+        /* & h3 {
             font-family: Playfair Display;
             font-style: italic;
             font-weight: bold;
@@ -261,7 +261,7 @@
                 margin-top: 9px;
                 margin-bottom: 20px;                                
             }
-        }
+        } */
         & p {
             font-family: Sofia Pro;
             font-style: normal;
@@ -283,8 +283,9 @@
             content: url(../../../assets/images/historydot.png);
             position: absolute;
             top: -110px;
-            right: -40px;
+            right: -70px;
             z-index: -2;
+            transform: scale(0.6);
         }        
         
     }
@@ -575,7 +576,7 @@
         padding-top: 20px;
     }
     .who__staff::before {
-        transform: scale(0.8);
+        transform: scale(0.5);
     }
     .who__card {
         padding: 10px 20px 4px;
@@ -588,9 +589,14 @@
     
     .who__staff::before {
         top: -85px;
-    }
+     }
     .who__text p {
         font-size: 16px;
+       line-height: 30px;
+    }
+    .who__hleft p {
+        /* font-size: 16px; */
+       line-height: 25px;
     }
     .who__text h3 {
         font-size: 20px;
@@ -632,6 +638,9 @@
     .who__staff{
         width: 70%;
         margin: 0 auto;
+    }
+    .who__text {
+        width: 100%;
     }
 }
 @media only screen and (max-width:625px){
@@ -712,6 +721,9 @@
 @media only screen and (max-width:425px){
     .who__text p {
         font-size: 14px;
+    }
+    .who__text h3 {
+        line-height: 56px;
     }
     .who__bg img {
         height: 116%;

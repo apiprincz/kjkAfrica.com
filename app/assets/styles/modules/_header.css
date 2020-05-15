@@ -266,7 +266,7 @@
         text-align: center;
         width: 100%;
         margin: 0 auto;
-        border-top: 1px solid #807D7D;
+        /* border-top: 1px solid #807D7D; */
 
         &--removed {
             border-top: none;
@@ -291,6 +291,7 @@
                     font-weight: 300;
                 transition: all 0.3s ease-in;
                 white-space:nowrap;
+                color:#FB5A1E;
 
                 }
             }
