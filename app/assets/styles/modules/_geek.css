@@ -161,7 +161,7 @@
     }
     .geek__activity{
         padding: 0px 25px 40px;
-        top: 343px;
+        /* top: 343px; */
         opacity: 0.8;
     }
     .geek__container {
@@ -193,7 +193,7 @@
     }
     .geek__activity{
         transform: translateY(146px);
-        top: 366px;
+        /* top: 366px; */
     }
 
 }
@@ -207,7 +207,7 @@
     }
     .geek__activity {
         padding-top: 30px;
-        top: 400px;
+        /* top: 400px; */
     }
 }
 @media only screen and (max-width:530px){
@@ -226,7 +226,7 @@
 }
 @media only screen and (max-width:445px){
     .geek__activity {
-        top: 450px;
+        top: 70px;
         margin-top: 20px;
         
     }
@@ -260,7 +260,7 @@
 
 @media only screen and (max-width:350px){
     .geek__activity {
-        top: 480px;
+        /* top: 480px; */
         
     }
 }

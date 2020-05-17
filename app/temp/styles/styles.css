@@ -3314,7 +3314,7 @@ header > .nav-bar .new-bar{
 
 .portfolio__item--flex-img > img.queens {
                 width: 100%; 
-                height: 100vh;
+                /* height: 100vh; */
             }
 
 .portfolio__swiper--area {
@@ -3518,11 +3518,7 @@ color: #FFFFFF;
         font-size: 43px;
         white-space: normal;
     }
-    .portfolio__title.responsive__title {
-        line-height: 66px;
-        font-size: 43px;
-        white-space: normal;
-    }
+    
 }
 
 @media only screen and (max-width:1220px){
@@ -6198,7 +6194,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
                 width: 100%;
             }
 
-.portfolio-section-modal-img.mom {
+.portfolio-section-modal-img.narrow {
                 width: 69%;
             }
 
@@ -6212,7 +6208,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
                 padding:0
             }
 
-.portfolio-section-modal-logo.mom {
+.portfolio-section-modal-logo.narrow {
                 width: 16%;
                 padding: 5px 0px;
             }
@@ -10762,7 +10758,7 @@ section.br{
     }
     .geek__activity{
         padding: 0px 25px 40px;
-        top: 343px;
+        /* top: 343px; */
         opacity: 0.8;
     }
     .geek__container {
@@ -10794,7 +10790,7 @@ section.br{
     }
     .geek__activity{
         transform: translateY(146px);
-        top: 366px;
+        /* top: 366px; */
     }
 
 }
@@ -10809,7 +10805,7 @@ section.br{
     }
     .geek__activity {
         padding-top: 30px;
-        top: 400px;
+        /* top: 400px; */
     }
 }
 
@@ -10830,7 +10826,7 @@ section.br{
 
 @media only screen and (max-width:445px){
     .geek__activity {
-        top: 450px;
+        top: 70px;
         margin-top: 20px;
         
     }
@@ -10864,7 +10860,7 @@ section.br{
 
 @media only screen and (max-width:350px){
     .geek__activity {
-        top: 480px;
+        /* top: 480px; */
         
     }
 }

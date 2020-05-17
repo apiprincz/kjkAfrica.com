@@ -181,7 +181,7 @@
 
             > img.queens {
                 width: 100%; 
-                height: 100vh;
+                /* height: 100vh; */
             }
         }
     }
@@ -374,11 +374,7 @@ color: #FFFFFF;
         font-size: 43px;
         white-space: normal;
     }
-    .portfolio__title.responsive__title {
-        line-height: 66px;
-        font-size: 43px;
-        white-space: normal;
-    }
+    
 }
 @media only screen and (max-width:1220px){
     .portfolio__title {
