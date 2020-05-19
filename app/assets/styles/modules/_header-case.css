@@ -25,9 +25,14 @@
             margin:0 auto;
         }
 
+        &.petrol {
+            padding-left: 40px;
+        }
+
         & img {
             width: 100%;
         }
+        
     }
     &--content {
         
@@ -141,7 +146,7 @@
     }
 }
 
-@media only screen and (max-width:765px){
+@media only screen and (max-width:768px){
     .header__case {
         flex-direction: column;
     }
@@ -158,8 +163,22 @@
         padding-left: 0;
     }
     .header__case--img.wide {
-        width: 75%;
+        width: 60%;
     }
+    .header__case--logo.afiaanyi {
+        width: 28%;
+    }
+    .header__case--logo.mom {
+        width: 37%;
+    }
+    .header__case--logo.petrol {
+        padding-left: 0px;
+        margin:0 auto;
+    } 
+    .header__case--logo.xpad {
+       
+        margin:10px auto;
+    } 
 }
 @media only screen and (max-width:600px){
     .header__case > div.header__case--content.narrow {
@@ -175,10 +194,14 @@
     .header__case > div.header__case--content.wide {
         width: 100%;
     }
+    .header__case--content > div h3 {
+        white-space: nowrap;
+    }
 }
 @media only screen and (max-width:425px){
     .header__case--content > div li, .header__case--content > div p {
         font-size: 12px;
+        line-height: 17px;
     }
     .header__case--content > div h3 {
         font-size: 16px;
@@ -187,7 +210,7 @@
          width: 90%;
      }
      .header__case > div.header__case--content.wide {
-         padding:0px 3px 0px 6px;
+         padding:0px 3px 0px 16px;
      }
      .header__case--btn {
          padding: 12px 18px;
@@ -196,5 +219,6 @@
      .header__case--content > div h3 {
          white-space: nowrap;
      }
+     
 
 }

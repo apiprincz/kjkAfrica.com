@@ -7673,17 +7673,23 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .work__board {
         display: flex;
-        padding: 20px 0px 0px 110px;
+        padding: 20px 0px 40px 110px;
     }
 
-/* position: relative; */
+/* width: 100%; */
 
 .work__board > div {
             width: 50%;
         }
 
+/* position: relative; */
+
+.work__board > .diff__right {
+            padding-top: 40px;
+        }
+
 .work__board:nth-of-type(1) >div >.work__visual {
-            padding: 124px 40px 0px 20px;
+            padding: 20px 40px 0px 20px;
 
         }
 
@@ -7703,7 +7709,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .work__board img.work__base {
             position: absolute;
             z-index:-1;
-            height:64%;
+            height:37%;
             bottom: 0;
         }
 
@@ -7726,6 +7732,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .work__board:nth-of-type(odd) img.work__base {
            right: 0;
+           top: 0;
         
         }
 
@@ -7760,6 +7767,23 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .work__desc h2 {
             font-size: 2.5rem;
         }
+
+.work__img--cont {
+        width: 100%;
+    }
+
+.work__img--cont img {
+            width: 100%;
+            padding:0px 40px 40px 40px;
+        }
+
+.work__img--cont > div {
+            width: 30%;
+        }
+
+.work__img--cont > div img {
+                width: 100%;
+            }
 
 .work__contents{
         display: flex;
@@ -7818,7 +7842,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
     
     .work__board img.work__base {
-        height: 46%;
+        height: 29%;
     } 
     .work__board:nth-of-type(even) {
         /* padding-left: 30px; */
@@ -7829,7 +7853,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .work__container p {
         line-height: 30px;
     }
-
+   
 }
 
 @media only screen and (max-width: 1021px){
@@ -7859,6 +7883,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .work__board:nth-of-type(even) .work__desc p {
         padding-right: 10px;
     }
+    .work__board > .diff__right {
+        padding-top: 70px;
+    }
 }
 
 @media only screen and (max-width: 860px){
@@ -7868,6 +7895,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .work__container p {
         line-height: 24px;
         font-size: 14px;
+    }
+    .work__board img.work__base {
+        height: 24%;
     }
     
 }
@@ -7884,17 +7914,17 @@ App.js:39 Letter 10 is 147.7610626220703 */
         width: 90%;
     }
     .work__board:nth-of-type(1) > div >.work__visual{
-        padding: 25px 0px 0px 20px;
+        padding: 25px 0px 0px 0px;
     }
     .work__board:nth-of-type(odd) .work__desc {
         order: 0;
        
     }
     .work__board:nth-of-type(odd) img.work__base{
-        right: -32px;
+        /* right: -32px; */
     }
     .work__board img.work__base {
-        height: 71%;
+        /* height: 71%; */
     }
     .work__board:nth-of-type(even) img.work__base {
         height: 128%;
@@ -7919,18 +7949,16 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .work__board:nth-of-type(odd) img.work__base{
         right: 0px;
     }
-    .work__img--cont {
-        width: 86%;
+    
+    .work__board img.work__base {
+        height: 20%;
     }
 }
 
 @media only screen and (max-width: 512px){
-    .work__board img.work__base {
-        /* display: none; */
-        height:50%;
-    }
+    
     .work__desc {
-        padding: 20px 28px;
+        padding: 20px 22px;
     }
     .work__title {
         font-size: 30px;
@@ -7957,9 +7985,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
         font-size: 20px;
         line-height: 32px;
     }
-    /* .work__desc {
-        padding: 20px 0px 0px 28px;
-    } */
+    .work__board img.work__base {
+        height: 16%;
+    }
     
 
 }
@@ -7979,6 +8007,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     } */
     .work__desc {
         padding-bottom: 0px ;
+    }
+    .work__board img.work__base {
+        height: 12%;
     }
 }
 
@@ -9246,12 +9277,12 @@ section.br{
             }
 
 .diff__board {
-            display: flex;
-            justify-content: space-between;
-            padding: 70px 50px 50px 60px;
+             width: 100%;
         }
 
-/* position: relative; */
+.diff__board img {
+                 width: 100%;
+             }
 
 .diff__board:nth-of-type(odd){
                 
@@ -9282,19 +9313,17 @@ section.br{
             }
 
 .diff__visual {
-            /* width: 800px; */
-            height: 462px;
+            
             position: relative;
-          
         }
-
-.diff__visual:nth-of-type(odd){
-                height: 450px;
-            }
 
 .diff__visual img {
                 height: 90%;
                /* z-index: 2; */
+            }
+
+.diff__visual--responsive {
+                display: none;
             }
 
 .diff__desc {
@@ -9336,10 +9365,25 @@ section.br{
                 padding: 20px 0 30px;
             }
 
+.diff__desc p.para {
+                    line-height: 220%;
+                    padding-bottom:60px
+                
+                }
+
 .diff__desc p span {
                 color: #FB5A1E;                
-                    font-weight:500
+                    font-weight:500;
+
+
                 }
+
+.diff__desc p span::before {
+                        content: url(../../../assets/images/colordot.png);
+                        vertical-align: top;
+                        padding-right: 10px;
+
+                    }
 
 .diff__dot {
             position: absolute;
@@ -9397,6 +9441,7 @@ section.br{
         width: 63%;
         
     }
+    
 }
 
 @media only screen and (max-width:1089px){
@@ -9416,7 +9461,10 @@ section.br{
     .diff__container {
         padding-left: 0px;
     }
-    
+    .diff__desc p.para {
+        padding-bottom: 20px;
+        line-height: 186%;
+    }
 }
 
 @media only screen and (max-width:956px){
@@ -9494,8 +9542,16 @@ section.br{
         padding: 0px 15px;
     }
     .diff__visual {
-        height: 340px;
+        display: none;
     }
+
+        .diff__visual--responsive {
+            display: block;
+        }
+
+            .diff__visual--responsive > div {
+            padding-left: 0;
+            }
     .diff__visual:nth-of-type(odd) {
         height: 330px;
     }
@@ -10249,17 +10305,29 @@ section.br{
     }
 }
 
-@media only screen and (max-width:740px){
-    .blog__left{
-        width: 110%;
+@media only screen and (max-width:770px){
+    .blog__container > div{
+       flex-direction: column;
     }
+    .blog__column {
+        padding-left: 0px;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    .blog__left {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:740px){
+    
     .blog__column--item {
         flex-direction: column;
     }
     .blog__column {
-        height: 765px;
-        overflow-y: scroll;
-        padding-left: 45px;
+        /* height: 765px; */
+        /* overflow-y: scroll; */
+        /* padding-left: 45px; */
     }
     .blog__cta span {
         transform: translate(0);
@@ -11183,11 +11251,16 @@ section.br{
 
 .header__case--logo {
         width: 60%;
+        
     }
 
 .header__case--logo.afiaanyi {
             width: 32%;
             margin:0 auto;
+        }
+
+.header__case--logo.petrol {
+            padding-left: 40px;
         }
 
 .header__case--logo img {
@@ -11311,7 +11384,7 @@ section.br{
     }
 }
 
-@media only screen and (max-width:765px){
+@media only screen and (max-width:768px){
     .header__case {
         flex-direction: column;
     }
@@ -11328,8 +11401,22 @@ section.br{
         padding-left: 0;
     }
     .header__case--img.wide {
-        width: 75%;
+        width: 60%;
     }
+    .header__case--logo.afiaanyi {
+        width: 28%;
+    }
+    .header__case--logo.mom {
+        width: 37%;
+    }
+    .header__case--logo.petrol {
+        padding-left: 0px;
+        margin:0 auto;
+    } 
+    .header__case--logo.xpad {
+       
+        margin:10px auto;
+    } 
 }
 
 @media only screen and (max-width:600px){
@@ -11347,11 +11434,15 @@ section.br{
     .header__case > div.header__case--content.wide {
         width: 100%;
     }
+    .header__case--content > div h3 {
+        white-space: nowrap;
+    }
 }
 
 @media only screen and (max-width:425px){
     .header__case--content > div li, .header__case--content > div p {
         font-size: 12px;
+        line-height: 17px;
     }
     .header__case--content > div h3 {
         font-size: 16px;
@@ -11360,7 +11451,7 @@ section.br{
          width: 90%;
      }
      .header__case > div.header__case--content.wide {
-         padding:0px 3px 0px 6px;
+         padding:0px 3px 0px 16px;
      }
      .header__case--btn {
          padding: 12px 18px;
@@ -11369,6 +11460,7 @@ section.br{
      .header__case--content > div h3 {
          white-space: nowrap;
      }
+     
 
 }
 
@@ -11415,7 +11507,7 @@ section.br{
     }
 
 .client__list li{
-            font-size: 1.1rem;
+            font-size: 1.0rem;
             line-height: 2.0rem;
             font-weight: 300;
             position: relative;
@@ -11449,7 +11541,7 @@ section.br{
 
 .client__text{
         font-weight: 300;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         line-height:1.7rem;
         padding-bottom: 20px;
     }

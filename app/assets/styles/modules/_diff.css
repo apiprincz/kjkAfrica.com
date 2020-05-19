@@ -88,10 +88,11 @@
         }
     
         &__board {
-            display: flex;
-            justify-content: space-between;
-            padding: 70px 50px 50px 60px;
-            /* position: relative; */
+             width: 100%;
+
+             & img {
+                 width: 100%;
+             }
             
             &:nth-of-type(odd){
                 
@@ -125,19 +126,18 @@
         }
     
         &__visual {
-            /* width: 800px; */
-            height: 462px;
+            
             position: relative;
 
-            &:nth-of-type(odd){
-                height: 450px;
-            }
+            
             
             & img {
                 height: 90%;
                /* z-index: 2; */
             }
-          
+            &--responsive {
+                display: none;
+            }
         }
     
         &__desc {
@@ -146,6 +146,7 @@
             & h2 {
                 font-size: 2.5rem;
             }
+            
             & h3 {
                 font-family: Sofia Pro;
                 font-style: normal;
@@ -173,10 +174,25 @@
                 letter-spacing: -0.02em;
                 color: #504D4D;
                 padding: 20px 0 30px;
+
+                &.para {
+                    line-height: 220%;
+                    padding-bottom:60px
+                
+                }
                 
                 & span {
                 color: #FB5A1E;                
-                    font-weight:500
+                    font-weight:500;
+
+                    &::before {
+                        content: url(../../../assets/images/colordot.png);
+                        vertical-align: top;
+                        padding-right: 10px;
+
+                    }
+
+
                 }
             }
         }
@@ -238,6 +254,7 @@
         width: 63%;
         
     }
+    
 }
 @media only screen and (max-width:1089px){
     .diff__container > div h3  {
@@ -256,7 +273,10 @@
     .diff__container {
         padding-left: 0px;
     }
-    
+    .diff__desc p.para {
+        padding-bottom: 20px;
+        line-height: 186%;
+    }
 }
 @media only screen and (max-width:956px){
     .diff__container {
@@ -329,7 +349,15 @@
         padding: 0px 15px;
     }
     .diff__visual {
-        height: 340px;
+        display: none;
+
+        &--responsive {
+            display: block;
+
+            & > div {
+            padding-left: 0;
+            }
+        }
     }
     .diff__visual:nth-of-type(odd) {
         height: 330px;
