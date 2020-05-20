@@ -97,3 +97,8 @@
         width: 23px;
     }
 }
+@media only screen and (max-width: 425px){
+    .btn--petrol{
+        padding: 12px 10px;
+    }
+}

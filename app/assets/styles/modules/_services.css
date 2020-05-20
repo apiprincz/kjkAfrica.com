@@ -38,7 +38,8 @@
             line-height: 2.0rem;
             font-weight: 300;
             position: relative;
-            white-space: nowrap;
+            /* white-space: ; */
+            text-indent:-35px;
 
             &::before{
                 content: "";
@@ -87,6 +88,7 @@
         display: flex;
         justify-content: center; 
         align-content: center;
+        align-items: center;
         position: relative; 
 
         &--space-added{
@@ -256,7 +258,7 @@
         display: flex;
     }
     .services__list li{
-        width: 50%;
+        width: 47%;
     }
     .services__list li::before{
         margin-right: 20px;
@@ -287,6 +289,7 @@
     }
     .services__list li{
         width: 100%;
+        text-indent: 0;
     }
     .services__container__text{
         padding-left: 0;

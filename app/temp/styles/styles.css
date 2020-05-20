@@ -2154,6 +2154,12 @@ header > .nav-bar .new-bar{
     }
 }
 
+@media only screen and (max-width: 425px){
+    .btn--petrol{
+        padding: 12px 10px;
+    }
+}
+
 .footer{
     width: 100%;
 
@@ -4761,7 +4767,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
             line-height: 2.0rem;
             font-weight: 300;
             position: relative;
-            white-space: nowrap;
+            /* white-space: ; */
+            text-indent:-35px;
         }
 
 .services__list li::before{
@@ -4810,6 +4817,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         display: flex;
         justify-content: center; 
         align-content: center;
+        align-items: center;
         position: relative;
     }
 
@@ -4971,7 +4979,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         display: flex;
     }
     .services__list li{
-        width: 50%;
+        width: 47%;
     }
     .services__list li::before{
         margin-right: 20px;
@@ -5002,6 +5010,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
     .services__list li{
         width: 100%;
+        text-indent: 0;
     }
     .services__container__text{
         padding-left: 0;
@@ -7853,6 +7862,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .work__container p {
         line-height: 30px;
     }
+    .diff__desc p {
+        font-size: 15px;
+    }
    
 }
 
@@ -7869,6 +7881,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
         padding-top: 0px;
         padding-bottom: 21px;
     }
+    .work__board--bg{
+        display: flex;
+        align-items: center;
+    }
     .work__container{
         padding:0;
     }
@@ -7882,6 +7898,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
     .work__board:nth-of-type(even) .work__desc p {
         padding-right: 10px;
+        
     }
     .work__board > .diff__right {
         padding-top: 70px;
@@ -7900,6 +7917,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
         height: 24%;
     }
     
+    .work__board:nth-of-type(even) .work__desc p {
+        line-height: 136%;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -7936,6 +7956,12 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
     .work__desc {
         padding: 20px 30px;
+    }
+    .diff__desc p {
+        line-height: 170%;
+    }
+    .work__board:nth-of-type(even) .work__desc p {
+        line-height: 170%;
     }
 }
 
@@ -11457,6 +11483,10 @@ section.br{
          padding: 12px 18px;
          font-size: 14px;
      }
+     .header__case--btn.btn--petrol {
+         padding: 12px 10px;
+         /* font-size: 14px; */
+     }
      .header__case--content > div h3 {
          white-space: nowrap;
      }
@@ -11507,13 +11537,13 @@ section.br{
     }
 
 .client__list li{
-            font-size: 1.0rem;
+            font-size: 1.1rem;
             line-height: 2.0rem;
             font-weight: 300;
             position: relative;
+            /* white-space: nowrap; */
+            text-indent:-48px;
         }
-
-/* white-space: nowrap; */
 
 .client__list li::before{
                 content: "";
@@ -11574,6 +11604,7 @@ section.br{
         padding: 50px 0;
         display: flex;
         justify-content: center; 
+        align-items: center;
         align-content: center;
         position: relative;
     }

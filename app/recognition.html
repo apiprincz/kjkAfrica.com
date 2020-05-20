@@ -471,12 +471,28 @@
                         Our Founder,<span> Olajumoke Oduwole </span>, was listed on 
                         Forbes Africa’s 30 under 30, youngest bright minds in 2020.
                     </p>
-                    <div class="recognition__btn">
-                    <a href="https://www.forbesafrica.com/under-30/2020/04/02/forbes-africa-30under30-list-leading-the-charge/"target="_blank" class=" recognition__btn btn btn--link btn--primary btn--upper-space  btn--hover" >
-                        <!-- <img src="assets/images/play-slim.png " style="height: 14%; width: 5px; font-size: 14px;" class="btn__img btn__img--small" alt=" "> VIEW -->
-                        View
-                    </a> 
-                    </div>
+                   
+                    <div class="recognition__btn recognition__modal--btn">
+                        <a href="#" class=" btn btn--link btn--primary btn--upper-space  btn--hover btn--content"  >
+                           View All <img src="assets/images/play-slim.png " style="height: 14%; width: 5px; font-size: 14px;" class="btn__img btn__img--small" alt=" "> 
+                            
+                        </a> 
+                        </div>
+                        <div class="recognition__overlay">
+                            
+                                <div class="recognition__close"></div>
+                                <a href="https://www.forbesafrica.com/under-30/2020/04/02/forbes-africa-30under30-list-leading-the-charge/" target="_blank" class="  btn btn--link btn--primary btn--upper-space  btn--hover" >
+                                    <!-- <img src="assets/images/play-slim.png " style="height: 14%; width: 5px; font-size: 14px;" class="btn__img btn__img--small" alt=" "> VIEW -->
+                                    View
+                                </a> 
+                                <a href="https://www.forbesafrica.com/product/single-digital-issue-forbes-africa-april-2020/" target="_blank" class=" btn btn--link btn--primary btn--upper-space  btn--hover" >
+                                    <!-- <img src="assets/images/play-slim.png " style="height: 14%; width: 5px; font-size: 14px;" class="btn__img btn__img--small" alt=" "> VIEW -->
+                                    View
+                                </a> 
+                               
+                            
+                            
+                        </div>
                 </div>
                 <div class="recognition__card">
                     <div class="recognition__logo">
@@ -1098,6 +1114,13 @@
                 })
                 
             }
+            
+        }
+
+        for (let i = 0; i < modalOverlay.length; i++) {
+            modalOverlay[i].addEventListener('click', function(){
+                modalOverlay[i].classList.remove('recognition__overlay--show')
+            })
             
         }
     </script>

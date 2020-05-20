@@ -216,6 +216,10 @@
          padding: 12px 18px;
          font-size: 14px;
      }
+     .header__case--btn.btn--petrol {
+         padding: 12px 10px;
+         /* font-size: 14px; */
+     }
      .header__case--content > div h3 {
          white-space: nowrap;
      }
