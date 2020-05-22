@@ -7937,15 +7937,12 @@ App.js:39 Letter 10 is 147.7610626220703 */
         padding: 25px 0px 0px 0px;
     }
     .work__board:nth-of-type(odd) .work__desc {
-        order: 0;
+        order: -1;
        
     }
-    .work__board:nth-of-type(odd) img.work__base{
-        /* right: -32px; */
-    }
-    .work__board img.work__base {
-        /* height: 71%; */
-    }
+   
+    
+    
     .work__board:nth-of-type(even) img.work__base {
         height: 128%;
         left: -30px;
@@ -9567,9 +9564,7 @@ section.br{
         width: 100%;
         padding: 0px 15px;
     }
-    .diff__visual {
-        display: none;
-    }
+        /* display: none; */
 
         .diff__visual--responsive {
             display: block;

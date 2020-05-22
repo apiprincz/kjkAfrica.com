@@ -325,15 +325,12 @@
         padding: 25px 0px 0px 0px;
     }
     .work__board:nth-of-type(odd) .work__desc {
-        order: 0;
+        order: -1;
        
     }
-    .work__board:nth-of-type(odd) img.work__base{
-        /* right: -32px; */
-    }
-    .work__board img.work__base {
-        /* height: 71%; */
-    }
+   
+    
+    
     .work__board:nth-of-type(even) img.work__base {
         height: 128%;
         left: -30px;
@@ -350,6 +347,12 @@
     }
     .work__board:nth-of-type(even) .work__desc p {
         line-height: 170%;
+    }
+    .work__board > .diff__right {
+        padding-top: 10px;
+    }
+    .work__img--cont img {
+        padding-bottom: 5px;
     }
 }
 

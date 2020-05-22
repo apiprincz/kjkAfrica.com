@@ -340,20 +340,14 @@
         flex-direction: column;
         align-items: center;
     }
-    /* .diff__button {
-        margin-left: 56px;
-    } */
+ 
     .diff__container > div {
        
         width: 100%;
         padding: 0px 15px;
     }
     .diff__visual {
-        display: none;
-
-        &--responsive {
-            display: block;
-
+        
             & > div {
             padding-left: 0;
             }
@@ -382,6 +376,7 @@
     .diff__container > div img.diff__home-left {
         width: 100%;
     }
+    
 }
 @media only screen and (max-width:540px){
     
