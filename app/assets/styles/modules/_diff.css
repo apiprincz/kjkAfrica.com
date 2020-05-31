@@ -351,7 +351,7 @@
             & > div {
             padding-left: 0;
             }
-        }
+        
     }
     .diff__visual:nth-of-type(odd) {
         height: 330px;
