@@ -222,6 +222,7 @@
          > div{
             background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);
             border-radius:8px;
+            padding:60px 60px 60px 20px;
             
             }
             & h2, p {
@@ -233,7 +234,8 @@
             & > div {
                 background: #225B9B;
                 box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
-                border-radius: 8px;
+            padding:60px 60px 60px 20px;
+            border-radius: 8px;
             }
         }
         &.cms {
@@ -241,7 +243,8 @@
             & > div {
                 background: linear-gradient(179.7deg, #262626 8.29%, #3E3E3E 99.71%);
                 box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
-                border-radius: 8px;                
+            padding:60px 60px 60px 20px;
+            border-radius: 8px;                
             }
         }
         &.edu {
@@ -249,7 +252,8 @@
             & > div {
                 background: #477DA0;
                 box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
-                border-radius: 8px;                
+            padding:60px 60px 60px 20px;
+            border-radius: 8px;                
             }
         }
         &.pave{
@@ -258,6 +262,7 @@
             & > div{
             background: #387789;
             box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
+            padding:60px 60px 60px 20px;
             border-radius: 8px; 
               
              
@@ -273,7 +278,8 @@
             & > div {
                 background: linear-gradient(115.97deg, #7200EA 1.2%, #6509C4 49.37%, #630DBC 92.96%, #7037AD 92.96%);
                 box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
-                border-radius: 8px;                
+            padding:60px 60px 60px 20px;
+            border-radius: 8px;                
             }
         }
         &.travel{
@@ -282,6 +288,7 @@
             /* padding: 100px 80px 80px; */
             & > div{
             background: linear-gradient(231.09deg, #504D4D -3.8%, #50150C 46.32%);
+            padding:60px 60px 60px 20px;
             border-radius: 8px;
 
                
@@ -295,7 +302,8 @@
             & > div {
                 background: linear-gradient(259.35deg, #5CAAF2 -5.55%, #3077B3 97.49%);
                 box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
-                border-radius: 8px;               
+            padding:60px 60px 60px 20px;
+            border-radius: 8px;               
             }
         }
         
@@ -305,6 +313,7 @@
             box-shadow: none;
             & > div{
             background: linear-gradient(184.56deg, #F99225 23.65%, #F26327 89.79%);
+            padding:60px 60px 60px 20px;
                 
         
         }
@@ -346,6 +355,9 @@
 
         & > div {
             padding-bottom: 20px;
+        }
+        & span{
+            font-weight: 300;
         }
     }
     &-extended {
@@ -395,7 +407,7 @@
         }
 
         &--resp{
-            transform: translateX(-90px);
+            transform: translateX(-60px);
             width: 97%;
         }
     }
@@ -689,6 +701,13 @@
     
 }
 
+@media only screen and (max-width: 1140px){
+    .portfolio-section__text-content-container.wide
+    {
+        width: 68%;
+    }
+    
+}
 @media only screen and (max-width: 1100px){
     .portfolio-section__img {
         width: 100%;

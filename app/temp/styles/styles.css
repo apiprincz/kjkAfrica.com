@@ -3151,6 +3151,98 @@ header > .nav-bar .new-bar{
             background: #E83124;
         }
 
+.portfolio__title.april:after{
+            background: rgb(50, 177, 150);
+        }
+
+.portfolio__title.gimc:after{
+            background: #32B196;
+        }
+
+.portfolio__title.cakes:after{
+            background: rgb(155, 78, 108);
+        }
+
+.portfolio__title.trans:after{
+            background: rgb(51, 62, 168);
+        }
+
+.portfolio__title.tripple:after{
+            background: rgb(216, 148, 78);
+        }
+
+.portfolio__title.radiant:after{
+            background: rgb(143, 69, 165);
+        }
+
+.portfolio__title.easi:after{
+            background: rgb(62, 123, 172);
+        }
+
+.portfolio__title.femi:after{
+            background: rgb(65, 171, 213);
+        }
+
+.portfolio__title.queens:after{
+            background: rgb(34, 45, 53);
+        }
+
+.portfolio__title.j36:after{
+            background: rgb(43, 131, 9);
+        }
+
+.portfolio__title.inline:after{
+            background: #8E4BB4;
+        }
+
+.portfolio__title.mom:after{
+            background: rgb(151, 10, 115);
+        }
+
+.portfolio__title.dumbell:after{
+            background: rgb(0, 23, 92);
+        }
+
+.portfolio__title.graphe:after{
+            background: rgb(26, 123, 168);
+        }
+
+.portfolio__title.shortest:after{
+            background: rgb(134, 211, 247);
+        }
+
+.portfolio__title.telpecon:after{
+            background: rgb(105, 150, 173);
+        }
+
+.portfolio__title.afiaanyi:after{
+            background: rgb(145, 31, 13);
+        }
+
+.portfolio__title.green:after{
+            background: rgb(70, 174, 20);
+        }
+
+.portfolio__title.keuti:after{
+            background: rgb(19, 20, 64);
+        }
+
+.portfolio__title.distancing:after{
+            background: rgb(48, 200, 250);
+        }
+
+.portfolio__title.screen:after{
+            background: rgb(111, 40, 40);
+        }
+
+.portfolio__title.pave:after{
+            background: rgb(33, 101, 123);
+        }
+
+.portfolio__title.visor:after{
+            background: rgb(33, 68, 29);
+        }
+
 .portfolio .owl-theme .owl-controls .owl-page {
         display: inline-block;
     }
@@ -5798,6 +5890,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .portfolio-section-item.fave > div{
             background: linear-gradient(176.07deg, #FD9F52 15.36%, #FA4683 93.88%);
             border-radius:8px;
+            padding:60px 60px 60px 20px;
             
             }
 
@@ -5808,19 +5901,22 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .portfolio-section-item.attendance > div {
                 background: #225B9B;
                 box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
-                border-radius: 8px;
+            padding:60px 60px 60px 20px;
+            border-radius: 8px;
             }
 
 .portfolio-section-item.cms > div {
                 background: linear-gradient(179.7deg, #262626 8.29%, #3E3E3E 99.71%);
                 box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
-                border-radius: 8px;                
+            padding:60px 60px 60px 20px;
+            border-radius: 8px;                
             }
 
 .portfolio-section-item.edu > div {
                 background: #477DA0;
                 box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
-                border-radius: 8px;                
+            padding:60px 60px 60px 20px;
+            border-radius: 8px;                
             }
 
 .portfolio-section-item.pave{
@@ -5832,6 +5928,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .portfolio-section-item.pave > div{
             background: #387789;
             box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
+            padding:60px 60px 60px 20px;
             border-radius: 8px; 
               
              
@@ -5845,7 +5942,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .portfolio-section-item.mind > div {
                 background: linear-gradient(115.97deg, #7200EA 1.2%, #6509C4 49.37%, #630DBC 92.96%, #7037AD 92.96%);
                 box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
-                border-radius: 8px;                
+            padding:60px 60px 60px 20px;
+            border-radius: 8px;                
             }
 
 .portfolio-section-item.travel{
@@ -5857,6 +5955,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section-item.travel > div{
             background: linear-gradient(231.09deg, #504D4D -3.8%, #50150C 46.32%);
+            padding:60px 60px 60px 20px;
             border-radius: 8px;
 
                
@@ -5869,7 +5968,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .portfolio-section-item.directory > div {
                 background: linear-gradient(259.35deg, #5CAAF2 -5.55%, #3077B3 97.49%);
                 box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.18);
-                border-radius: 8px;               
+            padding:60px 60px 60px 20px;
+            border-radius: 8px;               
             }
 
 .portfolio-section-item.marketplace
@@ -5880,6 +5980,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section-item.marketplace > div{
             background: linear-gradient(184.56deg, #F99225 23.65%, #F26327 89.79%);
+            padding:60px 60px 60px 20px;
                 
         
         }
@@ -5921,6 +6022,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section__text-content-container > div {
             padding-bottom: 20px;
+        }
+
+.portfolio-section__text-content-container span{
+            font-weight: 300;
         }
 
 .portfolio-section-extended {
@@ -5972,7 +6077,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         }
 
 .portfolio-section__image-container--resp{
-            transform: translateX(-90px);
+            transform: translateX(-60px);
             width: 97%;
         }
 
@@ -6281,6 +6386,14 @@ App.js:39 Letter 10 is 147.7610626220703 */
 @media only screen and (max-width: 1244px){
     .portfolio-section-item h2{
         font-size: 42px;
+    }
+    
+}
+
+@media only screen and (max-width: 1140px){
+    .portfolio-section__text-content-container.wide
+    {
+        width: 68%;
     }
     
 }

@@ -25,6 +25,76 @@
             display:block;
             background: #E83124;
         }
+
+        &.april:after{
+            background: rgb(50, 177, 150);
+        }
+        &.gimc:after{
+            background: #32B196;
+        }
+        &.cakes:after{
+            background: rgb(155, 78, 108);
+        }
+        &.trans:after{
+            background: rgb(51, 62, 168);
+        }
+        &.tripple:after{
+            background: rgb(216, 148, 78);
+        }
+        &.radiant:after{
+            background: rgb(143, 69, 165);
+        }
+        &.easi:after{
+            background: rgb(62, 123, 172);
+        }
+        &.femi:after{
+            background: rgb(65, 171, 213);
+        }
+        &.queens:after{
+            background: rgb(34, 45, 53);
+        }
+        &.j36:after{
+            background: rgb(43, 131, 9);
+        }
+        &.inline:after{
+            background: #8E4BB4;
+        }
+        &.mom:after{
+            background: rgb(151, 10, 115);
+        }
+        &.dumbell:after{
+            background: rgb(0, 23, 92);
+        }
+        &.graphe:after{
+            background: rgb(26, 123, 168);
+        }
+        &.shortest:after{
+            background: rgb(134, 211, 247);
+        }
+        &.telpecon:after{
+            background: rgb(105, 150, 173);
+        }
+        &.afiaanyi:after{
+            background: rgb(145, 31, 13);
+        }
+        &.green:after{
+            background: rgb(70, 174, 20);
+        }
+        &.keuti:after{
+            background: rgb(19, 20, 64);
+        }
+        &.distancing:after{
+            background: rgb(48, 200, 250);
+        }
+        &.screen:after{
+            background: rgb(111, 40, 40);
+        }
+        &.pave:after{
+            background: rgb(33, 101, 123);
+        }
+        &.visor:after{
+            background: rgb(33, 68, 29);
+        }
         
     }
 
