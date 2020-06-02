@@ -6893,7 +6893,6 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .team{
     position: relative;
     padding: 40px 0;
-        
 
 }
 
@@ -7227,6 +7226,40 @@ App.js:39 Letter 10 is 147.7610626220703 */
             overflow-y: auto;
             
         }
+
+.team__close{
+            position: fixed;
+            top: 8%;
+            right:15%;
+            cursor: pointer;
+        }
+
+.team__close:before{
+                content: '';
+                width: 30px;
+                height: 3px;
+                background: black;
+                display: block;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                transform: rotate(45deg);                
+            }
+
+.team__close::after{
+                content: '';
+                width: 30px;
+                height: 3px;
+                background: black;
+                display: block;
+                /* position: absolute; */
+                /* top: -60px; */
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                transform: rotate(-45deg);
+                transform-origin: center;                
+            }
 
 @-webkit-keyframes shake {
    

@@ -325,7 +325,38 @@
             overflow-y: auto;
             
         }
-        
+        &__close{
+            position: fixed;
+            top: 8%;
+            right:15%;
+            cursor: pointer;
+            
+            &:before{
+                content: '';
+                width: 30px;
+                height: 3px;
+                background: black;
+                display: block;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                transform: rotate(45deg);                
+            }
+            &::after{
+                content: '';
+                width: 30px;
+                height: 3px;
+                background: black;
+                display: block;
+                /* position: absolute; */
+                /* top: -60px; */
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                transform: rotate(-45deg);
+                transform-origin: center;                
+            }
+        }
 
 }
 

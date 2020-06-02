@@ -430,7 +430,7 @@
                     <div class="team__container__main">
                         <div class="team__board">
                             <div class="team__overlay">
-                                <p>Read Onyema's <br>
+                                <p>Read Onyeka's <br>
                                    Profile
                                 </p>
                             </div>
@@ -440,7 +440,7 @@
                                     <img class="team__dot" src="assets/images/teamdot.png" alt="">
                                 </div>
                                 <div class="team__desc">
-                                    <h3 class="">Onyema Akumah</h3>
+                                    <h3 class="">Onyeka Akumah</h3>
                                 </div>
                                 <div class="team__role">
                                     <p> <span>Founder</span>, CrowdyVest Holdings and FarmCrowdy</p>
@@ -614,7 +614,10 @@
                     <div class="team__container--modal">
                         <div class="team__modal modal 1">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
+
                                     <div>
                                     <div style="position: absolute; right: 0;">
                                         <img src="assets/images/modalmap.png" alt="">
@@ -654,6 +657,8 @@
                         </div>
                         <div class="team__modal modal 2">
                         <div class="team__content modal__content">
+                            <div class="team__close"></div>
+
                             <div class="team__desc">
                                 
                                 <div>
@@ -692,6 +697,8 @@
                         </div>
                         <div class="team__modal modal 3">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
                                     <div>
                                         <div style="position: absolute; right: 0;">
@@ -733,6 +740,8 @@
                         
                         <div class="team__modal modal 4">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
                                     <div>
                                         <div style="position: absolute; right: 0;">
@@ -774,6 +783,8 @@
                         
                         <div class="team__modal modal 5">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
                                     <div>
                                         <div style="position: absolute; right: 0;">
@@ -798,6 +809,8 @@
                         </div>
                         <div class="team__modal modal 6">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
                                     <div>
                                         <div style="position: absolute; right: 0;">
@@ -833,6 +846,8 @@
                         </div>
                         <div class="team__modal modal 7">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
                                     <div>
                                         <div style="position: absolute; right: 0;">
@@ -1036,6 +1051,8 @@
                     <div class="team__container--modal">
                         <div class="team__modal modal 7">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
                                     <div>
                                         <div style="position: absolute; right: 0;">
@@ -1068,6 +1085,8 @@
                         </div>
                         <div class="team__modal modal 8">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
                                     <div>
                                         <div style="position: absolute; right: 0;">
@@ -1092,6 +1111,8 @@
                         </div>
                         <div class="team__modal modal 9">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
                                     <div>
                                         <div style="position: absolute; right: 0;">
@@ -1118,6 +1139,8 @@
                         </div>
                         <div class="team__modal modal 10">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
                                     <div>
                                         <div style="position: absolute; right: 0;">
@@ -1141,6 +1164,8 @@
                         </div>
                         <div class="team__modal modal 11">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
                                     <div>
                                         <div style="position: absolute; right: 0;">
@@ -1163,6 +1188,8 @@
                         </div>
                         <div class="team__modal modal 12">
                             <div class="team__content modal__content">
+                                <div class="team__close"></div>
+
                                 <div class="team__desc">
                                     <div>
                                         <div style="position: absolute; right: 0;">
@@ -1521,7 +1548,8 @@
     <script>
       const team = document.querySelectorAll(".team__board");
       const teamModals = document.querySelectorAll(".team__modal");
-      const overLay = document.querySelectorAll(".team__overlay")
+      const overLay = document.querySelectorAll(".team__overlay");
+      const modalClosed = document.querySelectorAll(".team__close");
 
         for (let i = 0; i < team.length; i++) {
 
@@ -1537,7 +1565,15 @@
                     
                 }
             })
-
+            for (let x = 0; x < modalClosed.length; x++) {
+                modalClosed[x].addEventListener('click', function(){
+                    for (let x = 0; x < teamModals.length; x++) {
+                    
+                    teamModals[x].classList.remove('team__modal--show')
+                    }  
+                })
+                
+            }
             
             team[i].addEventListener("mouseover", ()=> {
 
