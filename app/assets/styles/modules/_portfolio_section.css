@@ -137,9 +137,9 @@
         }
         & h2 {
             font-family: Playfair Display;
-            font-style: italic;
+            /* font-style: italic; */
             font-weight: 900;
-            font-size: 50px;
+            font-size: 60px;
             line-height: 32px;
             text-align: left;
             color: #FFFFFF; 
@@ -159,14 +159,14 @@
             font-size: 16px;
             line-height: 24px;
             color: #FFFFFF;
-            padding-bottom: 20px;
+            padding: 20px 0px;
         }
         &:nth-of-type(odd) {
             background: #FFF7F5;
         }
         & > div {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             background-size: cover;
             box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.12);
@@ -176,7 +176,7 @@
             /* margin-bottom: 50px; */
             transition: all .2s ease-in-out;
             width: 100%;
-            padding: 60px 0px;
+            padding: 60px;
         }
         &-afiaanyi, &-tworeport, &-mom{
             display: flex;
@@ -320,7 +320,7 @@
         width: 100%;
         position: relative;
         z-index: 1;
-        transform: translateX(-40px);
+        /* transform: translateX(-100px); */
 
         &--cakesgallery{
             width: 100%;
@@ -333,11 +333,15 @@
         /* display: inline-flex; */
         align-items: center;
         justify-content: center;
-        padding: 2% 5% 2% 2%;
+        padding: 2% 0% 2% 2%;
 
-        &--half{
-            width: 100%;
-            padding: 8% 6%
+        &.wide{
+            width: 50%;
+            
+        }
+        &.mid{
+            width: 40%;
+            
         }
 
         & > div {
@@ -356,17 +360,20 @@
             font-size: 17px;
             line-height: 24px;
             color: #FFFFFF;
+            background:white;
+            padding:10px 20px;
+            border-radius:20px;
             
         }
     }
-    &-link:after {
+    /* &-link:after {
         content: "";
         display: block;
         width: 70px;
         height: 3px;
         background: white;
         margin: 6px 0px;
-    }
+    } */
     &__image-container{
         width: 68%;
         position: relative;
@@ -385,6 +392,11 @@
 
         &--cakesgallery{
             padding: 0;
+        }
+
+        &--resp{
+            transform: translateX(-90px);
+            width: 97%;
         }
     }
 
@@ -456,10 +468,10 @@
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: 300;
-            font-size:16px;
+            font-size:18px;
             line-height: 35px;
             color: #FB5A1E; 
-            padding-right:24px           
+            padding-right:35px           
         }
         &.afiaanyi,&.tworeport{
         
@@ -513,6 +525,9 @@
     }
     &__image-casing{
         width: 56%;    
+    }
+    &__image-casing.narrow{
+        width: 45%;    
     }
 
     &__ellipse{
@@ -691,7 +706,13 @@
     .portfolio-section-item > div{
         /* width: 48%; */
         flex-direction: column;
-    }
+    } 
+    .portfolio-section__text-content-container.wide,
+    .portfolio-section__image-casing.narrow,
+    .portfolio-section__text-content-container.mid{
+        width:  100%;
+    }                     
+    
     .portfolio-section__image-container{
         width: 100%;
         order: -1;
@@ -749,6 +770,9 @@
     .portfolio-section-next {
         right: 24%;
         bottom: 9%;
+    }
+    .portfolio-section-item > div{
+        padding: 30px;
     }
 }
 @media only screen and (max-width:768px){

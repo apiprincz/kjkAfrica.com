@@ -5701,9 +5701,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section-item h2 {
             font-family: Playfair Display;
-            font-style: italic;
+            /* font-style: italic; */
             font-weight: 900;
-            font-size: 50px;
+            font-size: 60px;
             line-height: 32px;
             text-align: left;
             color: #FFFFFF;
@@ -5724,7 +5724,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
             font-size: 16px;
             line-height: 24px;
             color: #FFFFFF;
-            padding-bottom: 20px;
+            padding: 20px 0px;
         }
 
 .portfolio-section-item:nth-of-type(odd) {
@@ -5733,7 +5733,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section-item > div {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             background-size: cover;
             box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.12);
@@ -5743,7 +5743,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
             /* margin-bottom: 50px; */
             transition: all .2s ease-in-out;
             width: 100%;
-            padding: 60px 0px;
+            padding: 60px;
         }
 
 .portfolio-section-item-afiaanyi, .portfolio-section-item-tworeport, .portfolio-section-item-mom{
@@ -5892,8 +5892,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
         width: 100%;
         position: relative;
         z-index: 1;
-        transform: translateX(-40px);
     }
+
+/* transform: translateX(-100px); */
 
 .portfolio-section__img-markup--cakesgallery{
             width: 100%;
@@ -5905,12 +5906,17 @@ App.js:39 Letter 10 is 147.7610626220703 */
         /* display: inline-flex; */
         align-items: center;
         justify-content: center;
-        padding: 2% 5% 2% 2%;
+        padding: 2% 0% 2% 2%;
     }
 
-.portfolio-section__text-content-container--half{
-            width: 100%;
-            padding: 8% 6%
+.portfolio-section__text-content-container.wide{
+            width: 50%;
+            
+        }
+
+.portfolio-section__text-content-container.mid{
+            width: 40%;
+            
         }
 
 .portfolio-section__text-content-container > div {
@@ -5930,17 +5936,20 @@ App.js:39 Letter 10 is 147.7610626220703 */
             font-size: 17px;
             line-height: 24px;
             color: #FFFFFF;
+            background:white;
+            padding:10px 20px;
+            border-radius:20px;
             
         }
 
-.portfolio-section-link:after {
+/* &-link:after {
         content: "";
         display: block;
         width: 70px;
         height: 3px;
         background: white;
         margin: 6px 0px;
-    }
+    } */
 
 .portfolio-section__image-container{
         width: 68%;
@@ -5960,6 +5969,11 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section__image-container--cakesgallery{
             padding: 0;
+        }
+
+.portfolio-section__image-container--resp{
+            transform: translateX(-90px);
+            width: 97%;
         }
 
 .portfolio-section__text-content-title{
@@ -6039,10 +6053,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
             font-family: Sofia Pro;
             font-style: normal;
             font-weight: 300;
-            font-size:16px;
+            font-size:18px;
             line-height: 35px;
             color: #FB5A1E; 
-            padding-right:24px           
+            padding-right:35px           
         }
 
 .portfolio-section__desc-content.afiaanyi::before,.portfolio-section__desc-content.tworeport::before{
@@ -6100,6 +6114,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .portfolio-section__image-casing{
         width: 56%;    
+    }
+
+.portfolio-section__image-casing.narrow{
+        width: 45%;    
     }
 
 .portfolio-section__ellipse{
@@ -6284,7 +6302,13 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .portfolio-section-item > div{
         /* width: 48%; */
         flex-direction: column;
-    }
+    } 
+    .portfolio-section__text-content-container.wide,
+    .portfolio-section__image-casing.narrow,
+    .portfolio-section__text-content-container.mid{
+        width:  100%;
+    }                     
+    
     .portfolio-section__image-container{
         width: 100%;
         order: -1;
@@ -6344,6 +6368,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .portfolio-section-next {
         right: 24%;
         bottom: 9%;
+    }
+    .portfolio-section-item > div{
+        padding: 30px;
     }
 }
 
@@ -6899,6 +6926,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
             font-size:1.4rem;
             position: absolute;
             top: 50%;
+            white-space: nowrap;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -6906,8 +6934,8 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .team__board {
         display: flex;
         justify-content:space-between;
-        padding: 30px 44px ;
-        width:30%;
+        padding: 0px 10px 10px;
+        width:26%;
         /* border: 1px solid #FB5A1E; */
         box-sizing: border-box;
         border-radius: 30px;
@@ -6936,7 +6964,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
    }
 
 .team__ppic {
-        width: 230px;
+        width: 145px;
         position: relative;
         z-index: 10;
         padding-top: 40px;
@@ -6994,7 +7022,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         font-style: normal;
         font-weight: bold;
         font-size: 26px;
-        line-height: 90px;
+        line-height: 35px;
         letter-spacing: -0.02em;
         color: #FB5A1E;
         white-space:nowrap;
@@ -7042,6 +7070,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 .team__role.xtra {
             padding-bottom: 22px;
+        }
+
+.team__role span{
+            font-weight: 700;
         }
 
 .team__links {
@@ -10729,7 +10761,8 @@ section.br{
         }
 
 .geek__item {
-        width: 50%;
+        width:48%;
+        margin: 0 10px 10px;
     }
 
 .geek__item img {
@@ -10786,29 +10819,17 @@ section.br{
         }
 
 .geek__hero {
-        font-family: Playfair Display;
+        /* font-family: Playfair Display;
         font-style: italic;
         font-weight: bold;
-        font-size: 48px;
+        font-size: 1.8rem;
         line-height: 72px;
         color: #333333;
         text-align: left;
-        padding-bottom: 20px;
+        padding-bottom: 20px; */
         padding-left: 40px;
+        
     }
-
-.geek__hero::after {
-            content: '';
-            background: #FB5A1E;
-            border-radius: 15px;
-            width: 100px;
-            height: 3px;
-            display: block;
-            position: absolute;
-            /* right: 50%; */
-            text-align: center;
-            transform: translateX(50%);
-        }
 
 .geek__activity {
         padding: 0px 80px 40px;
@@ -10828,13 +10849,19 @@ section.br{
     }
 
 .geek__space {
-        width: 100%;
+        width: 50%;
         padding: 10px 0px;
     }
 
 .geek__space img {
             width: 100%;
         }
+
+@media only screen and (max-width:1124px){
+    .geek__item {
+        width: 47%;
+    }
+}
 
 @media only screen and (max-width:1024px){
     .geek {
@@ -10890,7 +10917,7 @@ section.br{
     }
     .geek__item {
         z-index: 12;
-        width: 49%;
+        width: 44%;
     }
     .geek__activity {
         padding-top: 30px;
@@ -10942,9 +10969,9 @@ section.br{
         font-size: 22px;
         line-height: 28px;
     }
-    /* .geek__wrapper > .geek__item:last-child {
-        width: 85%;
-    } */
+    .geek__item {
+        width: 42%;
+    } 
 }
 
 @media only screen and (max-width:350px){
@@ -11552,21 +11579,21 @@ section.br{
             }
 
 .client__itemize {
-        padding-left: 10px;
+        padding: 10px;
     }
 
 .client__itemize li {
             list-style-type: disc;
             list-style-position:inside;
             font-weight: 300;
-            font-size: 0.9rem;
-            line-height: 1.3rem;
+            font-size: 16px;
+            line-height: 1.9rem;
             
         }
 
 .client__text{
         font-weight: 300;
-        font-size: 1.2rem;
+        font-size: 16px;
         line-height:1.7rem;
         padding-bottom: 20px;
     }
@@ -11636,7 +11663,7 @@ section.br{
 
 .client__container__text{
             width: 42%;
-            padding-left: 5%;
+            padding:0% 5%;
             display: flex;
             justify-content: flex-start;
             align-items: center;

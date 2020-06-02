@@ -53,7 +53,8 @@
         }
     }
     &__item {
-        width: 50%;
+        width:48%;
+        margin: 0 10px 10px;
         
         & img {
             width: 100%;
@@ -104,27 +105,16 @@
         }
     }
     &__hero {
-        font-family: Playfair Display;
+        /* font-family: Playfair Display;
         font-style: italic;
         font-weight: bold;
-        font-size: 48px;
+        font-size: 1.8rem;
         line-height: 72px;
         color: #333333;
         text-align: left;
-        padding-bottom: 20px;
+        padding-bottom: 20px; */
         padding-left: 40px;
-        &::after {
-            content: '';
-            background: #FB5A1E;
-            border-radius: 15px;
-            width: 100px;
-            height: 3px;
-            display: block;
-            position: absolute;
-            /* right: 50%; */
-            text-align: center;
-            transform: translateX(50%);
-        }
+        
     } 
     &__activity {
         padding: 0px 80px 40px;
@@ -141,7 +131,7 @@
 
     }
     &__space {
-        width: 100%;
+        width: 50%;
         padding: 10px 0px;
 
         & img {
@@ -149,6 +139,11 @@
         }
     }
     
+}
+@media only screen and (max-width:1124px){
+    .geek__item {
+        width: 47%;
+    }
 }
 @media only screen and (max-width:1024px){
     .geek {
@@ -203,7 +198,7 @@
     }
     .geek__item {
         z-index: 12;
-        width: 49%;
+        width: 44%;
     }
     .geek__activity {
         padding-top: 30px;
@@ -253,9 +248,9 @@
         font-size: 22px;
         line-height: 28px;
     }
-    /* .geek__wrapper > .geek__item:last-child {
-        width: 85%;
-    } */
+    .geek__item {
+        width: 42%;
+    } 
 }
 
 @media only screen and (max-width:350px){

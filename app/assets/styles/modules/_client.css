@@ -60,20 +60,20 @@
     }
 
     &__itemize {
-        padding-left: 10px;
+        padding: 10px;
         & li {
             list-style-type: disc;
             list-style-position:inside;
             font-weight: 300;
-            font-size: 0.9rem;
-            line-height: 1.3rem;
+            font-size: 16px;
+            line-height: 1.9rem;
             
         }
     }
 
     &__text{
         font-weight: 300;
-        font-size: 1.2rem;
+        font-size: 16px;
         line-height:1.7rem;
         padding-bottom: 20px;
 
@@ -144,7 +144,7 @@
 
         &__text{
             width: 42%;
-            padding-left: 5%;
+            padding:0% 5%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
