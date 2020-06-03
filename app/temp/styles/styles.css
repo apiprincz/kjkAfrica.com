@@ -6481,6 +6481,18 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .portfolio-section-item > div{
         padding: 30px;
     }
+    .portfolio-section-item.fave> div,
+    .portfolio-section-item.attendance > div,
+    .portfolio-section-item.cms > div,
+    .portfolio-section-item.edu  > div,
+    .portfolio-section-item.pave > div,
+    .portfolio-section-item.mind > div,
+    .portfolio-section-item.travel > div,
+    .portfolio-section-item.directory  > div,
+    .portfolio-section-item.marketplace > div{
+        padding:30px;
+        
+    }  
 }
 
 @media only screen and (max-width:768px){
@@ -6573,6 +6585,22 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .portfolio-section-item > div {
         padding: 23px 0px;
     }
+    .portfolio-section-item.fave> div,
+    .portfolio-section-item.attendance > div,
+    .portfolio-section-item.cms > div,
+    .portfolio-section-item.edu  > div,
+    .portfolio-section-item.pave > div,
+    .portfolio-section-item.mind > div,
+    .portfolio-section-item.travel > div,
+    .portfolio-section-item.directory  > div,
+    .portfolio-section-item.marketplace > div{
+        padding:23px 0px;
+        
+    } 
+.portfolio-section__image-container--resp{
+    transform: translateX(-27px);
+}
+
 }
 
 @media only screen and (max-width: 512px){
@@ -6590,7 +6618,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
         right: 16%;
         bottom: 15%;
     }
-    
+.portfolio-section-item.travel h2{
+    line-height: 34px;
+}
+
 }
 
 @media only screen and (max-width: 425px){
@@ -6644,6 +6675,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     .portfolio-section__text {
         font-size: 1.0rem;
     }
+    .portfolio-section__image-container--resp{
+        transform: translateX(-9px);
+    }
 }
 
 @media only screen and (max-width: 368px){
@@ -6662,6 +6696,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
        
         right: 22%;
     }
+.portfolio-section-extended a{
+    font-size: 11px;
+}
 }
 
 @media only screen and (max-width: 368px){
