@@ -3243,6 +3243,26 @@ header > .nav-bar .new-bar{
             background: rgb(33, 68, 29);
         }
 
+.portfolio__title.crystal:after{
+            background: #24e82a;
+        }
+
+.portfolio__title.gold:after{
+            background: #8a0880;
+        }
+
+.portfolio__title.glam:after{
+            background: #de17cf;
+        }
+
+.portfolio__title.erz:after{
+            background: #de1720;
+        }
+
+.portfolio__title.agro:after{
+            background: #de7317;
+        }
+
 .portfolio .owl-theme .owl-controls .owl-page {
         display: inline-block;
     }
@@ -3415,6 +3435,10 @@ header > .nav-bar .new-bar{
                 /* height: 100vh; */
             }
 
+.portfolio__item--flex-img> img{
+                height: 100%;
+            }
+
 .portfolio__swiper--area {
         position: absolute;
         bottom: 0;
@@ -3574,35 +3598,6 @@ color: #FFFFFF;
     }
 }
 
-@media only screen and (min-width: 520px){
-    /* .portfolio__container{
-        flex-direction: row;
-    } */
-    /* .portfolio__item--left{
-        width: 43%;
-    } */
-    /* .portfolio__item--right{
-        width: 57%;
-        order: unset;
-        /* padding-bottom: 69px; */
-     
-    /* .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
-        width: 40px;
-        height: 5px;
-        margin: 0 6px;
-    } */
-}
-
-@media only screen and (min-width: 920px){
-    /* .portfolio .owl-carousel .owl-nav button.owl-prev, .portfolio .owl-carousel .owl-nav button.owl-next, .portfolio .owl-carousel .owl-dots {
-        transform: translateY(-48px);
-    } */
-}
-
-/* .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
-    display: none;
-} */
-
 @media only screen and (max-width:1325px){
     .portfolio__title.saint, .portfolio__title.queens {
         font-size: 40px;
@@ -3657,6 +3652,7 @@ color: #FFFFFF;
         line-height: 50px;
         font-size: 30px;
     }
+    
 }
 
 @media only screen and (min-width:1245px){

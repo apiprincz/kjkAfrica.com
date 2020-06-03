@@ -56,6 +56,28 @@
             .swiper-container {
                 height: 100%;
             }
+            .swiper-container.swiper-2 {
+                height: 1020px;
+            }
+            
+        }
+        @media only screen and (max-width:768px) {
+            .swiper-container.swiper-2 {
+                height: 900px;
+            }
+            
+        }
+        @media only screen and (max-width:580px) {
+            .swiper-container.swiper-2 {
+                height: 782px;
+            }
+            
+        }
+        @media only screen and (max-width:425px) {
+            .swiper-container.swiper-2 {
+                height: 656px;
+            }
+            
         }
     </style>
 
@@ -1901,7 +1923,7 @@
                     </div>
                     <div class="swiper-slide portfolio__brand--item">
                         <div class="portfolio__container web">
-                            <div class="portfolio__item portfolio__item--flex-img ">
+                            <div class="portfolio__item portfolio__item--flex-img " style="background: rgb(127, 177, 177);">
                                 <img src="assets/images/telpecon.png " style="width: 100%; " alt=" ">
                             </div>
                             <div class="portfolio__item portfolio__item--flex-text">
@@ -2224,12 +2246,12 @@
                     <div class="swiper-slide portfolio__brand--item">
                         <div class="portfolio__container web">
                             <div class="portfolio__item portfolio__item--flex-img ">
-                                <img src="assets/images/goldwings-br.png" style="width: 100%; " alt=" ">
+                                <img src="assets/images/agro-br.png" style="width: 100%; " alt=" ">
                             </div>
                             <div class="portfolio__item portfolio__item--flex-text">
 
-                                <h2 class="portfolio__title gold">
-                                    GoldWings
+                                <h2 class="portfolio__title agro">
+                                    AgroSeed
                                 </h2>
                                 <ul>
                                     <p>WHAT WE DID</p>
@@ -2314,12 +2336,12 @@
                     <div class="swiper-slide portfolio__brand--item">
                         <div class="portfolio__container web">
                             <div class="portfolio__item portfolio__item--flex-img ">
-                                <img src="assets/images/agro-br.png" style="width: 100%; " alt=" ">
+                                <img src="assets/images/goldwings-br.png" style="width: 100%; " alt=" ">
                             </div>
                             <div class="portfolio__item portfolio__item--flex-text">
 
-                                <h2 class="portfolio__title agro">
-                                    AgroSeed
+                                <h2 class="portfolio__title gold">
+                                    GoldWings
                                 </h2>
                                 <ul>
                                     <p>WHAT WE DID</p>
@@ -2334,6 +2356,7 @@
                         </div>
 
                     </div>
+                    
 
 
 
@@ -2554,7 +2577,7 @@
 
         const swiperBg = document.querySelectorAll('.portfolio__swiper--area')
         const bgColors = ['#E83124', '#D43724', '#32B196', '#D43724', '#4DC28D', '#9B4E6C', '#333EA8', '#D8944E', '#8F45A5', '#3E7BAC', '#41ABD5', '#222D35', '#2B8309', '#8F45A5']
-        const brandColors = ['#970A73', '#00175C', '#1A7BA8', '#66CCFF', '#669999', '#911F0D', '#46AE14', '#131440', '#46AE14', '#30C8FA', '#F44236', '#4363DF', '#FB0201', '#6F2828', '#336666', '#003300', '#1A7BA8', '#30C8FA', '#30C8FA', '#30C8FA', '#30C8FA', '#30C8FA']
+        const brandColors = ['#970A73', '#00175C', '#1A7BA8', '#66CCFF', '#669999', '#911F0D', '#46AE14', '#131440', '#46AE14', '#30C8FA', '#F44236', '#4363DF', '#FB0201', '#6F2828', '#336666', '#003300', '#24e82a','#de7317', '#de17cf', '#0099cc', '#de1720', '#8a0880']
 
         const newColors = bgColors.concat(brandColors)
 
