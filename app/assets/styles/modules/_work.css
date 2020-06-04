@@ -322,8 +322,8 @@
         width: 90%;
     }
     .work__board:nth-of-type(1) > div >.work__visual{
-        padding: 25px 0px 0px 0px;
-    }
+        padding: 20px 0px 0px 20px;
+    } 
     .work__board:nth-of-type(odd) .work__desc {
         order: -1;
        
@@ -425,4 +425,12 @@
     .work__board img.work__base {
         height: 12%;
     }
+}
+@media only screen and (max-width: 330px){
+   
+    .work__visual {
+        margin-bottom: 30px;
+    }
+   
+  
 }
