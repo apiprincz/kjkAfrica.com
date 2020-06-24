@@ -25,12 +25,11 @@ class KeepFormStyleTwo {
 
     //     })
     // }
-    // footer__label--keep
 
     keepStyleTwo() {
         this.contactInput.forEach(item => {
             item.addEventListener('blur', function () {
-                console.log(item.value)
+                console.log(item)
                 if (item.value.trim().length !== 0) {
                     item.nextElementSibling.classList.add('contact-form__label--keep');
                 } else {
