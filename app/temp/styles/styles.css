@@ -3678,6 +3678,9 @@ color: #FFFFFF;
         width: 100%;
         /* height: auto; */
     }
+    .btn-femi.btn--top-space {
+        margin-top: 6px;
+    }
     .no-break{
         display: none;
     }
@@ -3711,7 +3714,13 @@ color: #FFFFFF;
     /* .portfolio__swiper--area {
         width: 50%;
     } */
-    
+    .portfolio__item--flex-text.custom{
+        height: 475px;
+    }
+    .btn-femi.btn--top-space {
+        margin-top: 17px;
+    }
+
 }
 
 @media only screen and (max-width:512px){
