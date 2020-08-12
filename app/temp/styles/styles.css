@@ -3427,8 +3427,9 @@ header > .nav-bar .new-bar{
 
 .portfolio__item--flex-img {
             width: 783px;
-            height: 640px;
         }
+
+/* height: 640px; */
 
 .portfolio__item--flex-img > img.queens {
                 width: 100%; 
@@ -3626,9 +3627,9 @@ color: #FFFFFF;
 }
 
 @media only screen and (max-width:1110px){
-    .portfolio__item--flex-img {
-        height: 666px;
-    }
+    /* .portfolio__item--flex-img {
+        height: 666px; 
+   }*/
     .portfolio__swiper--area {
         width:calc(100% - 666px)
     }
@@ -3675,7 +3676,7 @@ color: #FFFFFF;
     
     {
         width: 100%;
-        height: auto;
+        /* height: auto; */
     }
     .no-break{
         display: none;
@@ -3688,7 +3689,7 @@ color: #FFFFFF;
     }
     
     .portfolio__swiper--area {
-        width: 40%;
+        width: 100%;
     }
     .portfolio__title.saint, .portfolio__title.queens {
         /* font-size: 36px; */
@@ -3707,9 +3708,9 @@ color: #FFFFFF;
     .portfolio__item--flex-text {
         padding:0px 0px 10px 70px;
     }
-    .portfolio__swiper--area {
+    /* .portfolio__swiper--area {
         width: 50%;
-    }
+    } */
     
 }
 
@@ -3717,7 +3718,10 @@ color: #FFFFFF;
     
     .portfolio__item--flex-text {
         padding:0px 0px 10px 30px;
-        min-height: 521px;
+        /* min-height: 521px; */
+        
+    }
+    .portfolio__item--flex-text.custom{
         height: 521px;
     }
     .swiper-2 > .swiper-wrapper > .swiper-slide > div > .portfolio__item--flex-text {
@@ -3727,7 +3731,7 @@ color: #FFFFFF;
         height: auto;
     }
     .portfolio__swiper--area {
-        width: 60%;
+        /* width: 60%; */
         padding: 14px;
     }
     .portfolio__title {
@@ -3746,6 +3750,9 @@ color: #FFFFFF;
     .portfolio__title.saint, 
     .portfolio__title.queens {
         font-size: 25px;
+    }
+    .portfolio__item--flex-img> img {
+        height: 350px;
     }
 }
 
