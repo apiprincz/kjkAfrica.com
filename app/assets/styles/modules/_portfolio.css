@@ -362,6 +362,9 @@ color: #FFFFFF;
     &-inline {
         background: #8E4BB4;
     }
+    &-bosh {
+        background: #B62D85;
+    }
 
 }
 
