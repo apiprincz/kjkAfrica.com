@@ -424,6 +424,9 @@
         &--afiaanyi{
             color: #fff;
         }
+        &.cms {
+            line-height: 47px;
+        }
         &--mom{
             color: white;
             line-height: 50px;

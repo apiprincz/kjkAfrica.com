@@ -6112,6 +6112,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
             color: #fff;
         }
 
+.portfolio-section__text-content-title.cms {
+            line-height: 47px;
+        }
+
 .portfolio-section__text-content-title--mom{
             color: white;
             line-height: 50px;
