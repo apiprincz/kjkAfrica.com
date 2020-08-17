@@ -508,7 +508,7 @@
 
 
             </section>
-            <div class="portfolio-section-item">
+            <div class="portfolio-section-item" id="trudata">
                 <div>
                     <div class="portfolio-section__text-content-container">
                         <div>
@@ -543,7 +543,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-section-item">
+            <div class="portfolio-section-item" id="afiaanyi">
                 <div class="portfolio-section-item-afiaanyi">
                     <div
                         class="portfolio-section__text-content-container portfolio-section__text-content-container--afiaanyi mid">
@@ -585,7 +585,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-section-item">
+            <div class="portfolio-section-item" id="tworeport">
 
                 <div class="portfolio-section-item-tworeport">
 
@@ -743,7 +743,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-section-item">
+            <div class="portfolio-section-item" id="mom-foundation">
 
                 <div class="portfolio-section-item-mom">
 
@@ -818,7 +818,7 @@
 
             </section>
 
-            <div class="portfolio-section-item fave">
+            <div class="portfolio-section-item fave" id="fave">
                 <div>
                     <div class="portfolio-section__image-container portfolio-section__image-container--resp">
                         <img src="assets/images/fave-pro.png" class="portfolio-section__img-markup" alt="">
@@ -847,7 +847,7 @@
 
                 </div>
             </div>
-            <div class="portfolio-section-item attendance">
+            <div class="portfolio-section-item attendance" id="e-attendance">
                 <div>
                     <div class="portfolio-section__image-container portfolio-section__image-container--resp">
                         <img src="assets/images/attendance.png" class="portfolio-section__img-markup" alt="">
@@ -879,7 +879,7 @@
 
                 </div>
             </div>
-            <div class="portfolio-section-item cms">
+            <div class="portfolio-section-item cms" id="cms-platform">
                 <div>
                     <div class="portfolio-section__image-container portfolio-section__image-container--resp">
                         <img src="assets/images/kjk cms.png" class="portfolio-section__img-markup" alt="">
@@ -913,7 +913,7 @@
 
                 </div>
             </div>
-            <div class="portfolio-section-item edu">
+            <div class="portfolio-section-item edu" id="edu-portal">
                 <div>
                     <div class="portfolio-section__image-container portfolio-section__image-container--resp">
                         <img src="assets/images/eduportal.png" class="portfolio-section__img-markup" alt="">
@@ -945,7 +945,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-section-item pave">
+            <div class="portfolio-section-item pave" id="pave">
 
                 <div>
                     <div class="portfolio-section__image-container portfolio-section__image-container--resp">
@@ -981,7 +981,7 @@
 
                 </div>
             </div>
-            <div class="portfolio-section-item mind">
+            <div class="portfolio-section-item mind" id="mind-me">
 
                 <div>
                     <div class="portfolio-section__image-container portfolio-section__image-container--resp">
@@ -1023,7 +1023,7 @@
 
             </div>
 
-            <div class="portfolio-section-item travel">
+            <div class="portfolio-section-item travel" id="travels-platform">
 
                 <div>
                     <div class="portfolio-section__image-container portfolio-section__image-container--resp">
@@ -1060,7 +1060,7 @@
 
                 </div>
             </div>
-            <div class="portfolio-section-item directory">
+            <div class="portfolio-section-item directory" id="directory">
 
                 <div>
                     <div class="portfolio-section__image-container portfolio-section__image-container--resp">
@@ -1099,7 +1099,7 @@
 
                 </div>
             </div>
-            <div class="portfolio-section-item marketplace">
+            <div class="portfolio-section-item marketplace" id="marketplace">
                 <div>
                     <div
                         class="portfolio-section__image-container portfolio-section__image-container--resp portfolio-section__afiaanyi">
@@ -2551,8 +2551,8 @@
 
 
     </script>
-    <script src="jquery.min.js"></script>
-    <script src="assets/scripts/owl.carousel.min.js"></script>
+    <!-- <script src="jquery.min.js"></script> -->
+    <!-- <script src="assets/scripts/owl.carousel.min.js"></script> -->
     <script>
         const Navs = document.querySelectorAll('.header__portfolio--navs ul li')
         const Portfolios = document.querySelectorAll('.portfolio-section__items-container')
@@ -2611,7 +2611,7 @@
 
 
     </script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
@@ -2798,7 +2798,39 @@
 
     </script>
 
+<script>
+    var jump = function (e) {
+        if (e) {
+            e.preventDefault();
+            var target = $(this).attr("href");
+        } else {
+            var target = location.hash;
+        }
 
+        $('html,body').animate(
+            {
+                scrollTop: $(target).offset().top-600
+            }, 2000, function () {
+            location.hash = target;
+        });
+
+    }
+
+    $('html, body').hide();
+
+    $(document).ready(function () {
+        $('a[href^=#]').bind("click", jump);
+
+        if (location.hash) {
+            setTimeout(function () {
+                $('html, body').scrollTop(0).show();
+                jump();
+            }, 0);
+        } else {
+            $('html, body').show();
+        }
+    });
+</script>
     <!-- build:jsassets/scripts/App.js -->
     <script src="temp/scripts/App.js "></script>
     <!-- endbuild -->

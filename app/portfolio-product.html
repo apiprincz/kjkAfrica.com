@@ -26,8 +26,8 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/global/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/styles/global/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="assets/styles/global/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/styles/global/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="assets/styles/css/glide.core.min.css">
     <link rel="stylesheet" href="assets/styles/css/glide.core.css">
     <link rel="stylesheet" href="assets/styles/css/glide.theme.min.css">
@@ -36,7 +36,7 @@
     <!-- endbuild -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/@glidejs/glide"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
@@ -510,7 +510,7 @@
 
 
             </section>
-            <div class="portfolio-section-item">
+            <div class="portfolio-section-item" id="trudata">
                 <div>
                     <div class="portfolio-section__text-content-container">
                         <div>
@@ -545,7 +545,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-section-item">
+            <div class="portfolio-section-item" id="afiaanyi">
                 <div class="portfolio-section-item-afiaanyi">
                     <div
                         class="portfolio-section__text-content-container portfolio-section__text-content-container--afiaanyi mid">
@@ -587,7 +587,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-section-item">
+            <div class="portfolio-section-item" id="tworeport">
 
                 <div class="portfolio-section-item-tworeport">
 
@@ -745,7 +745,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-section-item">
+            <div class="portfolio-section-item" id="mom-foundation">
 
                 <div class="portfolio-section-item-mom">
 
@@ -2520,7 +2520,39 @@
         </div>
 
     </footer>
+    <script>
+        var jump = function (e) {
+            if (e) {
+                e.preventDefault();
+                var target = $(this).attr("href");
+            } else {
+                var target = location.hash;
+            }
 
+            $('html,body').animate(
+                {
+                    scrollTop: $(target).offset().top
+                }, 2000, function () {
+                location.hash = target;
+            });
+
+        }
+
+        $('html, body').hide();
+
+        $(document).ready(function () {
+            $('a[href^=#]').bind("click", jump);
+
+            if (location.hash) {
+                setTimeout(function () {
+                    $('html, body').scrollTop(0).show();
+                    jump();
+                }, 0);
+            } else {
+                $('html, body').show();
+            }
+        });
+    </script>
     <script>
 
         var slideInTop = {
@@ -2587,8 +2619,8 @@
 
 
     </script>
-    <script src="jquery.min.js"></script>
-    <script src="assets/scripts/owl.carousel.min.js"></script>
+    <!-- <script src="jquery.min.js"></script> -->
+    
     <script>
         const Navs = document.querySelectorAll('.header__portfolio--navs ul li')
         const Portfolios = document.querySelectorAll('.portfolio-section__items-container')
@@ -2647,40 +2679,8 @@
 
 
     </script>
-    <script>
-        var jump = function (e) {
-            if (e) {
-                e.preventDefault();
-                var target = $(this).attr("href");
-            } else {
-                var target = location.hash;
-            }
-
-            $('html,body').animate(
-                {
-                    scrollTop: $(target).offset().top-200
-                }, 2000, function () {
-                location.hash = target;
-            });
-
-        }
-
-        $('html, body').hide();
-
-        $(document).ready(function () {
-            $('a[href^=#]').bind("click", jump);
-
-            if (location.hash) {
-                setTimeout(function () {
-                    $('html, body').scrollTop(0).show();
-                    jump();
-                }, 0);
-            } else {
-                $('html, body').show();
-            }
-        });
-    </script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
